@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+
+    <record id="partner_user_1" model="res.partner">
+        <field name="name">Luis Manuel Marin Guadarrama</field>
+        <field name="type">contact</field>
+        <field name="street">Privada Santiaguito 5</field>
+        <field name="street2">Barrio de Santiaguito</field>
+        <field name="city">Metepec</field>
+        <field name="zip">52140</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="vat">MAGL910204CY8</field>
+        <field name="phone">+52 722 232 0859</field>
+        <field name="email">luis.maring@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+        <field name="l10n_mx_edi_fiscal_regime">612</field>
+        <field name="l10n_mx_type_of_operation">85</field>
+        <field name="l10n_mx_edi_curp">MAGL910204HMCRDS05</field>
+    </record>
+
+    <record id="user_1" model="res.users">
+        <field name="login">luis.maring@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_1" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field
+            name="company_ids"
+            eval="[
+            Command.link(ref('base.main_company')),
+            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('xiuman_data.company_tjgl')),
+            Command.link(ref('xiuman_data.company_ammg')),
+            Command.link(ref('xiuman_data.company_cfmg')),
+            Command.link(ref('xiuman_data.company_glmm')),
+            Command.link(ref('xiuman_data.company_xiuman')),
+        ]"
+        />
+    </record>
+
+    <record id="partner_user_2" model="res.partner">
+        <field name="name">Karla Alejandra Reyes Avila</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">karla_joesito@hotmail.com</field>
+        <field name="employee" eval="True" />
+        <field name="gender">female</field>
+    </record>
+
+    <record id="user_2" model="res.users">
+        <field name="login">karla_joesito@hotmail.com</field>
+        <field name="partner_id" ref="partner_user_2" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_3" model="res.partner">
+        <field name="name">Christian Eugenio Elizais Peñaloza</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">elizais-uaemex09@hotmail.com</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_3" model="res.users">
+        <field name="login">elizais-uaemex09@hotmail.com</field>
+        <field name="partner_id" ref="partner_user_3" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_4" model="res.partner">
+        <field name="name">Jose Luis Farfan Trejo</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">farfanepoani@hotmail.com</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_4" model="res.users">
+        <field name="login">farfanepoani@hotmail.com</field>
+        <field name="partner_id" ref="partner_user_4" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_5" model="res.partner">
+        <field name="name">Diana Stephani Evangelista Reyes</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">diana.evangelista@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">female</field>
+    </record>
+
+    <record id="user_5" model="res.users">
+        <field name="login">diana.evangelista@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_5" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_6" model="res.partner">
+        <field name="name">Gladis Linette Mancinas Miranda</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">gladis.mancinas@xiuman.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">female</field>
+    </record>
+
+    <record id="user_6" model="res.users">
+        <field name="login">gladis.mancinas@xiuman.mx</field>
+        <field name="partner_id" ref="partner_user_6" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_7" model="res.partner">
+        <field name="name">Carlos Fernando Marin Guadarrama</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">carlos.marin@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_7" model="res.users">
+        <field name="login">carlos.marin@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_7" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_8" model="res.partner">
+        <field name="name">Maria de los Angeles Martinez</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">angeles.martinez@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">female</field>
+    </record>
+
+    <record id="user_8" model="res.users">
+        <field name="login">angeles.martinez@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_8" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_9" model="res.partner">
+        <field name="name">Elsy Valeria Corona Arias</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">elsy.corona@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">female</field>
+    </record>
+
+    <record id="user_9" model="res.users">
+        <field name="login">elsy.corona@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_9" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_10" model="res.partner">
+        <field name="name">Hugo Garcia Martinez</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">hugo.garcia@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_10" model="res.users">
+        <field name="login">hugo.garcia@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_10" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_11" model="res.partner">
+        <field name="name">Jorge Antonio Moreno Ramirez</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">ingjorgemoreno@gmail.com</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_11" model="res.users">
+        <field name="login">ingjorgemoreno@gmail.com</field>
+        <field name="partner_id" ref="partner_user_11" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_12" model="res.partner">
+        <field name="name">Aaron Espinosa Herrera</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">aaron.espinosa@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_12" model="res.users">
+        <field name="login">aaron.espinosa@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_12" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_13" model="res.partner">
+        <field name="name">Daniela Garduño Tellez</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">gardunodani55@gmail.com</field>
+        <field name="employee" eval="True" />
+        <field name="gender">female</field>
+    </record>
+
+    <record id="user_13" model="res.users">
+        <field name="login">gardunodani55@gmail.com</field>
+        <field name="partner_id" ref="partner_user_13" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_14" model="res.partner">
+        <field name="name">Jose Ignacio Guillen Ocampo</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">jose.guillen@xiuman.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_14" model="res.users">
+        <field name="login">jose.guillen@xiuman.mx</field>
+        <field name="partner_id" ref="partner_user_14" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_15" model="res.partner">
+        <field name="name">Emmanuel Alejandro Ornelas Sanchez</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">alejandro.ornelas@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_15" model="res.users">
+        <field name="login">alejandro.ornelas@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_15" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_16" model="res.partner">
+        <field name="name">Juan Carlos Lino Flores</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">juan.lino@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_16" model="res.users">
+        <field name="login">juan.lino@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_16" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_17" model="res.partner">
+        <field name="name">Itzel Cruz Engrande</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">itzel.cruz@xiuman.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">female</field>
+    </record>
+
+    <record id="user_17" model="res.users">
+        <field name="login">itzel.cruz@xiuman.mx</field>
+        <field name="partner_id" ref="partner_user_17" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_18" model="res.partner">
+        <field name="name">Eduardo Hernandez Martinez</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">eduardo.hernandez@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_18" model="res.users">
+        <field name="login">eduardo.hernandez@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_18" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_19" model="res.partner">
+        <field name="name">Oscar Abdiel Becerril Villafuerte</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">oscar.becerril@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_19" model="res.users">
+        <field name="login">oscar.becerril@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_19" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_20" model="res.partner">
+        <field name="name">Misael Varela Quiroz</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">misael.varela@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_20" model="res.users">
+        <field name="login">misael.varela@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_20" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_21" model="res.partner">
+        <field name="name">Diego Serafin Garcia Varela</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">diego.garcia@xiuman.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_21" model="res.users">
+        <field name="login">diego.garcia@xiuman.mx</field>
+        <field name="partner_id" ref="partner_user_21" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_22" model="res.partner">
+        <field name="name">Zulli Faviola Mejia Miranda</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">zulli.mejia@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">female</field>
+    </record>
+
+    <record id="user_22" model="res.users">
+        <field name="login">zulli.mejia@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_22" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_23" model="res.partner">
+        <field name="name">Bryan Hilario Martinez Castillo</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">bryan.martinez@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_23" model="res.users">
+        <field name="login">bryan.martinez@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_23" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_24" model="res.partner">
+        <field name="name">Jorge Reynaldo Ibarra Cuadras</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">jorge.ibarra@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_24" model="res.users">
+        <field name="login">jorge.ibarra@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_24" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_25" model="res.partner">
+        <field name="name">Juan Rafael Carranza Sacramento</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">juan.carranza@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_25" model="res.users">
+        <field name="login">juan.carranza@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_25" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_26" model="res.partner">
+        <field name="name">Rod Axel Jimenez Magaña</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">rod.jimenez@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_26" model="res.users">
+        <field name="login">rod.jimenez@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_26" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_27" model="res.partner">
+        <field name="name">Magdalena Garcia Flores</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">magdalena.garcia@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">female</field>
+    </record>
+
+    <record id="user_27" model="res.users">
+        <field name="login">magdalena.garcia@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_27" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_28" model="res.partner">
+        <field name="name">Maria Guadalupe Orozco Mendieta</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">maria.orozco@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">female</field>
+    </record>
+
+    <record id="user_28" model="res.users">
+        <field name="login">maria.orozco@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_28" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_29" model="res.partner">
+        <field name="name">Alexander Benito Acevedo</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">alexander.benito@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_29" model="res.users">
+        <field name="login">alexander.benito@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_29" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_30" model="res.partner">
+        <field name="name">Patricia Nicolas Hernandez</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">patricia.nicolas@xiuman.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">female</field>
+    </record>
+
+    <record id="user_30" model="res.users">
+        <field name="login">patricia.nicolas@xiuman.mx</field>
+        <field name="partner_id" ref="partner_user_30" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_31" model="res.partner">
+        <field name="name">Ruben Daniel Piña Arcos</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">daniel.pina@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_31" model="res.users">
+        <field name="login">daniel.pina@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_31" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_32" model="res.partner">
+        <field name="name">Sergio Hernandez Alcantara</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">sergio.hernandez@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_32" model="res.users">
+        <field name="login">sergio.hernandez@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_32" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_user_33" model="res.partner">
+        <field name="name">Hugo Esquivel Callejas</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">hugo.esquivel@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_33" model="res.users">
+        <field name="login">hugo.esquivel@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_33" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+
+    <record id="partner_user_34" model="res.partner">
+        <field name="name">Antonio Lona Salum</field>
+        <field name="type">contact</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="email">antonio.lona@marinagro.mx</field>
+        <field name="employee" eval="True" />
+        <field name="gender">male</field>
+    </record>
+
+    <record id="user_34" model="res.users">
+        <field name="login">antonio.lona@marinagro.mx</field>
+        <field name="partner_id" ref="partner_user_34" />
+        <field name="notification_type">inbox</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_ids" eval="[
+            Command.link(ref('xiuman_data.company_lmmr')),
+        ]" />
+    </record>
+</odoo>

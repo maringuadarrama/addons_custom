@@ -1,0 +1,114 @@
+id,company_id/id,name,type,code,sequence,show_on_dashboard,color,refund_sequence,payment_sequence,x_treatment,currency_id/id,default_account_id/id,default_payable_account_id/id,default_receivable_account_id/id,default_refund_account_id/id,loss_account_id/id,profit_account_id/id,suspense_account_id/id
+journal_501,base.main_company,Vendors advances NF,Cash,ANT00,17,,10,,,Not Fiscal real,,xiuman_data.account_120_01_002_main_company,,,,xiuman_data.account_304_02_002_main_company,xiuman_data.account_101_01_007_lmmr,xiuman_data.account_102_01_001_main_company
+journal_502,base.main_company,Vendors advances FF,Cash,ANT01,16,,10,,,Fiscal real,,xiuman_data.account_120_01_001_main_company,,,,xiuman_data.account_304_02_002_main_company,xiuman_data.account_101_01_007_lmmr,xiuman_data.account_102_01_001_main_company
+journal_503,base.main_company,Cash Main,Cash,EFC01,18,True,10,,,Not Fiscal real,,xiuman_data.account_101_01_001_main_company,,,,xiuman_data.account_304_02_002_main_company,xiuman_data.account_101_01_007_lmmr,xiuman_data.account_102_01_001_main_company
+journal_504,base.main_company,Payments done by thirth party in name of the company FF,Cash,EFT,19,,10,,,Fiscal real,,xiuman_data.account_202_03_001_main_company,,,,xiuman_data.account_304_02_002_main_company,xiuman_data.account_101_01_007_lmmr,xiuman_data.account_102_01_001_main_company
+journal_505,base.main_company,Bank BBVA 0110152269,Bank,BNC01,13,,10,,,Not Fiscal real,,xiuman_data.account_102_01_002_main_company,,,,xiuman_data.account_304_02_002_main_company,xiuman_data.account_101_01_007_lmmr,xiuman_data.account_102_01_001_main_company
+journal_506,base.main_company,Bank BBVA Payroll,Bank,BNC02,14,,10,,,Not Fiscal real,,xiuman_data.account_102_01_010_main_company,,,,xiuman_data.account_304_02_002_main_company,xiuman_data.account_101_01_007_lmmr,xiuman_data.account_102_01_001_main_company
+journal_507,base.main_company,Bank BBVA 0478986592,Bank,BNC03,10,True,10,,,Fiscal real,,xiuman_data.account_102_01_001_main_company,,,,xiuman_data.account_304_02_002_main_company,xiuman_data.account_101_01_007_lmmr,xiuman_data.account_102_01_001_main_company
+journal_508,base.main_company,Bank BBVA CC 5435,Bank,BNC04,15,,10,,,Not Fiscal real,,xiuman_data.account_202_03_002_main_company,,,,xiuman_data.account_304_02_002_main_company,xiuman_data.account_101_01_007_lmmr,xiuman_data.account_102_01_001_main_company
+journal_509,base.main_company,Bank Efectivale - Expenses,Bank,BNC05,12,,10,,,Not Fiscal real,,xiuman_data.account_102_01_003_main_company,,,,xiuman_data.account_304_02_002_main_company,xiuman_data.account_101_01_007_lmmr,xiuman_data.account_102_01_001_main_company
+journal_510,base.main_company,Bank Banbajio 0038383038,Bank,BNC06,11,True,10,,,Not Fiscal real,,xiuman_data.account_102_01_004_main_company,,,,xiuman_data.account_304_02_002_main_company,xiuman_data.account_101_01_007_lmmr,xiuman_data.account_102_01_001_main_company
+journal_511,base.main_company,Foreign Suppliers FF,Purchase,PEX,32,,6,True,,Fiscal real,,xiuman_data.account_201_02_001_main_company,xiuman_data.account_115_01_001_main_company,,,,,
+journal_512,base.main_company,Suppliers FF,Purchase,PF,24,True,6,True,,Fiscal real,,xiuman_data.account_201_01_001_main_company,xiuman_data.account_113_08_001_main_company,,xiuman_data.account_602_56_002_main_company,,,
+journal_513,base.main_company,Suppliers NF,Purchase,PN,28,True,6,True,,Not Fiscal real,,xiuman_data.account_602_57_001_main_company,xiuman_data.account_114_01_001_main_company,,,,,
+journal_514,base.main_company,Suppliers NFX,Purchase,PNX,30,,6,,,Not Fiscal simulated,,xiuman_data.account_602_57_001_main_company,xiuman_data.account_114_01_001_main_company,,,,,
+journal_515,base.main_company,Suppliers FX,Purchase,PX,26,,6,True,,Fiscal simulated,,xiuman_data.account_602_61_001_main_company,xiuman_data.account_113_08_001_main_company,,,,,
+journal_516,base.main_company,Customers FF,Sales,CF,36,True,11,True,,Fiscal real,,xiuman_data.account_601_83_008_main_company,xiuman_data.account_105_01_002_main_company,xiuman_data.account_105_01_002_main_company,,,,
+journal_517,base.main_company,Customers NF,Sales,CN,41,True,11,True,,Not Fiscal real,,xiuman_data.account_601_84_001_main_company,xiuman_data.account_201_01_001_main_company,,,,,
+journal_518,base.main_company,Customers NFX,Sales,CNX,10,True,0,True,,Not Fiscal real,,xiuman_data.account_601_84_001_main_company,,,,,,
+journal_519,base.main_company,Customers FX,Sales,CX,39,,11,True,,Fiscal simulated,,xiuman_data.account_601_84_002_main_company,xiuman_data.account_105_01_002_main_company,xiuman_data.account_105_01_002_main_company,,,,
+journal_520,base.main_company,Tax declarations FF,Miscellaneous,CABA1,52,,0,,,Fiscal real,,,,,,,,
+journal_521,base.main_company,Effectively paid FF,Miscellaneous,CBMX1,46,,0,,,Not Fiscal real,,,,,,,,
+journal_522,base.main_company,Computing equipment FF,Miscellaneous,EQC01,70,,0,,,Fiscal real,,,,,,,,
+journal_523,base.main_company,"Automobiles, trucks, forklifts and trailers NF",Miscellaneous,EQT00,68,,0,,,Not Fiscal real,,,,,,,,
+journal_524,base.main_company,"Automobiles, trucks, forklifts and trailers FF",Miscellaneous,EQT01,66,,0,,,Fiscal real,,,,,,,,
+journal_525,base.main_company,Communications equipment FF,Miscellaneous,EQTL1,72,,0,,,Fiscal real,,,,,,,,
+journal_526,base.main_company,Exchange difference FF,Miscellaneous,EXCH1,49,,0,,,Fiscal real,,,,,,,,
+journal_527,base.main_company,Uncollectible debts NF,Miscellaneous,INC0,91,,0,,,Not Fiscal real,,,,,,,,
+journal_528,base.main_company,Uncollectible debts FF,Miscellaneous,INC1,55,,0,,,Fiscal real,,,,,,,,
+journal_529,base.main_company,Machinery and equipment NF,Miscellaneous,MAQ00,76,,0,,,Not Fiscal real,,,,,,,,
+journal_530,base.main_company,Machinery and equipment FF,Miscellaneous,MAQ01,74,,0,,,Fiscal real,,,,,,,,
+journal_531,base.main_company,Furniture and office equipment NF,Miscellaneous,MOQ00,80,,0,,,Not Fiscal real,,,,,,,,
+journal_532,base.main_company,Furniture and office equipment FF,Miscellaneous,MOQ01,78,,0,,,Fiscal real,,,,,,,,
+journal_533,base.main_company,Miscellaneous operations NF,Miscellaneous,MSC0,64,,0,,,Not Fiscal real,,,,,,,,
+journal_534,base.main_company,Miscellaneous operations FF,Miscellaneous,MSC1,61,,0,,,Fiscal real,,,,,,,,
+journal_535,base.main_company,Employees NF,Miscellaneous,NOM00,34,,6,,,Not Fiscal real,,xiuman_data.account_101_01_001_main_company,,,,,,
+journal_536,base.main_company,POS MAIN,Miscellaneous,TPV00,43,,0,,,Not Fiscal real,,,,,,,,
+journal_537,base.main_company,Lands NF,Miscellaneous,TRR00,86,,0,,,Not Fiscal real,,,,,,,,
+journal_538,base.main_company,Lands FF,Miscellaneous,TRR01,85,,0,,,Fiscal real,,,,,,,,
+journal_539,xiuman_data.company_lmmr,Vendors advances NF,Cash,ANT00,53,,10,,,Not Fiscal real,,xiuman_data.account_216_10_020_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_540,xiuman_data.company_lmmr,Vendors advances FF,Cash,ANT01,50,,10,,,Fiscal real,,xiuman_data.account_216_10_010_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_541,xiuman_data.company_lmmr,Cash Main,Cash,EFC01,23,True,10,,,Not Fiscal real,,xiuman_data.account_102_01_003_lmmr,xiuman_data.account_113_02_001_lmmr,__export__.account_account_1203_a0b03b89,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_542,xiuman_data.company_lmmr,Cash USD,Cash,EFC02,42,,10,,,Not Fiscal real,,xiuman_data.account_102_01_004_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_543,xiuman_data.company_lmmr,Cash BAL1,Cash,EFC04,44,,10,,,Not Fiscal real,,xiuman_data.account_102_01_006_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_544,xiuman_data.company_lmmr,Cash SJN,Cash,EFC05,47,,10,,,Not Fiscal real,,xiuman_data.account_105_01_001_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_545,xiuman_data.company_lmmr,Payments done by thirth party in name of the company FF,Cash,EFT,56,,9,,,Not Fiscal real,,xiuman_data.account_113_08_001_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_546,xiuman_data.company_lmmr,Bank BBVA 0194254961,Bank,BNC01,20,True,10,,,Fiscal real,,xiuman_data.account_107_01_001_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_547,xiuman_data.company_lmmr,Bank BBVA CC 4406 (5619),Bank,BNC03,29,,1,,,Fiscal real,,xiuman_data.account_114_01_001_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_548,xiuman_data.company_lmmr,Bank BBVA TN 5064,Bank,BNC04,25,,1,,,Fiscal real,,xiuman_data.account_115_01_002_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_549,xiuman_data.company_lmmr,Bank Banorte 0313328770,Bank,BNC05,35,True,10,,True,Fiscal real,,xiuman_data.account_107_01_002_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_550,xiuman_data.company_lmmr,Bank American Express Gold,Bank,BNC06,31,,1,,,Fiscal real,,xiuman_data.account_118_03_001_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_551,xiuman_data.company_lmmr,Bank American Express Platinum,Bank,BNC07,33,,1,,,Fiscal real,,xiuman_data.account_119_01_001_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_552,xiuman_data.company_lmmr,Bank BBVA 1007025823,Bank,BNC08,37,True,1,,True,Fiscal real,,xiuman_data.account_118_01_001_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_553,xiuman_data.company_lmmr,Bank BBVA TN 5073,Bank,BNC09,27,,1,,,Fiscal real,,xiuman_data.account_115_01_001_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_554,xiuman_data.company_lmmr,Bank Efectivale - Expenses,Bank,BNC10,22,,10,,,Fiscal real,,xiuman_data.account_201_01_001_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_555,xiuman_data.company_lmmr,Bank Banbajio 0038383478,Bank,BNC11,21,True,10,,,Fiscal real,,xiuman_data.account_201_01_002_lmmr,,,,xiuman_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,xiuman_data.account_105_01_002_lmmr
+journal_556,xiuman_data.company_lmmr,Foreign Suppliers FF,Purchase,PEX,69,,1,True,,Fiscal real,,xiuman_data.account_601_54_001_lmmr,xiuman_data.account_113_06_001_lmmr,,,,,
+journal_557,xiuman_data.company_lmmr,Suppliers FF,Purchase,PF,59,True,1,True,,Fiscal real,,xiuman_data.account_601_54_001_lmmr,xiuman_data.account_113_01_001_lmmr,,,,,
+journal_558,xiuman_data.company_lmmr,Suppliers NF,Purchase,PN,65,True,1,True,,Not Fiscal real,,xiuman_data.account_601_54_002_lmmr,xiuman_data.account_113_02_001_lmmr,,,,,
+journal_559,xiuman_data.company_lmmr,Suppliers NFX,Purchase,PNX,67,,1,,,Not Fiscal simulated,,xiuman_data.account_601_34_001_lmmr,xiuman_data.account_113_02_001_lmmr,,,,,
+journal_560,xiuman_data.company_lmmr,Suppliers FX,Purchase,PX,62,,1,True,,Fiscal simulated,,xiuman_data.account_601_56_001_lmmr,xiuman_data.account_113_01_001_lmmr,,,,,
+journal_561,xiuman_data.company_lmmr,Customers FF,Sales,CF,75,True,11,True,,Fiscal real,,xiuman_data.account_601_16_002_lmmr,__export__.account_account_1202_7ebf715a,__export__.account_account_1202_7ebf715a,,,,
+journal_562,xiuman_data.company_lmmr,Customers NF,Sales,CN,79,True,11,True,,Not Fiscal real,,xiuman_data.account_601_17_001_lmmr,__export__.account_account_1203_a0b03b89,__export__.account_account_1203_a0b03b89,,,,
+journal_563,xiuman_data.company_lmmr,Customers NFX,Sales,CNX,81,,11,True,,Not Fiscal simulated,,xiuman_data.account_601_17_001_lmmr,__export__.account_account_1203_a0b03b89,__export__.account_account_1203_a0b03b89,,,,
+journal_564,xiuman_data.company_lmmr,Customers FX,Sales,CX,77,,11,True,,Fiscal simulated,,xiuman_data.account_601_17_002_lmmr,__export__.account_account_1202_7ebf715a,__export__.account_account_1202_7ebf715a,,,,
+journal_565,xiuman_data.company_lmmr,Tax declarations FF,Miscellaneous,CABA1,89,,0,,,Fiscal real,,,,,,,,
+journal_566,xiuman_data.company_lmmr,Effectively paid FF,Miscellaneous,CBMX1,87,,0,,,Fiscal real,,,,,,,,
+journal_567,xiuman_data.company_lmmr,Computing equipment FF,Miscellaneous,EQC01,96,,0,,,Fiscal real,,,,,,,,
+journal_568,xiuman_data.company_lmmr,"Automobiles, trucks, forklifts and trailers NF",Miscellaneous,EQT00,95,,0,,,Not Fiscal real,,,,,,,,
+journal_569,xiuman_data.company_lmmr,"Automobiles, trucks, forklifts and trailers FF",Miscellaneous,EQT01,94,,0,,,Fiscal real,,,,,,,,
+journal_570,xiuman_data.company_lmmr,Communications equipment FF,Miscellaneous,EQTL1,97,,0,,,Fiscal real,,,,,,,,
+journal_571,xiuman_data.company_lmmr,Exchange difference FF,Miscellaneous,EXCH1,88,,0,,,Fiscal real,,,,,,,,
+journal_572,xiuman_data.company_lmmr,Uncollectible debts NF,Miscellaneous,INC0,58,,0,,,Not Fiscal real,,,,,,,,
+journal_573,xiuman_data.company_lmmr,Uncollectible debts FF,Miscellaneous,INC1,90,,0,,,Fiscal real,,,,,,,,
+journal_574,xiuman_data.company_lmmr,Machinery and equipment NF,Miscellaneous,MAQ00,99,,0,,,Not Fiscal real,,,,,,,,
+journal_575,xiuman_data.company_lmmr,Machinery and equipment FF,Miscellaneous,MAQ01,98,,0,,,Fiscal real,,,,,,,,
+journal_576,xiuman_data.company_lmmr,Furniture and office equipment NF,Miscellaneous,MOQ00,101,,0,,,Not Fiscal real,,,,,,,,
+journal_577,xiuman_data.company_lmmr,Furniture and office equipment FF,Miscellaneous,MOQ01,100,,0,,,Fiscal real,,,,,,,,
+journal_578,xiuman_data.company_lmmr,Miscellaneous operations NF,Miscellaneous,MSC0,93,,0,,,Not Fiscal real,,,,,,,,
+journal_579,xiuman_data.company_lmmr,Miscellaneous operations FF,Miscellaneous,MSC1,92,,0,,,Fiscal real,,,,,,,,
+journal_580,xiuman_data.company_lmmr,Employees NF,Miscellaneous,NOM00,73,,1,,,Not Fiscal real,,xiuman_data.account_102_01_003_lmmr,,,,,,
+journal_581,xiuman_data.company_lmmr,Employees FF,Miscellaneous,NOM01,71,,1,,,Fiscal real,,xiuman_data.account_153_01_002_lmmr,,,,,,
+journal_582,xiuman_data.company_lmmr,POS MAIN,Miscellaneous,TPV00,82,,0,,,Not Fiscal real,,,,,,,,
+journal_583,xiuman_data.company_lmmr,POS BAL1,Miscellaneous,TPV01,83,,0,,,Not Fiscal real,,,,,,,,
+journal_584,xiuman_data.company_lmmr,POS SJN,Miscellaneous,TPV02,84,,0,,,Not Fiscal real,,,,,,,,
+journal_585,xiuman_data.company_lmmr,Lands NF,Miscellaneous,TRR00,103,,0,,,Not Fiscal real,,,,,,,,
+journal_586,xiuman_data.company_lmmr,Lands FF,Miscellaneous,TRR01,102,,0,,,Fiscal real,,,,,,,,
+journal_587,xiuman_data.company_tjgl,Main cash,Cash,EFC01,105,True,0,,True,Not Fiscal real,,xiuman_data.account_105_01_002_tjgl,,,,xiuman_data.account_201_01_002_glmm,xiuman_data.account_209_01_001_glmm,xiuman_data.account_201_01_001_tjgl
+journal_588,xiuman_data.company_tjgl,Bank BBVA 0463866521,Bank,BNC01,106,True,0,,True,Fiscal real,,xiuman_data.account_201_01_002_tjgl,,,,xiuman_data.account_201_01_002_glmm,xiuman_data.account_209_01_001_glmm,xiuman_data.account_201_01_001_tjgl
+journal_589,xiuman_data.company_tjgl,Bank BBVA Payroll,Bank,BNC03,107,True,0,,True,Fiscal real,,__export__.account_account_1517_5cca4ea2,,,,xiuman_data.account_201_01_002_glmm,xiuman_data.account_209_01_001_glmm,xiuman_data.account_201_01_001_tjgl
+journal_590,xiuman_data.company_tjgl,Suppliers FF,Purchase,PF,108,True,0,True,,Fiscal real,,xiuman_data.account_704_22_001_tjgl,xiuman_data.account_119_01_001_tjgl,,,,,
+journal_591,xiuman_data.company_tjgl,Suppliers NF,Purchase,PN,109,True,0,True,,Not Fiscal real,,xiuman_data.account_704_23_002_tjgl,xiuman_data.account_119_03_001_tjgl,,,,,
+journal_592,xiuman_data.company_tjgl,Customers FF,Sales,CF,110,True,0,True,,Fiscal real,,xiuman_data.account_401_22_002_tjgl,xiuman_data.account_208_01_001_tjgl,,,,,
+journal_593,xiuman_data.company_tjgl,Customers NF,Sales,CN,111,True,0,True,,Not Fiscal real,,__export__.account_account_1555_6df98e49,xiuman_data.account_209_01_001_tjgl,,,,,
+journal_594,xiuman_data.company_tjgl,Customers FX,Sales,CX,10,True,0,True,,Not Fiscal real,,xiuman_data.account_704_01_001_tjgl,,,,,,
+journal_595,xiuman_data.company_tjgl,Tax declarations FF,Miscellaneous,CABA1,117,True,0,,,Fiscal real,,,,,,,,
+journal_596,xiuman_data.company_tjgl,Effectively paid FF,Miscellaneous,CBMX1,114,,0,,,Not Fiscal real,,,,,,,,
+journal_597,xiuman_data.company_tjgl,Exchange difference FF,Miscellaneous,EXCH1,115,True,0,,,Fiscal real,,,,,,,,
+journal_598,xiuman_data.company_tjgl,Miscellaneous operations FF,Miscellaneous,MSC1,119,True,0,,,Fiscal real,,,,,,,,
+journal_599,xiuman_data.company_tjgl,Lands FF,Miscellaneous,TRR01,104,True,0,,,Fiscal real,,,,,,,,
+journal_600,xiuman_data.company_glmm,Main cash,Cash,EFC01,38,,10,,,Not Fiscal real,,xiuman_data.account_213_01_001_glmm,,,,__export__.account_account_1662_44e7c9f7,__export__.account_account_1666_ac0bc8d0,xiuman_data.account_213_03_001_glmm
+journal_601,xiuman_data.company_glmm,Bank BBVA Payroll,Bank,BNC01,45,,10,,,Fiscal real,,__export__.account_account_1585_a5a17646,,,,__export__.account_account_1662_44e7c9f7,__export__.account_account_1666_ac0bc8d0,xiuman_data.account_213_03_001_glmm
+journal_602,xiuman_data.company_glmm,Bank BBVA 0466728227,Bank,BNC02,40,True,10,,,Fiscal real,,xiuman_data.account_216_01_001_glmm,,,,__export__.account_account_1662_44e7c9f7,__export__.account_account_1666_ac0bc8d0,xiuman_data.account_213_03_001_glmm
+journal_603,xiuman_data.company_glmm,Suppliers FF,Purchase,PF,48,True,6,True,,Fiscal real,,xiuman_data.account_703_21_002_glmm,xiuman_data.account_501_01_001_glmm,,,,,
+journal_604,xiuman_data.company_glmm,Suppliers NF,Purchase,PN,54,True,6,True,,Not Fiscal real,,xiuman_data.account_703_21_003_glmm,xiuman_data.account_501_01_002_glmm,,,,,
+journal_605,xiuman_data.company_glmm,Suppliers FX,Purchase,PX,51,,0,True,,Fiscal simulated,,xiuman_data.account_899_01_099_glmm,xiuman_data.account_501_01_001_glmm,,,,,
+journal_606,xiuman_data.company_glmm,Customers FF,Sales,CF,60,True,11,True,,Fiscal real,,xiuman_data.account_603_102_001_glmm,xiuman_data.account_102_01_111_glmm,,,,,
+journal_607,xiuman_data.company_glmm,Customers NF,Sales,CN,112,True,11,True,,Not Fiscal real,,xiuman_data.account_603_102_002_glmm,__export__.account_account_1588_7146f554,,,,,
+journal_608,xiuman_data.company_glmm,Customers FX,Sales,CX,63,,0,True,,Fiscal simulated,,xiuman_data.account_611_01_001_glmm,xiuman_data.account_102_01_111_glmm,,,,,
+journal_609,xiuman_data.company_glmm,Tax declarations FF,Miscellaneous,CABA1,118,,0,,,Fiscal real,,,,,,,,
+journal_610,xiuman_data.company_glmm,Effectively paid FF,Miscellaneous,CBMX1,113,True,0,,,Not Fiscal real,,,,,,,,
+journal_611,xiuman_data.company_glmm,Exchange difference FF,Miscellaneous,EXCH1,116,,0,,,Fiscal real,,,,,,,,
+journal_612,xiuman_data.company_glmm,Miscellaneous operations FF,Miscellaneous,MSC1,120,,0,,,Fiscal real,,,,,,,,
+journal_613,xiuman_data.company_glmm,Employees FF,Miscellaneous,NOM01,57,,0,,,Fiscal real,,xiuman_data.account_601_58_001_glmm,,,,,,

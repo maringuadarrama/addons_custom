@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+    <record id="journal_group_1" model="account.journal.group">
+        <field name="name">Internal</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="sequence" eval="10" />
+    </record>
+
+    <record id="journal_group_2" model="account.journal.group">
+        <field name="name">Fiscal</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="sequence" eval="11" />
+    </record>
+
+    <record id="journal_group_3" model="account.journal.group">
+        <field name="name">Internal</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="sequence" eval="10" />
+    </record>
+
+    <record id="journal_group_4" model="account.journal.group">
+        <field name="name">Fiscal</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="sequence" eval="11" />
+    </record>
+</odoo>
