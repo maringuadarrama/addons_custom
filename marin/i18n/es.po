@@ -1,0 +1,4380 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* xiuman
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-07 19:24+0000\n"
+"PO-Revision-Date: 2024-06-07 19:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/res_partner_age_range.py:0
+#, python-format
+msgid "%(name)s is not a valid range (%(age_from)s >= %(age_to)s)"
+msgstr "%(name)s no esta en un rango valido (%(age_from)s >= %(age_to)s)"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/res_partner_age_range.py:0
+#, python-format
+msgid "%(name)s is overalapping with range %(age_from)s"
+msgstr "%(name)s se traslapa con el rango %(age_from)s"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/documents_document.py:0
+#, python-format
+msgid "%s(copy)"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "2023-01-01"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "50 USD"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_invoice_document_debt_management
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "<small>Certificado de Autenticidad</small>"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_discount_form
+msgid "<span class=\"o_form_label oe_inline\">%</span>"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.crm_lead_view_form
+msgid "<span class=\"oe_grey p-2\"> Ha</span>"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.product_category_form_view
+msgid "<span> days after receipt</span>"
+msgstr "<span> días después de recibo</span>"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.product_category_form_view
+msgid "<span> days before expiration date</span>"
+msgstr "<span> días antes de fecha de expiración</span>"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_header
+msgid "<strong>Company address block</strong>"
+msgstr "<strong>Bloque de Dirección de Compañia</strong>"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_header
+msgid "<strong>Company details block</strong>"
+msgstr "<strong>Bloque de detalles de compañia</strong>"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/documents_document.py:0
+#, python-format
+msgid "A document with legal number \"%s - %s\" already exists."
+msgstr "Un documento con número legal \"%s - %s\" ya existe."
+
+#. module: xiuman
+#: model:ir.model.constraint,message:xiuman.constraint_res_partner_age_range_name_uniq
+msgid "A name must be unique !"
+msgstr "El nombre debe ser único !"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_documents_workflow_rule
+msgid ""
+"A set of condition and actions which will be available to all attachments "
+"matching the conditions"
+msgstr ""
+"Un conjunto de condiciones y acciones que estarán disponibles para todos los"
+" archivos adjuntos que coincidan con las condiciones"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_crm_lead__season_id
+msgid "AG season"
+msgstr ""
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "Abort"
+msgstr "Abortar"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_move_filter_marin
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: xiuman
+#: model:ir.actions.server,name:xiuman.action_account_purchase_orders
+msgid "Account Purchase"
+msgstr "Cuenta de Compras"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_management
+msgid "Accounting"
+msgstr "Contabilidad"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_hr_payslip__move_state
+msgid "Accounting Entry state"
+msgstr "Estado de Asiento Contable"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_res_company__pos_cash_transfer_journal_id
+#: model:ir.model.fields,help:xiuman.field_res_config_settings__pos_cash_transfer_journal_id
+msgid "Accounting journal used to create pos cash withdraw."
+msgstr ""
+"Diario contable a ser usado en la creación de retiros de efecivo del PdV"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_manager
+msgid "Accounting manager"
+msgstr "Gerente Contable"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_readonly
+msgid "Accounting readonly"
+msgstr "Contable solo lectura"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_user
+msgid "Accounting user"
+msgstr "Usuario Contable"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_documents_facet__active
+#: model:ir.model.fields,field_description:xiuman.field_documents_folder__active
+#: model:ir.model.fields,field_description:xiuman.field_documents_tag__active
+#: model:ir.model.fields,field_description:xiuman.field_documents_workflow_rule__active
+#: model:ir.model.fields,field_description:xiuman.field_pos_config__active
+#: model:ir.model.fields,field_description:xiuman.field_stock_lot__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "Add new line"
+msgstr "Añadir nueva línea"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/hr_payslip_run.py:0
+#: code:addons/xiuman/models/hr_payslip_run.py:0
+#, python-format
+msgid "Adjustment Entry"
+msgstr "Asiento de Ajuste"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__age
+#: model:ir.model.fields,field_description:xiuman.field_res_users__age
+msgid "Age"
+msgstr "Edad"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__age_range_id
+#: model:ir.model.fields,field_description:xiuman.field_res_users__age_range_id
+msgid "Age Range"
+msgstr "Rango de Edad"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_product_category__alert_time
+msgid "Alert Date"
+msgstr "Fecha de Alerta"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_sale_order_all
+msgid "All Orders"
+msgstr "Todos los Pedidos"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/stock_picking.py:0
+#, python-format
+msgid ""
+"All products could not be reserved. Click on the 'Check Availability' button"
+" to try to reserve products."
+msgstr ""
+"No todos los productos pudieron ser reservados. Hacer presionar el botón "
+"'Revisar Disponibilidad' para intentar reservar los productos."
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_pos_cash_transfer
+msgid "Allow POS session cash transfer"
+msgstr "Permitir transferencias de efectivo de PDV"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_move_cancel
+msgid "Allow to cancel journal entries"
+msgstr "Permitir cancelar asientos contables"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_move_force_removal
+msgid "Allow to delete journal entries"
+msgstr "Permitir eliminar facturas y asientos contables"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_move_draft
+msgid "Allow to draft journal entries"
+msgstr "Permitir pasar a borrador asientos contables"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_hr_expense_menu
+msgid "Allow to use Expense module"
+msgstr "Permitir el uso de modulo de Gastos"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_journal__allowed_user_ids
+#: model:ir.model.fields,field_description:xiuman.field_stock_picking_type__allowed_user_ids
+msgid "Allowed Users"
+msgstr "Usuarios Permitidos"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_move_line__allowed_purchase_line_ids
+#: model:ir.model.fields,field_description:xiuman.field_stock_move__allowed_purchase_line_ids
+msgid "Allowed purchase lines to be related"
+msgstr "Permitir líneas de compra ser relacionadas"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_move_line__allowed_sale_line_ids
+#: model:ir.model.fields,field_description:xiuman.field_stock_move__allowed_sale_line_ids
+msgid "Allowed sale lines to be related"
+msgstr "Permitir líneas de venta ser relacionadas"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_pos_order__is_total_cost_computed
+msgid ""
+"Allows to know if all the total cost of the order lines have already been "
+"computed"
+msgstr ""
+"Permitir saber si el costo total de las líneas de pedido ya han sido "
+"computadas"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__amount_authorize
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__amount
+msgid "Amount"
+msgstr "Monto"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_analytic_line__amount_taxinc
+msgid "Amount Tax included"
+msgstr "Monto impuesto incluido"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/hr_contract.py:0
+#, python-format
+msgid ""
+"An employee can only have one contract at the same time. (Excluding Draft and Cancelled contracts).\n"
+"\n"
+"Employee: %(employee_name)s"
+msgstr ""
+"Un empleado solo puede tener un contrato al mismo tiempo. (Excluyendo contratos en Borrador y Cancelados). \n"
+"\n"
+"Empleado: %(employee_name)s"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_account_analytic_distribution_model
+msgid "Analytic Distribution Model"
+msgstr "Modelo de distribución analítica"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Línea analítica"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.wizard_stock_quant_lot_form_view
+msgid "Apply"
+msgstr "Aplicar"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_discount_form
+msgid "Apply Cash Discount"
+msgstr "Aplicar descuento al cobro"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "Apply changes"
+msgstr "Aplicar Cambios"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__apply_putaway_strategy
+msgid "Apply putaway strategy"
+msgstr "Aplicar estrategia de almacenamiento"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.search_product_lot_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_production_lot_form_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_res_company_search
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: xiuman
+#: model:documents.folder,name:xiuman.documents_assets_folder
+msgid "Assets"
+msgstr "Bienes"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move.py:0
+#: code:addons/xiuman/models/sale_order.py:0
+#: model:ir.actions.server,name:xiuman.action_account_move_authorize_debt
+#: model:ir.actions.server,name:xiuman.action_sale_order_authorize_debt
+#, python-format
+msgid "Authorize debt"
+msgstr "Autorizar deuda"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "Available"
+msgstr "Disponible"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__debit_limit_available
+#: model:ir.model.fields,field_description:xiuman.field_res_users__debit_limit_available
+msgid "Available Payable Limit"
+msgstr "Límite de Pago Disponible"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__credit_limit_available
+#: model:ir.model.fields,field_description:xiuman.field_res_users__credit_limit_available
+msgid "Available Receivable Limit"
+msgstr "Límite de Crédito Disponible"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_res_partner__debit_limit_available
+#: model:ir.model.fields,help:xiuman.field_res_users__debit_limit_available
+msgid "Available payable limit"
+msgstr "Límite de pago disponible"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_authorize_debt_wizard__credit_limit_available
+#: model:ir.model.fields,help:xiuman.field_res_partner__credit_limit_available
+#: model:ir.model.fields,help:xiuman.field_res_users__credit_limit_available
+msgid "Available receivable limit"
+msgstr "Límite de crédito disponible"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_b2b
+msgid "B2B"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_b2c
+msgid "B2C"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__b2x
+#: model:ir.model.fields,field_description:xiuman.field_res_users__b2x
+msgid "B2X"
+msgstr ""
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_commercial_documents_bi
+msgid "BI"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_payment_search_marin
+msgid "Bank"
+msgstr "Bancario"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Línea de estado de cuenta bancario"
+
+#. module: xiuman
+#: model:documents.folder,name:xiuman.documents_bank_statements_folder
+#: model:ir.ui.menu,name:xiuman.menu_finance_bank_statement
+msgid "Bank Statements"
+msgstr "Estados de cuenta bancarios"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_bank_statement
+msgid "Bank statements"
+msgstr "Extracto Bancario"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_finance_bank
+msgid "Banks"
+msgstr "Bancos"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_invoice_document_debt_management
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "Barcode"
+msgstr "Código de Barras"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_product_category__use_time
+msgid "Best Before Date"
+msgstr "Mejor Antes de Fecha"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order__invoice_status
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_search_marin
+msgid "Billing Status"
+msgstr "Estado de facturación"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__birthdate
+#: model:ir.model.fields,field_description:xiuman.field_res_users__birthdate
+msgid "Birthdate"
+msgstr "Fecha de nacimiento"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__res_partner__b2x__both
+msgid "Business business and consumer"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__res_partner__b2x__b2b
+msgid "Business to business"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__res_partner__b2x__b2c
+msgid "Business to consumer"
+msgstr ""
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_commercial_documents_crm
+msgid "CRM"
+msgstr ""
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_knowledge_documents_cs
+msgid "CS"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line__product_updatable
+msgid "Can Edit Product"
+msgstr "Puede Editar el Producto"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_discount_form
+#: model_terms:ir.ui.view,arch_db:xiuman.view_wiz_stock_move_location_form_stock_move_location
+#: model_terms:ir.ui.view,arch_db:xiuman.wizard_pos_cash_transfer_form_view
+#: model_terms:ir.ui.view,arch_db:xiuman.wizard_stock_quant_lot_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/hr_payslip.py:0
+#, python-format
+msgid "Cannot post a payslip's account move that is not done."
+msgstr ""
+"No es posible publicar un asiento contable de una nomina que no esta "
+"finalizada."
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_payment_search_marin
+msgid "Cash"
+msgstr "Efectivo"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_invoice_form_marin
+msgid "Cash Discount"
+msgstr "Descuento al pago"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/pos_cash_transfer_wizard.py:0
+#: model:mail.activity.type,summary:xiuman.cash_transfer_activity
+#: model_terms:ir.ui.view,arch_db:xiuman.pos_session_view_form
+#: model_terms:ir.ui.view,arch_db:xiuman.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:xiuman.view_pos_config_kanban
+#, python-format
+msgid "Cash Transfer"
+msgstr "Transferencia de Efectivo"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.wizard_pos_cash_transfer_form_view
+msgid "Cash Transfer Data"
+msgstr "Datos de Transferencia de Efectivo"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.wizard_pos_cash_transfer_form_view
+msgid "Cash Transfer Destination"
+msgstr "Destino de Transferencia de Efectivo"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_session__cash_transfer_payment_ids
+msgid "Cash Transfer Payment"
+msgstr "Pago de Transferencia de Efectivo"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_session__cash_transfer_payment_count
+msgid "Cash Transfer Payment Count"
+msgstr "Conteo de Pagos de Transferencia de Efectivo"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__cash_transfer_pos_id
+msgid "Cash Transfer Pos"
+msgstr "Transferencia de Efectivo de PdV"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.pos_session_view_form
+msgid "Cash Transfers"
+msgstr "Transferencias de Efectivo"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_move_cash_discount
+msgid "Cash discounts Marin"
+msgstr "Descuentos de Efectivo Marin"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/pos_session.py:0
+#, python-format
+msgid "Cash transfer is only allowed for the last closed POs Session."
+msgstr ""
+"Transferencia de Efectivo solo se permite para la última sesión cerrada del "
+"PdV"
+
+#. module: xiuman
+#: model_terms:documents.folder,description:xiuman.documents_commercial_folder
+msgid "Categorize, share and keep track of all commercial documents."
+msgstr ""
+"Categoriza, comparte y mantiene un registro de todos los documentos "
+"comerciales."
+
+#. module: xiuman
+#: model_terms:documents.folder,description:xiuman.documents_wh_folder
+msgid "Categorize, share and keep track of all your Stock documents."
+msgstr ""
+"Categoriza, comparte y mantiene un registro de todos sus documentos de "
+"Inventario."
+
+#. module: xiuman
+#: model_terms:documents.folder,description:xiuman.documents_knowledge_folder
+msgid "Categorize, share and keep track of all your knowledge documents."
+msgstr ""
+"Categoriza, comparte y mantiene un registro de todos sus documentos de "
+"conocimiento."
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_documents_facet
+#: model_terms:ir.ui.view,arch_db:xiuman.quant_search_view_marin
+msgid "Category"
+msgstr "Categoría"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "Change"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_stock_quant_tree_inventory_editable_marin
+msgid "Change Lot"
+msgstr "Cambiar Lote"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_stock_quant_lot
+msgid "Change Quant Lot Wizard"
+msgstr "Asistente para Cambiar Lote de Quant"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/screens/payment_screen.js:0
+#: code:addons/xiuman/static/src/pos/app/store/order.js:0
+#: code:addons/xiuman/static/src/pos/app/store/orderline.js:0
+#, python-format
+msgid "Choose a lot for this orderline"
+msgstr "Selecciona un lote para esta línea de pedido"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_form_marin
+msgid "Clean 3-0"
+msgstr "Limpieza 3-0"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_form_marin
+msgid "Clean Up"
+msgstr "Limpieza"
+
+#. module: xiuman
+#: model:ir.actions.report,name:xiuman.action_report_payment_receipt
+msgid "Client Receipt"
+msgstr "Recibo de Cliente"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_payment.py:0
+#, python-format
+msgid "Client Receipt %s"
+msgstr "Recibo de Cliente %s"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__client_receipt_document_share_id
+msgid "Client Receipt Document Share"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.invoice_line_price_history_view_form
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_line_price_history_view_form
+#: model_terms:ir.ui.view,arch_db:xiuman.sale_order_line_price_history_view_form
+#: model_terms:ir.ui.view,arch_db:xiuman.view_authorize_debt_wizard_form
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: xiuman
+#: model:product.removal,name:xiuman.removal_closest_priority
+msgid "Closest Location + Priority"
+msgstr ""
+
+#. module: xiuman
+#: model:documents.folder,name:xiuman.documents_commercial_folder
+#: model:res.partner.category,name:xiuman.partner_category_commercial
+msgid "Commercial"
+msgstr "Comercial"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_sale_order__commercial_partner_id
+msgid "Commercial Entity"
+msgstr "Entidad Comercial"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_move_filter_marin
+msgid "Commercial Partner"
+msgstr "Socio comercial"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_sale_manager
+msgid "Commercial manager"
+msgstr "Gerente Comercial"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_sale_readonly
+msgid "Commercial readonly"
+msgstr "Comercial solo lectura"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_sale_user
+msgid "Commercial user"
+msgstr "Usuario Comercial"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__company_id
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__company_id
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_header
+msgid "Company tagline"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__competitor
+#: model:ir.model.fields,field_description:xiuman.field_res_users__competitor
+msgid "Competitor"
+msgstr "Competidor"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_company__complete_name
+msgid "Complete Name"
+msgstr "Nombre Completo"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_account_invoice_cash_discount
+msgid "Compute cash discount directly on product unit price"
+msgstr ""
+"Calcula el descuento al pago directamente en el precio unitario de los "
+"productos"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_configuration
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_invoice_form_marin
+msgid "Consistency"
+msgstr "consistencia"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_consolidation_company_period
+msgid "Consolidation Company Period"
+msgstr "Periodo de consolidación de la empresa"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: xiuman
+#: model:ir.actions.server,name:xiuman.ir_cron_partner_age_range_ir_actions_server
+msgid "Contact: Update Age Range"
+msgstr "Contacto: Actualizar Rango de Edad"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_header
+msgid "Contains the company address."
+msgstr "Contiene la dirección de la compañia"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_header
+msgid "Contains the company details."
+msgstr "Contiene los detalles de la compañia"
+
+#. module: xiuman
+#: model:documents.folder,name:xiuman.documents_control_folder
+msgid "Control"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_core_supplier
+msgid "Core business supplier"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_order_line__price_cost
+msgid "Cost"
+msgstr "Costo"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__count_move
+msgid "Count Move"
+msgstr "Contador de Movimientos"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_picking_type__count_picking_ready
+msgid "Count Picking Ready"
+msgstr "Conteo de Traslados Listos"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_picking_type__count_picking_waiting
+msgid "Count Picking Waiting"
+msgstr "Conteo de Traslados en Espera"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__count_so
+msgid "Count So"
+msgstr "Contador SO"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_res_company_search
+msgid "Country"
+msgstr "País"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_tree
+msgid "Create Bills"
+msgstr "Crear Factura"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_invoice_form_marin
+msgid "Create Purchase"
+msgstr "Crear Compra"
+
+#. module: xiuman
+#: model_terms:ir.actions.act_window,help:xiuman.action_orders_marin
+msgid "Create a new quotation, the first step of a new sale!"
+msgstr "Crear una nueva cotización, el primer paso de una nueva venta!"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_invoice_cash_discount__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_res_partner_age_range__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__create_uid
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+msgid "Created by: _____________________________________"
+msgstr "Creado por: _____________________________________"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_invoice_cash_discount__create_date
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__create_date
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history__create_date
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__create_date
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__create_date
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history__create_date
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__create_date
+#: model:ir.model.fields,field_description:xiuman.field_res_partner_age_range__create_date
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history__create_date
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__create_date
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__create_date
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__create_date
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sale_order_tree_marin
+msgid "Creation Date"
+msgstr "Fecha de Creación"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_sale_order_line__date_order
+#: model:ir.model.fields,help:xiuman.field_sale_order_line_price_history_line__date
+msgid ""
+"Creation date of draft/sent orders,\n"
+"Confirmation date of confirmed orders."
+msgstr ""
+"Fecha de creación de pedidos en borrador/enviados, \n"
+"Fecha de confirmación de pedidos confirmados."
+
+#. module: xiuman
+#: model:documents.folder,name:xiuman.documents_credentials_folder
+msgid "Credentials and passwords"
+msgstr "Credenciales y contraseñas"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__credit_limit
+#: model:ir.model.fields,field_description:xiuman.field_res_users__credit_limit
+msgid "Credit Limit"
+msgstr "Límite de Crédito"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move.py:0
+#, python-format
+msgid "Credit Note %s"
+msgstr "Nota de Crédito %s"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/res_partner.py:0
+#, python-format
+msgid "Credit available: %s"
+msgstr "Crédito disponible: %s"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "Credit card"
+msgstr "Tarjeta de Crédito"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__credit_limit
+msgid "Credit limit"
+msgstr "Límite de crédito"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__credit_limit_available
+msgid "Credit limit available"
+msgstr "Límite de crédito disponible"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__credit_on_hold
+#: model:ir.model.fields,field_description:xiuman.field_res_users__credit_on_hold
+msgid "Credit on hold"
+msgstr "Crédito en espera"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_avocado
+msgid "Crop - Avocado"
+msgstr "Cultivo - Aguacate"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_barley
+msgid "Crop - Barley"
+msgstr "Cultivo - Cebada"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_bean
+msgid "Crop - Bean"
+msgstr "Cultivo - Frijol"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_berry
+msgid "Crop - Berry"
+msgstr "Cultivo - Baya"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_carrot
+msgid "Crop - Carrot"
+msgstr "Cultivo - Zanahoria"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_citrus
+msgid "Crop - Citrus"
+msgstr "Cultivo - Cítricos"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_corn
+msgid "Crop - Corn"
+msgstr "Cultivo - Maíz"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_cucurbit
+msgid "Crop - Cucurbits"
+msgstr "Cultivo - Cucurbitáceas"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_onion
+msgid "Crop - Onion"
+msgstr "Cultivo - Cebolla"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_ornamental
+msgid "Crop - Ornamentals"
+msgstr "Cultivo - Ornamentales"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_pepper
+msgid "Crop - Pepper"
+msgstr "Cultivo - Pimiento"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_potato
+msgid "Crop - Potato"
+msgstr "Cultivo - Papa"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_tomato
+msgid "Crop - Tomato"
+msgstr "Cultivo - Tomate"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_wheat
+msgid "Crop - Wheat"
+msgstr "Cultivo - Trigo"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__company_currency_id
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "Current lines"
+msgstr "Líneas Actuales"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__custom
+msgid "Custom line"
+msgstr "Línea personalizada"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__customer
+#: model:ir.model.fields,field_description:xiuman.field_res_users__customer
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line__order_partner_id
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history__partner_id
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__partner_id
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_customer_invoice
+msgid "Customer invoices"
+msgstr "Facturas de Cliente"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_customer_payment
+msgid "Customer payments"
+msgstr "Pagos de Cliente"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_customer_refund
+msgid "Customer refunds"
+msgstr "Reembolsos de Cliente"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "Customer:"
+msgstr "Cliente:"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__date
+#: model:ir.model.fields,field_description:xiuman.field_account_move__date
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__date
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_analytic_line__date_impacted
+msgid "Date impacted"
+msgstr "Fecha impactada"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.product_category_form_view
+msgid "Dates"
+msgstr "Fechas"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_partner_property_form_marin
+msgid "Debit Limits"
+msgstr "Límites de Débito"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__debit_on_hold
+#: model:ir.model.fields,field_description:xiuman.field_res_users__debit_on_hold
+msgid "Debit on hold"
+msgstr "Débito en espera"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_authorize_debt_wizard_form
+msgid "Debt Management"
+msgstr "Gestión de la Deuda"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_144
+msgid "Debt collection - Aaron"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_145
+msgid "Debt collection - Alejandro"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_146
+msgid "Debt collection - Axel"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_147
+msgid "Debt collection - BAL"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_148
+msgid "Debt collection - Bryan"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_149
+msgid "Debt collection - Corporativo"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_150
+msgid "Debt collection - Hugo"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_151
+msgid "Debt collection - Juan"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_152
+msgid "Debt collection - Misael"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_153
+msgid "Debt collection - Reynaldo"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_154
+msgid "Debt collection - SJN"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_debt_manager
+msgid "Debt manager"
+msgstr "Gerente de Deudas"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_debt_high
+msgid "Debt quality - High"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_debt_low
+msgid "Debt quality - Low"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_debt_medium
+msgid "Debt quality - Medium"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_debt_uncollectible
+msgid "Debt quality - Uncollectible"
+msgstr "Calidad de la deuda - Incobrable"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_journal__default_payable_account_id
+msgid "Default Payable Account"
+msgstr "Cuenta de Pago por Defecto"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_journal__default_receivable_account_id
+msgid "Default Receivable Account"
+msgstr "Cuenta de Crédito por Defecto"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_journal__default_refund_account_id
+msgid "Default Refund Account"
+msgstr "cuenta de Reembolso por Defecto"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_users__property_sale_journal_id
+msgid "Default Sale Journal"
+msgstr "Diario de Ventas por Defecto"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_picking_type__route_ids
+msgid "Default destination route"
+msgstr "Ruta destino predeterminada"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_stock_picking_type__route_ids
+msgid "Default route to be used."
+msgstr "uta predeterminada ha ser usada."
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__sale_order_line__delivery_status__delivered
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_purchase_order_line_tree
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Delivered"
+msgstr "Entregado"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+msgid "Delivered Qty"
+msgstr "Cantidad entregada"
+
+#. module: xiuman
+#: model:ir.actions.server,name:xiuman.action_print_deliveryslip
+msgid "Delivery Slip"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_sale_order__delivery_status
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line__delivery_status
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_form_inherit_sale_stock_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Delivery Status"
+msgstr "Estado de entrega"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/screens/receipt_screen/receipt_screen.xml:0
+#, python-format
+msgid "Delivery information from this order:"
+msgstr "Información de entrega de este pedido:"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "Delivery status"
+msgstr "Estado de entrega"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_purchase_order_line_price_history_line__date
+msgid ""
+"Depicts the date within which the Quotation should be confirmed and "
+"converted into a purchase order."
+msgstr ""
+"Muestra la fecha dentro de la cual la cotización debe confirmarse y "
+"convertirse en una orden de compra."
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_commercial_status_deprecated
+msgid "Deprecated"
+msgstr "Obsoleto"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_wiz_stock_move_location_form_stock_move_location
+#: model_terms:ir.ui.view,arch_db:xiuman.wizard_stock_quant_lot_form_view
+msgid "Destination"
+msgstr "Destino"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__destination_account_id
+msgid "Destination Account"
+msgstr "Cuenta Destino"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__destination_journal_id
+msgid "Destination Journal"
+msgstr "Diario Destino"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__destination_location_id
+msgid "Destination Location"
+msgstr "Ubicación del Destino"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__destination_location_readonly
+msgid "Destination Location Readonly"
+msgstr "Ubicación de Destino Solo lectura"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__dest_lot_id
+msgid "Destination Lot"
+msgstr "Lote Destino"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+msgid "Disc.%"
+msgstr "Desc.%"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__discount
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__discount
+msgid "Discount (%)"
+msgstr "Descuento (%)"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_invoice_cash_discount__display_name
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__display_name
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history__display_name
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__display_name
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__display_name
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history__display_name
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__display_name
+#: model:ir.model.fields,field_description:xiuman.field_res_partner_age_range__display_name
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history__display_name
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__display_name
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__display_name
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__display_name
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__display_name
+msgid "Display Name"
+msgstr "Nombre en pantalla"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_analytic_distribution_model_search_marin
+msgid "Distribution Model"
+msgstr "Modelo de Distribución"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_documents_document
+msgid "Document"
+msgstr "Documento"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__document_share_id
+#: model:ir.model.fields,field_description:xiuman.field_account_move__document_share_id
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__document_share_id
+msgid "Document Share"
+msgstr "Compartir Documento"
+
+#. module: xiuman
+#: model:documents.facet,name:xiuman.documents_commercial_documents
+#: model:documents.facet,name:xiuman.documents_knowledge_documents
+#: model:documents.facet,name:xiuman.documents_wh_logistics_documents
+msgid "Documents"
+msgstr "Documentos"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_documents_folder
+msgid "Documents Workspace"
+msgstr "Espacio de trabajo de documentos"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_documents_password_manager
+msgid "Documents passwords manager"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_documents_password_readonly
+msgid "Documents passwords readonly"
+msgstr ""
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/screens/receipt_screen/receipt_screen.xml:0
+#, python-format
+msgid "Done"
+msgstr "Hecho"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_product_product__x_dose_x_ha
+#: model:ir.model.fields,field_description:xiuman.field_product_template__x_dose_x_ha
+msgid "Dose per Hectare"
+msgstr "Dósis por hectárea"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_stock_move_line__location_lot_domain
+msgid "Dynamic domain used for the lot that can be set on move line"
+msgstr ""
+"Dominio dinámico utilizado para el lote que se puede configurar en la línea "
+"de movimiento"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move.py:0
+#, python-format
+msgid ""
+"EDI amounts doesn't match with entry ones.\n"
+"\n"
+"Total amount: %s --> Verification total amount: %s. Difference: %s\n"
+"Tax amount: %s --> Verification tax amount: %s. Difference: %s\n"
+msgstr ""
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/store/orderline.js:0
+#, python-format
+msgid "Edit Lot/Serial Number"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__edit_locations
+msgid "Edit locations"
+msgstr "Editar ubicaciones"
+
+#. module: xiuman
+#: model:documents.folder,name:xiuman.documents_edomex_folder
+msgid "EdoMex"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_hr_contract__final_yearly_costs
+msgid "Employee Budget"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato del empleado"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_res_company__account_use_debit_limit
+msgid "Enable the use of debit limit on partners."
+msgstr "Habilitar el uso de límite de débito en socios."
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_session__cash_register_balance_end_real
+msgid "Ending Balance"
+msgstr "Balance Final"
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_fleet_environmental_verification
+msgid "Environmental verification"
+msgstr "Verificación ambiental"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__debt_request
+msgid "Exceeded debit amount"
+msgstr "Monto de débito Superado"
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_knowledge_documents_excel
+msgid "Excel and Power BI"
+msgstr "Excel y PowerBI"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.crm_case_tree_view_oppor
+msgid "Expected Area"
+msgstr "Área Esperada"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_crm_lead__expected_area
+msgid "Expected area"
+msgstr "Área esperada"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_move_line_filter_marin
+msgid "Expense"
+msgstr "Gasto"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_product_category__property_account_expense_refund_id
+#: model:ir.model.fields,field_description:xiuman.field_product_product__property_account_expense_refund_id
+#: model:ir.model.fields,field_description:xiuman.field_product_template__property_account_expense_refund_id
+msgid "Expense Refund Account"
+msgstr "Cuenta de Reembolso de Gastos"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#: model:ir.model.fields,field_description:xiuman.field_product_category__expiration_time
+#, python-format
+msgid "Expiration Date"
+msgstr "Fecha de Expirción"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__res_partner__gender__female
+msgid "Female"
+msgstr "Femenino"
+
+#. module: xiuman
+#: model:product.removal,name:xiuman.removal_fefo_priority
+msgid "First Expiry First Out(FEFO) + Priority"
+msgstr ""
+
+#. module: xiuman
+#: model:product.removal,name:xiuman.removal_fifo_priority
+msgid "First In First Out (FIFO) + Priority"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_move_filter_marin
+msgid "Fiscal"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_ff
+msgid "Fiscal effect - FF"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_fx
+msgid "Fiscal effect - FX"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_nf
+msgid "Fiscal effect - NF"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__account_journal__x_treatment__fiscal_real
+msgid "Fiscal real"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__account_journal__x_treatment__fiscal_simulated
+msgid "Fiscal simulated"
+msgstr "Fiscal simulado"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__flag
+msgid "Flag"
+msgstr "Bandera"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_move_line__fleet_vehicle_log_services_ids
+msgid "Fleet services logs"
+msgstr "Registro de servicios de flota"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/stock_picking.py:0
+#, python-format
+msgid ""
+"Following pickings are not valid to print their delivery slip: \n"
+"%s"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/stock_picking.py:0
+#, python-format
+msgid ""
+"Following pickings are not valid to print their picking operation: \n"
+"%s"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_sale_order__force_fully_invoiced
+msgid "Force Fully Invoiced"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__force_payment_policy_pue
+#: model:ir.model.fields,field_description:xiuman.field_account_move__force_payment_policy_pue
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__force_payment_policy_pue
+msgid "Force PUE"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_purchase_force_billing_status
+msgid "Force billing status on Purchase Orders"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_form_inherit_sale_stock_marin
+msgid "Force delivery done"
+msgstr "Forzar entrega realizada"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_sale_force_delivery_status
+msgid "Force delivery status on Sale Orders"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_form_marin
+msgid "Force invoice status"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_sale_force_invoicing_status
+msgid "Force invoicing status on Sale Orders"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_form_inherit_marin
+msgid "Force reception done"
+msgstr "Forzar recepción realizada"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_purchase_force_reception_status
+msgid "Force reception status on Purchase Orders"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line__force_company_id
+msgid "Forced Company"
+msgstr "Empresa Forzada"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line__force_company_id
+msgid "Forced company"
+msgstr "Empresa Forzada"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/screens/receipt_screen/receipt_screen.xml:0
+#: model:ir.model.fields,field_description:xiuman.field_res_partner_age_range__age_from
+#, python-format
+msgid "From"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_move_line_filter_marin
+msgid "From Expense accounts"
+msgstr "Desde cuentas de gasto"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_move_line_filter_marin
+msgid "From Income accounts"
+msgstr "Desde cuentas de ingreso"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_move_line__location_availability
+msgid "From availability"
+msgstr "Disponibilidad Origen"
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_fleet_fuel_card
+msgid "Fuel Card"
+msgstr "Tarjeta de combustible"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order_line__invoice_status__invoiced
+msgid "Fully billed"
+msgstr "Totalmente facturado"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Future Activities"
+msgstr "Actividades Futuras"
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_fleet_gps
+msgid "GPS"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__gender
+msgid "Gender"
+msgstr "Género"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_general_supplier
+msgid "General supplier"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.wizard_pos_cash_transfer_form_view
+msgid "Generate Cash Transfer"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_res_company_search
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "Group By"
+msgstr "Agrupar Por"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_contraction
+msgid "Growth perspective - Contraction"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_expansion
+msgid "Growth perspective - Expansion"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_hold
+msgid "Growth perspective - Hold"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_hr_manager
+msgid "HR manager"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_hr_readonly
+msgid "HR readonly"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_hr_user
+msgid "HR user"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_122
+msgid "High Risk"
+msgstr ""
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_fleet_highway_pass
+msgid "Highway Pass"
+msgstr "PASE"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history__line_ids
+msgid "Historical lines"
+msgstr "Líneas Históricas"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history__line_ids
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history__line_ids
+msgid "History lines"
+msgstr "Líneas Históricas"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_invoice_cash_discount__id
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__id
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history__id
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__id
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__id
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history__id
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__id
+#: model:ir.model.fields,field_description:xiuman.field_res_partner_age_range__id
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history__id
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__id
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__id
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__id
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__id
+msgid "ID"
+msgstr "Identificación"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "INV0001"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_account_bank_statement_line__stored
+#: model:ir.model.fields,help:xiuman.field_account_move__stored
+#: model:ir.model.fields,help:xiuman.field_account_payment__stored
+msgid ""
+"If this checkbox is ticked, it means that a management representative has "
+"received and stored a printed invoice on credit signed by the customer. "
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_sale_order_line__pricelist_id
+msgid "If you change the pricelist, only newly added lines will be affected."
+msgstr ""
+"Si cambia la lista de precios, solo las nuevas líneas agregadas serán "
+"afectadas."
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_wiz_stock_move_location_form_stock_move_location
+msgid "Immediate Transfer"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_payment_term__is_immediate
+msgid "Immediate payment term"
+msgstr "Término de pago Inmediato"
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_commercial_status_inbox
+msgid "Inbox"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history__include_draft
+msgid "Include Draft Moves"
+msgstr "Incluir Movimiento en Borrador"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history__include_quotations
+msgid "Include Quotations"
+msgstr "Incluir Cotizaciones"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history__include_rfq
+msgid "Include Request for Quotations"
+msgstr "Incluir Solicitud para Cotizaciones"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_move_line_filter_marin
+msgid "Income"
+msgstr "Ingreso"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_product_category__property_account_income_refund_id
+#: model:ir.model.fields,field_description:xiuman.field_product_product__property_account_income_refund_id
+#: model:ir.model.fields,field_description:xiuman.field_product_template__property_account_income_refund_id
+msgid "Income Refund Account"
+msgstr "Cuenta de Devolución de Ingresos"
+
+#. module: xiuman
+#: model_terms:documents.folder,description:xiuman.documents_commercial_folder
+#: model_terms:documents.folder,description:xiuman.documents_knowledge_folder
+#: model_terms:documents.folder,description:xiuman.documents_wh_folder
+msgid ""
+"Incoming letters sent to <span class=\"o_folder_description_alias\">inbox "
+"email alias</span> will be added to your inbox automatically."
+msgstr ""
+"Las cartas enviadas a <span class=\"o_folder_description_alias\">bandeja de "
+"entradaalias del correo electrónico </span> será agregada a su bandeja de "
+"entrada automáticamente."
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_authorize_debt_wizard_form
+msgid "Increment debt limit"
+msgstr "Incrementar el límite de deuda"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_authorize_debt_wizard_form
+msgid "Increment debt limit and Confirm"
+msgstr "Incrementar el límite de deuda y Confirmar"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_crm_lead__is_ag_initial
+msgid "Initial AG lead"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/pos_session.py:0
+#, python-format
+msgid ""
+"Insufficient cash amount. Cash transfer is trying to use more cash than "
+"available on Pos Session."
+msgstr ""
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_fleet_insurance_policy
+msgid "Insurance policy"
+msgstr "Póliza de seguro"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_pickingtype_filter_marin
+msgid "Internal"
+msgstr "Interno"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_action_account_payments_transfer
+msgid "Internal liquidity transfers"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_stock_location
+msgid "Inventory Locations"
+msgstr "Ubicaciones de inventario"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_stock_inventory_adjustment
+msgid "Inventory adjustments"
+msgstr "Ajuste de Inventarios"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_stock_inventory_adjustment_lot
+msgid "Inventory adjustments: Lots"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move.py:0
+#, python-format
+msgid "Invoice %s"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history__line_id
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__line_id
+msgid "Invoice Line"
+msgstr "Línea de Factura"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_invoice_line_price_history
+msgid "Invoice Line price history"
+msgstr "Historial de precio de la Línea de Factura"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_invoice_line_price_history_line
+msgid "Invoice Line price history line"
+msgstr "Historial de precio de la Línea de Factura"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_line_search_marin
+msgid "Invoice Related"
+msgstr "Factura Relacionada"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line__invoice_status
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_form_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Invoice Status"
+msgstr "Estado de Factura"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "Invoice status"
+msgstr "Estado de Factura"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__invoice_date
+#: model:ir.model.fields,field_description:xiuman.field_account_move__invoice_date
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__invoice_date
+msgid "Invoice/Bill Date"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_purchase_order_line_tree
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Invoiced"
+msgstr "Facturados"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+msgid "Invoiced Qty"
+msgstr "Cantidad Facturada"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_order__is_total_cost_computed
+msgid "Is Total Cost Computed"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order__is_user_id_editable
+msgid "Is User Id Editable"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_account_journal__default_payable_account_id
+msgid ""
+"It acts as a default account for payable amount instead of the Company's "
+"default"
+msgstr ""
+"Actúa como cuenta por defecto del monto a pagar en lugar de la cuenta por "
+"defecto de la empresa"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_account_journal__default_receivable_account_id
+msgid ""
+"It acts as a default account for receivable amount instead of the Company's "
+"default"
+msgstr ""
+"Actúa como cuenta por defecto del monto de crédito en lugar de la cuenta por"
+" defecto de la empresa"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_account_journal__default_refund_account_id
+msgid "It acts as a default account for refunds"
+msgstr "Actúa como cuenta por defecto para reembolsos"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_account_journal
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__journal_id
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_users_form_marin
+msgid "Journal"
+msgstr "Diario"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_account_move
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__move_id
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_payment_search_marin
+msgid "Journal Type"
+msgstr "Tipo de Diario"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__journal_type
+#: model:ir.model.fields,field_description:xiuman.field_account_move__journal_type
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__journal_type
+msgid "Journal type"
+msgstr "Tipo de Diario"
+
+#. module: xiuman
+#: model:documents.folder,name:xiuman.documents_knowledge_folder
+msgid "Knowledge"
+msgstr "Conocimiento"
+
+#. module: xiuman
+#: model:product.removal,name:xiuman.removal_lifo_priority
+msgid "Last In First Out (LIFO) + Priority"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_invoice_cash_discount__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_res_partner_age_range__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__write_uid
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_invoice_cash_discount__write_date
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__write_date
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history__write_date
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__write_date
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__write_date
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history__write_date
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__write_date
+#: model:ir.model.fields,field_description:xiuman.field_res_partner_age_range__write_date
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history__write_date
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__write_date
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__write_date
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__write_date
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Late Activities"
+msgstr "Actividades atrasadas"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Lead/oportunidad"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_documents_document__legal_number
+msgid "Legal number"
+msgstr "Número legal"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__line_ids
+msgid "Lines"
+msgstr "Líneas"
+
+#. module: xiuman
+#: model:documents.workflow.rule,name:xiuman.documents_fleet_rule
+msgid "Link to a vehicle"
+msgstr "Enlace a un vehículo"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/screens/receipt_screen/receipt_screen.xml:0
+#, python-format
+msgid "Loading delivery info..."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_move_line__location_lot_domain
+msgid "Location Lot domain"
+msgstr "Dominio de la Ubicación del lote"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_configuration_logistics
+msgid "Logistics"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_header
+msgid "Logo"
+msgstr ""
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/screens/receipt_screen/receipt_screen.xml:0
+#, python-format
+msgid "Lot"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_scrap__lot_domain
+msgid "Lot domain"
+msgstr "Dominio del Lote"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_wiz_stock_move_location_form_stock_move_location
+msgid "Lot/S.N."
+msgstr ""
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#: model:ir.model,name:xiuman.model_stock_lot
+#: model:ir.model.fields,field_description:xiuman.field_stock_scrap__lot_id
+#, python-format
+msgid "Lot/Serial"
+msgstr "Número de lote/serie "
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__lot_id
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__lot_id
+msgid "Lot/Serial Number"
+msgstr "Lote/Número de Serie"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_mrp
+msgid "MRP"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__res_partner__gender__male
+msgid "Male"
+msgstr "Masculino"
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_knowledge_documents_mgm_acc
+msgid "Management and accounting"
+msgstr "Administracion y contabilidad"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.quant_search_view_marin
+msgid "Manufacturer"
+msgstr "Fabricante"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "Marc Demo"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_order__margin
+#: model:ir.model.fields,field_description:xiuman.field_pos_order_line__margin
+msgid "Margin"
+msgstr "Margen"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_order__margin_percent
+#: model:ir.model.fields,field_description:xiuman.field_pos_order_line__margin_percent
+msgid "Margin (%)"
+msgstr "Margen (%)"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__max_quantity
+msgid "Maximum available quantity"
+msgstr "Cantidad máxima disponible"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "Memo:"
+msgstr ""
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/screens/payment_screen.js:0
+#: code:addons/xiuman/static/src/pos/app/store/order.js:0
+#, python-format
+msgid "Missing inventory for these serials number"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move.py:0
+#, python-format
+msgid ""
+"More than one Purchase Orders with the same origin have been found. Please "
+"review"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_invoice_cash_discount__move_ids
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__move_ids
+msgid "Move"
+msgstr "Movimiento"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_fleet_vehicle_log_services__move_line_id
+msgid "Move Line"
+msgstr "Línea de Movimiento"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move.py:0
+#: model_terms:ir.ui.view,arch_db:xiuman.view_invoice_form_marin
+#, python-format
+msgid "Move Lines"
+msgstr "Líneas de movimiento"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.stock_picking_type_kanban_marin
+msgid "Move On Hand"
+msgstr "Mover en existencias"
+
+#. module: xiuman
+#: model:ir.actions.act_window,name:xiuman.wiz_stock_move_location_action
+msgid "Move from location"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/stock_move_location.py:0
+#, python-format
+msgid "Move quantity can not be negative"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/stock_move_location.py:0
+#, python-format
+msgid "Move quantity can not exceed max quantity"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/stock_picking.py:0
+#, python-format
+msgid "Moves lines already exists"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "My Orders"
+msgstr "Mis órdenes"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "My Sales Order Lines"
+msgstr "Mis Líneas de Pedido de Ventas"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner_age_range__name
+msgid "Name"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_purchase_order_line_tree
+msgid "New"
+msgstr "Nuevo"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "New Lines"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/fleet_vehicle.py:0
+#, python-format
+msgid "No Plate"
+msgstr ""
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/screens/receipt_screen/receipt_screen.xml:0
+#, python-format
+msgid "No delivery info found for this order."
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.actions.act_window,help:xiuman.purchase_form_action
+msgid "No purchase order found. Let's create one!"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_move_filter_marin
+msgid "Not Fiscal"
+msgstr "No Fiscal"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__account_journal__x_treatment__not_fiscal_real
+msgid "Not Fiscal real"
+msgstr "No Fiscal real"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__account_journal__x_treatment__not_fiscal_simulated
+msgid "Not Fiscal simulated"
+msgstr "No fiscal simulado"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_line_search_marin
+msgid "Not Invoice Related"
+msgstr "No hay Factura Relacionada"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_payment_search_marin
+msgid "Not Reconciled"
+msgstr "No conciliado"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__sale_order__delivery_status__no
+#: model:ir.model.fields.selection,name:xiuman.selection__sale_order_line__delivery_status__no
+msgid "Nothing to deliver"
+msgstr "Nada que entregar"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order_line__invoice_status__no
+msgid "Nothing to invoice"
+msgstr "Nada que facturar"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order__receipt_status__no
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order_line__reception_status__no
+msgid "Nothing to receive"
+msgstr "Nada que recibir"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sale_order_tree_marin
+msgid "Number"
+msgstr "Número"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_product_category__expiration_time
+msgid ""
+"Number of days after the receipt of the products (from the vendor or in "
+"stock after production) after which the goods may become dangerous and must "
+"not be consumed. It will be computed on the lot/serial number."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_product_category__alert_time
+msgid ""
+"Number of days before the Expiration Date after which an alert should be "
+"raised on the lot/serial number. It will be computed on the lot/serial "
+"number."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_product_category__removal_time
+msgid ""
+"Number of days before the Expiration Date after which the goods should be "
+"removed from the stock. It will be computed on the lot/serial number."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_product_category__use_time
+msgid ""
+"Number of days before the Expiration Date after which the goods starts "
+"deteriorating, without being dangerous yet. It will be computed on the "
+"lot/serial number."
+msgstr ""
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_knowledge_documents_odoo
+msgid "Odoo"
+msgstr ""
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "On hand"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.actions.act_window,help:xiuman.action_orders_marin
+msgid ""
+"Once the quotation is confirmed, it becomes a sales order.<br> You will be "
+"able to create an invoice and collect the payment."
+msgstr ""
+"Una vez confirmada la cotización, se convierte en un pedido de venta.<br> "
+"Podrás crear una factura y cobrar el pago."
+
+#. module: xiuman
+#: model_terms:ir.actions.act_window,help:xiuman.purchase_form_action
+msgid ""
+"Once you ordered your products to your supplier, confirm your request for "
+"quotation and it will turn into a purchase order."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/hr_payslip.py:0
+#, python-format
+msgid ""
+"Only Managers who are allow to validate payslip can perform this operation"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/stock_quant.py:0
+#, python-format
+msgid "Only a Inventory manager can validate an inventory adjustment."
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_purchase_order_line_tree
+msgid "Open Order"
+msgstr "Orden Abierta"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/stock_picking_type.py:0
+#: code:addons/xiuman/models/stock_picking_type.py:0
+#, python-format
+msgid "Operation not supported"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_operations
+msgid "Operations"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_purchase_order_line_tree
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "Order"
+msgstr "Orden"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line__date_order
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__date
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sale_order_tree_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "Order Date"
+msgstr "Fecha de Orden"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__date
+msgid "Order Deadline"
+msgstr "Fecha límite de pedido"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_purchase_order_line_input
+#: model:ir.ui.menu,name:xiuman.menu_sale_order_line
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_form_marin
+msgid "Order Lines"
+msgstr "Líneas de orden"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__order_id
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__order_id
+msgid "Order Reference"
+msgstr "Referencia de pedido"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_purchase_order_line_tree
+msgid "Ordered"
+msgstr "Pedido"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_purchase_order_line_tree
+msgid "Ordered Qty"
+msgstr "Cantidad pedida"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__invoice_origin
+#: model:ir.model.fields,field_description:xiuman.field_account_move__invoice_origin
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__invoice_origin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_wiz_stock_move_location_form_stock_move_location
+#: model_terms:ir.ui.view,arch_db:xiuman.wizard_stock_quant_lot_form_view
+msgid "Origin"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__origin_location_id
+msgid "Origin Location"
+msgstr "Ubicación de Origen"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__origin_location_readonly
+msgid "Origin Location Readonly"
+msgstr "Ubicación de Origen Solo lectura"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_session__cash_original_ending_balance
+msgid "Original Ending Balance"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__res_partner__gender__other
+msgid "Other"
+msgstr "Otro"
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_knowledge_documents_others
+msgid "Others"
+msgstr "Otros"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order__invoice_status__over_invoiced
+msgid "Over Billed"
+msgstr "Sobrefacturación"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Over Delivered"
+msgstr "Sobre entregado"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_search_marin
+msgid "Over Received"
+msgstr "Exceso de recibido"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order_line__invoice_status__over_invoiced
+msgid "Over billed"
+msgstr "Sobrefacturación"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__sale_order__delivery_status__over_full
+#: model:ir.model.fields.selection,name:xiuman.selection__sale_order_line__delivery_status__over_delivered
+msgid "Over delivered"
+msgstr "Sobre entregado"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order__receipt_status__over_full
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order_line__reception_status__over_received
+msgid "Over received"
+msgstr "Exceso de recibido"
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_fleet_l10n_mx_ownership_tax
+msgid "Ownership Tax"
+msgstr "Impuesto de Propiedad"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order__invoice_status__partially
+msgid "Partially Billed"
+msgstr "Parcialmente Facturado"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Partially Delivered"
+msgstr "Parcialmente Entregado"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_search_marin
+msgid "Partially Received"
+msgstr "Parcialmente Recibido"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order_line__invoice_status__partially
+msgid "Partially billed"
+msgstr "Parcialmente facturado"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__sale_order_line__delivery_status__partially
+msgid "Partially delivered"
+msgstr "Parcialmente entregado"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order_line__reception_status__partially
+msgid "Partially received"
+msgstr "Parcialmente recibido"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__partner_id
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history__partner_id
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__partner_id
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__partner_id
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line__partner_id
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__partner_id
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_analytic_distribution_model_search_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_invoice_form_marin
+msgid "Partner"
+msgstr "Contacto"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_res_partner_age_range
+msgid "Partner Age Range"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_analytic_distribution_model_search_marin
+msgid "Partner Category"
+msgstr "Categoría de Contacto"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__use_partner_debit_limit
+#: model:ir.model.fields,field_description:xiuman.field_res_users__use_partner_debit_limit
+msgid "Partner Debit Limit"
+msgstr "Límite de Débito del Contacto"
+
+#. module: xiuman
+#: model:documents.folder,name:xiuman.documents_partners_ledger_folder
+msgid "Partner Ledger"
+msgstr "Libro de socios"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_authorize_debt_wizard
+msgid "Partner authorize debt wizard"
+msgstr "Wizard de autorización de deuda de Contacto"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Recibo de nómina"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__debit_limit
+#: model:ir.model.fields,field_description:xiuman.field_res_users__debit_limit
+msgid "Payable limit"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_res_partner__debit_limit
+#: model:ir.model.fields,help:xiuman.field_res_users__debit_limit
+msgid "Payable limit specific to this partner."
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "Payment Amount:"
+msgstr "Monto de Pago:"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "Payment Date:"
+msgstr "Fecha de Pago:"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "Payment Method:"
+msgstr "Método de Pago:"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__l10n_mx_edi_payment_policy
+#: model:ir.model.fields,field_description:xiuman.field_account_move__l10n_mx_edi_payment_policy
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__l10n_mx_edi_payment_policy
+msgid "Payment Policy"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_payment.py:0
+#, python-format
+msgid "Payment Receipt %s"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__payment_receipt_document_share_id
+msgid "Payment Receipt Document Share"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "Payment Receipt:"
+msgstr "Recibo de Pago:"
+
+#. module: xiuman
+#: model:documents.folder,name:xiuman.documents_payment_receipts_folder
+msgid "Payment Receipts"
+msgstr "Recibos de Pago"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_account_payment_term
+msgid "Payment Terms"
+msgstr "Términos de pago"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/pos_config.py:0
+#: code:addons/xiuman/wizards/pos_cash_transfer_wizard.py:0
+#: model:ir.model,name:xiuman.model_account_payment
+#: model:ir.model.fields.selection,name:xiuman.selection__account_move__l10n_mx_edi_usage__cp01
+#, python-format
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_hr_payslip_run
+msgid "Payslip Batches"
+msgstr "Lotes de recibos de nómina"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_invoice_cash_discount__amount
+msgid "Percentage"
+msgstr "Porcentaje"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/pos_session.py:0
+#, python-format
+msgid "Permission needed"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/stock_move_location.py:0
+#, python-format
+msgid "Picking"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.actions.server,name:xiuman.action_print_picking_operation
+msgid "Picking Operations"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_stock_picking_type
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location__picking_type_id
+msgid "Picking Type"
+msgstr "Tipo de recolección"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_wiz_stock_move_location_form_stock_move_location
+msgid "Planned Transfer"
+msgstr ""
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_fleet_l10n_mx_plate
+msgid "Plate"
+msgstr "Placa"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/stock_picking.py:0
+#, python-format
+msgid "Please choose a source end location"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/pos_cash_transfer_wizard.py:0
+#, python-format
+msgid "Please specify an amount for the cash transfer different of 0.0"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.actions.act_window,name:xiuman.pos_cash_transfer_wizard
+msgid "PoS Cash Transfer"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_company__pos_cash_transfer_journal_id
+#: model:ir.model.fields,field_description:xiuman.field_res_config_settings__pos_cash_transfer_journal_id
+msgid "PoS Cash Transfer Journal"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_pos_cash_transfer_wizard
+msgid "PoS Cash Transfer Wizard"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuración del punto de venta"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_pos_order_line
+msgid "Point of Sale Order Lines"
+msgstr "Líneas de orden del Punto de venta"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Órdenes del Punto de venta"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Sesión de Punto de venta"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_picking_type__pos_avoid_locations
+msgid "Pos Avoid Locations"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_cash_transfer_wizard__pos_session_id
+msgid "Pos Session"
+msgstr ""
+
+#. module: xiuman
+#: model:mail.activity.type,name:xiuman.cash_transfer_activity
+msgid "Pos Session Cash transfer"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_hr_payslip_form_marin
+msgid "Post Move"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.actions.server,name:xiuman.action_server_predict_bank_statement_values
+msgid "Predict Partner"
+msgstr "Predecir Contacto"
+
+#. module: xiuman
+#: model:ir.actions.act_window,name:xiuman.invoice_line_price_history_action
+msgid "Price history"
+msgstr "Historial de Precio"
+
+#. module: xiuman
+#: model:ir.actions.act_window,name:xiuman.sale_line_price_history_action
+msgid "Price history per customer"
+msgstr "Historial de precio por cliente"
+
+#. module: xiuman
+#: model:ir.actions.act_window,name:xiuman.purchase_line_price_history_action
+msgid "Price history per supplier"
+msgstr "Historial de precio por proveedor"
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_commercial_documents_pricelist
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line__pricelist_id
+msgid "Pricelist"
+msgstr "Lista de precios"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_pricelists
+msgid "Pricelists"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_print_delivery_slip
+msgid "Print Delivery Slip"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_print_picking_operation
+msgid "Print Picking Operation"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_partner_form_marin
+msgid "Private information"
+msgstr "Información Privada"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/screens/receipt_screen/receipt_screen.xml:0
+#: model:ir.model,name:xiuman.model_product_template
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history__product_id
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history__product_id
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history__product_id
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__product_id
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__product_id
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_analytic_distribution_model_search_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_move_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_pos_order_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+#, python-format
+msgid "Product"
+msgstr "Producto"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_product_attribute
+msgid "Product Attributes"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_product_category
+msgid "Product Categories"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_product_category
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant__product_categ_id
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_analytic_distribution_model_search_marin
+msgid "Product Category"
+msgstr "Categoría del producto"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_product_lot
+msgid "Product Lots"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Movimientos de producto (línea de movimiento de inventario)"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_product_packaging
+msgid "Product Packagings"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_product_tag
+msgid "Product Tags"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_product_cost_readonly
+msgid "Product cost readonly"
+msgstr "Costo de Producto solo lectura"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_product_cost_manager
+msgid "Product cost user"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_mrp_production
+msgid "Production Order"
+msgstr "Orden de producción"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_big
+msgid "Production size - Big holder (up to 30mdp)"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_medium
+msgid "Production size - Medium holder (up to 18mdp)"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_small
+msgid "Production size - Small holder (up to 10mdp)"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_super_big
+msgid "Production size - Super big holder (more than 30mdp)"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_very_small
+msgid "Production size - Very small holder (up to 3mdp)"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_configuration_product
+#: model:ir.ui.menu,name:xiuman.menu_product_template
+#: model:ir.ui.menu,name:xiuman.product_menu_root
+msgid "Products"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_company__account_use_debit_limit
+msgid "Purchase Debit Limit"
+msgstr "Límite de Débito de Compra"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_purchase_order
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_tree
+#: model_terms:ir.ui.view,arch_db:xiuman.view_picking_form_marin
+msgid "Purchase Order"
+msgstr "Orden de compra"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_purchase_order_line
+#: model:ir.model.fields,field_description:xiuman.field_stock_move__purchase_line_id
+msgid "Purchase Order Line"
+msgstr "Línea de la orden de compra"
+
+#. module: xiuman
+#: model:ir.actions.act_window,name:xiuman.action_purchase_order_lines
+#: model_terms:ir.ui.view,arch_db:xiuman.view_purchase_order_line_pivot
+msgid "Purchase Order Lines"
+msgstr "Líneas de Orden de Compra"
+
+#. module: xiuman
+#: model:ir.actions.act_window,name:xiuman.purchase_form_action
+#: model:ir.ui.menu,name:xiuman.menu_account_purchase_orders
+#: model:ir.ui.menu,name:xiuman.menu_purchase_form_action
+msgid "Purchase Orders"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_purchase_core_business
+msgid "Purchase core business"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_purchase_general
+msgid "Purchase general"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_purchase_manager
+msgid "Purchase manager"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history__line_id
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__line_id
+msgid "Purchase order line"
+msgstr "Línea de Orden de Compra"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_purchase_order_line_price_history
+msgid "Purchase order line price history"
+msgstr "Historial de Precio de Línea de Orden de Compra"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_purchase_order_line_price_history_line
+msgid "Purchase order line price history line"
+msgstr "Historial de Precio de Línea de Orden de Compra"
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_purchase_readonly
+msgid "Purchase readonly"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_purchase_special_projects
+msgid "Purchase special projects"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_purchase_user
+msgid "Purchase user"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_purchase_bill_union
+msgid "Purchases & Bills Union"
+msgstr "Unión de compras y facturas"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_wiz_stock_move_location_form_stock_move_location
+msgid "Qty to move"
+msgstr ""
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "Quanity to take from the selected line."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__quant_id
+msgid "Quant"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.actions.act_window,name:xiuman.stock_quant_lot_wizard
+msgid "Quant Transfer Lot"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__qty
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__qty
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__qty
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__max_quantity
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant_lot__quantity
+#: model_terms:ir.ui.view,arch_db:xiuman.wizard_stock_quant_lot_form_view
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_stock_quant_lot__max_quantity
+msgid ""
+"Quantity of products in this quant, in the default unit of measure of the "
+"product"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_stock_quant_lot__quantity
+msgid "Quantity to be transfered to the destintation lot."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__move_quantity
+msgid "Quantity to move"
+msgstr "Cantidad por mover"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line__qty_to_receive
+msgid "Quantity to receive"
+msgstr "Cantidad a recibir"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_stock_quant
+msgid "Quants"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Quotations"
+msgstr "Cotizaciones"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_pickingtype_filter_marin
+msgid "Ready"
+msgstr "Listo"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_move_filter_marin
+msgid "Real"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order__receipt_status
+msgid "Receipt Status"
+msgstr "Estado de entrega"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+msgid "Receipt by: _____________________________________"
+msgstr "Recibido por: _____________________________________"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_authorize_debt_wizard__credit_limit
+#: model:ir.model.fields,help:xiuman.field_res_partner__credit_limit
+#: model:ir.model.fields,help:xiuman.field_res_users__credit_limit
+msgid "Receivable limit specific to this partner."
+msgstr "Límite de crédito específico para este partner."
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order_line__reception_status__received
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_search_marin
+msgid "Received"
+msgstr "Recibido"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line__reception_status
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_search_marin
+msgid "Reception Status"
+msgstr "Estado de Recepción"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_tree
+msgid "Reference"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_invoice_discount_form
+msgid "Register Cash Discount"
+msgstr "Registrar Descuento al cobro"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move.py:0
+#: model:ir.actions.server,name:xiuman.action_account_move_cash_discount
+#, python-format
+msgid "Register cash discount"
+msgstr "Registrar descuento en efectivo"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__relate_purchase_order
+#: model:ir.model.fields,field_description:xiuman.field_account_move__relate_purchase_order
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__relate_purchase_order
+msgid "Relate Purchase Order"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__related_purchase_order_id
+#: model:ir.model.fields,field_description:xiuman.field_account_move__related_purchase_order_id
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__related_purchase_order_id
+msgid "Related Purchase Order"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_product_category__removal_time
+msgid "Removal Date"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_location__removal_priority
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant__removal_priority
+msgid "Removal Priority"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_ir_actions_report
+msgid "Report Action"
+msgstr "Acción de reporte"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_wiz_stock_move_location_form_stock_move_location
+msgid "Reserved qty"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__reserved_quantity
+msgid "Reserved quantity"
+msgstr "Cantidad Reservada"
+
+#. module: xiuman
+#: model:ir.actions.server,name:xiuman.action_account_move_draft
+msgid "Reset to draft"
+msgstr "Regresar a borrador"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_form_marin
+msgid "Restore invoice status"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_picking_type_form_marin
+msgid "Routes"
+msgstr ""
+
+#. module: xiuman
+#: model:documents.folder,name:xiuman.documents_sat_folder
+#: model:documents.tag,name:xiuman.documents_knowledge_documents_sat
+msgid "SAT"
+msgstr ""
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "SN"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+msgid "Sale Order"
+msgstr "Orden de Venta"
+
+#. module: xiuman
+#: model:ir.actions.act_window,name:xiuman.action_sale_order_line
+msgid "Sale Order Lines"
+msgstr "Líneas de Orden de Venta"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__so_ids
+#: model:ir.ui.menu,name:xiuman.menu_account_sale_orders
+msgid "Sale Orders"
+msgstr "Órdenes de Venta"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history__line_id
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__line_id
+msgid "Sale order line"
+msgstr "Líneas de orden de venta"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_sale_order_line_price_history
+msgid "Sale order line price history"
+msgstr "Historial de línea de orden de venta"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_sale_order_line_price_history_line
+msgid "Sale order line price history line"
+msgstr "Historial de línea de orden de venta"
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_knowledge_documents_sales
+msgid "Sales"
+msgstr "Ventas"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_sale_order
+#: model_terms:ir.ui.view,arch_db:xiuman.view_picking_form_marin
+msgid "Sales Order"
+msgstr "Orden de venta"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de la orden de venta"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "Sales Order Lines ready to be invoiced"
+msgstr "Líneas de Órdenes de venta listas para ser facturadas"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "Sales Order Lines related to a Sales Order of mine"
+msgstr "Líneas de Orden de venta relacionadas con una orden de venta mía"
+
+#. module: xiuman
+#: model:ir.actions.act_window,name:xiuman.action_orders_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Sales Orders"
+msgstr "Órdenes de Venta"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_product_pricelist
+msgid "Sales Pricelists"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Sales Team"
+msgstr "Equipo de Ventas"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "Salesperson"
+msgstr "Vendedor"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "Sample Memo"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_stock_scrap
+msgid "Scrap"
+msgstr "Desechar"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Search Sale Orders"
+msgstr "Buscar Orden de Venta"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "Search Sales Order Lines"
+msgstr "Buscar Líneas de Orden de Venta"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_picking_type_form_marin
+msgid "Security"
+msgstr "Seguridad"
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_105
+msgid "Security - Compliance"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_security_compliance
+msgid "Security and compliance"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_account_bank_statement_line__journal_type
+#: model:ir.model.fields,help:xiuman.field_account_move__journal_type
+#: model:ir.model.fields,help:xiuman.field_account_payment__journal_type
+msgid ""
+"Select 'Sale' for customer invoices journals.\n"
+"Select 'Purchase' for vendor bills journals.\n"
+"Select 'Cash' or 'Bank' for journals that are used in customer or vendor payments.\n"
+"Select 'General' for miscellaneous operations journals."
+msgstr ""
+"Seleccione 'Ventas' para diarios de facturas de cliente.\n"
+"Seleccione 'Compras' para diarios de facturas de proveedor.\n"
+"Seleccione 'Caja' o 'Banco' para diarios que se usan para pagos de clientes y proveedores.\n"
+"Seleccione 'General' para diarios que contienen operaciones varias."
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/edit_list_input/edit_list_input.xml:0
+#, python-format
+msgid "Select a lot"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_account_analytic_distribution_model__vehicle_id
+msgid ""
+"Select a vehicle for which the analytic distribution will be used (e.g. "
+"create new customer invoice or Sales order if we select this vehicle, it "
+"will automatically take this as an analytic account)"
+msgstr ""
+"Seleccionar un vehículo para el que se usará la distribución analítica (ej. "
+"crear una nueva factura de cliente u orden de Venta si se selecciona este "
+"vehículo, esto se tomará automáticamente como una cuenta analítica)"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "Select an order line to see the available lots for the product."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_fleet_vehicle_log_services
+msgid "Services for vehicles"
+msgstr "Servicios para los vehículos"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_picking_form_marin
+msgid "Set Draft"
+msgstr "Establecer como Borrador"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.invoice_line_price_history_view_form
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_line_price_history_view_form
+#: model_terms:ir.ui.view,arch_db:xiuman.sale_order_line_price_history_view_form
+msgid "Set price"
+msgstr "Fijar precio"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_configuration_settings
+msgid "Settings"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_consolidation_company_period__company_code
+#: model:ir.model.fields,field_description:xiuman.field_res_company__code
+msgid "Short Code"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_picking_type__show_move_onhand
+msgid "Show Move On hand stock"
+msgstr "Mostrar inventario disponible"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_picking__show_purchase_lines
+msgid "Show Purchase Lines"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_picking__show_sale_lines
+msgid "Show Sale Lines"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_stock_picking_type__show_move_onhand
+msgid ""
+"Show a button 'Move On Hand' in the Inventory Dashboard to initiate the "
+"process to move the products in stock at the origin location."
+msgstr ""
+"Muestre un botón 'Mover en existencias' en el panel de control de inventario"
+" para iniciar el proceso de mover los productos en existencia en la "
+"ubicación de origen."
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Show all records which has next action date is before today"
+msgstr ""
+"Mostrar todos los registros en los cuales la fecha de acción siguiente es "
+"una fecha previa al día de hoy"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_crm_lead__season_id
+msgid ""
+"Since every farmer can have several growing seasons the specific one can be "
+"selected."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__social_style_color
+#: model:ir.model.fields,field_description:xiuman.field_res_users__social_style_color
+msgid "Social style color"
+msgstr "Color de estilo social"
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move.py:0
+#, python-format
+msgid "Some move lines does not have a product set. Please review"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_110
+msgid "Special project supplier - Xiuman"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "State"
+msgstr "Estado"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_search_marin
+msgid "Status"
+msgstr ""
+
+#. module: xiuman
+#: model:documents.folder,name:xiuman.documents_wh_folder
+msgid "Stock"
+msgstr "Inventario"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de existencias"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_move_line__move_id
+msgid "Stock Operation"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_stock_manager
+msgid "Stock manager"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_stock_readonly
+msgid "Stock readonly"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_stock_user
+msgid "Stock user"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__stored
+#: model:ir.model.fields,field_description:xiuman.field_account_move__stored
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__stored
+#: model_terms:ir.ui.view,arch_db:xiuman.view_invoice_form_marin
+msgid "Stored"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history__partner_id
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__supplier
+#: model:ir.model.fields,field_description:xiuman.field_res_users__supplier
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_documents_tag
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Tag"
+msgstr "Etiqueta"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__category_id
+#: model:ir.model.fields,field_description:xiuman.field_res_users__category_id
+#: model_terms:ir.ui.view,arch_db:xiuman.quant_search_view_marin
+msgid "Tags"
+msgstr "Categorías"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_header
+msgid "Tax ID"
+msgstr "RFC"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sale_order_tree_marin
+msgid "Tax Total"
+msgstr "Impuesto Total"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__x_tax_difference
+#: model:ir.model.fields,field_description:xiuman.field_account_move__x_tax_difference
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__x_tax_difference
+msgid "Tax difference"
+msgstr "Diferencia de Impuesto"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__tax_ids
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__tax_ids
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Team"
+msgstr "Equipo"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_purchase_order_line__force_company_id
+#: model:ir.model.fields,help:xiuman.field_sale_order_line__force_company_id
+msgid ""
+"Technical field to force company or get it from env user if order don't "
+"exist."
+msgstr ""
+"Campo técnico para forzar empresa u obtenerla del usuario env si no existe "
+"la orden"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_account_journal__x_treatment
+msgid ""
+"Technical field used to group journal and journal moves according to fiscal "
+"logic."
+msgstr ""
+"Campo técnico usado para agrupar diarios movimientos de diarios de acuerdo a"
+" la lógica fiscal."
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/hr_payslip_run.py:0
+#, python-format
+msgid "The Expense Journal \"%s\" has not properly configured the Credit Account!"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/hr_payslip_run.py:0
+#, python-format
+msgid "The Expense Journal \"%s\" has not properly configured the Debit Account!"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/sale_order.py:0
+#, python-format
+msgid ""
+"The Partner %s does not have an authorized credit line. Contact the Credit "
+"Manager."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move.py:0
+#, python-format
+msgid ""
+"The Partner %s does not have enough credit line. Contact the Credit Manager."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move.py:0
+#, python-format
+msgid ""
+"The Partner's %s credit line has been held. Contact the Credit Manager."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move_line.py:0
+#, python-format
+msgid "The account %s (%s) is deprecated."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move_line.py:0
+#, python-format
+msgid ""
+"The account selected on your journal entry forces to provide a secondary "
+"currency. You should remove the secondary currency on the account."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.constraint,message:xiuman.constraint_res_company_code_uniq
+msgid "The company code must be unique !"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_account_bank_statement_line__invoice_origin
+#: model:ir.model.fields,help:xiuman.field_account_move__invoice_origin
+#: model:ir.model.fields,help:xiuman.field_account_payment__invoice_origin
+msgid "The document(s) that generated the invoice."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_invoice_line_price_history_line__qty
+msgid ""
+"The optional quantity expressed by this line, eg: number of product sold. "
+"The quantity is not a legal requirement but is very useful for some reports."
+msgstr ""
+"La cantidad opcional expresada por esta línea ej. número del producto "
+"vendido. La cantidad no es un requerimiento legal pero es muy útil para "
+"algunos reportes."
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/res_partner.py:0
+#, python-format
+msgid "The partner %s has reached its credit limit of : %s\n"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/sale_order.py:0
+#, python-format
+msgid "The partner's credit has been held. Contact the Credit Manager."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_pos_cash_transfer_wizard__currency_id
+msgid "The payment's currency."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_journal.py:0
+#, python-format
+msgid ""
+"The type of the journal's default receivable/payable account should be "
+"'receivable' or 'payable'."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/pos_session.py:0
+#, python-format
+msgid ""
+"The used POS has no CASH Payment method or journal correctly configured, "
+"please check for them."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_stock_location__removal_priority
+#: model:ir.model.fields,help:xiuman.field_stock_quant__removal_priority
+msgid ""
+"This priority applies when removing stock and incoming dates are equal."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner_age_range__age_to
+msgid "To"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order_line__invoice_status__to_invoice
+msgid "To Bill"
+msgstr "Por Facturar"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "To Deliver"
+msgstr "Por Entregar"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_purchase_order_line_tree
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_line_filter_marin
+msgid "To Invoice"
+msgstr "Por Facturar"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_search_marin
+msgid "To Receive"
+msgstr "Por Recibir"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_move_filter_marin
+msgid "To Store"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "To Upsell"
+msgstr "Para aumentar las ventas"
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_commercial_status_tc
+msgid "To Validate"
+msgstr "Por validar"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_move_line__location_dest_availability
+msgid "To availability"
+msgstr "Disponibilidad destino"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__sale_order_line__delivery_status__to_deliver
+msgid "To deliver"
+msgstr "Para entregar"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+msgid "To invoice Qty"
+msgstr "Cant por facturar"
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__purchase_order_line__reception_status__to_receive
+msgid "To receive"
+msgstr "Por recibir"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sales_order_filter_marin
+msgid "Today Activities"
+msgstr "Actividades del Día"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_authorize_debt_wizard__credit
+msgid "Total Receivable"
+msgstr "Total por Cobrar"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sale_order_tree_marin
+msgid "Total Tax Excluded"
+msgstr "Impuesto Total Excluido"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_sale_order_tree_marin
+msgid "Total Tax Included"
+msgstr "Impuesto Total Incluido"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_tree
+msgid "Total Untaxed amount"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_tree
+msgid "Total amount"
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/res_partner.py:0
+#, python-format
+msgid "Total amount due (including this document): %s\n"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_authorize_debt_wizard__credit
+msgid "Total amount this customer owes you."
+msgstr "Monto total que debe este cliente."
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__x_total_difference
+#: model:ir.model.fields,field_description:xiuman.field_account_move__x_total_difference
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__x_total_difference
+msgid "Total difference"
+msgstr "Diferencia total"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_hr_contract__final_yearly_costs
+msgid "Total yearly cost of the employee for the employer."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_stock_picking
+#: model:ir.model.fields,field_description:xiuman.field_stock_move__picking_id
+msgid "Transfer"
+msgstr "Transferir "
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.wizard_stock_quant_lot_form_view
+msgid "Transfer Quantity"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_pos_session__cash_transfered
+msgid "Transfered"
+msgstr ""
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_fleet_l10n_mx_transit_permit
+msgid "Transit permit"
+msgstr "Tránsito permitido"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_journal__x_treatment
+msgid "Treatment"
+msgstr "Tratamiento"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_consolidation_trial_balance_report_handler
+msgid "Trial Balance Custom Handler"
+msgstr "Administrador personalizado de la balanza de comprobación"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_move_line__move_type
+msgid "Type"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_header
+msgid "US12345671"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_form_inherit_sale_stock_marin
+msgid "Unforce delivery done"
+msgstr "Entrega no forzada realizada"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_form_inherit_marin
+msgid "Unforce reception done"
+msgstr "Recepción no forzada realizada"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__price_unit
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__price_unit
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__price_unit
+msgid "Unit Price"
+msgstr "Precio Unitario"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__product_uom_id
+msgid "Unit of Measure"
+msgstr "Unidad de Medida"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_uom_uom
+msgid "Units of Measure"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_uom_category
+msgid "Units of Measure Categories"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_view_tree
+msgid "Untaxed"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.purchase_order_line_search_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_line_tree_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_purchase_order_line_tree
+#: model_terms:ir.ui.view,arch_db:xiuman.view_wiz_stock_move_location_form_stock_move_location
+msgid "UoM"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_order_form_marin
+msgid "Update"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__l10n_mx_edi_usage
+#: model:ir.model.fields,field_description:xiuman.field_account_move__l10n_mx_edi_usage
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__l10n_mx_edi_usage
+msgid "Usage"
+msgstr "Uso"
+
+#. module: xiuman
+#. odoo-javascript
+#: code:addons/xiuman/static/src/pos/app/popups/missing_stock_popup/missing_stock_popup.xml:0
+#, python-format
+msgid "Use"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_product_product__use_expiration_date
+#: model:ir.model.fields,field_description:xiuman.field_product_template__use_expiration_date
+msgid "Use Expiration Date"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_product_product__property_account_income_refund_id
+#: model:ir.model.fields,help:xiuman.field_product_template__property_account_income_refund_id
+msgid ""
+"Used as default value on the customer credit notes lines. Leave empty to use"
+" the account from the product category."
+msgstr ""
+"Usado como valor por defecto en las líneas de notas de crédito del cliente. "
+"Deje vacío para usar la cuenta de la categoría del producto."
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_product_category__property_account_income_refund_id
+msgid ""
+"Used as default value on the customer credit notes lines. Leave empty to use"
+" the income account."
+msgstr ""
+"Usado como valor por defecto en las líneas de notas de crédito del cliente. "
+"Deje vacío para usar la cuenta de entrada."
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_product_product__property_account_expense_refund_id
+#: model:ir.model.fields,help:xiuman.field_product_template__property_account_expense_refund_id
+msgid ""
+"Used as default value on the vendor refunds lines. Leave empty to use the "
+"account from the product category."
+msgstr ""
+"Usado como valor por defecto en las líneas de reembolso a proveedores. Deje "
+"vacío para usar la cuenta de la categoría del producto."
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_product_category__property_account_expense_refund_id
+msgid ""
+"Used as default value on the vendor refunds lines. Leave empty to use the "
+"expense account."
+msgstr "usuario Comercial"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_account_bank_statement_line__l10n_mx_edi_usage
+#: model:ir.model.fields,help:xiuman.field_account_move__l10n_mx_edi_usage
+#: model:ir.model.fields,help:xiuman.field_account_payment__l10n_mx_edi_usage
+msgid ""
+"Used in CFDI to express the key to the usage that will gives the receiver to this invoice. This value is defined by the customer.\n"
+"Note: It is not cause for cancellation if the key set is not the usage that will give the receiver of the document."
+msgstr ""
+"Se utiliza en el CFDI para indicar la clave de uso que el receptor proporcionará a esta factura. El cliente define este valor.\n"
+"Nota: no será motivo de cancelación si la clave establecida no tiene el mismo uso que le dará el receptor del documento."
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_res_users
+msgid "User"
+msgstr "Usuario"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__user_account_manager
+#: model:ir.model.fields,field_description:xiuman.field_res_users__user_account_manager
+msgid "User Account Manager"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__user_account_user
+#: model:ir.model.fields,field_description:xiuman.field_res_users__user_account_user
+msgid "User Account User"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__user_debt_manager
+#: model:ir.model.fields,field_description:xiuman.field_res_users__user_debt_manager
+msgid "User Debt Manager"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__user_hr_manager
+#: model:ir.model.fields,field_description:xiuman.field_res_users__user_hr_manager
+msgid "User Hr Manager"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__user_hr_user
+#: model:ir.model.fields,field_description:xiuman.field_res_users__user_hr_user
+msgid "User Hr User"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_product_product__user_product_cost_manager
+#: model:ir.model.fields,field_description:xiuman.field_product_template__user_product_cost_manager
+msgid "User Product Cost Manager"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_product_product__user_product_cost_readonly
+#: model:ir.model.fields,field_description:xiuman.field_product_template__user_product_cost_readonly
+msgid "User Product Cost Readonly"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__user_purchase_manager
+#: model:ir.model.fields,field_description:xiuman.field_res_users__user_purchase_manager
+msgid "User Purchase Manager"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__user_purchase_user
+#: model:ir.model.fields,field_description:xiuman.field_res_users__user_purchase_user
+msgid "User Purchase User"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_product_product__user_sale_manager
+#: model:ir.model.fields,field_description:xiuman.field_product_template__user_sale_manager
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__user_sale_manager
+#: model:ir.model.fields,field_description:xiuman.field_res_users__user_sale_manager
+msgid "User Sale Manager"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_product_product__user_sale_readonly
+#: model:ir.model.fields,field_description:xiuman.field_product_template__user_sale_readonly
+msgid "User Sale Readonly"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__user_sale_user
+#: model:ir.model.fields,field_description:xiuman.field_res_users__user_sale_user
+msgid "User Sale User"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__user_stock_manager
+#: model:ir.model.fields,field_description:xiuman.field_res_users__user_stock_manager
+msgid "User Stock Manager"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_res_partner__user_stock_user
+#: model:ir.model.fields,field_description:xiuman.field_res_users__user_stock_user
+msgid "User Stock User"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_sale_salesman_team
+msgid "User: Sales Team Documents"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_account_journal__allowed_user_ids
+msgid "Users that can visualize and perform actions with this journal."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_stock_picking_type__allowed_user_ids
+msgid ""
+"Users that can visualize and perform pickings with this type of operation."
+msgstr ""
+"Usuarios que pueden visualizar y realizar recolecciones con este tipo de "
+"operación."
+
+#. module: xiuman
+#: model:documents.tag,name:xiuman.documents_commercial_status_validated
+msgid "Validated"
+msgstr "Validado"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_product_product
+msgid "Variants"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_fleet_vehicle
+#: model:ir.model.fields,field_description:xiuman.field_account_analytic_distribution_model__vehicle_id
+#: model:ir.model.fields,field_description:xiuman.field_account_analytic_line__vehicle_id
+#: model:ir.model.fields,field_description:xiuman.field_documents_document__vehicle_id
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_analytic_distribution_model_search_marin
+#: model_terms:ir.ui.view,arch_db:xiuman.view_account_analytic_line_filter_marin
+msgid "Vehicle"
+msgstr "Vehículo"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order__partner_id
+msgid "Vendor"
+msgstr "Proveedor"
+
+#. module: xiuman
+#: model:ir.ui.menu,name:xiuman.menu_product_supplierinfo
+msgid "Vendor Pricelists"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_vendor_bill
+msgid "Vendor bills"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_vendor_payment
+msgid "Vendor payments"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,name:xiuman.group_account_vendor_refund
+msgid "Vendor refunds"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_content
+#: model_terms:ir.ui.view,arch_db:xiuman.report_payment_receipt_document_inherit
+msgid "Vendor:"
+msgstr "Proveedor:"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__x_check_tax
+#: model:ir.model.fields,field_description:xiuman.field_account_move__x_check_tax
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__x_check_tax
+msgid "Verification tax"
+msgstr "Verificación del impuesto"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_account_bank_statement_line__x_check_total
+#: model:ir.model.fields,field_description:xiuman.field_account_move__x_check_total
+#: model:ir.model.fields,field_description:xiuman.field_account_payment__x_check_total
+msgid "Verification total"
+msgstr "Verificación total"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_picking_tree_marin
+msgid "View Moves"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.view_pickingtype_filter_marin
+msgid "Waiting"
+msgstr "En espera"
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_picking__waiting_warning
+msgid "Waiting Warning"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_stock_quant__warehouse_id
+#: model_terms:ir.ui.view,arch_db:xiuman.quant_search_view_marin
+msgid "Warehouse"
+msgstr "Almacen"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_product_product__use_expiration_date
+#: model:ir.model.fields,help:xiuman.field_product_template__use_expiration_date
+msgid ""
+"When this box is ticked, you have the possibility to specify dates to manage"
+" product expiration, on the product and on the corresponding lot/serial "
+"numbers"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields,field_description:xiuman.field_invoice_line_price_history_line__wizard_id
+#: model:ir.model.fields,field_description:xiuman.field_purchase_order_line_price_history_line__wizard_id
+#: model:ir.model.fields,field_description:xiuman.field_sale_order_line_price_history_line__wizard_id
+#: model:ir.model.fields,field_description:xiuman.field_wiz_stock_move_location_line__wizard_id
+msgid "Wizard"
+msgstr "Asistente"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_wiz_stock_move_location
+msgid "Wizard move location"
+msgstr "Asistente de ubicación de los movimientos"
+
+#. module: xiuman
+#: model:ir.model,name:xiuman.model_wiz_stock_move_location_line
+msgid "Wizard move location line"
+msgstr "Asistente de ubicación de líneas de movimiento"
+
+#. module: xiuman
+#: model:documents.facet,name:xiuman.documents_commercial_status
+#: model:documents.facet,name:xiuman.documents_wh_logistics_status
+msgid "Workflow"
+msgstr "Flujo"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_purchase_order__partner_id
+#: model:ir.model.fields,help:xiuman.field_purchase_order_line__partner_id
+#: model:ir.model.fields,help:xiuman.field_purchase_order_line_price_history_line__partner_id
+msgid "You can find a vendor by its Name, TIN, Email or Internal Reference."
+msgstr ""
+"Puede encontrar un proveedor por su nombre, NIF, correo electrónico o "
+"referencia interna."
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/stock_move_line.py:0
+#, python-format
+msgid ""
+"You can not delete product moves if the picking is done. You can only "
+"correct the done quantities."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/authorize_debt.py:0
+#, python-format
+msgid "You can only authorize debt for draft journal entries."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/authorize_debt.py:0
+#, python-format
+msgid "You can only authorize debt for quotations."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/stock_quant.py:0
+#, python-format
+msgid "You can only change lot of one quant at a time."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/stock_quant.py:0
+#, python-format
+msgid "You can only change lots used by a single company."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/invoice_cash_discount.py:0
+#, python-format
+msgid "You can only register cash discounts on posted moves."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/authorize_debt.py:0
+#, python-format
+msgid ""
+"You can't authorize credit because the records dont match the criteria."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/authorize_debt.py:0
+#, python-format
+msgid "You can't authorize debt because the records dont match the criteria."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/authorize_debt.py:0
+#, python-format
+msgid ""
+"You can't authorize debt for records being either all inbound, either all "
+"outbound."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/stock_picking_type.py:0
+#, python-format
+msgid "You cannot archive '%s' as it is used by a POS configuration '%s'."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move_line.py:0
+#, python-format
+msgid ""
+"You cannot use the account (%s) in the journal (%s), check the field "
+"\"Allowed Journals\" on the related account."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/models/account_move_line.py:0
+#, python-format
+msgid ""
+"You cannot use the account (%s) in the journal (%s), check the section "
+"\"Control-Access\" under tab \"Advanced Settings\" on the related journal."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/authorize_debt.py:0
+#: code:addons/xiuman/wizards/authorize_debt.py:0
+#, python-format
+msgid "You cant authorize debt for records belonging to different companies."
+msgstr ""
+
+#. module: xiuman
+#. odoo-python
+#: code:addons/xiuman/wizards/authorize_debt.py:0
+#: code:addons/xiuman/wizards/authorize_debt.py:0
+#, python-format
+msgid "You cant authorize debt for records belonging to different partners."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__res_partner__social_style_color__blue
+msgid "blue"
+msgstr "azul"
+
+#. module: xiuman
+#: model:product.removal,method:xiuman.removal_closest_priority
+msgid "closest + priority"
+msgstr ""
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.fleet_vehicle_view_form_marin
+msgid "e.g. Model S"
+msgstr "por ejemplo, Modelo S"
+
+#. module: xiuman
+#: model_terms:ir.ui.view,arch_db:xiuman.fleet_vehicle_view_form_marin
+msgid "e.g. PAE 326"
+msgstr "por ejemplo, PAE 326"
+
+#. module: xiuman
+#: model:product.removal,method:xiuman.removal_fefo_priority
+msgid "fefo + priority"
+msgstr ""
+
+#. module: xiuman
+#: model:product.removal,method:xiuman.removal_fifo_priority
+msgid "fifo + priority"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__res_partner__social_style_color__green
+msgid "green"
+msgstr "verde"
+
+#. module: xiuman
+#: model:product.removal,method:xiuman.removal_lifo_priority
+msgid "lifo + priority"
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__res_partner__social_style_color__red
+msgid "red"
+msgstr "rojo"
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_wiz_stock_move_location__destination_location_readonly
+msgid "technical field to disable the edition of destination location."
+msgstr "Campo técnico para desactivar la edición de la ubicación de destino."
+
+#. module: xiuman
+#: model:ir.model.fields,help:xiuman.field_wiz_stock_move_location__origin_location_readonly
+msgid "technical field to disable the edition of origin location."
+msgstr "Campo técnico para desactivar la edición de la ubicación de origen."
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_106
+msgid "temp1"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_107
+msgid "temp2"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_108
+msgid "temp3"
+msgstr ""
+
+#. module: xiuman
+#: model:res.partner.category,name:xiuman.partner_category_109
+msgid "temp4"
+msgstr ""
+
+#. module: xiuman
+#: model:res.groups,comment:xiuman.group_sale_salesman_team
+msgid ""
+"the user will have access to all records of everyone of the same sales team "
+"in the sales application."
+msgstr ""
+
+#. module: xiuman
+#: model:ir.model.fields.selection,name:xiuman.selection__res_partner__social_style_color__yellow
+msgid "yellow"
+msgstr "amarillo"
