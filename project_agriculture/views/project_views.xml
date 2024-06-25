@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_project_agriculture_project_search" model="ir.ui.view">
+        <field name="name">project.agriculture.project.select</field>
+        <field name="model">project.project</field>
+        <field name="arch" type="xml">
+            <search string="Search Project">
+                <field name="name" string="Project" />
+                <field name="tag_ids" />
+                <field name="user_id" string="Project Manager" />
+                <field name="partner_id" string="Customer" filter_domain="[('partner_id', 'child_of', self)]" />
+                <field name="analytic_account_id" />
+                <field name="stage_id" groups="project.group_project_stages" />
+                <filter string="My Projects" name="own_projects" domain="[('user_id', '=', uid)]" />
+                <filter string="My Favorites" name="my_projects" domain="[('favorite_user_ids', 'in', uid)]" />
+                <filter string="Followed" name="followed_by_me" domain="[('message_is_follower', '=', True)]" />
+                <filter string="Unassigned" name="unassigned_projects" domain="[('user_id', '=', False)]" />
+                <separator />
+                <filter
+                    string="Late Milestones"
+                    name="late_milestones"
+                    domain="[('is_milestone_exceeded', '=', True)]"
+                    groups="project.group_project_milestone"
+                />
+                <separator />
+                <filter
+                    string="Open"
+                    name="open_project"
+                    domain="[('stage_id.fold', '=', False)]"
+                    groups="project.group_project_stages"
+                />
+                <filter
+                    string="Closed"
+                    name="closed_project"
+                    domain="[('stage_id.fold', '=', True)]"
+                    groups="project.group_project_stages"
+                />
+                <separator />
+                <filter string="Start Date" name="start_date" date="date_start" />
+                <filter string="End Date" name="end_date" date="date" />
+                <separator />
+                <filter
+                    name="rating_satisfied"
+                    string="Satisfied"
+                    domain="[('rating_active', '=', True), ('rating_avg', '&gt;=', 3.66)]"
+                    groups="project.group_project_rating"
+                />
+                <filter
+                    name="rating_okay"
+                    string="Okay"
+                    domain="[('rating_active', '=', True), ('rating_avg', '&lt;', 3.66), ('rating_avg', '&gt;=', 2.33)]"
+                    groups="project.group_project_rating"
+                />
+                <filter
+                    name="dissatisfied"
+                    string="Dissatisfied"
+                    domain="[('rating_active', '=', True), ('rating_avg', '&lt;', 2.33), ('rating_avg', '&gt;', 0)]"
+                    groups="project.group_project_rating"
+                />
+                <filter
+                    name="no_rating"
+                    string="No Rating"
+                    domain="['|', ('rating_active', '=', False), ('rating_avg', '=', 0)]"
+                    groups="project.group_project_rating"
+                />
+                <separator />
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]" />
+                <separator />
+                <filter
+                    invisible="1"
+                    string="Late Activities"
+                    name="activities_overdue"
+                    domain="[('my_activity_date_deadline', '&lt;', context_today().strftime('%Y-%m-%d'))]"
+                    help="Show all records which has next action date is before today"
+                />
+                <filter
+                    invisible="1"
+                    string="Today Activities"
+                    name="activities_today"
+                    domain="[('my_activity_date_deadline', '=', context_today().strftime('%Y-%m-%d'))]"
+                />
+                <filter
+                    invisible="1"
+                    string="Future Activities"
+                    name="activities_upcoming_all"
+                    domain="[('my_activity_date_deadline', '&gt;', context_today().strftime('%Y-%m-%d'))]"
+                />
+                <group expand="0" string="Group By">
+                    <filter string="Project Manager" name="Manager" context="{'group_by': 'user_id'}" />
+                    <filter string="Customer" name="Partner" context="{'group_by': 'partner_id'}" />
+                    <filter string="Status" name="status" context="{'group_by': 'last_update_status'}" />
+                    <filter
+                        string="Stage"
+                        name="groupby_stage"
+                        context="{'group_by': 'stage_id'}"
+                        groups="project.group_project_stages"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_project_agriculture_tree" model="ir.ui.view">
+        <field name="name">project.agriculture.project.tree</field>
+        <field name="model">project.project</field>
+        <field name="arch" type="xml">
+            <tree
+                decoration-muted="active == False"
+                string="Projects"
+                multi_edit="1"
+                sample="1"
+                default_order="sequence, name, id"
+            >
+                <field name="sequence" optional="show" widget="handle" />
+                <field name="message_needaction" invisible="1" />
+                <field name="active" invisible="1" />
+                <field name="is_favorite" nolabel="1" width="1" widget="boolean_favorite" />
+                <field name="display_name" string="Name" class="fw-bold" />
+                <field name="agricultural_cycle" string="Cycle" />
+                <field name="partner_id" optional="show" string="Customer" />
+                <field name="privacy_visibility" optional="hide" />
+                <field name="analytic_account_id" optional="hide" groups="analytic.group_analytic_accounting" />
+                <field
+                    name="date_start"
+                    string="Start Date"
+                    widget="daterange"
+                    options="{'related_end_date': 'date'}"
+                />
+                <field
+                    name="date"
+                    string="End Date"
+                    widget="daterange"
+                    options="{'related_start_date': 'date_start'}"
+                />
+                <field name="surface_total" />
+                <field
+                    name="user_id"
+                    optional="show"
+                    string="Project Manager"
+                    widget="many2one_avatar_user"
+                    options="{'no_open':True, 'no_create': True, 'no_create_edit': True}"
+                />
+                <field name="last_update_color" invisible="1" />
+                <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" optional="hide" />
+                <field name="stage_id" options="{'no_open': True}" optional="show" />
+                <field
+                    name="last_update_status"
+                    string="Status"
+                    nolabel="1"
+                    optional="show"
+                    widget="status_with_color"
+                    options="{'color_field': 'last_update_color', 'hide_label': True}"
+                />
+                <field
+                    name="company_id"
+                    optional="show"
+                    groups="base.group_multi_company"
+                    options="{'no_create': True, 'no_create': True}"
+                />
+                <field name="company_id" invisible="1" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="project_view_kanban" model="ir.ui.view">
+        <field name="name">project.project.kanban</field>
+        <field name="model">project.project</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="user_id" string="Project Manager" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_content oe_kanban_global_click o_kanban_get_form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <strong><field name="name" string="Project Name" /></strong>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <field name="partner_id" string="Contact" />
+                                </div>
+                                <div class="col-4">
+                                    <div class="oe_kanban_bottom_right float-end">
+                                        <field name="user_id" widget="many2one_avatar_user" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_project_agriculture_form" model="ir.ui.view">
+        <field name="name">project.agriculture.project.form</field>
+        <field name="model">project.project</field>
+        <field name="arch" type="xml">
+            <form string="Project" class="o_form_project_project" js_class="project_form">
+                <field name="company_id" invisible="1" />
+                <field name="analytic_account_id" invisible="1" />
+                <header>
+                    <button
+                        name="%(project.project_share_wizard_action)d"
+                        string="Share Readonly"
+                        type="action"
+                        class="oe_highlight"
+                        groups="project.group_project_manager"
+                        invisible="privacy_visibility != 'portal'"
+                        context="{'default_access_mode': 'read'}"
+                        data-hotkey="r"
+                    />
+                    <button
+                        name="%(project.project_share_wizard_action)d"
+                        string="Share Editable"
+                        type="action"
+                        class="oe_highlight"
+                        groups="project.group_project_manager"
+                        invisible="privacy_visibility != 'portal'"
+                        context="{'default_access_mode': 'edit'}"
+                        data-hotkey="e"
+                    />
+                    <field
+                        name="stage_id"
+                        widget="statusbar"
+                        options="{'clickable': '1', 'fold_field': 'fold'}"
+                        groups="project.group_project_stages"
+                    />
+                </header>
+                <sheet string="Project">
+                    <div class="oe_button_box" name="button_box" groups="base.group_user">
+                        <button
+                            class="oe_stat_button ps-2"
+                            name="project_update_all_action"
+                            type="object"
+                            groups="project.group_project_manager"
+                        >
+                            <div class="w-100">
+                                <field name="last_update_color" invisible="1" />
+                                <field
+                                    name="last_update_status"
+                                    readonly="1"
+                                    widget="status_with_color"
+                                    options="{'color_field': 'last_update_color'}"
+                                />
+                            </div>
+                        </button>
+                        <button
+                            class="oe_stat_button o_project_not_clickable ps-2"
+                            disabled="disabled"
+                            groups="!project.group_project_manager"
+                        >
+                            <div class="w-100">
+                                <field name="last_update_color" invisible="1" />
+                                <field
+                                    name="last_update_status"
+                                    readonly="1"
+                                    widget="status_with_color"
+                                    options="{'color_field': 'last_update_color'}"
+                                />
+                            </div>
+                        </button>
+                        <button
+                            class="oe_stat_button"
+                            name="%(project.project_collaborator_action)d"
+                            type="action"
+                            icon="fa-users"
+                            groups="project.group_project_manager"
+                            invisible="privacy_visibility != 'portal'"
+                        >
+                            <div class="o_field_widget o_stat_info">
+                                <span class="o_stat_value">
+                                    <field name="collaborator_count" nolabel="1" />
+                                </span>
+                                <span class="o_stat_text">
+                                    Collaborators
+                                </span>
+                            </div>
+                        </button>
+                    </div>
+                    <widget name="web_ribbon" title="Archived" bg_color="bg-danger" invisible="active" />
+                    <div class="oe_title">
+                        <h1 class="d-flex flex-row">
+                            <field name="is_favorite" nolabel="1" widget="boolean_favorite" class="me-2" />
+                            <field name="name" class="o_text_overflow" placeholder="e.g. Office Party" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="partner_id" widget="res_partner_many2one" />
+                            <field name="agricultural_cycle" />
+                            <field name="surface_total" />
+                        </group>
+                        <group>
+                            <field name="active" invisible="1" />
+                            <label for="date_start" string="Planned Date" />
+                            <div name="dates" class="o_row">
+                                <field name="date_start" widget="daterange" options='{"related_end_date": "date"}' />
+                                <i
+                                    class="fa fa-long-arrow-right mx-2 oe_edit_only"
+                                    aria-label="Arrow icon"
+                                    title="Arrow"
+                                />
+                                <i
+                                    class="fa fa-long-arrow-right mx-2 oe_read_only"
+                                    aria-label="Arrow icon"
+                                    title="Arrow"
+                                    invisible="not date_start and not date"
+                                />
+                                <field name="date" widget="daterange" options='{"related_start_date": "date_start"}' />
+                            </div>
+                            <field
+                                name="user_id"
+                                string="Project Manager"
+                                widget="many2one_avatar_user"
+                                readonly="not active"
+                                domain="[('share', '=', False)]"
+                            />
+                            <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="assets" string="Assets">
+                            <field
+                                name="description"
+                                options="{'resizable': false}"
+                                placeholder="Project description..."
+                            />
+                        </page>
+                        <page name="produce" string="Produce">
+                            <field name="agriculture_asset_ids" />
+                        </page>
+                        <page name="bi" string="BI">
+                            <group>
+                                <group>
+                                    <field name="fianna_percentage" />
+                                    <field name="fresh_percentage" />
+                                </group>
+                                <group>
+                                    <field name="potato_yield_total_expected" />
+                                    <field name="potato_yield_mean" />
+                                    <field name="potato_total_harvest_percentage" />
+                                </group>
+                                <group>
+                                    <field name="potato_stage1_percentage" />
+                                    <field name="potato_stage2_percentage" />
+                                    <field name="potato_stage3_percentage" />
+                                    <field name="potato_stage4_percentage" />
+                                    <field name="potato_stage5_percentage" />
+                                </group>
+                                <group>
+                                </group>
+                            </group>
+                        </page>
+                        <page name="settings" string="Settings">
+                            <group>
+                                <group>
+                                    <field
+                                        name="analytic_account_id"
+                                        domain="['|', ('company_id', '=', company_id), ('company_id', '=', False)]"
+                                        context="{'default_partner_id': partner_id}"
+                                        groups="analytic.group_analytic_accounting"
+                                    />
+                                    <field name="privacy_visibility" widget="radio" />
+                                    <span colspan="2" class="text-muted" invisible="not access_instruction_message">
+                                        <i class="fa fa-lightbulb-o" />&amp;nbsp;<field
+                                            class="d-inline"
+                                            name="access_instruction_message"
+                                            nolabel="1"
+                                        />
+                                    </span>
+                                    <span colspan="2" class="text-muted" invisible="not privacy_visibility_warning">
+                                        <i class="fa fa-warning" />&amp;nbsp;<field
+                                            class="d-inline"
+                                            name="privacy_visibility_warning"
+                                            nolabel="1"
+                                        />
+                                    </span>
+                                </group>
+                                <group>
+                                    <field name="company_id" groups="base.group_multi_company" />
+                                    <!-- TODO: looks like the fields with the alias_ prefix are deprecated from project.project model -->
+                                    <!-- <div
+                                        name="alias_def"
+                                        colspan="2"
+                                        class="pb-2"
+                                        invisible="not alias_domain"
+                                    > -->
+                                        <!-- Always display the whole alias in edit mode. It depends in read only -->
+                                        <!-- <field name="alias_enabled" invisible="1" />
+                                        <label
+                                            for="alias_name"
+                                            class="fw-bold o_form_label"
+                                            string="Create tasks by sending an email to"
+                                        />
+                                        <field
+                                            name="alias_value"
+                                            class="oe_read_only d-inline"
+                                            readonly="1"
+                                            widget="email"
+                                            invisible="not alias_name"
+                                        />
+                                        <span class="oe_edit_only">
+                                            <field name="alias_name" class="oe_inline" />@<field
+                                                name="alias_domain"
+                                                class="oe_inline"
+                                                readonly="1"
+                                            />
+                                        </span>
+                                    </div> -->
+                                    <!-- the alias contact must appear when the user start typing and it must disappear
+                                        when the string is deleted. -->
+                                    <field name="alias_contact" class="oe_inline" string="Accept Emails From" />
+                                </group>
+                                <group name="extra_settings">
+                                </group>
+                            </group>
+                            <group>
+                                <group
+                                    name="group_tasks_managment"
+                                    string="Tasks Management"
+                                    col="1"
+                                    class="row mt16 o_settings_container"
+                                    groups="project.group_project_task_dependencies,project.group_project_milestone,project.group_project_recurring_tasks"
+                                >
+                                    <div>
+                                        <!-- <div
+                                            class="o_setting_box"
+                                            id="subtask_settings"
+                                            groups="project.group_subtask_project"
+                                        >
+                                            <div class="o_setting_left_pane">
+                                                <field name="allow_subtasks" />
+                                            </div>
+                                            <div class="o_setting_right_pane">
+                                                <label for="allow_subtasks" />
+                                                <div class="text-muted">
+                                                    Split your tasks to organize your work into sub-milestones
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="o_setting_box mt-4"
+                                            id="recurring_tasks_setting"
+                                            groups="project.group_project_recurring_tasks"
+                                        >
+                                            <div class="o_setting_left_pane">
+                                                <field name="allow_recurring_tasks" />
+                                            </div>
+                                            <div class="o_setting_right_pane">
+                                                <label for="allow_recurring_tasks" />
+                                                <div class="text-muted">
+                                                    Auto-generate tasks for regular activities
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <div
+                                            class="o_setting_box mt-4"
+                                            id="task_dependencies_setting"
+                                            groups="project.group_project_task_dependencies"
+                                        >
+                                            <div class="o_setting_left_pane">
+                                                <field name="allow_task_dependencies" />
+                                            </div>
+                                            <div class="o_setting_right_pane">
+                                                <label for="allow_task_dependencies" />
+                                                <div class="text-muted">
+                                                    Determine the order in which to perform tasks
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="o_setting_box mt-4"
+                                            id="project_milestone_setting"
+                                            groups="project.group_project_milestone"
+                                        >
+                                            <div class="o_setting_left_pane">
+                                                <field name="allow_milestones" />
+                                            </div>
+                                            <div class="o_setting_right_pane">
+                                                <label for="allow_milestones" />
+                                                <div class="text-muted">
+                                                    Track major progress points that must be reached to achieve success
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </group>
+                                <group
+                                    name="group_time_managment"
+                                    string="Time Management"
+                                    invisible="1"
+                                    col="1"
+                                    class="row mt16 o_settings_container"
+                                />
+                                <group
+                                    name="group_documents_analytics"
+                                    string="Analytics"
+                                    col="1"
+                                    class="row mt16 o_settings_container"
+                                    invisible="not allow_rating"
+                                >
+                                    <div>
+                                        <field name="allow_rating" invisible="1" />
+                                        <div
+                                            class="o_setting_box"
+                                            name="analytic_div"
+                                            groups="project.group_project_rating"
+                                        >
+                                            <div class="o_setting_left_pane">
+                                                <field name="rating_active" />
+                                            </div>
+                                            <div class="o_setting_right_pane">
+                                                <label for="rating_active" />
+                                                <div class="text-muted">
+                                                    Get customer feedback
+                                                </div>
+                                                <div class="mt16" invisible="not rating_active">
+                                                    <field name="rating_status" widget="radio" />
+                                                    <div
+                                                        required="rating_status == 'periodic'"
+                                                        invisible="rating_status != 'periodic'"
+                                                    >
+                                                        <label for="rating_status_period" />
+                                                        <field name="rating_status_period" />
+                                                    </div>
+                                                    <div class="content-group">
+                                                        <div class="mt8">
+                                                            <button
+                                                                name="%(project.open_task_type_form_domain)d"
+                                                                context="{'project_id':id}"
+                                                                icon="fa-arrow-right"
+                                                                type="action"
+                                                                string="Set a Rating Email Template on Stages"
+                                                                class="btn-link"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field
+                        name="message_follower_ids"
+                        options="{'post_refresh':True}"
+                        help="Follow this project to automatically track the events associated to tasks and issues of this project."
+                        groups="base.group_user"
+                    />
+                    <field name="activity_ids" />
+                    <field name="message_ids" />
+                </div>
+            </form>
+        </field>
+    </record>
+</odoo>

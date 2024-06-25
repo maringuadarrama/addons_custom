@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="geoengine_vector_layer_basic" model="geoengine.vector.layer">
+        <field name="geo_field_id" ref="project_agriculture.field_project_agriculture_land__the_geom" />
+        <field name="name">
+            Property Boundaries
+        </field>
+        <field eval="1" name="sequence" />
+        <field name="view_id" ref="ir_ui_view_res_better_project_agriculture_land_geo_view" />
+        <field name="geo_repr">basic</field>
+        <field name="attribute_field_id" ref="field_project_agriculture_land__name" />
+        <field name="active_on_startup">True</field>
+        <field name="layer_opacity">0.5</field>
+        <field name="begin_color">#0000f5</field>
+        <field name="display_polygon_labels" eval="1" />
+    </record>
+</odoo>

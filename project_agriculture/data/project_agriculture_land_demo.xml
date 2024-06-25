@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="city_demo" model="res.city">
+        <field name="name">City Demo</field>
+        <field name="zipcode">742100</field>
+        <field name="country_id" ref="base.mx" />
+        <field name="state_id" ref="base.state_mx_ags" />
+    </record>
+
+    <record id="land_demo_1" model="project.agriculture.land">
+        <field name="name">Land Demo</field>
+        <field name="city_id" ref="city_demo" />
+        <field name="the_geom">
+            MULTIPOLYGON (((-11339471.710185 2393255.333162, -11339546.089816 2393140.585501, -11339633.220221 2393090.649054, -11339658.19056 2393137.929312, -11339588.592478 2393177.772259, -11339522.182075 2393271.270324, -11339471.710185 2393255.333162)))
+        </field>
+        <field
+            name="geopoint_ids"
+            eval="[Command.create({
+                'name': 'geopoint demo',
+                'longitude': -11339579.93587,
+                'latitude': 2393155.82172
+            })]"
+        />
+        <field
+            name="child_ids"
+            eval="[Command.create({
+                'name': 'Child Land Demo 1',
+                'city_id': ref('city_demo'),
+                'polygon_type': 'Field',
+                'the_geom': 'MULTIPOLYGON (((-11339514.368272 2393235.298866, -11339549.097338 2393190.679578, -11339547.518748 2393176.18906, -11339495.855675 2393228.268819, -11339514.368272 2393235.298866)))'
+            })]"
+        />
+    </record>
+</odoo>

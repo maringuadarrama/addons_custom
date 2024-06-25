@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="project_agriculture_scout_form_view" model="ir.ui.view">
+        <field name="name">project.agriculture.scout.form.view</field>
+        <field name="model">project.agriculture.scout</field>
+        <field name="arch" type="xml">
+            <form string="Scout">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="description" />
+                        <field name="land_id" />
+                        <field name="longitude" />
+                        <field name="latitude" />
+                        <field name="scout_type" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- Stages -->
+    <record id="project_agriculture_species_stage_potato_1" model="project.agriculture.species.stage">
+        <field name="name">Potato stage 1</field>
+        <field name="sequence">1</field>
+    </record>
+
+    <record id="project_agriculture_species_stage_potato_2" model="project.agriculture.species.stage">
+        <field name="name">Potato stage 2</field>
+        <field name="sequence">2</field>
+    </record>
+
+    <record id="project_agriculture_species_stage_potato_3" model="project.agriculture.species.stage">
+        <field name="name">Potato stage 3</field>
+        <field name="sequence">3</field>
+    </record>
+
+    <record id="project_agriculture_species_stage_potato_4" model="project.agriculture.species.stage">
+        <field name="name">Potato stage 4</field>
+        <field name="sequence">4</field>
+    </record>
+
+    <record id="project_agriculture_species_stage_potato_5" model="project.agriculture.species.stage">
+        <field name="name">Potato stage 5</field>
+        <field name="sequence">5</field>
+    </record>
+
+
+    <!-- Sprecies -->
+    <record id="project_agriculture_species_corn" model="project.agriculture.species">
+        <field name="name">Corn</field>
+        <field name="scientific_name">Zea mayz</field>
+        <field name="type">crop</field>
+    </record>
+
+    <record id="project_agriculture_species_potato" model="project.agriculture.species">
+        <field name="name">Potato</field>
+        <field name="scientific_name">Solanum tuberosum</field>
+        <field name="type">crop</field>
+    </record>
+
+    <record id="project_agriculture_species_tomato" model="project.agriculture.species">
+        <field name="name">Tomato</field>
+        <field name="scientific_name">Solanum lycopersicum</field>
+        <field name="type">crop</field>
+    </record>
+
+    <!-- Subspecies -->
+    <record id="project_agriculture_species_potato_fianna" model="project.agriculture.species">
+        <field name="name">Fianna</field>
+        <field name="species_id" ref="project_agriculture.project_agriculture_species_potato" />
+        <field name="type">subspecies</field>
+    </record>
+
+    <record id="project_agriculture_species_potato_fl" model="project.agriculture.species">
+        <field name="name">FL</field>
+        <field name="species_id" ref="project_agriculture.project_agriculture_species_potato" />
+        <field name="type">subspecies</field>
+    </record>
+
+    <record id="project_agriculture_species_potato_agatha" model="project.agriculture.species">
+        <field name="name">Agatha</field>
+        <field name="species_id" ref="project_agriculture.project_agriculture_species_potato" />
+        <field name="type">subspecies</field>
+    </record>
+
+    <record id="project_agriculture_species_potato_ocra" model="project.agriculture.species">
+        <field name="name">Ocra</field>
+        <field name="species_id" ref="project_agriculture.project_agriculture_species_potato" />
+        <field name="type">subspecies</field>
+    </record>
+
+    <record id="project_agriculture_species_potato_orquesta" model="project.agriculture.species">
+        <field name="name">Orquesta</field>
+        <field name="species_id" ref="project_agriculture.project_agriculture_species_potato" />
+        <field name="type">subspecies</field>
+    </record>
+
+    <record id="project_agriculture_species_potato_atlantic" model="project.agriculture.species">
+        <field name="name">Atlantic</field>
+        <field name="species_id" ref="project_agriculture.project_agriculture_species_potato" />
+        <field name="type">subspecies</field>
+    </record>
+</odoo>

@@ -1,0 +1,521 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_agriculture
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-10 19:08+0000\n"
+"PO-Revision-Date: 2023-11-10 19:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_agriculture
+#: model:ir.model.fields,help:project_agriculture.field_project_agriculture_land__ec
+msgid ""
+"\n"
+"0.0 - 0.15    Very low          Plants may be starved of nutrients.\n"
+"\n"
+"0.15- 0.50    Low               If soil lacks organic matter.Satisfactory if soil is high in organic matter\n"
+"\n"
+"0.51- 1.25    Medium            Okay range for established plants.\n"
+"\n"
+"1.26- 1.75    High              Okay for most established plants. Too high for seedlings or cuttings.\n"
+"\n"
+"1.76-2.00     Very high         Plants usually stunted or chlorotic.\n"
+"\n"
+"> 2.00        Excessively high  Plants severely dwarfed; seedlings and rooted cuttings frequently killed.\n"
+"        "
+msgstr ""
+"\n"
+"0.0 - 0.15    Muy bajo          Las plantas pueden morir de hambre de nutrientes.\n"
+"\n"
+"0.15- 0.50    Bajo              Si el suelo carece de materia orgánica. Satisfactorio si el suelo es rico en materia orgánica\n"
+"\n"
+"0.51- 1.25    Medio             Rango aceptable para plantas establecidas.\n"
+"\n"
+"1.26- 1.75    Alto              Bien para la mayoría de las plantas establecidas. Demasiado alto para plántulas o esquejes.\n"
+"\n"
+"1.76-2.00     Muy alto          Las plantas generalmente son enanas o cloróticas.\n"
+"\n"
+"> 2.00        Excesivamente alto Las plantas severamente enanas; plántulas y esquejes enraizados frecuentemente muertos.\n"
+"        "
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: project_agriculture
+#: model:ir.ui.menu,name:project_agriculture.project_agriculture_menu_root
+msgid "Agroproject"
+msgstr "Agroproyecto"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__polygon_type__animal
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_scout__scout_type__animal
+msgid "Animal"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__area
+msgid "Area"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__barcode
+msgid "Barcode"
+msgstr "Código de barras"
+
+#. module: project_agriculture
+#: model:geoengine.vector.layer,name:project_agriculture.geoengine_vector_layer_basic
+msgid "Basic project_agriculture_land"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__polygon_type__bed
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_scout__scout_type__bed
+msgid "Bed"
+msgstr "Cama"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__polygon_type__buffer
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_scout__scout_type__buffer
+msgid "Buffer"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__polygon_type__building
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_scout__scout_type__building
+msgid "Building"
+msgstr "Construcción"
+
+#. module: project_agriculture
+#: model:ir.model.fields,help:project_agriculture.field_project_agriculture_land__active
+msgid ""
+"By unchecking the active field, you may hide a land without deleting it."
+msgstr "Desmarcando el campo activo, puede ocultar un terreno sin eliminarlo."
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__soil_type__chalky
+msgid "Chalky"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.actions.act_window,name:project_agriculture.action_project_agriculture_child_lands
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__child_ids_count
+#: model:ir.ui.menu,name:project_agriculture.child_lands
+msgid "Child Lands"
+msgstr "Terrenos hijos"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__city_id
+msgid "City"
+msgstr "Ciudad"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__soil_type__clay
+msgid "Clay"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: project_agriculture
+#: model_terms:ir.ui.view,arch_db:project_agriculture.view_project_agriculture_land_form
+msgid "Compute Localization"
+msgstr "Calcular localización"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__create_uid
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land_tag__create_uid
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__create_date
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land_tag__create_date
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__default_map_layer
+msgid "Default Map Layer"
+msgstr "Capa de mapa predeterminada"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__display_name
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land_tag__display_name
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: project_agriculture
+#: model:ir.actions.server,name:project_agriculture.ir_actions_server_action_download_geojson
+msgid "Download GeoJSON file"
+msgstr "Descargar archivo GeoJSON"
+
+#. module: project_agriculture
+#: model:ir.actions.server,name:project_agriculture.ir_actions_server_action_download_csv
+msgid "Download Geopoints CSV file"
+msgstr "Descargar archivo CSV de geopuntos"
+
+#. module: project_agriculture
+#: model:ir.actions.server,name:project_agriculture.ir_actions_server_action_download_kml
+msgid "Download KML file"
+msgstr "Descargar archivo KML"
+
+#. module: project_agriculture
+#: model:ir.actions.server,name:project_agriculture.ir_actions_server_action_download_shapefiles
+msgid "Download Shapefiles"
+msgstr "Descargar archivos de formas"
+
+#. module: project_agriculture
+#: model:ir.actions.server,name:project_agriculture.ir_actions_server_action_download_topojson
+msgid "Download TopoJSON file"
+msgstr "Descargar archivo TopoJSON"
+
+#. module: project_agriculture
+#: model:ir.actions.server,name:project_agriculture.ir_actions_server_action_download_wkt
+msgid "Download WKT file"
+msgstr "Descargar archivo WKT"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__ec
+msgid "Electrical conductivity (mmhos/cm)"
+msgstr "Conductividad eléctrica (mmhos/cm)"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__polygon_type__field
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_scout__scout_type__field
+msgid "Field"
+msgstr "Campo"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__geopoint_ids
+msgid "Geo Points"
+msgstr "Geopuntos"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__the_geom
+msgid "Geo Shape"
+msgstr "Forma geográfica"
+
+#. module: project_agriculture
+#: model_terms:ir.ui.view,arch_db:project_agriculture.view_project_agriculture_land_form
+msgid "Geometry"
+msgstr "Geometría"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__geopoint
+msgid "Geopoint"
+msgstr "Geopunto"
+
+#. module: project_agriculture
+#: model_terms:ir.ui.view,arch_db:project_agriculture.view_project_agriculture_land_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__id
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land_tag__id
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__id
+msgid "ID"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__polygon_type__irrigation
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_scout__scout_type__irrigation
+msgid "Irrigation"
+msgstr "Irrigación"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__is_irrigated
+msgid "Is Irrigated"
+msgstr "Está irrigado"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__child_ids
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__land_id
+#: model_terms:ir.ui.view,arch_db:project_agriculture.view_project_agriculture_land_form
+msgid "Land"
+msgstr "Terreno"
+
+#. module: project_agriculture
+#: model_terms:ir.ui.view,arch_db:project_agriculture.view_project_agriculture_land_form
+msgid "Land Type"
+msgstr "Tipo de terreno"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land____last_update
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land_tag____last_update
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificación en"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__write_uid
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land_tag__write_uid
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualización por"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__write_date
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land_tag__write_date
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__latitude
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__latitude
+msgid "Latitude"
+msgstr "Latitud"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__soil_type__loamy
+msgid "Loamy"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__longitude
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__longitude
+msgid "Longitude"
+msgstr "Longitud"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__name
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land_tag__name
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: project_agriculture
+#: model_terms:ir.ui.view,arch_db:project_agriculture.ir_ui_view_res_better_project_agriculture_land_geo_view
+msgid "Name:"
+msgstr "Nombre:"
+
+#. module: project_agriculture
+#. odoo-python
+#: code:addons/project_agriculture/models/project_agriculture_land.py:0
+#, python-format
+msgid "No geometry found for this land."
+msgstr "No se encontró geometría para este terreno."
+
+#. module: project_agriculture
+#. odoo-python
+#: code:addons/project_agriculture/models/project_agriculture_land.py:0
+#, python-format
+msgid "No geopoints found for this land."
+msgstr "No se encontraron geopuntos para este terreno."
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__default_map_layer__osm
+msgid "OSM"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__organic_matter
+msgid "Organic matter (%)"
+msgstr "Materia orgánica (%)"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__polygon_type__other
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_scout__scout_type__other
+msgid "Other"
+msgstr "Otro"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__default_map_layer__outdoors
+msgid "Outdoors"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__parent_id
+#: model_terms:ir.ui.view,arch_db:project_agriculture.view_project_agriculture_land_search
+msgid "Parent Land"
+msgstr "Terreno padre"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__parent_path
+msgid "Parent Path"
+msgstr "Ruta padre"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__partner_id
+msgid "Partner"
+msgstr "Socio"
+
+#. module: project_agriculture
+#: model_terms:ir.ui.view,arch_db:project_agriculture.ir_ui_view_res_better_project_agriculture_land_geo_view
+msgid "Partner:"
+msgstr "Socio:"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__polygon_type
+msgid "Polygon Type"
+msgstr "Tipo de polígono"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__priority
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__project_id
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: project_agriculture
+#: model:ir.actions.act_window,name:project_agriculture.action_project_agriculture_land
+#: model:ir.ui.menu,name:project_agriculture.menu_lands
+msgid "Property Boundaries"
+msgstr "Límites de propiedad"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__polygon_type__property_boundary
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_scout__scout_type__property_boundary
+msgid "Property boundary"
+msgstr "Límite de propiedad"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__ref
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: project_agriculture
+#: model_terms:ir.ui.view,arch_db:project_agriculture.view_project_agriculture_land_form
+msgid "Refresh"
+msgstr "Recargar"
+
+#. module: project_agriculture
+#: model_terms:ir.ui.view,arch_db:project_agriculture.view_project_agriculture_land_form
+msgid "Refresh Localization"
+msgstr "Recargar localización"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__soil_type__sandy
+msgid "Sandy"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__default_map_layer__satellite
+msgid "Satellite"
+msgstr "Satélite"
+
+#. module: project_agriculture
+#: model_terms:ir.ui.view,arch_db:project_agriculture.project_agriculture_scout_form_view
+msgid "Scout"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_scout__scout_type
+msgid "Scout Type"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model.fields,help:project_agriculture.field_project_agriculture_land__default_map_layer
+msgid "Select the default map view"
+msgstr "Seleccione la vista de mapa predeterminada"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__soil_type__silty
+msgid "Silty"
+msgstr "Limoso"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__soil_type
+msgid "Soil Type"
+msgstr "Tipo de suelo"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__state_id
+msgid "State"
+msgstr "Estado"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__polygon_type__storage
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_scout__scout_type__storage
+msgid "Storage"
+msgstr "Almacenamiento"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__default_map_layer__street
+msgid "Street"
+msgstr "Calle"
+
+#. module: project_agriculture
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_land__polygon_type__trial
+#: model:ir.model.fields.selection,name:project_agriculture.selection__project_agriculture_scout__scout_type__trial
+msgid "Trial"
+msgstr "Prueba"
+
+#. module: project_agriculture
+#: model:ir.model.fields,help:project_agriculture.field_project_agriculture_land__barcode
+msgid "Use a barcode to identify this land."
+msgstr "Utilice un código de barras para identificar este terreno."
+
+#. module: project_agriculture
+#: model:ir.model.fields,help:project_agriculture.field_project_agriculture_land__ph
+msgid "Values between 0 being the most acid and 14 being the most alcaline"
+msgstr "Valores entre 0 siendo el más ácido y 14 siendo el más alcalino"
+
+#. module: project_agriculture
+#: model:ir.model.fields,help:project_agriculture.field_project_agriculture_land__organic_matter
+msgid "Values not greater than 100%"
+msgstr "Valores no superiores al 100%"
+
+#. module: project_agriculture
+#: model:ir.model.fields,field_description:project_agriculture.field_project_agriculture_land__ph
+msgid "pH"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model,name:project_agriculture.model_project_agriculture_land
+msgid "project.agriculture.land"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model,name:project_agriculture.model_project_agriculture_land_tag
+msgid "project.agriculture.land.tag"
+msgstr ""
+
+#. module: project_agriculture
+#: model:ir.model,name:project_agriculture.model_project_agriculture_scout
+msgid "project.agriculture.scout"
+msgstr ""
+
+#. module: project_agriculture
+#: model:geoengine.raster.layer,name:project_agriculture.geoengine_raster_layer
+msgid "project_agriculture_land OSM"
+msgstr ""
+
+#. module: project_agriculture
+#: model:geoengine.raster.layer,name:project_agriculture.geoengine_raster_layer_osm0
+msgid "project_agriculture_land OSM Light"
+msgstr ""
+
+#. module: project_agriculture
+#: model:geoengine.raster.layer,name:project_agriculture.geoengine_raster_layer_wmts
+msgid "sgmc2"
+msgstr ""

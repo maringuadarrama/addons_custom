@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="project_agriculture_species_potato_rhizoctonia" model="project.agriculture.species">
+        <field name="name">Potato black scurf</field>
+        <field name="scientific_name">Rhizoctonia solani</field>
+        <field name="type">pdw</field>
+    </record>
+
+    <record id="project_agriculture_species_potato_fusarium" model="project.agriculture.species">
+        <field name="name">Potato Fusarium</field>
+        <field name="scientific_name">Fusarium oxysporum</field>
+        <field name="type">pdw</field>
+    </record>
+
+    <record id="project_agriculture_species_potato_streptomyces" model="project.agriculture.species">
+        <field name="name">Potato scab</field>
+        <field name="scientific_name">Streptomyces scabies</field>
+        <field name="type">pdw</field>
+    </record>
+
+    <record id="project_agriculture_species_potato_blight" model="project.agriculture.species">
+        <field name="name">Potato late blight</field>
+        <field name="scientific_name">Phytophthora infestans</field>
+        <field name="type">pdw</field>
+    </record>
+
+    <record id="project_agriculture_species_potato_early_blight" model="project.agriculture.species">
+        <field name="name">Potato early blight</field>
+        <field name="scientific_name">Alternaria solani</field>
+        <field name="type">pdw</field>
+    </record>
+
+    <record id="project_agriculture_species_potato_psilid" model="project.agriculture.species">
+        <field name="name">Potato psilid</field>
+        <field name="scientific_name">Bactericera cockerelli</field>
+        <field name="type">pdw</field>
+    </record>
+
+    <record id="project_agriculture_species_potato_wf" model="project.agriculture.species">
+        <field name="name">Potato white fly</field>
+        <field name="scientific_name">Bemiscia tabascii</field>
+        <field name="type">pdw</field>
+    </record>
+</odoo>

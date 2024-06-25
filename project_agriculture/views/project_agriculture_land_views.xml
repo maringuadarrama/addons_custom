@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_project_agriculture_land_search" model="ir.ui.view">
+        <field name="name">project.agriculture.land.search</field>
+        <field name="model">project.agriculture.land</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="partner_id" />
+                <field name="parent_id" />
+                <field name="city_id" />
+                <field name="soil_type" />
+                <filter string="Property Boundaries" name="property_boundaries" domain="[('parent_id', '=', False)]" />
+                <filter string="Fields" name="fields" domain="[('polygon_type', '=', 'Field')]" />
+                <filter string="Animals" name="animals" domain="[('polygon_type', '=', 'Animal')]" />
+                <filter string="Beds" name="beds" domain="[('polygon_type', '=', 'Bed')]" />
+                <filter string="Irrigations" name="irrigations" domain="[('polygon_type', '=', 'Irrigation')]" />
+                <filter string="Trials" name="trials" domain="[('polygon_type', '=', 'Trial')]" />
+                <filter string="Buffers" name="buffers" domain="[('polygon_type', '=', 'Buffer')]" />
+                <filter string="Storages" name="storages" domain="[('polygon_type', '=', 'Storage')]" />
+                <filter string="Buildings" name="buildings" domain="[('polygon_type', '=', 'Building')]" />
+                <filter string="Others" name="others" domain="[('polygon_type', '=', 'Other')]" />
+            </search>
+        </field>
+    </record>
+
+
+    <record id="view_project_agriculture_land_tree" model="ir.ui.view">
+        <field name="name">project.agriculture.land.tree</field>
+        <field name="model">project.agriculture.land</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="partner_id" />
+                <field name="parent_id" />
+                <field name="priority" />
+                <field name="area" />
+                <field name="company_id" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_project_agriculture_land_form" model="ir.ui.view">
+        <field name="name">project.agriculture.land.form</field>
+        <field name="model">project.agriculture.land</field>
+        <field name="arch" type="xml">
+            <form string="Land">
+                <sheet>
+                    <notebook invisible="not context.get('comes_from_js', False)">
+                        <page string="Map">
+                            <field name="the_geom" options="{'opacity': 0.8, 'color': '#0000FF' }" />
+                        </page>
+                        <page string="Info">
+                            <group>
+                                <field name="name" />
+                                <field name="partner_id" />
+                                <field name="city_id" />
+                                <field name="soil_type" />
+                                <field name="default_map_layer" />
+                                <field name="is_irrigated" widget="boolean_toggle" />
+                                <field name="polygon_type" string="Land Type" />
+                                <field name="child_ids_count" />
+                            </group>
+                            <group>
+                                <field name="area" />
+                                <field name="latitude" />
+                                <field name="longitude" />
+                                <button
+                                    invisible="latitude or longitude"
+                                    icon="fa-gear"
+                                    string="Compute Localization"
+                                    title="Compute Localization"
+                                    name="action_compute_geo_values"
+                                    type="object"
+                                    class="btn"
+                                />
+                                <button
+                                    invisible="not latitude and not longitude"
+                                    icon="fa-refresh"
+                                    string="Refresh"
+                                    title="Refresh Localization"
+                                    name="action_compute_geo_values"
+                                    type="object"
+                                    class="btn"
+                                />
+                            </group>
+                        </page>
+                        <page string="Geopoints">
+                            <group>
+                                <field name="geopoint_ids" widget="one2many">
+                                    <tree>
+                                        <field name="name" />
+                                        <field name="create_date" />
+                                        <field name="land_id" />
+                                        <field name="longitude" />
+                                        <field name="latitude" />
+                                        <field name="scout_type" />
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                    </notebook>
+                    <group invisible="not parent_id or context.get('comes_from_js', False)">
+                        <field name="name" />
+                        <field name="partner_id" />
+                        <field name="city_id" />
+                        <field name="polygon_type" string="Land Type" />
+                        <field name="parent_id" readonly="1" />
+                    </group>
+                    <group invisible="context.get('comes_from_js') or parent_id">
+                        <group>
+                            <field name="name" />
+                            <field name="partner_id" />
+                            <field name="city_id" />
+                            <field name="soil_type" />
+                            <field name="default_map_layer" />
+                            <field name="is_irrigated" widget="boolean_toggle" />
+                            <field name="polygon_type" string="Land Type" />
+                            <field name="child_ids_count" />
+                            <field name="id" invisible="True" />
+                        </group>
+                        <group>
+                            <field name="area" />
+                            <field name="latitude" />
+                            <field name="longitude" />
+                            <button
+                                invisible="latitude or longitude"
+                                icon="fa-gear"
+                                string="Compute Localization"
+                                title="Compute Localization"
+                                name="action_compute_geo_values"
+                                type="object"
+                                class="btn"
+                            />
+                            <button
+                                invisible="not latitude and not longitude"
+                                icon="fa-refresh"
+                                string="Refresh"
+                                title="Refresh Localization"
+                                name="action_compute_geo_values"
+                                type="object"
+                                class="btn"
+                            />
+                        </group>
+                    </group>
+                    <notebook colspan="4" invisible="context.get('comes_from_js') or parent_id">
+                        <page string="Geometry" invisible="context.get('hide_map')">
+                            <field name="the_geom" options="{'opacity': 0.8, 'color': '#0000FF' }" />
+                        </page>
+                    </notebook>
+                    <group invisible="context.get('comes_from_js') or parent_id">
+                        <field name="geopoint_ids" widget="one2many">
+                            <tree>
+                                <field name="name" />
+                                <field name="create_date" />
+                                <field name="land_id" />
+                                <field name="longitude" />
+                                <field name="latitude" />
+                                <field name="scout_type" />
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- GeoEngine views -->
+    <record id="ir_ui_view_res_better_project_agriculture_land_geo_view" model="ir.ui.view">
+        <field name="name">project.agriculture.land.geo_view</field>
+        <field name="arch" type="xml">
+            <geoengine editable="1">
+                <field name="name" />
+                <field name="partner_id" />
+                <field name="city_id" />
+                <field name="soil_type" />
+                <field name="is_irrigated" widget="boolean_toggle" />
+                <field name="the_geom" />
+                <field name="display_name" />
+                <field name="polygon_type" />
+                <templates>
+                    <t component="info_box" />
+                    <div>
+                        <field name="city_id" widget="badge" />
+                        <ul>
+                            <li>
+                                <span>
+                                    Name:
+                                </span>
+                                <field name="name" />
+                            </li>
+                            <li>
+                                <span>
+                                    Partner:
+                                </span>
+                                <field name="partner_id" />
+                            </li>
+                        </ul>
+                    </div>
+                </templates>
+            </geoengine>
+        </field>
+        <field eval="16" name="priority" />
+        <field name="model">project.agriculture.land</field>
+        <field name="default_extent">-11041412.0990740,1808169.2775740,-10196834.5424730,3526986.6169980</field>
+    </record>
+
+    <record id="ir_ui_view_res_better_project_agriculture_scout_geo_view" model="ir.ui.view">
+        <field name="name">project.agriculture.scout.geo_view</field>
+        <field name="arch" type="xml">
+            <geoengine editable="1">
+                <field name="name" />
+                <field name="land_id" />
+                <field name="description" />
+                <field name="longitude" />
+                <field name="latitude" />
+                <field name="scout_type" />
+                <templates>
+                    <t component="info_box">
+                        <field name="name" widget="badge" />
+                        <ul>
+                            <li>Longitude: <field name="longitude" />
+                            </li>
+                            <li>Latitude: <field name="latitude" />
+                            </li>
+                        </ul>
+                    </t>
+                </templates>
+            </geoengine>
+        </field>
+        <field eval="18" name="priority" />
+        <field name="model">project.agriculture.scout</field>
+        <field name="default_extent">-11041412.0990740,1808169.2775740,-10196834.5424730,3526986.6169980</field>
+    </record>
+
+</odoo>

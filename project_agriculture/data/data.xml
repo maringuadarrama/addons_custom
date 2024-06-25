@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="product_uom_hectare" model="uom.uom">
+        <field name="name">hectare</field>
+        <field name="category_id" ref="uom.uom_categ_surface" />
+        <field name="factor" eval="10000.0" />
+        <field name="uom_type">bigger</field>
+    </record>
+
+    <record id="product_uom_acre" model="uom.uom">
+        <field name="name">acre</field>
+        <field name="category_id" ref="uom.uom_categ_surface" />
+        <field name="factor" eval="4046.86" />
+        <field name="uom_type">bigger</field>
+    </record>
+
+    <record id="decimal_area" forcecreate="True" model="decimal.precision">
+        <field name="name">Area</field>
+        <field name="digits">2</field>
+    </record>
+</odoo>

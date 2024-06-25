@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_project_agriculture_species_stage_search" model="ir.ui.view">
+        <field name="name">project.agriculture.species.stage.search</field>
+        <field name="model">project.agriculture.species.stage</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+            </search>
+        </field>
+    </record>
+
+    <record id="view_project_agriculture_species_stage_tree" model="ir.ui.view">
+        <field name="name">project.agriculture.species.stage.tree</field>
+        <field name="model">project.agriculture.species.stage</field>
+        <field name="arch" type="xml">
+            <tree string="Lands">
+                <field name="name" />
+                <field name="sequence" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_project_agriculture_species_stage_form" model="ir.ui.view">
+        <field name="name">project.agriculture.species.stage.form</field>
+        <field name="model">project.agriculture.species.stage</field>
+        <field name="arch" type="xml">
+            <form string="Land">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                        </group>
+                        <group>
+                            <field name="sequence" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_project_agriculture_species_crop_tree" model="ir.ui.view">
+        <field name="name">project.agriculture.species.crop.tree</field>
+        <field name="model">project.agriculture.species</field>
+        <field name="arch" type="xml">
+            <tree string="Pests, diseases, weeds">
+                <field name="name" />
+                <field name="species_id" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_project_agriculture_species_pdw_tree" model="ir.ui.view">
+        <field name="name">project.agriculture.species.pdw.tree</field>
+        <field name="model">project.agriculture.species</field>
+        <field name="arch" type="xml">
+            <tree string="Crops">
+                <field name="name" />
+                <field name="species_id" />
+            </tree>
+        </field>
+    </record>
+</odoo>

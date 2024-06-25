@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ir_actions_server_action_download_geojson" model="ir.actions.server">
+        <field name="name">Download GeoJSON file</field>
+        <field name="model_id" ref="model_project_agriculture_land" />
+        <field name="binding_model_id" ref="model_project_agriculture_land" />
+        <field name="binding_view_types">form</field>
+        <field name="state">code</field>
+        <field name="code">
+if records:
+    action = records._download_geojson()
+        </field>
+    </record>
+
+    <record id="ir_actions_server_action_download_topojson" model="ir.actions.server">
+        <field name="name">Download TopoJSON file</field>
+        <field name="model_id" ref="model_project_agriculture_land" />
+        <field name="binding_model_id" ref="model_project_agriculture_land" />
+        <field name="binding_view_types">form</field>
+        <field name="state">code</field>
+        <field name="code">
+if records:
+    action = records._download_topojson()
+        </field>
+    </record>
+
+    <record id="ir_actions_server_action_download_csv" model="ir.actions.server">
+        <field name="name">Download Geopoints CSV file</field>
+        <field name="model_id" ref="model_project_agriculture_land" />
+        <field name="binding_model_id" ref="model_project_agriculture_land" />
+        <field name="binding_view_types">form</field>
+        <field name="state">code</field>
+        <field name="code">
+if records:
+    action = records._download_geopoints_csv()
+        </field>
+    </record>
+
+    <record id="ir_actions_server_action_download_kml" model="ir.actions.server">
+        <field name="name">Download KML file</field>
+        <field name="model_id" ref="model_project_agriculture_land" />
+        <field name="binding_model_id" ref="model_project_agriculture_land" />
+        <field name="binding_view_types">form</field>
+        <field name="state">code</field>
+        <field name="code">
+if records:
+    action = records._download_kml()
+        </field>
+    </record>
+
+
+    <record id="ir_actions_server_action_download_wkt" model="ir.actions.server">
+        <field name="name">Download WKT file</field>
+        <field name="model_id" ref="model_project_agriculture_land" />
+        <field name="binding_model_id" ref="model_project_agriculture_land" />
+        <field name="binding_view_types">form</field>
+        <field name="state">code</field>
+        <field name="code">
+if records:
+    action = records._download_wkt()
+        </field>
+    </record>
+
+    <record id="ir_actions_server_action_download_shapefiles" model="ir.actions.server">
+        <field name="name">Download Shapefiles</field>
+        <field name="model_id" ref="model_project_agriculture_land" />
+        <field name="binding_model_id" ref="model_project_agriculture_land" />
+        <field name="binding_view_types">form</field>
+        <field name="state">code</field>
+        <field name="code">
+if records:
+    action = records._download_shapefiles()
+        </field>
+    </record>
+</odoo>

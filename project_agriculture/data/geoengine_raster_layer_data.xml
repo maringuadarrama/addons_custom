@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="geoengine_raster_layer_osm" model="geoengine.raster.layer">
+        <field name="raster_type">osm</field>
+        <field name="name">OSM</field>
+        <field name="view_id" ref="ir_ui_view_res_better_project_agriculture_land_geo_view" />
+        <field eval="0" name="overlay" />
+    </record>
+    <record id="geoengine_raster_layer_stellite" model="geoengine.raster.layer">
+        <field name="raster_type">map_box</field>
+        <field name="name">Satellite</field>
+        <field name="view_id" ref="ir_ui_view_res_better_project_agriculture_land_geo_view" />
+        <field eval="1" name="overlay" />
+        <field
+            name="url"
+        >https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v12/tiles/256/{z}/{x}/{y}?access_token=</field>
+    </record>
+    <record id="geoengine_raster_layer_street" model="geoengine.raster.layer">
+        <field name="raster_type">map_box</field>
+        <field name="name">Street</field>
+        <field name="view_id" ref="ir_ui_view_res_better_project_agriculture_land_geo_view" />
+        <field eval="1" name="overlay" />
+        <field
+            name="url"
+        >https://api.mapbox.com/styles/v1/mapbox/streets-v12/tiles/256/{z}/{x}/{y}?access_token=</field>
+    </record>
+    <record id="geoengine_raster_layer_outdoors" model="geoengine.raster.layer">
+        <field name="raster_type">map_box</field>
+        <field name="name">Outdoors</field>
+        <field name="view_id" ref="ir_ui_view_res_better_project_agriculture_land_geo_view" />
+        <field eval="1" name="overlay" />
+        <field
+            name="url"
+        >https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/tiles/256/{z}/{x}/{y}?access_token=</field>
+    </record>
+</odoo>
