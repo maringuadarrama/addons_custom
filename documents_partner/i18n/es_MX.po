@@ -1,0 +1,192 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* documents_partner
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.4alpha1+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-25 08:10+0000\n"
+"PO-Revision-Date: 2023-05-25 08:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_documents_birth_registration
+msgid "Birth registration"
+msgstr "Acta de nacimiento"
+
+#. module: documents_partner
+#: model_terms:ir.ui.view,arch_db:documents_partner.res_config_settings_view_form
+msgid "Centralize files attached to Partners"
+msgstr ""
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_documents_cerification
+msgid "Certification"
+msgstr "Certificados"
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_documents_collateral
+msgid "Collateral"
+msgstr "Colateral"
+
+#. module: documents_partner
+#: model:ir.model,name:documents_partner.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: documents_partner
+#: model:ir.model,name:documents_partner.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: documents_partner
+#: model:ir.model,name:documents_partner.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_expiration_current
+msgid "Current"
+msgstr "Vigente"
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_type_customer
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: documents_partner
+#: model_terms:ir.ui.view,arch_db:documents_partner.res_config_settings_view_form
+msgid "Default Tags"
+msgstr ""
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_status_deprecated
+msgid "Deprecated"
+msgstr ""
+
+#. module: documents_partner
+#: model:ir.model.fields,field_description:documents_partner.field_res_company__documents_partner_settings
+msgid "Documents Partner Settings"
+msgstr ""
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_documents_drivers_licence
+msgid "Driver Licence"
+msgstr "Licencia de conducir"
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_type_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: documents_partner
+#: model:documents.facet,name:documents_partner.documents_partner_expiration
+msgid "Expiration"
+msgstr "Vencimiento"
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_expiration_expired
+msgid "Expired"
+msgstr "Vencido"
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_documents_fiscal
+msgid "Fiscal"
+msgstr ""
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_status_inbox
+msgid "Inbox"
+msgstr ""
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_documents_national_identification
+msgid "National Identification"
+msgstr "Identificación nacional"
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_expiration_near_expire
+msgid "Near expire"
+msgstr "Proximo a vencer"
+
+#. module: documents_partner
+#: model:ir.model.fields,field_description:documents_partner.field_res_company__partner_tags
+msgid "Partner Tags"
+msgstr ""
+
+#. module: documents_partner
+#: model:ir.model.fields,field_description:documents_partner.field_res_config_settings__partner_folder
+msgid "Partner default workspace"
+msgstr ""
+
+#. module: documents_partner
+#: model:documents.folder,name:documents_partner.documents_partner_folder
+#: model:ir.model.fields,field_description:documents_partner.field_res_config_settings__documents_partner_settings
+msgid "Partners"
+msgstr ""
+
+#. module: documents_partner
+#: model:ir.model.fields,field_description:documents_partner.field_res_company__partner_folder
+msgid "Partners Workspace"
+msgstr ""
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_documents_passport
+msgid "Passport"
+msgstr "Pasaporte"
+
+#. module: documents_partner
+#: model:documents.facet,name:documents_partner.documents_partner_documents
+msgid "Personal documents"
+msgstr "Documentos personales"
+
+#. module: documents_partner
+#: model:ir.model.fields,field_description:documents_partner.field_res_config_settings__partner_tags
+msgid "Product Tags"
+msgstr ""
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_documents_social_security_identification
+msgid "Social Security Identification"
+msgstr "Número de seguridad social"
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_type_supplier
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_status_tc
+msgid "To Validate"
+msgstr ""
+
+#. module: documents_partner
+#: model:documents.facet,name:documents_partner.documents_partner_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_status_validated
+msgid "Validated"
+msgstr ""
+
+#. module: documents_partner
+#: model:documents.tag,name:documents_partner.documents_partner_documents_visa
+msgid "Visa"
+msgstr ""
+
+#. module: documents_partner
+#: model:documents.facet,name:documents_partner.documents_partner_status
+msgid "Workflow"
+msgstr ""
+
+#. module: documents_partner
+#: model_terms:ir.ui.view,arch_db:documents_partner.res_config_settings_view_form
+msgid "Workspace"
+msgstr ""
