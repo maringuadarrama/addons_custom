@@ -1,7 +1,7 @@
 {
-    "name": "Xiuman data",
+    "name": "Marin data",
     "summary": """
-    Instance creator for xiuman. This is the app.
+    Instance creator for Marin. This is the app.
     """,
     "author": "Vauxoo",
     "website": "https://www.vauxoo.com",
@@ -9,7 +9,7 @@
     "category": "Installer",
     "version": "17.0.0.0.1",
     "depends": [
-        "xiuman",
+        "marin",
     ],
     "data": [
         "data/res_company_data.xml",
@@ -24,8 +24,8 @@
         "data/website_data.xml",
     ],
     "demo": [],
-    # "pre_init_hook": "_pre_init_xiuman",
-    # "post_init_hook": "_post_init_xiuman",
+    "pre_init_hook": "_pre_init_xiuman",
+    "post_init_hook": "_post_init_xiuman",
     "installable": True,
     "auto_install": False,
     "application": False,
