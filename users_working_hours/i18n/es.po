@@ -1,0 +1,305 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* users_working_hours
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-21 20:14+0000\n"
+"PO-Revision-Date: 2023-07-21 20:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: users_working_hours
+#: model:ir.model,name:users_working_hours.model_users_allow_login
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_users_allow_login
+msgid "Allow Login"
+msgstr "Permitir Inicio de Sesión"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_users_allow_login
+msgid "Allow Login Users"
+msgstr "Permitir Inicio de Sesión de Usuarios"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_users_allow_login
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_users_update_attendance
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_form
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_tree
+msgid "Close Session"
+msgstr "Cerrar Sesión"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__create_uid
+#: model:ir.model.fields,field_description:users_working_hours.field_users_allow_login__create_uid
+#: model:ir.model.fields,field_description:users_working_hours.field_users_update_attendance__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__create_date
+#: model:ir.model.fields,field_description:users_working_hours.field_users_allow_login__create_date
+#: model:ir.model.fields,field_description:users_working_hours.field_users_update_attendance__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: users_working_hours
+#. odoo-python
+#: code:addons/users_working_hours/models/session.py:0
+#, python-format
+msgid "Database not found."
+msgstr "Base de datos no encontrada."
+
+#. module: users_working_hours
+#: model:ir.model.fields,help:users_working_hours.field_res_users__extended_date
+msgid "Date on which the access time extension applies on."
+msgstr "Fecha en la que aplica la extensión de tiempo."
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__display_name
+#: model:ir.model.fields,field_description:users_working_hours.field_users_allow_login__display_name
+#: model:ir.model.fields,field_description:users_working_hours.field_users_update_attendance__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: users_working_hours
+#: model:ir.model,name:users_working_hours.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_users_update_attendance__employee_ids
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: users_working_hours
+#: model:ir.actions.server,name:users_working_hours.action_extend_user_worktime_from_list
+msgid "Extend Work Time"
+msgstr "Extensión de Tiempo Laboral"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_search
+msgid "Filter by Login State"
+msgstr "Filtrar por estado se Inicio de Sesión"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_users_allow_login
+msgid "Force All Logout"
+msgstr "Forzar Cierre de Sesión a Todos"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_users_allow_login
+msgid "Force All Logout and Block"
+msgstr "Forzar Cierre de Sesión y Bloqueo a Todos"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_users_allow_login
+msgid "Force Logout"
+msgstr "Forzar Cerrado de Sesión"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_search
+msgid "Group By"
+msgstr "Agrupar Por"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__id
+#: model:ir.model.fields,field_description:users_working_hours.field_users_allow_login__id
+#: model:ir.model.fields,field_description:users_working_hours.field_users_update_attendance__id
+msgid "ID"
+msgstr ""
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_search
+msgid "Kill User"
+msgstr "Usuario de Cierre"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__user_kill_id
+msgid "Killed by"
+msgstr "Cerrado por"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions____last_update
+#: model:ir.model.fields,field_description:users_working_hours.field_users_allow_login____last_update
+#: model:ir.model.fields,field_description:users_working_hours.field_users_update_attendance____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__write_uid
+#: model:ir.model.fields,field_description:users_working_hours.field_users_allow_login__write_uid
+#: model:ir.model.fields,field_description:users_working_hours.field_users_update_attendance__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__write_date
+#: model:ir.model.fields,field_description:users_working_hours.field_users_allow_login__write_date
+#: model:ir.model.fields,field_description:users_working_hours.field_users_update_attendance__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_search
+msgid "Logged"
+msgstr "Sesión Iniciada"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__logged_in
+msgid "Logged in"
+msgstr "Sesión Iniciada"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__date_login
+msgid "Login"
+msgstr ""
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_search
+msgid "Login Date"
+msgstr "Fecha de Inicio de Sesión"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_search
+msgid "Login State"
+msgstr "Estado de Inicio de Sesión"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__date_logout
+msgid "Logout"
+msgstr "Cierre de Sesión"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__logout_type
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_search
+msgid "Logout Type"
+msgstr "Tipo de Cierre de Sesión"
+
+#. module: users_working_hours
+#: model:ir.actions.act_window,name:users_working_hours.action_users_allow_login
+#: model:ir.actions.server,name:users_working_hours.action_logout_users_from_employee_list
+#: model:ir.actions.server,name:users_working_hours.action_logout_users_from_list
+#: model:ir.ui.menu,name:users_working_hours.menu_users_allow_login
+msgid "Logout Users"
+msgstr "Cerrar Sesión de Usuarios"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_search
+msgid "Not Logged"
+msgstr "No Loggeado"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_search
+msgid "Search Sessions"
+msgstr "Buscar Sesión"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__session_id
+msgid "Session ID"
+msgstr "ID de Sesión"
+
+#. module: users_working_hours
+#: model:ir.model.fields.selection,name:users_working_hours.selection__ir_sessions__logout_type__sk
+msgid "Session Killed"
+msgstr "Cierre Forzado"
+
+#. module: users_working_hours
+#: model:ir.model.fields.selection,name:users_working_hours.selection__ir_sessions__logout_type__to
+msgid "Session Timeout"
+msgstr "Cierre por Tiempo"
+
+#. module: users_working_hours
+#: model:ir.actions.act_window,name:users_working_hours.ir_session_action
+#: model:ir.model,name:users_working_hours.model_ir_sessions
+#: model:ir.ui.menu,name:users_working_hours.ir_session_menu
+msgid "Sessions"
+msgstr "Sesiones"
+
+#. module: users_working_hours
+#: model:ir.model.fields,help:users_working_hours.field_res_users__extended_hour
+msgid "Time extension of access to the instance."
+msgstr "Extensión de tiempo de acceso a la instancia."
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_users_update_attendance
+msgid "Update"
+msgstr "Actualizar"
+
+#. module: users_working_hours
+#: model:ir.model,name:users_working_hours.model_users_update_attendance
+msgid "Update Calendar Attendance"
+msgstr "Actualizar Asistencia de Calendario"
+
+#. module: users_working_hours
+#: model:ir.actions.act_window,name:users_working_hours.action_users_update_attendance
+#: model:ir.ui.menu,name:users_working_hours.menu_users_update_attendance
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_users_update_attendance
+msgid "Update User Attendance"
+msgstr "Actualizar Asistencia de Usuario"
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_users_allow_login
+msgid ""
+"Use this assistant to force logout of all users and forbid them to login or "
+"allow them to login."
+msgstr ""
+"Usar este asistente para forzar el cierre de sesión de todos los usuarios y "
+"prohibirles su inicio de sesión o permitirles el inicio de sesión."
+
+#. module: users_working_hours
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_users_update_attendance
+msgid "Use this assistant to update the attendance of a user calendar."
+msgstr ""
+"Usar el asistente para actualización de la asistencia de del calendario de "
+"un usuario."
+
+#. module: users_working_hours
+#: model:ir.model,name:users_working_hours.model_res_users
+#: model:ir.model.fields,field_description:users_working_hours.field_ir_sessions__user_id
+#: model_terms:ir.ui.view,arch_db:users_working_hours.view_sesssions_search
+msgid "User"
+msgstr "Usuario"
+
+#. module: users_working_hours
+#: model:ir.model.fields.selection,name:users_working_hours.selection__ir_sessions__logout_type__ul
+msgid "User Logout"
+msgstr "Cierre de Sesión de Usuario"
+
+#. module: users_working_hours
+#. odoo-python
+#: code:addons/users_working_hours/models/res_users.py:0
+#, python-format
+msgid "User not allowed to login at this specific time or day"
+msgstr ""
+"Usuario no permitido para iniciar sesión a este horario específico o día."
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_users_allow_login__user_ids
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: users_working_hours
+#: model:res.groups,name:users_working_hours.group_work_time_unlimited_access
+msgid "Work Unlimited Time"
+msgstr "Horario Laboral Sin Límite"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_res_users__extended_date
+msgid "Work extended date"
+msgstr "Fecha de Extensión Laboral"
+
+#. module: users_working_hours
+#: model:ir.model.fields,field_description:users_working_hours.field_res_users__extended_hour
+#: model:ir.model.fields,field_description:users_working_hours.field_users_update_attendance__extended_hour
+msgid "Work extended time (HH:MM)"
+msgstr "Extensión de Tiempo Laboral (HH:MM)"
