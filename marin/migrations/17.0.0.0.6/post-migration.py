@@ -7,30 +7,30 @@ def migrate(cr, version):
 
 
 def uninstall_old_l10n_mx_documents(cr):
-    """Uninstall custom module l10n_mx_edi_documents as it will be replaced."""
+    """Uninstall custom module documents_l10n_mx_edi as it will be replaced."""
     env = api.Environment(cr, SUPERUSER_ID, {})
-    module = env["ir.module.module"].search([("name", "=", "l10n_mx_edi_documents")])
+    module = env["ir.module.module"].search([("name", "=", "documents_l10n_mx_edi")])
     if module:
         module.button_uninstall()
 
 
 def change_xml_ids(cr):
-    """Update records xml ids, set the new module that will replace module l10n_mx_edi_documents."""
+    """Update records xml ids, set the new module that will replace module documents_l10n_mx_edi."""
     query = """
         UPDATE
             ir_model_data
         SET
             module = 'l10n_mx_edi_document'
         WHERE
-            module = 'l10n_mx_edi_documents'
+            module = 'documents_l10n_mx_edi'
             AND name in (
-                'xunnel_xml_facet',
-                'ingreso_tag',
-                'egreso_tag',
+                'documents_l10n_mx_edi_facet_type',
+                'documents_l10n_mx_edi_tag_ingreso',
+                'documents_l10n_mx_edi_tag_egreso',
                 'translado_tag',
-                'reception_tag',
-                'nomina_tag',
-                'retencion_tag'
+                'documents_l10n_mx_edi_tag_reception',
+                'documents_l10n_mx_edi_tag_nomina',
+                'documents_l10n_mx_edi_tag_retencion'
             )
     """
     query2 = """
@@ -39,9 +39,9 @@ def change_xml_ids(cr):
         SET
             module = 'l10n_edi_document'
         WHERE
-            module = 'l10n_mx_edi_documents'
+            module = 'documents_l10n_mx_edi'
             AND name in (
-                'l10n_edi_document_folder_edi_doc',
+                'documents_l10n_mx_edi_folder',
                 'edi_document_rule',
                 'documents_replace_inbox_edi_document',
                 'documents_add_documents_edi_document',
@@ -52,10 +52,10 @@ def change_xml_ids(cr):
                 'documents_edi_automatic_tag',
                 'documents_edi_partner_requires_po_tag',
                 'documents_edi_requires_po_tag',
-                'l10n_edi_document_folder_edi_received',
-                'l10n_edi_document_folder_edi_issued',
+                'documents_l10n_mx_edi_folder_received',
+                'documents_l10n_mx_edi_folder_issued',
                 'l10n_edi_document_documents_without_records',
-                'l10n_edi_document_facet_fiscal_month',
+                'documents_l10n_mx_edi_facet_fiscal_month',
                 'l10n_edi_document_fiscal_month_01',
                 'l10n_edi_document_fiscal_month_02',
                 'l10n_edi_document_fiscal_month_03',

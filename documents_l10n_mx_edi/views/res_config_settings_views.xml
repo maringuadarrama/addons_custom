@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//block[@id='invoicing_settings']" position="after">
                 <block
-                    id="l10n_mx_edi_documents_settings"
+                    id="documents_l10n_mx_edi_settings"
                     title="SAT Synchronization"
                     invisible="country_code != 'MX'"
                 >

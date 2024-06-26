@@ -7,7 +7,7 @@ import requests
 from lxml import etree, objectify
 from OpenSSL import crypto
 
-from odoo import _, models, tools
+from odoo import Command, _, models, tools
 from odoo.exceptions import ValidationError
 from odoo.tools.float_utils import float_round
 
@@ -70,7 +70,7 @@ class L10nMxEdiDocument(models.Model):
         attribute="tfd:TimbreFiscalDigital[1]",
         namespaces=None,
     ):
-        """Helper to extract relevant data from CFDI 3.3 nodes.
+        """Helper to extract relevant data from CFDI nodes.
         By default this method will retrieve tfd, Adjust parameters for other nodes
         :param cfdi_etree:  The cfdi etree object.
         :param attribute:   tfd.
@@ -100,6 +100,36 @@ class L10nMxEdiDocument(models.Model):
         """Return the codes that can be used in FUEL"""
         return [str(r) for r in range(15101500, 15101513)]
 
+    def search_prepare_tax_group_name(self, name, rate):
+        """Construct tax name for further search"""
+        return f"{name} {rate}", name, rate
+
+    def search_prepare_tax_name(self, name, rate):
+        """Construct tax name for further search"""
+        return f"{name} {rate}", name, rate
+
+    def prepare_tax_domain(self, name, rate, factor, type_tax_use="purchase"):
+        """Construct tax domain for further search"""
+        tax_group_name = self.search_prepare_tax_group_name(name, rate)
+        tax_group_id = self.env["account.tax.group"].with_context(
+            lang="es_MX").search([("name", "ilike", tax_group_name)])
+
+        tax_name = self.search_prepare_tax_name(name, rate)
+        domain = [
+            ("company_id", "=", self.env.company.id),
+            ("active", "=", True),
+            ("tax_group_id", "in", tax_group_id.ids),
+            ("type_tax_use", "=", type_tax_use),
+            ("name", "ilike", tax_name),
+            ("l10n_mx_tax_type", "=", factor),
+        ]
+        if -10.67 <= rate <= -10.66:
+            domain.append(("amount", "<=", -10.66))
+            domain.append(("amount", ">=", -10.67))
+        else:
+            domain.append(("amount", "=", rate))
+        return domain
+
     def get_taxes_to_omit(self):
         """Some taxes are not found in the system, but is correct, because those
         taxes should be added in the invoice like expenses.
@@ -111,7 +141,7 @@ class L10nMxEdiDocument(models.Model):
             return taxes.split(",")
         return ["ISH", "TUA", "ISAN"]
 
-    def collect_taxes(self, line_tax_element):
+    def collect_taxes(self, tax_element):
         """Get tax data of the Impuesto node of the xml and return
         dictionary with taxes datas
         :param taxes_xml: Impuesto node of xml
@@ -119,58 +149,23 @@ class L10nMxEdiDocument(models.Model):
         :return: A list with the taxes data dict
         :rtype: list
         """
-        taxes = []
+        tax_ids = []
         tax_codes = {"001": "ISR", "002": "IVA", "003": "IEPS"}
-        for rec in line_tax_element:
-            tax_xml = rec.get("Impuesto", "")
-            tax_xml = tax_codes.get(tax_xml, tax_xml)
-            amount_xml = float(rec.get("Importe", "0.0"))
-            rate_xml = float_round(float(rec.get("TasaOCuota", "0.0")) * 100, 4)
-            if "Retenciones" in rec.getparent().tag:
-                amount_xml = amount_xml * -1
-                rate_xml = rate_xml * -1
-            taxes.append(
-                {
-                    "tax": tax_xml,
-                    "factor": rec.get("TipoFactor", False),
-                    "rate": rate_xml,
-                    "amount": amount_xml,
-                }
-            )
-        return taxes
-
-    def search_taxes(self, taxes, type_tax_use="purchase"):
-        """Return the Odoo taxes based on the dict with taxes data"""
-        tax_list = []
-        for tax in taxes:
-            tax_group_id = self.env["account.tax.group"].search(
-                [("country_id", "=", self.env.ref("base.mx").id), ("name", "ilike", tax["tax"])]
-            )
-            tax_name = "%s %s" % (tax["tax"], tax["rate"])
-            tax_factor = tax["factor"] if tax["factor"] else "Tasa"
-            domain = [
-                ("active", "=", True),
-                ("tax_group_id", "in", tax_group_id.ids),
-                ("type_tax_use", "=", type_tax_use),
-                ("name", "ilike", tax_name),
-                ("l10n_mx_tax_type", "=", tax_factor),
-                ("company_id", "=", self.env.company.id),
-            ]
-            if -10.67 <= tax["rate"] <= -10.66:
-                domain.append(("amount", "<=", -10.66))
-                domain.append(("amount", ">=", -10.67))
-            else:
-                domain.append(("amount", "=", tax["rate"]))
-            tax_exist = self.env["account.tax"].search(domain, limit=1, order="id asc")
-            if not tax_exist:
-                # self.message_post(body=_("The tax %s cannot be found") % name)
-                continue
-            # tax_account = tax_exist.invoice_repartition_line_ids.filtered(lambda rec: rec.repartition_type == "tax")
-            # if not tax_account:
-            #    self.message_post(body=_("Please configure the tax account in the tax %s") % name)
-            #    continue
-            tax_list.append(tax_exist.id)
-        return tax_list
+        for line in tax_element:
+            att_tax = line.get("Impuesto", "")
+            att_tax = tax_codes.get(att_tax, att_tax)
+            att_rate = float_round(float(line.get("TasaOCuota", 0.0)) * 100, 4)
+            att_amount = float(line.get("Importe", 0.0))
+            att_factor = line.get("TipoFactor", "Tasa")
+            if "Retenciones" in line.getparent().tag:
+                att_amount = att_amount * -1
+                att_rate = att_rate * -1
+            tax_domain = self.prepare_tax_domain(att_tax, att_rate, att_factor, )
+            tax_exist = self.env["account.tax"].with_context(
+                lang="es_MX").search(tax_domain, limit=1, order="id asc")
+            if tax_exist:
+                tax_ids.append((4, tax_exist.id))
+        return tax_ids
 
     def prepare_line_taxes(self, line):
         if not hasattr(line, "Impuestos"):
@@ -182,178 +177,43 @@ class L10nMxEdiDocument(models.Model):
             taxes += self.collect_taxes(line.Impuestos.Retenciones.Retencion)
         return taxes
 
-    def get_et_taxes(self, cfdi_etree):
+    def collect_taxes_local(self, cfdi_etree):
         """:param cfdi_etree:  The cfdi etree object.
         :return:            A python dictionary.
         """
-        if not hasattr(cfdi_etree, "Impuestos"):
-            return {}
-
-        import_type, _move_type = self.get_et_import_type(cfdi_etree)
-        type_tax_use = "sale" if import_type == "issued" else "purchase"
-        tax_obj = self.env["account.tax"]
-        taxes_dict = {
-            "wrong_taxes": [],
-            "withno_account": [],
-            "taxes_ids": {},
-            "total_amount": 0.0,
-            "total_amount_retained": 0.0,
-        }
-
-        if cfdi_etree.get("Version") == "3.2":
-            if hasattr(cfdi_etree.Impuestos, "Traslados"):
-                for tax in cfdi_etree.Impuestos.Traslados.Traslado:
-                    taxes_dict["total_amount"] += float(tax.get("importe", 0.0))
-                    tax_name = tax.get("impuesto")
-                    tax_rate = float(tax.get("tasa"))
-                    tax_group_id = self.env["account.tax.group"].search([("name", "ilike", tax_name)])
-                    tax_domain = [
-                        ("type_tax_use", "=", type_tax_use),
-                        ("company_id", "=", self.env.company.id),
-                        ("tax_group_id", "in", tax_group_id.ids),
-                        ("amount_type", "=", "percent"),
-                        ("amount", "=", tax_rate),
-                    ]
-                    tax_exist = tax_obj.search(tax_domain, limit=1)
-                    if not tax_exist:
-                        taxes_dict["wrong_taxes"].append("%s(%s%%)" % (tax_name, tax_rate))
-                        continue
-
-                    repartition_id = self.env["account.tax.repartition.line"].search(
-                        [("tax_id", "=", tax.id), ("repartition_type", "=", "tax"), ("account_id", "!=", False)],
-                        limit=1,
-                    )
-                    account_id = repartition_id.account_id.id if repartition_id else False
-                    if not account_id:
-                        taxes_dict["withno_account"].append(tax_name)
-
-                    taxes_dict["taxes_ids"]["old"] = [(0, 0, {"tax_id": tax.id, "name": tax_name})]
-
-            if hasattr(cfdi_etree.Impuestos, "Retenciones"):
-                for rec in cfdi_etree.Impuestos.Retenciones.Retencion:
-                    taxes_dict["total_amount_retained"] += float(rec.get("importe", 0.0))
-
-        if cfdi_etree.get("Version") in ("3.3", "4.0"):
-            taxes_dict["total_amount"] += float(cfdi_etree.Impuestos.get("TotalImpuestosTrasladados", "0.0"))
-            taxes_dict["total_amount_retained"] += float(cfdi_etree.Impuestos.get("TotalImpuestosRetenidos", 0.0))
-
-        for index, line in enumerate(cfdi_etree.Conceptos.Concepto):
-            if not hasattr(line, "Impuestos"):
-                continue
-            taxes_dict["taxes_ids"][index] = []
-            collected_taxes = self.prepare_line_taxes(line)
-            for tax in collected_taxes:
-                tax_name = "%s %s" % (tax["tax"], tax["rate"])
-                domain = [
-                    ("active", "=", True),
-                    ("type_tax_use", "=", type_tax_use),
-                    ("name", "ilike", tax_name),
-                    ("l10n_mx_tax_type", "=", tax["factor"]),
-                ]
-                if type_tax_use == "purchase" and -10.67 <= tax["rate"] <= -10.66:
-                    domain.append(("amount", "<=", -10.66))
-                    domain.append(("amount", ">=", -10.67))
-                else:
-                    domain.append(("amount", "=", tax["rate"]))
-                tax_exist = tax_obj.search(domain, limit=1, order="id asc")
-                if not tax_exist:
-                    taxes_dict["wrong_taxes"].append(tax_name)
-                    continue
-
-                tax_account = tax_exist.invoice_repartition_line_ids.filtered(
-                    lambda rec: rec.repartition_type == "tax"
-                )
-                if not tax_account:
-                    taxes_dict["withno_account"].append(tax_name)
-                    continue
-
-                tax["id"] = tax_exist.id
-                tax["name"] = tax_name
-                taxes_dict["taxes_ids"][index].append(tax)
-
-        return taxes_dict
-
-    def get_et_local_taxes(self, cfdi_etree):
-        """:param cfdi_etree:  The cfdi etree object.
-        :return:            A python dictionary.
-        """
-        local_taxes = self.get_et_complemento(
+        local_tax_node = self.get_et_complemento(
             cfdi_etree, "implocal:ImpuestosLocales", {"implocal": "http://www.sat.gob.mx/implocal"}
         )
-        if not local_taxes:
-            return local_taxes
+        if not local_tax_node:
+            return {}
 
-        import_type, _move_type = self.get_et_import_type(cfdi_etree)
-        type_tax_use = "sale" if import_type == "issued" else "purchase"
-        tax_obj = self.env["account.tax"]
         taxes_to_omit = self.get_taxes_to_omit()
-        taxes_dict = {
-            "wrong_taxes": [],
-            "withno_account": [],
-            "taxes_ids": [],
-            "total_amount": 0.0,
-            "total_amount_retained": 0.0,
-        }
-
-        if hasattr(local_taxes, "RetencionesLocales"):
-            for tax in local_taxes.RetencionesLocales:
+        local_tax_vals = []
+        if hasattr(local_tax_node, "RetencionesLocales"):
+            for tax in local_tax_node.RetencionesLocales:
                 tax_name = tax.get("ImpLocRetenido")
                 tax_rate = float(tax.get("TasadeRetencion")) * -100
                 tax_dict = {"name": tax_name, "amount": float(tax.get("Importe")) * -1, "for_expenses": True}
                 if tax_name in taxes_to_omit:
-                    taxes_dict["taxes_ids"].append(tax_dict)
+                    local_tax_vals.append(tax_dict)
                     continue
 
-                tax_exist = tax_obj.search(
-                    [("type_tax_use", "=", type_tax_use), ("name", "ilike", tax_name), ("amount", "=", tax_rate)],
-                    limit=1,
-                )
-                if not tax_exist:
-                    taxes_dict["wrong_taxes"].append(tax_name)
-                    continue
-
-                account_id = tax_exist.invoice_repartition_line_ids.filtered(lambda rec: rec.repartition_type == "tax")
-                if not account_id.id:
-                    taxes_dict["withno_account"].append(tax_name)
-                    continue
-
-                tax_dict["tax_id"] = tax_exist.id
-                tax_dict["account_id"] = account_id.id
-                tax_dict["for_expenses"] = False
-
-                taxes_dict["taxes_ids"].append(tax_dict)
-                taxes_dict["total_amount"] = taxes_dict["total_amount"] + float(local_taxes.get("Importe"))
-
-        if hasattr(local_taxes, "TrasladosLocales"):
-            for tax in local_taxes.TrasladosLocales:
+        if hasattr(local_tax_node, "TrasladosLocales"):
+            for tax in local_tax_node.TrasladosLocales:
                 tax_name = tax.get("ImpLocTrasladado")
                 tax_rate = float(tax.get("TasadeTraslado")) * 100
                 tax_dict = {"name": tax_name, "amount": float(tax.get("Importe")), "for_expenses": True}
                 if tax_name in taxes_to_omit:
-                    taxes_dict["taxes_ids"].append(tax_dict)
+                    local_tax_vals.append(tax_dict)
                     continue
 
-                tax_exist = tax_obj.search(
-                    [("type_tax_use", "=", type_tax_use), ("name", "ilike", tax_name), ("amount", "=", tax_rate)],
-                    limit=1,
-                )
-                if not tax_exist:
-                    taxes_dict["wrong_taxes"].append(tax_name)
-                    continue
+        return local_tax_vals
 
-                account_id = tax_exist.invoice_repartition_line_ids.filtered(lambda rec: rec.repartition_type == "tax")
-                if not account_id:
-                    taxes_dict["withno_account"].append(tax_name)
-                    continue
+    def prepare_search_local_tax_name(self, values):
+        return "%s %s" % (values["tax_name"], values["rate"])
 
-                tax_dict["tax_id"] = tax_exist.id
-                tax_dict["account_id"] = account_id.id
-                tax_dict["for_expenses"] = False
-
-                taxes_dict["taxes_ids"].append(tax_dict)
-                taxes_dict["total_amount"] = taxes_dict["total_amount"] + float(tax.get("Importe"))
-
-        return taxes_dict
+    def search_local_tax_ids(self, taxes, type_tax_use):
+        pass
 
     def get_et_serie_folio(self, cfdi_etree):
         """:return:        Serie + Folio
@@ -479,8 +339,6 @@ class L10nMxEdiDocument(models.Model):
             "expedition": cfdi_etree.get("LugarExpedicion"),
             "related_uuids_dict": self.get_related_uuids_dict(cfdi_etree),
             "lines": cfdi_etree.Conceptos.Concepto,
-            "taxes": self.get_et_taxes(cfdi_etree),
-            "local_taxes": self.get_et_local_taxes(cfdi_etree),
             # TFD
             "stamp_date": self.get_et_datetime(tfd_node) if tfd_node else "",
             "certificate_sat_number": tfd_node.get("NoCertificadoSAT") if tfd_node else "not signed",
@@ -549,6 +407,11 @@ class L10nMxEdiDocument(models.Model):
 
         return self._create_cfdi_attachment(cfdi_filename, description, invoice, data)
 
+    def search_vehicle_ecc12(self, line_ecc12_element):
+        domain_vehicle = [("fuel_card_name", "=", line_ecc12_element.get("Identificador"))]
+        vehicle_exist = self.env["fleet.vehicle"].search(domain_vehicle, limit=1, order="id asc")
+        return vehicle_exist
+
     def search_partner_ecc12(self, line_ecc12_element):
         partner_obj = self.env["res.partner"]
         domain_partner = [("vat", "=", line_ecc12_element.get("Rfc"))]
@@ -570,7 +433,7 @@ class L10nMxEdiDocument(models.Model):
 
     def search_partner(self, cfdi_etree):
         partner_obj = self.env["res.partner"]
-        import_type, _move_type = self.get_et_import_type(cfdi_etree)
+        import_type, move_type = self.get_et_import_type(cfdi_etree)
         domain_partner = []
         if import_type == "received":
             name = cfdi_etree.Emisor.get("Nombre", "")
@@ -602,41 +465,35 @@ class L10nMxEdiDocument(models.Model):
         product = self.env["ir.config_parameter"].sudo().get_param("l10n_mx_product_ecc12", False)
         if product:
             product = self.env["product.product"].browse(int(product))
-            account = (product.property_account_expense_id or product.categ_id.property_account_expense_categ_id).id
+            account = product.property_account_expense_id or product.categ_id.property_account_expense_categ_id
         else:
             fuel_codes = self.env["product.unspsc.code"].search(
                 [("applies_to", "=", "product"), ("code", "in", (self.l10n_mx_edi_get_fuel_codes()))]
             )
             product = self.env["product.product"].search([("unspsc_code_id", "in", fuel_codes.ids)], limit=1)
-            account = (product.property_account_expense_id or product.categ_id.property_account_expense_categ_id).id
-
+            account = product.property_account_expense_id or product.categ_id.property_account_expense_categ_id
         move_line_ids = []
-        # analytic_distribution = self.env["account.analytic.distribution.model"]._get_distribution({
-        #    "product_id": product_exist.id if product_exist else False,
-        #    "product_categ_id": product_exist.categ_id.id if product_exist else False,
-        #    "partner_id": partner.id,
-        #    "partner_category_id": partner.category_id.ids,
-        #    "account_prefix": account_id.code,
-        #    "company_id": company.id,
-        # })
         tax_rate_exempt = self.env["account.tax"].search(
             [
-                ("name", "=ilike", "IVA" + "%" + "exento"),
-                ("l10n_mx_tax_type", "=", "Exento"),
-                ("amount_type", "=", "percent"),
-                ("amount", "=", 0),
-                ("type_tax_use", "=", "purchase"),
                 ("company_id", "=", self.env.company.id),
+                ("type_tax_use", "=", type_tax_use),
+                ("name", "=ilike", "IVA" + "%" + "exento"),
+                ("amount_type", "=", "percent"),
+                ("amount", "=", 0.0),
+                ("l10n_mx_tax_type", "=", "Exento"),
             ],
             limit=1,
         )
-
         for rec in ecc12.Conceptos.ConceptoEstadoDeCuentaCombustible:
             taxes = self.collect_taxes(rec.Traslados.Traslado) if hasattr(rec, "Traslados") else []
+            # Split IEPS if is assigned in the XML
+            ieps = [tax for tax in taxes if tax.get("tax") == "IEPS"]
+            taxes = [tax for tax in taxes if tax.get("tax") != "IEPS"]
             tax = taxes[0] if taxes else {}
             price = round(tax.get("amount") / (tax.get("rate") / 100), 2)
-            taxes = self.search_taxes(taxes)
+            taxes = self.search_tax_ids(taxes)
             partner = self.search_partner_ecc12(rec)
+            vehicle = self.search_vehicle_ecc12(rec)
             move_line_ids.append(
                 (
                     0,
@@ -649,8 +506,9 @@ class L10nMxEdiDocument(models.Model):
                             rec.get("Identificador"),
                         ),
                         "product_id": product.id,
+                        "vehicle_id": vehicle.id,
                         "product_uom_id": product.uom_id.id,
-                        "account_id": account,
+                        "account_id": account.id,
                         # "analytic_distribution": ,
                         "quantity": float(rec.get("Cantidad", "0.0")),
                         "price_unit": price / float(rec.get("Cantidad", "0.0")),
@@ -666,10 +524,12 @@ class L10nMxEdiDocument(models.Model):
                     0,
                     {
                         "name": _("Fuel - IEPS"),
-                        "account_id": account,
+                        "vehicle_id": vehicle.id,
+                        "account_id": account.id,
                         # "analytic_distribution": ,
                         "quantity": 1.0,
-                        "price_unit": float(rec.get("Importe", 0)) - price,
+                        "price_unit": (float(rec.get("Importe", 0)) - price)
+                            + float(ieps[0].get("amount", 0) if ieps else 0),
                         "tax_ids": tax_rate_exempt.ids,
                         "l10n_mx_edi_is_ecc": True,
                         "partner_id": partner.id,
@@ -678,170 +538,116 @@ class L10nMxEdiDocument(models.Model):
             )
         return move_line_ids
 
-    def prepare_move_lines(self, cfdi_etree, import_type, journal):
-        ecc12_lines = self.prepare_move_lines_ecc12(cfdi_etree)
-        if ecc12_lines:
-            return ecc12_lines
+    def prepare_move_lines(self, line, global_line_discount=False, can_create_product=False):
+        invoice_line_ids = []
+        # can_create_product = self._context.get("can_create_product", False)
+        # account_id = self._context.get("account_id", False)
+        line_quantity = float(line.get("Cantidad"))
+        line_price = float(line.get("ValorUnitario"))
+        line_amount = float(line.get("Importe", "0.0"))
+        line_discount = 0.0
+        if global_line_discount:
+            line_discount = global_line_discount
+        elif line.get("Descuento"):
+            line_discount = (float(line.get("Descuento")) / line_amount) * 100
 
-        prod_obj = self.env["product.product"]
-        prod_sup_obj = self.env["product.supplierinfo"]
-        sat_code_obj = self.env["product.unspsc.code"]
-        uom_obj = self.env["uom.uom"]
+        line_uom_sat_code = line.get("ClaveUnidad", False)
+        uom_sat_exist = self.env["product.unspsc.code"].search(
+            [("code", "=", line_uom_sat_code), ("applies_to", "=", "uom")], limit=1
+        )
+        uom_domain = [
+            ("unspsc_code_id", "=", uom_sat_exist.id),
+            ("name", "=ilike", line.get("Unidad", "")),
+        ]
+        uom_exist = self.env["uom.uom"].with_context(lang="es_MX").search(uom_domain)
+        uom_exist = uom_exist if uom_exist and len(uom_exist) == 1 else uom_exist[0] or self.env.ref("uom.product_uom_unit")
 
-        move_line_ids = []
-
-        product_create = self._context.get("product_create", False)
-        account_id = self._context.get("account_id", False)
-        # _logger.info(account_id)
-
-        for line in cfdi_etree.Conceptos.Concepto:
-            line_amount = float(line.get("Importe", "0.0"))
-            line_discount = 0.0
-            if line.get("Descuento"):
-                line_discount = (float(line.get("Descuento")) / line_amount) * 100
-            if not line.get("Descuento") and cfdi_etree.get("Descuento", 0.0):
-                line_discount = float(cfdi_etree.get("Descuento", 0.0)) * 100 / float(cfdi_etree.get("SubTotal", 0.0))
-            line_price = float(line.get("ValorUnitario"))
-            line_quantity = float(line.get("Cantidad"))
-
-            uom = line.get("Unidad", "")
-            sat_uom_exist = False
-            xml_uom_sat_code = line.get("ClaveUnidad", False)
-            if xml_uom_sat_code:
-                sat_uom_exist = sat_code_obj.search(
-                    [("code", "=", xml_uom_sat_code), ("applies_to", "=", "uom")], limit=1
-                )
-            uom_domain = (
-                [("name", "=ilike", uom)] if not sat_uom_exist else [("unspsc_code_id", "=", sat_uom_exist.id)]
+        line_name = line.get("Descripcion", "")
+        if line_name.splitlines():
+            line_name = line_name.splitlines()[0]
+        product_exist = self.env["product.product"]
+        supinfo_exist = self.env["product.supplierinfo"].search([("product_name", "=ilike", line_name)], limit=1)
+        if supinfo_exist:
+            product_exist = product_exist.browse(supinfo_exist.product_tmpl_id.id)
+        if not product_exist:
+            product_exist = product_exist.search(
+                [
+                    "|",
+                    ("description_purchase", "=ilike", line_name),
+                    ("name", "=ilike", line_name)
+                ], limit=1
             )
-            uom_exist = uom_obj.with_context(lang="es_MX").search(uom_domain, limit=1)
-            uom = uom_exist if uom_exist else self.env.ref("uom.product_uom_unit")
-
-            line_name = line.get("Descripcion", "")
-            if line_name.splitlines():
-                line_name = line_name.splitlines()[0]
-            product_exist = prod_sup_obj.search([("product_name", "=ilike", line_name)], limit=1)
-            if product_exist:
-                product_exist = product_exist.product_tmpl_id
-            else:
-                product_exist = prod_obj.search([("description_purchase", "=ilike", line_name)], limit=1)
-                if not product_exist:
-                    product_exist = prod_obj.search([("name", "=ilike", line_name)], limit=1)
-                    if not product_exist and product_create:
-                        product_exist = prod_obj.create(
-                            {
-                                "name": line_name,
-                                "description_purchase": line_name,
-                                "list_price": line_price,
-                                "type": "product",
-                                "detailed_type": "product",
-                                "uom_id": uom.id,
-                                "uom_po_id": uom.id,
-                                "l10n_mx_edi_code_sat_id": sat_uom_exist.id if sat_uom_exist else False,
-                            }
-                        )
-
-            if import_type == "received" and not account_id and product_exist:
-                account_id = (
-                    product_exist.property_account_expense_id.id
-                    or product_exist.categ_id.property_account_expense_categ_id.id
-                )
-                # _logger.info(account_id)
-            elif import_type == "issued" and not account_id and product_exist:
-                account_id = (
-                    product_exist.property_account_income_id.id
-                    or product_exist.categ_id.property_account_income_categ_id.id
-                )
-            if not account_id:
-                account_id = journal.default_account_id.id
-                # _logger.info(account_id)
-            if not account_id:
-                msg = _(
-                    "Some products are not found in the database, and the account that "
-                    "is used as default is not configured in the journal, please set "
-                    "default account in the journal %s to create the move.",
-                    journal.name,
-                )
-                raise ValidationError(msg)
-
-            # analytic_distribution = self.env["account.analytic.distribution.model"]._get_distribution({
-            #    "product_id": product_exist.id if product_exist else False,
-            #    "product_categ_id": product_exist.categ_id.id if product_exist else False,
-            #    "partner_id": partner.id,
-            #    "partner_category_id": partner.category_id.ids,
-            #    "account_prefix": account_id.code,
-            #    "company_id": company.id,
-            # })
-            line_taxes = self.prepare_line_taxes(line)
-            move_line_ids.append(
-                (
-                    0,
-                    0,
+        if not product_exist and can_create_product:
+            product_exist = product_exist.create(
+                {
+                    "name": line_name,
+                    "description_purchase": line_name,
+                    "list_price": line_price,
+                    "type": "product",
+                    "detailed_type": "product",
+                    "uom_id": uom_exist.id,
+                    "uom_po_id": uom_exist.id,
+                    "l10n_mx_edi_code_sat_id": uom_sat_exist.id if uom_sat_exist else False,
+                }
+            )
+        invoice_line_ids.append(
+            Command.create(
+                {
+                    "product_id": product_exist.id or False,
+                    "name": line_name,
+                    "account_id": account_id,
+                    # "analytic_distribution": analytic_distribution else False,
+                    "quantity": line_quantity,
+                    "product_uom_id": product_exist.uom_id.id if product_exist else uom.id,
+                    "price_unit": line_price,
+                    "discount": line_discount,
+                    "tax_ids": self.prepare_line_taxes(line),
+                },
+            )
+        )
+        # Case for fuel move line
+        line_product_sat_code = line.get("ClaveProdServ", False)
+        if line_product_sat_code in self.l10n_mx_edi_get_fuel_codes():
+            tax = self.collect_taxes(line.Impuestos.Traslados.Traslado)
+            fuel_line_price = tax[0].get("amount") / (tax[0].get("rate") / 100)
+            invoice_line_ids.append(
+            Command.create(
                     {
-                        "product_id": product_exist.id if product_exist else False,
-                        "name": line_name,
+                        "name": _("Fuel - IEPS"),
                         "account_id": account_id,
-                        # "analytic_distribution": analytic_distribution else False,
-                        "quantity": line_quantity,
-                        "product_uom_id": product_exist.uom_id.id if product_exist else uom.id,
-                        "price_unit": line_price,
-                        "discount": line_discount,
-                        "tax_ids": self.search_taxes(line_taxes),
+                        "quantity": 1,
+                        "price_unit": float(line.get("Importe")) - fuel_line_price,
                     },
                 )
             )
-
-            # Case for fuel move line
-            xml_sat_code_product = line.get("ClaveProdServ", False)
-            if xml_sat_code_product in self.l10n_mx_edi_get_fuel_codes():
-                tax = self.collect_taxes(line.Impuestos.Traslados.Traslado)
-                fuel_line_price = tax[0].get("amount") / (tax[0].get("rate") / 100)
-                move_line_ids.append(
-                    (
-                        0,
-                        0,
-                        {
-                            "name": _("Fuel - IEPS"),
-                            "account_id": account_id,
-                            # "analytic_distribution": analytic_distribution else False,
-                            "quantity": 1,
-                            "price_unit": float(line.get("Importe")) - fuel_line_price,
-                        },
-                    )
-                )
-
-        local_taxes = self.get_et_local_taxes(cfdi_etree)
+        local_taxes = self.collect_taxes_local(cfdi_etree)
         if local_taxes:
             for _tax in local_taxes.get("taxes_ids"):
                 if _tax["for_expenses"]:
-                    move_line_ids.append(
-                        (
-                            0,
-                            0,
+                    invoice_line_ids.append(
+                        Command.create(
                             {
                                 "name": _tax["name"],
                                 "account_id": account_id,
-                                # "analytic_distribution": analytic_distribution or False,
                                 "quantity": 1,
                                 "price_unit": _tax["amount"],
                             },
                         )
                     )
 
-        return move_line_ids
+        return invoice_line_ids
 
     def prepare_move(self, cfdi_etree):
         move_obj = self.env["account.move"]
-        company = self.env.company
         import_type, move_type = self.get_et_import_type(cfdi_etree)
+        type_tax_use = "purchase" if import_type == "received" else "sale"
         journal_types = ["general"]
         if move_type in move_obj.get_sale_types():
             journal_types = ["sale"]
         elif move_type in move_obj.get_purchase_types():
             journal_types = ["purchase"]
-        domain = [("company_id", "=", company.id), ("type", "in", journal_types)]
-        journal = self.env["account.journal"].search(domain, limit=1, order="id asc")
-        # _logger.info(journal)
+        domain = [("company_id", "=", self.env.company.id), ("type", "in", journal_types)]
+        journal_exist = self.env["account.journal"].search(domain, limit=1, order="id asc")
         currency_exist = self.env["res.currency"].search([("name", "=", self.get_et_currency(cfdi_etree))], limit=1)
         payment_form = self.env["l10n_mx_edi.payment.method"].search(
             [("code", "=", cfdi_etree.get("FormaDePago", cfdi_etree.get("FormaPago")))], limit=1
@@ -864,31 +670,48 @@ class L10nMxEdiDocument(models.Model):
             #    "refund_invoice_ids": [(4, invoice_id.id, 0)]
             # })
         partner = self.search_partner(cfdi_etree)
-        move_line_ids = self.prepare_move_lines(cfdi_etree, import_type, journal)
+        global_discount = cfdi_etree.get("Descuento", False)
+        if global_discount:
+            global_line_discount = float(cfdi_etree.get("Descuento")) * 100 / float(cfdi_etree.get("SubTotal", 0.0))
+        invoice_line_ids = []
+        for line in cfdi_etree.Conceptos.Concepto:
+            invoice_line_ids.append(self.prepare_move_lines(line, global_line_discount))
+
+        for line in invoice_line_ids:
+            if import_type == "received" and not account_id and product_exist:
+                account_id = (
+                    product_exist.property_account_expense_id.id
+                    or product_exist.categ_id.property_account_expense_categ_id.id
+                )
+            elif import_type == "issued" and not account_id and product_exist:
+                account_id = (
+                    product_exist.property_account_income_id.id
+                    or product_exist.categ_id.property_account_income_categ_id.id
+                )
 
         vals = {
             "move_type": move_type,
-            "journal_id": journal.id,
+            "journal_id": journal_exist.id,
             "currency_id": currency_exist.id,
             "invoice_date": self.get_et_datetime(cfdi_etree),
             "invoice_payment_term_id": payment_term.id if payment_term else 1,
             "partner_id": partner.id,
             "name": self.get_et_serie_folio(cfdi_etree) if import_type == "issued" else "/",
             "payment_reference": self.get_et_serie_folio(cfdi_etree)
-            if import_type == "received" and self.get_et_serie_folio(cfdi_etree)
-            else False,
+                if import_type == "received" and self.get_et_serie_folio(cfdi_etree)
+                else False,
             "posted_before": bool(import_type == "issued"),
             "l10n_mx_edi_payment_method_id": payment_form.id
-            if payment_form
-            else self.env.ref("l10n_mx_edi.payment_method_otros"),
+                if payment_form
+                else self.env.ref("l10n_mx_edi.payment_method_otros"),
             "l10n_mx_edi_payment_policy": cfdi_etree.get("MetodoPago"),
             "l10n_mx_edi_usage": cfdi_etree.Receptor.get("UsoCFDI", "S01"),
             "l10n_mx_edi_post_time": self.get_et_datetime(cfdi_etree),
             "l10n_mx_edi_cfdi_origin": l10n_mx_edi_origin,
             "invoice_line_ids": move_line_ids,
             "x_check_tax": float(cfdi_etree.Impuestos.get("TotalImpuestosTrasladados", "0.0"))
-            if hasattr(cfdi_etree, "Impuestos")
-            else 0.0,
+                if hasattr(cfdi_etree, "Impuestos")
+                else 0.0,
             "x_check_total": float(cfdi_etree.get("Total", 0.0)),
         }
         return vals

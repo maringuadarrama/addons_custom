@@ -1,6 +1,6 @@
 {
     "name": "CFDI file Management",
-    "version": "17.0.0.0.0",
+    "version": "1.0",
     "summary": """Download CFDI files from SAT
         portal for its further processing and management.""",
     "category": "Localization/Mexico",

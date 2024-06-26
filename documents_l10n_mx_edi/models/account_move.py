@@ -1,4 +1,4 @@
-from odoo import _, api, fields, models
+from odoo import _, api, models
 from odoo.exceptions import ValidationError
 
 
@@ -21,9 +21,3 @@ class AccountMove(models.Model):
                     for rec in dupli:
                         msg += "-(%s) %s\n" % (rec.id, rec.name)
                         raise ValidationError(msg)
-
-
-class AccountMoveLine(models.Model):
-    _inherit = "account.move.line"
-
-    l10n_mx_edi_is_ecc = fields.Boolean(help="Indicates that comes from a Fuel Account Statement complement")

@@ -21,13 +21,18 @@ CANCEL_STATUS = {
 }
 
 
-class DocumentsInherit(models.Model):
+class Document(models.Model):
     _inherit = "documents.document"
 
     l10n_mx_edi_is_cfdi = fields.Boolean(help="Specify if this is a CFDI document.")
-    l10n_mx_edi_sat_status = fields.Selection(
-        [("none", "State not defined"), ("not_found", "Not Found"), ("cancelled", "Cancelled"), ("valid", "Valid")],
-        string="SAT Status",
+    l10n_mx_edi_sat_state = fields.Selection(
+        [
+            ("none", "State not defined"),
+            ("not_found", "Not Found"),
+            ("cancelled", "Cancelled"),
+            ("valid", "Valid")
+        ],
+        "SAT Status",
         default="none",
         tracking=True,
         readonly=True,
@@ -48,7 +53,7 @@ class DocumentsInherit(models.Model):
         copy=False,
         help="Indicate wheter the document can be cancelled or not.",
     )
-    l10n_mx_edi_sat_cancel_status = fields.Selection(
+    l10n_mx_edi_sat_cancel_state = fields.Selection(
         [
             ("none", "State not defined"),
             ("in_process", "In Process"),
@@ -57,7 +62,7 @@ class DocumentsInherit(models.Model):
             ("cancelled_timeout", "Cancelled because timeout"),
             ("rejected", "Cancellation Rejected"),
         ],
-        string="Cancellation Status",
+        "Cancellation Status",
         default="none",
         tracking=True,
         readonly=True,
@@ -83,9 +88,10 @@ class DocumentsInherit(models.Model):
         help='In case this is a CFDI file, show invoice"s product list',
     )
 
-    def prepare_l10n_mx_edi_common_fields(self, cfdi_etree):
-        edi_obj = self.env["l10n_mx_edi.document"]
+    def prepare_l10n_mx_edi_common_fields(self, document):
         vals = {}
+        edi_obj = self.env["l10n_mx_edi.document"]
+        _is_cfdi, _is_cfdi_signed, cfdi_etree = edi_obj.check_objectify_xml(document.datas)
         partner = edi_obj.search_partner(cfdi_etree)
         tfd_node = edi_obj.get_et_complemento(cfdi_etree)
         product_list = []
@@ -109,19 +115,16 @@ class DocumentsInherit(models.Model):
 
     @api.depends("datas")
     def _compute_l10n_mx_edi_common_fields(self):
-        edi_obj = self.env["l10n_mx_edi.document"]
-        documents = self.filtered(lambda doc: doc.l10n_mx_edi_is_cfdi and doc.attachment_id)
-        for rec in documents:
-            _is_cfdi, _is_cfdi_signed, cfdi_etree = edi_obj.check_objectify_xml(rec.datas)
-            vals = self.prepare_l10n_mx_edi_common_fields(cfdi_etree)
+        for rec in self.filtered(lambda doc: doc.l10n_mx_edi_is_cfdi and doc.attachment_id):
+            vals = self.prepare_l10n_mx_edi_common_fields(rec)
             rec.update(vals)
 
-    def update_l10n_mx_edi_sat_status(self):
+    def update_l10n_mx_edi_sat_state(self):
         for rec in self:
             if not rec.l10n_mx_edi_is_cfdi or not rec.datas:
-                rec.l10n_mx_edi_sat_status = "none"
+                rec.l10n_mx_edi_sat_state = "none"
                 rec.l10n_mx_edi_sat_cancellable = "none"
-                rec.l10n_mx_edi_sat_cancel_status = "none"
+                rec.l10n_mx_edi_sat_cancel_state = "none"
                 continue
 
             _is_cfdi, _is_cfdi_signed, cfdi_etree = self.env["l10n_mx_edi.document"].check_objectify_xml(rec.datas)
@@ -132,35 +135,35 @@ class DocumentsInherit(models.Model):
                 cfdi_etree.get("Total", "0.00"),
                 uuid,
             )
-            rec.l10n_mx_edi_sat_status = STATUS.get(sat_status["status"] if sat_status else "none", "none")
+            rec.l10n_mx_edi_sat_state = STATUS.get(sat_status["status"] if sat_status else "none", "none")
             rec.l10n_mx_edi_sat_cancellable = CANCELLABLE.get(
                 sat_status["is_cancellable"] if sat_status else "", "none"
             )
-            rec.l10n_mx_edi_sat_cancel_status = CANCEL_STATUS.get(
+            rec.l10n_mx_edi_sat_cancel_state = CANCEL_STATUS.get(
                 sat_status["cancel_status"] if sat_status else "", "none"
             )
 
     def _get_cfdi_type_tag(self, key):
         default = self.env["documents.tag"]
         values = {
-            "I": self.env.ref("l10n_mx_edi_documents.ingreso_tag"),
-            "E": self.env.ref("l10n_mx_edi_documents.egreso_tag"),
-            "T": self.env.ref("l10n_mx_edi_documents.traslado_tag"),
-            "P": self.env.ref("l10n_mx_edi_documents.reception_tag"),
-            "N": self.env.ref("l10n_mx_edi_documents.nomina_tag"),
-            "R": self.env.ref("l10n_mx_edi_documents.retencion_tag"),
+            "I": self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_tag_ingreso"),
+            "E": self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_tag_egreso"),
+            "T": self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_tag_traslado"),
+            "P": self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_tag_reception"),
+            "N": self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_tag_nomina"),
+            "R": self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_tag_retencion"),
         }
         return values.get(key, default)
 
-    def _l10n_mx_edi_document_get_tags(self, cfdi_etree):
+    def _documents_l10n_mx_edi_get_tags(self, cfdi_etree):
         tag_obj = self.env["documents.tag"]
-        tags = [self.env.ref("l10n_mx_edi_documents.l10n_edi_document_to_process").id]
+        tags = [self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_tag_to_process").id]
         tag = self._get_cfdi_type_tag(cfdi_etree.get("TipoDeComprobante"))
         tags.append(tag.id)
         tag = tag_obj.search(
             [
                 ("name", "=", str(self.env["l10n_mx_edi.document"].get_et_datetime(cfdi_etree).year)),
-                ("facet_id", "=", self.env.ref("l10n_mx_edi_documents.l10n_edi_document_facet_fiscal_year").id),
+                ("facet_id", "=", self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_facet_fiscal_year").id),
             ],
             limit=1,
         )
@@ -169,7 +172,7 @@ class DocumentsInherit(models.Model):
         tag = tag_obj.search(
             [
                 ("name", "=", str(self.env["l10n_mx_edi.document"].get_et_datetime(cfdi_etree).month)),
-                ("facet_id", "=", self.env.ref("l10n_mx_edi_documents.l10n_edi_document_facet_fiscal_month").id),
+                ("facet_id", "=", self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_facet_fiscal_month").id),
             ],
             limit=1,
         )
@@ -177,12 +180,12 @@ class DocumentsInherit(models.Model):
             tags.append(tag.id)
         return tags
 
-    def _l10n_mx_edi_document_get_folder(self, cfdi_etree):
+    def _documents_l10n_mx_edi_get_folder(self, cfdi_etree):
         import_type = "issued" if self.env.company.vat == cfdi_etree.Emisor.get("Rfc", "") else "received"
         folder = (
-            self.env.ref("l10n_mx_edi_documents.l10n_edi_document_folder_edi_issued")
+            self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_folder_issued")
             if import_type == "issued"
-            else self.env.ref("l10n_mx_edi_documents.l10n_edi_document_folder_edi_received")
+            else self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_folder_received")
         )
         return folder
 
@@ -194,6 +197,7 @@ class DocumentsInherit(models.Model):
             if "datas" not in vals:
                 container.append(vals)
                 continue
+
             is_cfdi, _is_cfdi_signed, cfdi_etree = edi_obj.check_objectify_xml(vals["datas"])
             if not is_cfdi:
                 container.append(vals)
@@ -207,8 +211,8 @@ class DocumentsInherit(models.Model):
                 ]
             )
             if not exist_docs:
-                edi_tag_ids = self._l10n_mx_edi_document_get_tags(cfdi_etree)
-                folder = self._l10n_mx_edi_document_get_folder(cfdi_etree)
+                edi_tag_ids = self._documents_l10n_mx_edi_get_tags(cfdi_etree)
+                folder = self._documents_l10n_mx_edi_get_folder(cfdi_etree)
                 if "tags_ids" in vals:
                     vals["tag_ids"].append(edi_tag_ids)
                 else:

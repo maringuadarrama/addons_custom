@@ -346,32 +346,3 @@ class AccountMove(models.Model):
         barcode_value = url_quote_plus(self.document_share_id.full_url)
         barcode_src = f"/report/barcode/?barcode_type=QR&value={barcode_value}&width=120&height=120"
         return barcode_src
-
-    def _l10n_mx_edi_get_line_ecc12_values(self, rec, product, account):
-        res = super()._l10n_mx_edi_get_line_ecc12_values(rec, product, account)
-        fuel_card = rec.get("Identificador")
-        if fuel_card:
-            vehicle = self.env["fleet.vehicle"].search([("fuel_card_name", "=", fuel_card)], limit=1)
-            if vehicle:
-                for line in res:
-                    line[2].update({"vehicle_id": vehicle.id})
-        return res
-
-    def collect_taxes(self, taxes_xml):
-        res = super().collect_taxes(taxes_xml)
-        get_param = self.env["ir.config_parameter"].sudo().get_param
-        iva_param = get_param("xiuman.tax_iva")
-        if iva_param:
-            res = self._collect_taxes_mapped(res, "IVA", iva_param)
-        isr_param = get_param("xiuman.tax_isr")
-        if isr_param:
-            res = self._collect_taxes_mapped(res, "ISR", isr_param)
-        return res
-
-    def _collect_taxes_mapped(self, taxes, old_tax_name, new_tax_name):
-        new_taxes = []
-        for tax in taxes:
-            if tax.get("tax") == old_tax_name:
-                tax["tax"] = new_tax_name
-            new_taxes.append(tax)
-        return new_taxes

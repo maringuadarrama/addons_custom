@@ -1,46 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-
     <!-- Rules -->
-    <record id="l10n_mx_edi_documents_received_rule" model="documents.workflow.rule" forcecreate="0">
-        <field name="name">Process CFDI</field>
+    <record id="documents_l10n_mx_edi_received_rule" model="documents.workflow.rule" forcecreate="0">
+        <field name="name">Create from CFDI</field>
         <field name="remove_activities">True</field>
-        <field name="create_model">cfdi</field>
+        <field name="create_model">create.mx.edi.record</field>
         <field
             name="domain"
-            eval="['|', ('tag_ids', '=', False), ('tag_ids', 'in', [ref('l10n_mx_edi_documents.l10n_edi_document_to_process')])]"
+            eval="['|', ('tag_ids', '=', False), ('tag_ids', 'in', [ref('documents_l10n_mx_edi.documents_l10n_mx_edi_tag_to_process')])]"
         />
-        <field name="domain_folder_id" ref="l10n_edi_document_folder_edi_doc" />
+        <field name="domain_folder_id" ref="documents_l10n_mx_edi_folder" />
         <field
             name="required_tag_ids"
             eval="[
-            (6, 0, [ref('l10n_mx_edi_documents.l10n_edi_document_to_process')]),
-        ]"
+                (6, 0, [ref('documents_l10n_mx_edi.documents_l10n_mx_edi_tag_to_process')]),
+            ]"
         />
         <field name="sequence">10</field>
     </record>
-
-    <!-- Actions -->
-    <record
-        id="l10n_mx_edi_documents_workflow_action_received_remove_to_process"
-        model="documents.workflow.action"
-        forcecreate="0"
-    >
-        <field name="workflow_rule_id" ref="l10n_mx_edi_documents_received_rule" />
-        <field name="action">remove</field>
-        <field name="facet_id" ref="l10n_mx_edi_documents.l10n_mx_edi_documents_facet_processed" />
-        <field name="tag_id" ref="l10n_mx_edi_documents.l10n_edi_document_to_process" />
-    </record>
-
-    <record
-        id="l10n_mx_edi_documents_workflow_action_received_add_process"
-        model="documents.workflow.action"
-        forcecreate="0"
-    >
-        <field name="workflow_rule_id" ref="l10n_mx_edi_documents_received_rule" />
-        <field name="action">add</field>
-        <field name="facet_id" ref="l10n_mx_edi_documents.l10n_mx_edi_documents_facet_processed" />
-        <field name="tag_id" ref="l10n_mx_edi_documents.l10n_edi_document_processed" />
-    </record>
-
 </odoo>

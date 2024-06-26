@@ -208,7 +208,7 @@ WITH deleted_module AS (
             'l10n_mx_edi',
             'l10n_mx_edi_40',
             'l10n_mx_edi_avoid_reversal_entry',
-            'l10n_mx_edi_documents',
+            'documents_l10n_mx_edi',
             -- 'l10n_mx_edi_partner_defaults',
             'l10n_mx_edi_payslip',
             -- 'l10n_mx_edi_related_documents',
@@ -327,17 +327,17 @@ AS $$
         AND name = old_name;
 $$;
 
-CALL rename_xml_id('l10n_mx_edi_documents', 'l10n_mx_edi_documents_folder_edi_doc', 'l10n_edi_document_folder_edi_doc');
-CALL rename_xml_id('l10n_mx_edi_documents', 'l10n_mx_edi_documents_facet_fiscal_year', 'l10n_edi_document_facet_fiscal_year');
-CALL rename_xml_id('l10n_mx_edi_documents', 'l10n_mx_edi_documents_facet_fiscal_month', 'l10n_edi_document_facet_fiscal_month');
-CALL rename_xml_id('l10n_mx_edi_documents', 'l10n_mx_edi_to_process', 'l10n_edi_document_to_process');
-CALL rename_xml_id('l10n_mx_edi_documents', 'l10n_mx_edi_processed', 'l10n_edi_document_processed');
-CALL rename_xml_id('l10n_mx_edi_documents', 'l10n_mx_edi_documents_ingreso', 'ingreso_tag');
-CALL rename_xml_id('l10n_mx_edi_documents', 'l10n_mx_edi_documents_egreso', 'egreso_tag');
-CALL rename_xml_id('l10n_mx_edi_documents', 'l10n_mx_edi_documents_traslado', 'traslado_tag');
-CALL rename_xml_id('l10n_mx_edi_documents', 'l10n_mx_edi_documents_nomina', 'nomina_tag');
-CALL rename_xml_id('l10n_mx_edi_documents', 'l10n_mx_edi_documents_pago', 'pago_tag');
-CALL rename_xml_id('l10n_mx_edi_documents', 'l10n_mx_edi_documents_retencion', 'retencion_tag');
+CALL rename_xml_id('documents_l10n_mx_edi', 'documents_l10n_mx_edi_folder_edi_doc', 'documents_l10n_mx_edi_folder');
+CALL rename_xml_id('documents_l10n_mx_edi', 'documents_l10n_mx_edi_facet_fiscal_year', 'documents_l10n_mx_edi_facet_fiscal_year');
+CALL rename_xml_id('documents_l10n_mx_edi', 'documents_l10n_mx_edi_facet_fiscal_month', 'documents_l10n_mx_edi_facet_fiscal_month');
+CALL rename_xml_id('documents_l10n_mx_edi', 'l10n_mx_edi_to_process', 'documents_l10n_mx_edi_tag_to_process');
+CALL rename_xml_id('documents_l10n_mx_edi', 'l10n_mx_edi_processed', 'documents_l10n_mx_edi_tag_processed');
+CALL rename_xml_id('documents_l10n_mx_edi', 'documents_l10n_mx_edi_ingreso', 'documents_l10n_mx_edi_tag_ingreso');
+CALL rename_xml_id('documents_l10n_mx_edi', 'documents_l10n_mx_edi_egreso', 'documents_l10n_mx_edi_tag_egreso');
+CALL rename_xml_id('documents_l10n_mx_edi', 'documents_l10n_mx_edi_traslado', 'documents_l10n_mx_edi_tag_traslado');
+CALL rename_xml_id('documents_l10n_mx_edi', 'documents_l10n_mx_edi_nomina', 'documents_l10n_mx_edi_tag_nomina');
+CALL rename_xml_id('documents_l10n_mx_edi', 'documents_l10n_mx_edi_pago', 'documents_l10n_mx_edi_tag_pago');
+CALL rename_xml_id('documents_l10n_mx_edi', 'documents_l10n_mx_edi_retencion', 'documents_l10n_mx_edi_tag_retencion');
 
 -- Renamed xml_ids and changed of module
 

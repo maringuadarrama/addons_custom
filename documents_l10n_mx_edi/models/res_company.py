@@ -32,7 +32,7 @@ class ResCompany(models.Model):
     l10n_mx_edi_folder = fields.Many2one(
         "documents.folder",
         default=lambda self: self.env.ref(
-            "l10n_mx_edi_documents.l10n_edi_document_folder_edi_doc", raise_if_not_found=False
+            "documents_l10n_mx_edi.documents_l10n_mx_edi_folder", raise_if_not_found=False
         ),
     )
 

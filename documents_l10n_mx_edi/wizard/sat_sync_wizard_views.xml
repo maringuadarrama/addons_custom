@@ -40,7 +40,7 @@
         <field
             name="groups_id"
             eval="[
-            (6, 0, [ref('l10n_mx_edi_documents.group_l10n_mx_edi_documents')])
+            (6, 0, [ref('documents_l10n_mx_edi.group_documents_l10n_mx_edi')])
         ]"
         />
     </record>
@@ -51,6 +51,6 @@
         parent="documents.menu_root"
         action="sat_sync_wizard_action"
         sequence="10"
-        groups="l10n_mx_edi_documents.group_l10n_mx_edi_documents"
+        groups="documents_l10n_mx_edi.group_documents_l10n_mx_edi"
     />
 </odoo>

@@ -22,8 +22,8 @@
                 <p t-if="record.l10n_mx_edi_issuer_partner_id.raw_value" class="mb-0">
                     <field name="name" class="o_text_overflow"/>
                 </p>
-                <p t-if="record.l10n_mx_edi_sat_status.raw_value" class="mb-0">
-                    Sat staus: $ <field name="l10n_mx_edi_sat_status"/>
+                <p t-if="record.l10n_mx_edi_sat_state.raw_value" class="mb-0">
+                    Sat staus: $ <field name="l10n_mx_edi_sat_state"/>
                 </p>
                 <p t-if="record.l10n_mx_edi_cfdi_total_amount.raw_value" class="mb-0">
                     Total amount: $ <field name="l10n_mx_edi_cfdi_total_amount"/>

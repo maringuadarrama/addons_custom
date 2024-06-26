@@ -1,2 +1,2 @@
-l10n_mx_edi_documents
+documents_l10n_mx_edi
 =====================
