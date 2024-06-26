@@ -88,7 +88,7 @@
         "syngenta_edi",
     ],
     #"data": [
-    #    "security/res_groups_security.xml",
+    #    "security/res_groups.xml",
     #    "security/ir.model.access.csv",
     #    "security/ir_rules.xml",
     #    "data/ir_config_parameter_data.xml",
