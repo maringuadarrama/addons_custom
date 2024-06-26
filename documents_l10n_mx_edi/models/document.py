@@ -1,0 +1,244 @@
+import json
+
+from odoo import _, api, fields, models
+
+STATUS = {
+    "No Encontrado": "not_found",
+    "Cancelado": "cancelled",
+    "Vigente": "valid",
+}
+CANCELLABLE = {
+    "No Cancelable": "not_cancellable",
+    "Cancelable sin aceptación": "cancellable_no_auth",
+    "Cancelable con aceptación": "cancellable_auth",
+}
+CANCEL_STATUS = {
+    "En proceso": "in_process",
+    "Cancelado sin aceptación": "cancelled_no_auth",
+    "Cancelado con aceptación": "cancelled_auth",
+    "Plazo vencido": "cancelled_timeout",
+    "Solicitud rechazada": "rejected",
+}
+
+
+class DocumentsInherit(models.Model):
+    _inherit = "documents.document"
+
+    l10n_mx_edi_is_cfdi = fields.Boolean(help="Specify if this is a CFDI document.")
+    l10n_mx_edi_sat_status = fields.Selection(
+        [("none", "State not defined"), ("not_found", "Not Found"), ("cancelled", "Cancelled"), ("valid", "Valid")],
+        string="SAT Status",
+        default="none",
+        tracking=True,
+        readonly=True,
+        copy=False,
+        help="Refers to the status of the invoice inside the SAT system.",
+    )
+    l10n_mx_edi_sat_cancellable = fields.Selection(
+        [
+            ("none", "State not defined"),
+            ("not_cancellable", "Not Cancellable"),
+            ("cancellable_auth", "Cancellable with authorization"),
+            ("cancellable_no_auth", "Cancellable without authorization"),
+        ],
+        string="Cancellable",
+        default="none",
+        tracking=True,
+        readonly=True,
+        copy=False,
+        help="Indicate wheter the document can be cancelled or not.",
+    )
+    l10n_mx_edi_sat_cancel_status = fields.Selection(
+        [
+            ("none", "State not defined"),
+            ("in_process", "In Process"),
+            ("cancelled_no_auth", "Cancelled without authorization"),
+            ("cancelled_auth", "Cancelled with authorization"),
+            ("cancelled_timeout", "Cancelled because timeout"),
+            ("rejected", "Cancellation Rejected"),
+        ],
+        string="Cancellation Status",
+        default="none",
+        tracking=True,
+        readonly=True,
+        copy=False,
+        help="Refers to the status of the cancellation in the SAT system.",
+    )
+    l10n_mx_edi_stamp_date = fields.Datetime(
+        "CFDI stamp date", compute="_compute_l10n_mx_edi_common_fields", store=True
+    )
+    l10n_mx_edi_cfdi_total_amount = fields.Float(
+        "Total Amount",
+        compute="_compute_l10n_mx_edi_common_fields",
+        store=True,
+        help='In case this is a CFDI file, stores invoice"s total amount.',
+    )
+    l10n_mx_edi_related_cfdi = fields.Text(
+        "Related CFDI", compute="_compute_l10n_mx_edi_common_fields", store=True, help="Related CFDI of the XML file"
+    )
+    l10n_mx_edi_product_list = fields.Text(
+        "Products",
+        compute="_compute_l10n_mx_edi_common_fields",
+        store=True,
+        help='In case this is a CFDI file, show invoice"s product list',
+    )
+
+    def prepare_l10n_mx_edi_common_fields(self, cfdi_etree):
+        edi_obj = self.env["l10n_mx_edi.document"]
+        vals = {}
+        partner = edi_obj.search_partner(cfdi_etree)
+        tfd_node = edi_obj.get_et_complemento(cfdi_etree)
+        product_list = []
+        for line in cfdi_etree.Conceptos.Concepto:
+            product_list += [line.get("Descripcion", "")]
+        vals.update(
+            {
+                "partner_id": partner.id,
+                "l10n_mx_edi_cfdi_total_amount": float(cfdi_etree.get("Total", 0)),
+                "l10n_mx_edi_stamp_date": edi_obj.get_et_datetime(tfd_node),
+                "l10n_mx_edi_product_list": json.dumps(product_list),
+            }
+        )
+        related_uuids = edi_obj.get_related_uuids_dict(cfdi_etree)
+        if related_uuids:
+            l10n_mx_edi_origin = self.env["account.move"]._l10n_mx_edi_write_cfdi_origin(
+                related_uuids["type"], related_uuids["uuids"]
+            )
+            vals.update({"l10n_mx_edi_related_cfdi": json.dumps(l10n_mx_edi_origin)})
+        return vals
+
+    @api.depends("datas")
+    def _compute_l10n_mx_edi_common_fields(self):
+        edi_obj = self.env["l10n_mx_edi.document"]
+        documents = self.filtered(lambda doc: doc.l10n_mx_edi_is_cfdi and doc.attachment_id)
+        for rec in documents:
+            _is_cfdi, _is_cfdi_signed, cfdi_etree = edi_obj.check_objectify_xml(rec.datas)
+            vals = self.prepare_l10n_mx_edi_common_fields(cfdi_etree)
+            rec.update(vals)
+
+    def update_l10n_mx_edi_sat_status(self):
+        for rec in self:
+            if not rec.l10n_mx_edi_is_cfdi or not rec.datas:
+                rec.l10n_mx_edi_sat_status = "none"
+                rec.l10n_mx_edi_sat_cancellable = "none"
+                rec.l10n_mx_edi_sat_cancel_status = "none"
+                continue
+
+            _is_cfdi, _is_cfdi_signed, cfdi_etree = self.env["l10n_mx_edi.document"].check_objectify_xml(rec.datas)
+            uuid = self.env["l10n_mx_edi.document"].get_et_complemento(cfdi_etree).get("UUID", "").upper()
+            sat_status = self.env["l10n_mx_edi.document"].l10n_mx_ws_get_cfdi_status(
+                cfdi_etree.Emisor.get("Rfc", ""),
+                cfdi_etree.Receptor.get("Rfc", ""),
+                cfdi_etree.get("Total", "0.00"),
+                uuid,
+            )
+            rec.l10n_mx_edi_sat_status = STATUS.get(sat_status["status"] if sat_status else "none", "none")
+            rec.l10n_mx_edi_sat_cancellable = CANCELLABLE.get(
+                sat_status["is_cancellable"] if sat_status else "", "none"
+            )
+            rec.l10n_mx_edi_sat_cancel_status = CANCEL_STATUS.get(
+                sat_status["cancel_status"] if sat_status else "", "none"
+            )
+
+    def _get_cfdi_type_tag(self, key):
+        default = self.env["documents.tag"]
+        values = {
+            "I": self.env.ref("l10n_mx_edi_documents.ingreso_tag"),
+            "E": self.env.ref("l10n_mx_edi_documents.egreso_tag"),
+            "T": self.env.ref("l10n_mx_edi_documents.traslado_tag"),
+            "P": self.env.ref("l10n_mx_edi_documents.reception_tag"),
+            "N": self.env.ref("l10n_mx_edi_documents.nomina_tag"),
+            "R": self.env.ref("l10n_mx_edi_documents.retencion_tag"),
+        }
+        return values.get(key, default)
+
+    def _l10n_mx_edi_document_get_tags(self, cfdi_etree):
+        tag_obj = self.env["documents.tag"]
+        tags = [self.env.ref("l10n_mx_edi_documents.l10n_edi_document_to_process").id]
+        tag = self._get_cfdi_type_tag(cfdi_etree.get("TipoDeComprobante"))
+        tags.append(tag.id)
+        tag = tag_obj.search(
+            [
+                ("name", "=", str(self.env["l10n_mx_edi.document"].get_et_datetime(cfdi_etree).year)),
+                ("facet_id", "=", self.env.ref("l10n_mx_edi_documents.l10n_edi_document_facet_fiscal_year").id),
+            ],
+            limit=1,
+        )
+        if tag:
+            tags.append(tag.id)
+        tag = tag_obj.search(
+            [
+                ("name", "=", str(self.env["l10n_mx_edi.document"].get_et_datetime(cfdi_etree).month)),
+                ("facet_id", "=", self.env.ref("l10n_mx_edi_documents.l10n_edi_document_facet_fiscal_month").id),
+            ],
+            limit=1,
+        )
+        if tag:
+            tags.append(tag.id)
+        return tags
+
+    def _l10n_mx_edi_document_get_folder(self, cfdi_etree):
+        import_type = "issued" if self.env.company.vat == cfdi_etree.Emisor.get("Rfc", "") else "received"
+        folder = (
+            self.env.ref("l10n_mx_edi_documents.l10n_edi_document_folder_edi_issued")
+            if import_type == "issued"
+            else self.env.ref("l10n_mx_edi_documents.l10n_edi_document_folder_edi_received")
+        )
+        return folder
+
+    def _l10n_mx_edi_validate_values_create(self, vals_list):
+        edi_obj = self.env["l10n_mx_edi.document"]
+        container = []
+        duplicated_docs = []
+        for vals in vals_list:
+            if "datas" not in vals:
+                container.append(vals)
+                continue
+            is_cfdi, _is_cfdi_signed, cfdi_etree = edi_obj.check_objectify_xml(vals["datas"])
+            if not is_cfdi:
+                container.append(vals)
+                continue
+
+            uuid = edi_obj.get_et_complemento(cfdi_etree).get("UUID", "").upper()
+            exist_docs = self.search(
+                [
+                    ("name", "=", uuid + ".xml"),
+                    ("company_id", "=", self.env.company.id),
+                ]
+            )
+            if not exist_docs:
+                edi_tag_ids = self._l10n_mx_edi_document_get_tags(cfdi_etree)
+                folder = self._l10n_mx_edi_document_get_folder(cfdi_etree)
+                if "tags_ids" in vals:
+                    vals["tag_ids"].append(edi_tag_ids)
+                else:
+                    vals.update({"tag_ids": edi_tag_ids})
+                if "l10n_mx_edi_is_cfdi" not in vals:
+                    vals.update({"l10n_mx_edi_is_cfdi": True})
+                vals.update(
+                    {
+                        "name": uuid + ".xml",
+                        "folder_id": folder.id,
+                    }
+                )
+                container.append(vals)
+                continue
+
+            message = _("Duplicated CFDI, document creation skipped.")
+            self.env["bus.bus"]._sendone(
+                self.env.user.partner_id,
+                "simple_notification",
+                {"title": "Duplicated CFDI", "message": message, "sticky": False, "warning": True},
+            )
+            duplicated_docs.append(vals)
+            continue
+
+        if duplicated_docs and not container:
+            return []
+
+        return container
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        new_vals_list = self._l10n_mx_edi_validate_values_create(vals_list)
+        return super().create(new_vals_list)
