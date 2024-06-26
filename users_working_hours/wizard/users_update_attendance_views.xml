@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_users_update_attendance" model="ir.ui.view">
+        <field name="name">Update Attendance</field>
+        <field name="model">users.update.attendance</field>
+        <field name="arch" type="xml">
+            <form string="Update User Attendance">
+                <p>
+                Use this assistant to update the attendance of a user calendar.
+                </p>
+                <group>
+                    <field
+                        name="employee_ids"
+                        widget="many2many_tags"
+                        options="{'no_create_edit': True, 'no_quick_create': True}"
+                    />
+                    <field name="extended_hour" widget="float_time" />
+                </group>
+                <footer>
+                    <button name="update_attendance" string="Update" type="object" class="btn-primary" />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_users_update_attendance" model="ir.actions.act_window">
+        <field name="name">Update User Attendance</field>
+        <field name="res_model">users.update.attendance</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem
+        action="action_users_update_attendance"
+        id="menu_users_update_attendance"
+        parent="base.menu_users"
+        sequence="300"
+        groups="base.group_no_one"
+    />
+</odoo>

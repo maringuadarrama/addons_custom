@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_users_allow_login" model="ir.ui.view">
+        <field name="name">Allow Login</field>
+        <field name="model">users.allow.login</field>
+        <field name="arch" type="xml">
+            <form string="Allow Login Users">
+                <p>
+                Use this assistant to force logout of all users and forbid them to login or allow them to login.
+                </p>
+                <group>
+                    <field
+                        name="user_ids"
+                        widget="many2many_tags"
+                        options="{'no_create_edit': True, 'no_quick_create': True}"
+                    />
+                </group>
+                <footer>
+                    <button name="logout_users" string="Force Logout" type="object" class="btn-primary" />
+                    <button name="logout_all_users" string="Force All Logout" type="object" class="btn-primary" />
+                    <button
+                        name="logout_and_block_users"
+                        string="Force All Logout and Block"
+                        type="object"
+                        class="btn-primary"
+                    />
+                    <button name="allow_login" string="Allow Login" type="object" class="btn-primary" />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_users_allow_login" model="ir.actions.act_window">
+        <field name="name">Logout Users</field>
+        <field name="res_model">users.allow.login</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem
+        action="action_users_allow_login"
+        id="menu_users_allow_login"
+        parent="base.menu_users"
+        sequence="400"
+        groups="base.group_no_one"
+    />
+</odoo>
