@@ -34,10 +34,10 @@ class ProductTemplate(models.Model):
 
     def _prepare_compute_group(self):
         return {
-            "user_product_cost_readonly": self.user_has_groups("xiuman.group_product_cost_readonly"),
-            "user_product_cost_manager": self.user_has_groups("xiuman.group_product_cost_manager"),
-            "user_sale_readonly": self.user_has_groups("xiuman.group_sale_readonly"),
-            "user_sale_manager": self.user_has_groups("xiuman.group_sale_manager"),
+            "user_product_cost_readonly": self.user_has_groups("marin.group_product_cost_readonly"),
+            "user_product_cost_manager": self.user_has_groups("marin.group_product_cost_manager"),
+            "user_sale_readonly": self.user_has_groups("marin.group_sale_readonly"),
+            "user_sale_manager": self.user_has_groups("marin.group_sale_manager"),
         }
 
     def _compute_group(self):

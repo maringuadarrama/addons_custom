@@ -51,7 +51,7 @@ class AccountMove(models.Model):
         }
 
     def action_authorize_debt_wizard(self):
-        view = self.env.ref("xiuman.view_authorize_debt_wizard_form")
+        view = self.env.ref("marin.view_authorize_debt_wizard_form")
         return {
             "name": _("Authorize debt"),
             "type": "ir.actions.act_window",
@@ -149,7 +149,7 @@ class AccountMove(models.Model):
                         invoice.commercial_partner_id.name,
                     )
                 )
-            if not self.env.user.has_group("xiuman.group_account_debt_manager"):
+            if not self.env.user.has_group("marin.group_account_debt_manager"):
                 raise UserError(
                     _(
                         "The Partner %s does not have enough credit line. Contact the Credit Manager.",
@@ -157,7 +157,7 @@ class AccountMove(models.Model):
                     )
                 )
             authorized = self._context.get("debt_authorized")
-            if authorized or self.env["ir.config_parameter"].sudo().get_param("xiuman.avoid_authorize_debt"):
+            if authorized or self.env["ir.config_parameter"].sudo().get_param("marin.avoid_authorize_debt"):
                 return True
             return invoice.action_authorize_debt_wizard()
         return True
@@ -165,7 +165,7 @@ class AccountMove(models.Model):
     # Extend original method
     def unlink(self):
         cancelled_moves = self.env["account.move"]
-        if self.env.user.has_group("xiuman.group_account_move_force_removal"):
+        if self.env.user.has_group("marin.group_account_move_force_removal"):
             cancelled_moves |= self.filtered(lambda m: m.state == "cancel")
             super(AccountMove, cancelled_moves.with_context(force_delete=True)).unlink()
         return super(AccountMove, self - cancelled_moves).unlink()

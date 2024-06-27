@@ -69,7 +69,7 @@ class StockPickingTypeInherit(models.Model):
         return [("id", "in", picking_type_ids)]
 
     def action_move_location(self):
-        action = self.env.ref("xiuman.wiz_stock_move_location_action").read()[0]
+        action = self.env.ref("marin.wiz_stock_move_location_action").read()[0]
         action["context"] = {
             "default_picking_type_id": self.id,
             "default_origin_location_id": self.default_location_src_id.id,

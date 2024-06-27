@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="product.product_product_tree_view" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='standard_price']" position="attributes">
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
         </field>
     </record>
@@ -17,7 +17,7 @@
         <field name="inherit_id" ref="product.product_variant_easy_edit_view" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='standard_price']" position="attributes">
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
         </field>
     </record>

@@ -126,10 +126,10 @@
             </t>
             <t t-set="values" t-value="o._get_payment_receipt_report_values()" />
             <div class="page">
-                <t t-call="xiuman.report_payment_receipt_document_content" t-lang="lang" />
+                <t t-call="marin.report_payment_receipt_document_content" t-lang="lang" />
                 <div class="oe_structure mb128" />
-                <t t-call="xiuman.report_payment_receipt_document_header" t-lang="lang" />
-                <t t-call="xiuman.report_payment_receipt_document_content" t-lang="lang" />
+                <t t-call="marin.report_payment_receipt_document_header" t-lang="lang" />
+                <t t-call="marin.report_payment_receipt_document_content" t-lang="lang" />
             </div>
             <div class="oe_structure" />
         </t>
@@ -139,7 +139,7 @@
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="o">
                 <t t-set="lang" t-value="o.partner_id.lang or o.company_id.partner_id.lang" />
-                <t t-call="xiuman.report_payment_receipt_document" t-lang="lang" />
+                <t t-call="marin.report_payment_receipt_document" t-lang="lang" />
             </t>
         </t>
     </template>
@@ -148,8 +148,8 @@
         <field name="name">Client Receipt</field>
         <field name="model">account.payment</field>
         <field name="report_type">qweb-pdf</field>
-        <field name="report_name">xiuman.report_payment_receipt</field>
-        <field name="report_file">xiuman.report_payment_receipt</field>
+        <field name="report_name">marin.report_payment_receipt</field>
+        <field name="report_file">marin.report_payment_receipt</field>
         <field name="binding_model_id" ref="account.model_account_payment" />
         <field name="binding_type">report</field>
     </record>

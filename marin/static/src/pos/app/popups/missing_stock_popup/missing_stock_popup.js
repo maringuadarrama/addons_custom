@@ -151,7 +151,7 @@ class MissingStockPopup extends AbstractAwaitablePopup {
     }
 }
 
-MissingStockPopup.template = "xiuman.MissingStockPopup";
+MissingStockPopup.template = "marin.MissingStockPopup";
 MissingStockPopup.components = {
     Orderline,
 };

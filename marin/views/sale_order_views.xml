@@ -274,7 +274,7 @@
                             string="Force invoice status"
                             type="object"
                             invisible="invoice_status == 'invoiced' or state != 'sale'"
-                            groups="xiuman.group_sale_force_invoicing_status"
+                            groups="marin.group_sale_force_invoicing_status"
                             class="oe_inline oe_button"
                         />
                         <button
@@ -282,7 +282,7 @@
                             string="Restore invoice status"
                             type="object"
                             invisible="invoice_status != 'invoiced' or state != 'sale'"
-                            groups="xiuman.group_sale_force_invoicing_status"
+                            groups="marin.group_sale_force_invoicing_status"
                             class="oe_inline oe_button"
                         />
                     </div>
@@ -313,7 +313,7 @@
                             string="Force delivery done"
                             type="object"
                             invisible="delivery_status == 'full' or state != 'sale'"
-                            groups="xiuman.group_sale_force_delivery_status"
+                            groups="marin.group_sale_force_delivery_status"
                             class="oe_inline oe_button"
                         />
                         <button
@@ -321,7 +321,7 @@
                             string="Unforce delivery done"
                             type="object"
                             invisible="delivery_status != 'full' or state != 'sale'"
-                            groups="xiuman.group_sale_force_delivery_status"
+                            groups="marin.group_sale_force_delivery_status"
                             class="oe_inline oe_button"
                         />
                     </div>
@@ -336,10 +336,10 @@
         <field name="inherit_id" ref="sale_margin.sale_margin_sale_order" />
         <field name="arch" type="xml">
             <xpath expr="//label[@for='margin']" position="attributes">
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
             <xpath expr="//div[hasclass('text-nowrap')]" position="attributes">
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
         </field>
     </record>
@@ -350,7 +350,7 @@
         <field name="inherit_id" ref="sale_margin.sale_margin_sale_order_line" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='purchase_price']" position="attributes">
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
         </field>
     </record>
@@ -361,13 +361,13 @@
         <field name="inherit_id" ref="sale_margin.sale_margin_sale_order_line_form" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='purchase_price']" position="attributes">
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
             <xpath expr="//field[@name='margin']" position="attributes">
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
             <xpath expr="//field[@name='margin_percent']" position="attributes">
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
         </field>
     </record>

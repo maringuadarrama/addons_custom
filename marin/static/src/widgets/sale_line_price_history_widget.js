@@ -12,7 +12,7 @@ export class SalePriceHistoryWidget extends Component {
     }
 
     async viewSalePriceHistory() {
-        this.actionService.doAction("xiuman.sale_line_price_history_action", {
+        this.actionService.doAction("marin.sale_line_price_history_action", {
             additionalContext: {
                 default_line_id: this.props.record.data.id,
                 default_partner_id: this.props.record.data.order_partner_id[0],

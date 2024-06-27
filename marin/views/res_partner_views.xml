@@ -63,7 +63,7 @@
                 <field name="user_id" invisible="1" />
             </field>
             <xpath expr="//page[@name='sales_purchases']//group[@name='sale']" position="attributes">
-                <attribute name="groups">xiuman.group_sale_readonly</attribute>
+                <attribute name="groups">marin.group_sale_readonly</attribute>
             </xpath>
             <xpath expr="//page[@name='sales_purchases']//field[@name='user_id']" position="attributes">
                 <attribute name="options">{'no_create': True}</attribute>
@@ -73,11 +73,11 @@
                 <field name="social_style_color" />
             </xpath>
             <xpath expr="//page[@name='sales_purchases']//group[@name='purchase']" position="attributes">
-                <attribute name="groups">xiuman.group_purchase_readonly</attribute>
+                <attribute name="groups">marin.group_purchase_readonly</attribute>
             </xpath>
             <!-- Fix this, add the correct security group -->
             <!--<xpath expr="//page[@name='sales_purchases']//group[@name='misc']" position="attributes">
-                <attribute name="groups">xiuman.group_account_readonly</attribute>
+                <attribute name="groups">marin.group_account_readonly</attribute>
             </xpath>-->
             <xpath expr="//page[@name='sales_purchases']//field[@name='industry_id']" position="after">
                 <field name="b2x" />
@@ -111,7 +111,7 @@
         <field name="priority" eval="100" />
         <field name="arch" type="xml">
             <xpath expr="//group[@name='credit_limits']" position="attributes">
-                <attribute name="groups">account.group_account_readonly,xiuman.group_account_debt_manager</attribute>
+                <attribute name="groups">account.group_account_readonly,marin.group_account_debt_manager</attribute>
             </xpath>
             <xpath expr="//field[@name='use_partner_credit_limit']" position="attributes">
                 <attribute name="readonly">not user_debt_manager</attribute>
@@ -129,7 +129,7 @@
                     string="Debit Limits"
                     name="debit_limits"
                     invisible="not show_credit_limit"
-                    groups="account.group_account_readonly,xiuman.group_account_debt_manager"
+                    groups="account.group_account_readonly,marin.group_account_debt_manager"
                 >
                     <field name="debit" />
                     <label for="use_partner_debit_limit" />
@@ -160,7 +160,7 @@
             <xpath expr="//field[@name='team_id'][2]" position="attributes">
                 <attribute name="options">{'no_create': True}</attribute>
                 <attribute name="readonly">not user_sale_manager</attribute>
-                <attribute name="groups">base.group_no_one,xiuman.group_sale_readonly</attribute>
+                <attribute name="groups">base.group_no_one,marin.group_sale_readonly</attribute>
             </xpath>
         </field>
     </record>

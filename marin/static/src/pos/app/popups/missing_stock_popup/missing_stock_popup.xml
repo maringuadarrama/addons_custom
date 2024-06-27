@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates id="template" xml:space="preserve">
 
-    <t t-name="xiuman.MissingStockPopup">
+    <t t-name="marin.MissingStockPopup">
         <div class="popup missing-stock-popup">
             <div class="modal-header">
                 <h4 class="modal-title title drag-handle">

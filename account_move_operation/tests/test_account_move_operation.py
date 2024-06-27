@@ -34,7 +34,7 @@ class TestAccountMoveTemplate(TestBankRecWidgetCommon):
         cls.journal_bank = cls.env["account.journal"].search(
             [("company_id", "=", cls.company.id), ("type", "=", "bank")], limit=1
         )
-        cls.env["ir.config_parameter"].sudo().set_param("xiuman.avoid_authorize_debt", "True")
+        cls.env["ir.config_parameter"].sudo().set_param("marin.avoid_authorize_debt", "True")
 
     @classmethod
     def create_payment_term(cls):
@@ -61,7 +61,7 @@ class TestAccountMoveTemplate(TestBankRecWidgetCommon):
         return payment_term
 
     def test_01_create_operation(self):
-        group = self.env.ref("xiuman.group_account_debt_manager", False)
+        group = self.env.ref("marin.group_account_debt_manager", False)
         if group:
             self.env.user.groups_id = [(4, group.id)]
         operation = self.operation_obj.create(
@@ -576,7 +576,7 @@ class TestAccountMoveTemplate(TestBankRecWidgetCommon):
         self.assertEqual(operation.state, "draft")
 
     def test_06_create_operation_manual(self):
-        group = self.env.ref("xiuman.group_account_debt_manager", False)
+        group = self.env.ref("marin.group_account_debt_manager", False)
         if group:
             self.env.user.groups_id = [(4, group.id)]
         operation = self.operation_obj.create(

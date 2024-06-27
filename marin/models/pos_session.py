@@ -53,7 +53,7 @@ class PosSession(models.Model):
             "view_mode": "form",
             "res_model": "pos.cash.transfer.wizard",
             "type": "ir.actions.act_window",
-            "view_id": self.env.ref("xiuman.wizard_pos_cash_transfer_form_view").id,
+            "view_id": self.env.ref("marin.wizard_pos_cash_transfer_form_view").id,
             "target": "new",
             "context": {
                 "default_amount": self.cash_register_balance_end_real,
@@ -70,7 +70,7 @@ class PosSession(models.Model):
     def _confirmed_cash_transfer(self, cash_amount):
         self.ensure_one()
         if self.cash_transfered != cash_amount:
-            if not self.env.user.has_group("xiuman.group_pos_cash_transfer"):
+            if not self.env.user.has_group("marin.group_pos_cash_transfer"):
                 raise AccessError(_("Permission needed"))
         if self.cash_original_ending_balance == 0:
             self.cash_original_ending_balance = self.cash_register_balance_end_real
@@ -112,7 +112,7 @@ class PosSession(models.Model):
             "manager" if any(id == self.config_id.group_pos_manager_id.id for id in user["groups_id"]) else "cashier"
         )
         user["cost_access"] = any(
-            id == self.env.ref("xiuman.group_product_cost_readonly").id for id in user["groups_id"]
+            id == self.env.ref("marin.group_product_cost_readonly").id for id in user["groups_id"]
         )
         del user["groups_id"]
         return user

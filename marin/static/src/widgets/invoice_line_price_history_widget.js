@@ -12,7 +12,7 @@ export class InvoicePriceHistoryWidget extends Component {
     }
 
     async viewInvoicePriceHistory() {
-        this.actionService.doAction("xiuman.invoice_line_price_history_action", {
+        this.actionService.doAction("marin.invoice_line_price_history_action", {
             additionalContext: {
                 default_line_id: this.props.record.data.id,
                 default_partner_id: this.props.record.data.partner_id[0],

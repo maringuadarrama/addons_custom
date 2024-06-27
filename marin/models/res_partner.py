@@ -9,14 +9,14 @@ class ResPartner(models.Model):
 
     def _prepare_partner_category_domain(self):
         parents = []
-        if self.user_has_groups("xiuman.group_account_user"):
-            parents.append(self.env.ref("xiuman.partner_category_management").id)
-        if self.user_has_groups("xiuman.group_sale_user"):
-            parents.append(self.env.ref("xiuman.partner_category_commercial").id)
-        if self.user_has_groups("xiuman.group_security_compliance"):
-            parents.append(self.env.ref("xiuman.partner_category_105").id)
-        if self.user_has_groups("xiuman.group_purchase_user"):
-            parents.append(self.env.ref("xiuman.partner_category_106").id)
+        if self.user_has_groups("marin.group_account_user"):
+            parents.append(self.env.ref("marin.partner_category_management").id)
+        if self.user_has_groups("marin.group_sale_user"):
+            parents.append(self.env.ref("marin.partner_category_commercial").id)
+        if self.user_has_groups("marin.group_security_compliance"):
+            parents.append(self.env.ref("marin.partner_category_105").id)
+        if self.user_has_groups("marin.group_purchase_user"):
+            parents.append(self.env.ref("marin.partner_category_106").id)
         if not parents:
             return [("id", "=", False)]
         return [("parent_id", "!=", False), ("parent_id", "in", parents)]
@@ -90,17 +90,17 @@ class ResPartner(models.Model):
 
     def _prepare_compute_group(self):
         return {
-            "user_account_user": self.user_has_groups("xiuman.group_account_user"),
-            "user_account_manager": self.user_has_groups("xiuman.group_account_manager"),
-            "user_debt_manager": self.user_has_groups("xiuman.group_account_debt_manager"),
-            "user_hr_user": self.user_has_groups("xiuman.group_hr_user"),
-            "user_hr_manager": self.user_has_groups("xiuman.group_hr_manager"),
-            "user_purchase_user": self.user_has_groups("xiuman.group_purchase_user"),
-            "user_purchase_manager": self.user_has_groups("xiuman.group_purchase_manager"),
-            "user_sale_user": self.user_has_groups("xiuman.group_sale_user"),
-            "user_sale_manager": self.user_has_groups("xiuman.group_sale_manager"),
-            "user_stock_user": self.user_has_groups("xiuman.group_stock_user"),
-            "user_stock_manager": self.user_has_groups("xiuman.group_stock_manager"),
+            "user_account_user": self.user_has_groups("marin.group_account_user"),
+            "user_account_manager": self.user_has_groups("marin.group_account_manager"),
+            "user_debt_manager": self.user_has_groups("marin.group_account_debt_manager"),
+            "user_hr_user": self.user_has_groups("marin.group_hr_user"),
+            "user_hr_manager": self.user_has_groups("marin.group_hr_manager"),
+            "user_purchase_user": self.user_has_groups("marin.group_purchase_user"),
+            "user_purchase_manager": self.user_has_groups("marin.group_purchase_manager"),
+            "user_sale_user": self.user_has_groups("marin.group_sale_user"),
+            "user_sale_manager": self.user_has_groups("marin.group_sale_manager"),
+            "user_stock_user": self.user_has_groups("marin.group_stock_user"),
+            "user_stock_manager": self.user_has_groups("marin.group_stock_manager"),
         }
 
     def _compute_group(self):

@@ -15,7 +15,7 @@ class StockQuantInherit(models.Model):
     removal_priority = fields.Integer(related="location_id.removal_priority", store=True)
 
     def _apply_inventory_group_validate(self):
-        if not self.user_has_groups("xiuman.group_stock_inventory_adjustment"):
+        if not self.user_has_groups("marin.group_stock_inventory_adjustment"):
             raise UserError(_("Only a Inventory manager can validate an inventory adjustment."))
 
     def _apply_inventory2(self):
@@ -54,7 +54,7 @@ class StockQuantInherit(models.Model):
     def action_view_inventory_group_validate(self, action):
         if self.user_has_groups(
             """stock.group_stock_user,!stock.group_stock_manager,
-        !xiuman.group_stock_inventory_adjustment"""
+        !marin.group_stock_inventory_adjustment"""
         ):
             action["search_default_my_count"] = True
         return action
@@ -104,6 +104,6 @@ class StockQuantInherit(models.Model):
             raise UserError(_("You can only change lots used by a single company."))
         if len(self) > 1:
             raise UserError(_("You can only change lot of one quant at a time."))
-        action = self.env["ir.actions.act_window"]._for_xml_id("xiuman.stock_quant_lot_wizard")
+        action = self.env["ir.actions.act_window"]._for_xml_id("marin.stock_quant_lot_wizard")
         action["context"] = {"active_model": self._name, "active_ids": self.ids}
         return action

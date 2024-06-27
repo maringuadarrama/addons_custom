@@ -59,7 +59,7 @@ class SaleOrder(models.Model):
                 )
 
     def action_sale_authorize_debt(self):
-        view = self.env.ref("xiuman.view_authorize_debt_wizard_form")
+        view = self.env.ref("marin.view_authorize_debt_wizard_form")
         return {
             "name": _("Authorize debt"),
             "type": "ir.actions.act_window",
@@ -75,7 +75,7 @@ class SaleOrder(models.Model):
         if self.partner_credit_warning and not self.payment_term_id.is_immediate:
             if self.commercial_partner_id.credit_on_hold:
                 raise UserError(_("The partner's credit has been held. Contact the Credit Manager."))
-            if not self.env.user.has_group("xiuman.group_account_debt_manager"):
+            if not self.env.user.has_group("marin.group_account_debt_manager"):
                 raise UserError(
                     _(
                         "The Partner %s does not have an authorized credit line. Contact the Credit Manager.",
@@ -120,7 +120,7 @@ class SaleOrder(models.Model):
         self._compute_delivery_status()
 
     def action_open_order_lines(self):
-        action = self.env["ir.actions.act_window"]._for_xml_id("xiuman.action_sale_order_line")
+        action = self.env["ir.actions.act_window"]._for_xml_id("marin.action_sale_order_line")
         action["domain"] = [("id", "in", self.order_line.ids)]
         return action
 

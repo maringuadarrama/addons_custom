@@ -64,10 +64,10 @@ class TestUsers(TransactionCase):
             ],
         )
         self.user.groups_id |= (
-            self.env.ref("xiuman.group_account_manager")
-            | self.env.ref("xiuman.group_purchase_user")
-            | self.env.ref("xiuman.group_sale_manager")
-            | self.env.ref("xiuman.group_account_debt_manager")
+            self.env.ref("marin.group_account_manager")
+            | self.env.ref("marin.group_purchase_user")
+            | self.env.ref("marin.group_sale_manager")
+            | self.env.ref("marin.group_account_debt_manager")
         )
         partner._compute_group()
         self.assertRecordValues(

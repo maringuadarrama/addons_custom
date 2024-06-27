@@ -7,12 +7,12 @@ class PurchaseOrderInherit(models.Model):
 
     def _domain_partner_id(self):
         categories = []
-        if self.user_has_groups("xiuman.group_purchase_core_business"):
-            categories.append(self.env.ref("xiuman.partner_category_core_supplier").id)
-        if self.user_has_groups("xiuman.partner_category_110"):
-            categories.append(self.env.ref("xiuman.partner_category_110").id)
-        if self.user_has_groups("xiuman.group_purchase_general"):
-            categories.append(self.env.ref("xiuman.partner_category_general_supplier").id)
+        if self.user_has_groups("marin.group_purchase_core_business"):
+            categories.append(self.env.ref("marin.partner_category_core_supplier").id)
+        if self.user_has_groups("marin.partner_category_110"):
+            categories.append(self.env.ref("marin.partner_category_110").id)
+        if self.user_has_groups("marin.group_purchase_general"):
+            categories.append(self.env.ref("marin.partner_category_general_supplier").id)
         if not categories:
             return [("id", "=", False)]
         return [

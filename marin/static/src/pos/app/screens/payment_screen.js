@@ -3,7 +3,7 @@
 import {PaymentScreen} from "@point_of_sale/app/screens/payment_screen/payment_screen";
 import {patch} from "@web/core/utils/patch";
 import {_t} from "@web/core/l10n/translation";
-import {MissingStockPopup} from "@xiuman/pos/app/popups/missing_stock_popup/missing_stock_popup";
+import {MissingStockPopup} from "@marin/pos/app/popups/missing_stock_popup/missing_stock_popup";
 
 patch(PaymentScreen.prototype, {
     async _isOrderValid(isForceValidate) {

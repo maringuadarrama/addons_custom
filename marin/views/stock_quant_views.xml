@@ -36,14 +36,14 @@
                 <attribute name="optional">hide</attribute>
             </xpath>
             <xpath expr="//button[@name='action_apply_inventory']" position="attributes">
-                <attribute name="groups">xiuman.group_stock_inventory_adjustment</attribute>
+                <attribute name="groups">marin.group_stock_inventory_adjustment</attribute>
             </xpath>
             <xpath expr="//header" position="inside">
                 <button
                     name="action_stock_quant_lot"
                     string="Change Lot"
                     type="object"
-                    groups="xiuman.group_stock_inventory_adjustment_lot"
+                    groups="marin.group_stock_inventory_adjustment_lot"
                 />
             </xpath>
         </field>

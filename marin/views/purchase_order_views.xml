@@ -199,7 +199,7 @@
                         type="object"
                         class="btn-link d-block"
                         invisible="receipt_status == 'full' or state not in ('purchase', 'done')"
-                        groups="xiuman.group_purchase_force_reception_status"
+                        groups="marin.group_purchase_force_reception_status"
                     />
                     <button
                         name="action_unforce_reception_status"
@@ -207,7 +207,7 @@
                         type="object"
                         class="btn-link d-block"
                         invisible="receipt_status != 'full'"
-                        groups="xiuman.group_purchase_force_reception_status"
+                        groups="marin.group_purchase_force_reception_status"
                     />
                 </div>
             </xpath>
@@ -221,7 +221,7 @@
         <field
             name="view_ids"
             eval="[(5, 0, 0),
-            (0, 0, {'view_mode': 'tree', 'view_id': ref('xiuman.purchase_order_view_tree')}),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('marin.purchase_order_view_tree')}),
             (0, 0, {'view_mode': 'kanban', 'view_id': ref('purchase.purchase_order_view_kanban_without_dashboard')}),
         ]"
         />

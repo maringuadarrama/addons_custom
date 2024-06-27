@@ -153,13 +153,13 @@
         <field name="priority" eval="100" />
         <field name="arch" type="xml">
             <xpath expr="//button[@name='button_cancel'][1]" position="attributes">
-                <attribute name="groups">xiuman.group_account_move_cancel</attribute>
+                <attribute name="groups">marin.group_account_move_cancel</attribute>
             </xpath>
             <xpath expr="//button[@name='button_cancel'][2]" position="attributes">
-                <attribute name="groups">xiuman.group_account_move_cancel</attribute>
+                <attribute name="groups">marin.group_account_move_cancel</attribute>
             </xpath>
             <xpath expr="//button[@name='button_draft']" position="attributes">
-                <attribute name="groups">xiuman.group_account_move_draft</attribute>
+                <attribute name="groups">marin.group_account_move_draft</attribute>
             </xpath>
             <xpath expr="//button[@name='button_set_checked']" position="after">
                 <button
@@ -167,7 +167,7 @@
                     string="Stored"
                     type="object"
                     invisible="stored"
-                    groups="xiuman.group_account_customer_invoice"
+                    groups="marin.group_account_customer_invoice"
                 />
             </xpath>
             <xpath expr="//header" position="inside">
@@ -178,7 +178,7 @@
                     type="object"
                     class="oe_highlight"
                     invisible="move_type != 'out_invoice' or state not in ['posted', 'draft'] or payment_state in ['paid', 'in_payment']"
-                    groups="xiuman.group_account_move_cash_discount"
+                    groups="marin.group_account_move_cash_discount"
                 />
                 <button
                     name="create_purchase_order"
@@ -258,17 +258,17 @@
             >
                 <attribute name="column_invisible">parent.move_type not in ['out_invoice','out_refund']</attribute>
                 <attribute name="optional">hide</attribute>
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
             <xpath
                 expr="//page[@id='invoice_tab']/field[@name='invoice_line_ids']/form//field[@name='purchase_price']"
                 position="attributes"
             >
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
             <xpath expr="//group[hasclass('oe_subtotal_footer')]/field[@name='margin']" position="attributes">
                 <attribute name="invisible">move_type not in ['out_invoice', 'out_refund', 'out_receipt']</attribute>
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
             <xpath expr="//page[@id='aml_tab']" position="attributes">
                 <attribute name="groups">account.group_account_readonly,account.group_account_user</attribute>

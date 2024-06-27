@@ -12,7 +12,7 @@ class FleetVehicleInherit(models.Model):
     fuel_card_id = fields.Many2one(
         "documents.document",
         domain=lambda self: [
-            ("tag_ids", "in", self.env.ref("xiuman.documents_fleet_fuel_card", False).ids),
+            ("tag_ids", "in", self.env.ref("marin.documents_fleet_fuel_card", False).ids),
             "|",
             ("vehicle_id", "=", self.id),
             ("vehicle_id", "=", False),
@@ -25,7 +25,7 @@ class FleetVehicleInherit(models.Model):
     highway_pass_id = fields.Many2one(
         "documents.document",
         domain=lambda self: [
-            ("tag_ids", "in", self.env.ref("xiuman.documents_fleet_highway_pass", False).ids),
+            ("tag_ids", "in", self.env.ref("marin.documents_fleet_highway_pass", False).ids),
             "|",
             ("vehicle_id", "=", self.id),
             ("vehicle_id", "=", False),
@@ -55,7 +55,7 @@ class FleetVehicleInherit(models.Model):
 
     def _inverse_fuel_card(self):
         """Set the vehicle on the corresponding document, and unset the vehicle on previously related documents"""
-        tag = self.env.ref("xiuman.documents_fleet_fuel_card", False)
+        tag = self.env.ref("marin.documents_fleet_fuel_card", False)
         for rec in self:
             doc = rec.fuel_card_id
             other_docs = doc.search([("vehicle_id", "=", rec.id), ("tag_ids", "in", tag.ids)]) - doc
@@ -84,7 +84,7 @@ class FleetVehicleInherit(models.Model):
 
     def _inverse_highway_pass(self):
         """Set the vehicle on the corresponding document, and unset the vehicle on previously related documents"""
-        tag = self.env.ref("xiuman.documents_fleet_highway_pass", False)
+        tag = self.env.ref("marin.documents_fleet_highway_pass", False)
         for rec in self:
             doc = rec.highway_pass_id
             other_docs = doc.search([("vehicle_id", "=", rec.id), ("tag_ids", "in", tag.ids)]) - doc

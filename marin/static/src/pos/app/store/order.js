@@ -2,7 +2,7 @@
 
 import {Order} from "@point_of_sale/app/store/models";
 import {patch} from "@web/core/utils/patch";
-import {MissingStockPopup} from "@xiuman/pos/app/popups/missing_stock_popup/missing_stock_popup";
+import {MissingStockPopup} from "@marin/pos/app/popups/missing_stock_popup/missing_stock_popup";
 import {_t} from "@web/core/l10n/translation";
 
 patch(Order.prototype, {

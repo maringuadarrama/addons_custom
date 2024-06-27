@@ -3,7 +3,7 @@
     "summary": "Agriculture managment with project",
     "version": "17.0.0.0.0",
     "category": "Hidden",
-    "website": "https://www.xiuman.mx",
+    "website": "https://www.marin.mx",
     "author": "Luis Marin, Vauxoo",
     "depends": [
         "base_address_extended",

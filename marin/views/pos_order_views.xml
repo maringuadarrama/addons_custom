@@ -17,7 +17,7 @@
         <field name="inherit_id" ref="point_of_sale.view_pos_pos_form" />
         <field name="arch" type="xml">
             <xpath expr="//group[@name='order_total']//field[@name='margin']/.." position="attributes">
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
         </field>
     </record>

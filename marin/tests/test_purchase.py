@@ -163,7 +163,7 @@ class TestPurchase(ValuationReconciliationTestCommon):
         )
 
     def test_05_purchase_order_create_and_show(self):
-        with Form(self.env["purchase.order.line"], view="xiuman.view_purchase_order_line_tree") as line_form:
+        with Form(self.env["purchase.order.line"], view="marin.view_purchase_order_line_tree") as line_form:
             line_form.partner_id = self.partner_a
             line_form.product_id = self.product_id_1
             line_form.price_unit = 190.50

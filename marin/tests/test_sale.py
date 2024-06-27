@@ -128,13 +128,13 @@ class TestSale(TestSaleCommon):
         order.order_line.price_unit = 10.0
         order._compute_partner_credit_warning()
         partner.credit_on_hold = True
-        self.env.user.groups_id = [(3, self.env.ref("xiuman.group_account_debt_manager").id)]
+        self.env.user.groups_id = [(3, self.env.ref("marin.group_account_debt_manager").id)]
         with self.assertRaisesRegex(UserError, "The partner's credit has been held. Contact the Credit Manager."):
             order.action_confirm()
         partner.credit_on_hold = False
         with self.assertRaises(UserError):
             order.action_confirm()
-        self.env.user.groups_id = [(4, self.env.ref("xiuman.group_account_debt_manager").id)]
+        self.env.user.groups_id = [(4, self.env.ref("marin.group_account_debt_manager").id)]
         res = order.action_confirm()
         self.assertEqual(order.state, "draft")
         self.assertEqual(res.get("res_model"), "authorize.debt.wizard")
@@ -174,7 +174,7 @@ class TestSale(TestSaleCommon):
         picking2.button_fillwithstock()
 
     def test_04_sale_order_authorize_debt_multi(self):
-        self.env.user.groups_id = [(4, self.env.ref("xiuman.group_account_debt_manager").id)]
+        self.env.user.groups_id = [(4, self.env.ref("marin.group_account_debt_manager").id)]
         order = self.sale_order
         order.payment_term_id = self.pay_term_net_30_days
         partner = order.commercial_partner_id
@@ -198,7 +198,7 @@ class TestSale(TestSaleCommon):
         self.assertEqual(partner.credit_limit, 100)
 
     def test_05_sale_order_authorize_errors(self):
-        self.env.user.groups_id = [(4, self.env.ref("xiuman.group_account_debt_manager").id)]
+        self.env.user.groups_id = [(4, self.env.ref("marin.group_account_debt_manager").id)]
         ctx = {"active_model": "sale.order", "active_ids": []}
         with self.assertRaisesRegex(
             UserError, "You can't authorize credit because the records dont match the criteria."
@@ -304,7 +304,7 @@ class TestSale(TestSaleCommon):
         )
 
     def test_09_sale_order_create_and_show(self):
-        with Form(self.env["sale.order.line"], view="xiuman.view_order_line_tree_marin") as line_form:
+        with Form(self.env["sale.order.line"], view="marin.view_order_line_tree_marin") as line_form:
             line_form.order_partner_id = self.partner_a
             line_form.product_id = self.product
             line_form.price_unit = 190.50

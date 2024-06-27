@@ -7,7 +7,7 @@
         <field
             name="domain_force"
         >['|', '|', ('user_id', '=', user.id), ('user_id', '=', False), ('team_id', 'in', user.crm_team_ids.ids)]</field>
-        <field name="groups" eval="[(4, ref('xiuman.group_sale_salesman_team'))]" />
+        <field name="groups" eval="[(4, ref('marin.group_sale_salesman_team'))]" />
     </record>
 
     <record id="sale_order_report_salesteam_rule" model="ir.rule">
@@ -16,7 +16,7 @@
         <field
             name="domain_force"
         >['|', '|', ('user_id', '=', user.id), ('user_id', '=', False), ('team_id', 'in', user.crm_team_ids.ids)]</field>
-        <field name="groups" eval="[(4, ref('xiuman.group_sale_salesman_team'))]" />
+        <field name="groups" eval="[(4, ref('marin.group_sale_salesman_team'))]" />
     </record>
 
     <record id="sale_order_line_salesteam_rule" model="ir.rule">
@@ -26,7 +26,7 @@
         <field
             name="domain_force"
         >['|', '|', ('salesman_id', '=', user.id), ('salesman_id', '=', False), ('order_id.team_id', 'in', user.crm_team_ids.ids)]</field>
-        <field name="groups" eval="[(4, ref('xiuman.group_sale_salesman_team'))]" />
+        <field name="groups" eval="[(4, ref('marin.group_sale_salesman_team'))]" />
     </record>
 
     <record id="account_invoice_report_rule_see_salesteam" model="ir.rule">
@@ -35,7 +35,7 @@
         <field
             name="domain_force"
         >['|', '|', ('invoice_user_id', '=', user.id), ('invoice_user_id', '=', False), ('team_id', 'in', user.crm_team_ids.ids)]</field>
-        <field name="groups" eval="[(4, ref('xiuman.group_sale_salesman_team'))]" />
+        <field name="groups" eval="[(4, ref('marin.group_sale_salesman_team'))]" />
     </record>
 
     <record id="account_invoice_rule_see_salesteam" model="ir.rule">
@@ -44,7 +44,7 @@
         <field
             name="domain_force"
         >[('move_type', 'in', ('out_invoice', 'out_refund')), '|', '|', ('invoice_user_id', '=', user.id), ('invoice_user_id', '=', False), ('team_id', 'in', user.crm_team_ids.ids)]</field>
-        <field name="groups" eval="[(4, ref('xiuman.group_sale_salesman_team'))]" />
+        <field name="groups" eval="[(4, ref('marin.group_sale_salesman_team'))]" />
     </record>
 
     <record id="account_invoice_line_rule_see_salesteam" model="ir.rule">
@@ -53,7 +53,7 @@
         <field
             name="domain_force"
         >[('move_id.move_type', 'in', ('out_invoice', 'out_refund')), '|', '|', ('move_id.invoice_user_id', '=', user.id), ('move_id.invoice_user_id', '=', False), ('move_id.team_id', 'in', user.crm_team_ids.ids)]</field>
-        <field name="groups" eval="[(4, ref('xiuman.group_sale_salesman_team'))]" />
+        <field name="groups" eval="[(4, ref('marin.group_sale_salesman_team'))]" />
     </record>
 
     <record id="account_invoice_send_rule_see_salesteam" model="ir.rule">
@@ -62,7 +62,7 @@
         <field
             name="domain_force"
         >[('move_ids.move_type', 'in', ('out_invoice', 'out_refund')), '|', '|', ('move_ids.invoice_user_id', '=', user.id), ('move_ids.invoice_user_id', '=', False), ('move_ids.team_id', 'in', user.crm_team_ids.ids)]</field>
-        <field name="groups" eval="[(4, ref('xiuman.group_sale_salesman_team'))]" />
+        <field name="groups" eval="[(4, ref('marin.group_sale_salesman_team'))]" />
     </record>
 
 </odoo>

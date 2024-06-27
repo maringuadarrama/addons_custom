@@ -58,7 +58,7 @@ class PosCashTransferWizard(models.TransientModel):
         return res
 
     def _get_activity_type_for_cash_transfer(self):
-        return self.env.ref("xiuman.cash_transfer_activity", raise_if_not_found=False)
+        return self.env.ref("marin.cash_transfer_activity", raise_if_not_found=False)
 
     def _create_cash_transfer_payment(self):
         if self.amount == 0.0:
@@ -98,7 +98,7 @@ class PosCashTransferWizard(models.TransientModel):
         users = self._get_schedule_activity_users()
         for user in users:
             payment.activity_schedule(
-                "xiuman.cash_transfer_activity",
+                "marin.cash_transfer_activity",
                 user_id=user.id,
                 note=_("Cash Transfer"),
             )

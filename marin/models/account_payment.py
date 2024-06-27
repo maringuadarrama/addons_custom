@@ -12,7 +12,7 @@ class AccountPayment(models.Model):
 
     def action_post(self):
         res = super().action_post()
-        folder = self.env.ref("xiuman.documents_payment_receipts_folder")
+        folder = self.env.ref("marin.documents_payment_receipts_folder")
         if self.partner_type == "customer":
             if not self.client_receipt_document_share_id:
                 self.client_receipt_document_share_id = self.env["documents.share"].create(
@@ -36,7 +36,7 @@ class AccountPayment(models.Model):
 
     def _generate_client_receipt_from_report(self):
         doc_name = _("Client Receipt %s", self.name)
-        document = self._generate_document_from_report(doc_name, "xiuman.action_report_payment_receipt")
+        document = self._generate_document_from_report(doc_name, "marin.action_report_payment_receipt")
         self.client_receipt_document_share_id.document_ids.attachment_id.unlink()
         self.client_receipt_document_share_id.document_ids.unlink()
         self.client_receipt_document_share_id.document_ids = [(4, document.id)]
@@ -50,7 +50,7 @@ class AccountPayment(models.Model):
 
     def _generate_document_from_report(self, doc_name, report_xml_id):
         report_content, _report_format = self.env["ir.actions.report"]._render_qweb_pdf(report_xml_id, self.id)
-        folder = self.env.ref("xiuman.documents_payment_receipts_folder")
+        folder = self.env.ref("marin.documents_payment_receipts_folder")
         attachment = self.env["ir.attachment"].create(
             {
                 "name": doc_name,

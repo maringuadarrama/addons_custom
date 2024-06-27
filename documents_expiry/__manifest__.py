@@ -2,7 +2,7 @@
     "name": "Documents Expiration Date",
     "summary": "Set document expiration",
     "author": "Luis Marin",
-    "website": "https://xiuman.mx",
+    "website": "https://marin.mx",
     "category": "Productivity/Documents",
     "version": "17.0.0.0.0",
     "depends": ["documents"],

@@ -17,10 +17,10 @@
         <field name="inherit_id" ref="product.product_template_tree_view" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='list_price']" position="attributes">
-                <attribute name="groups">xiuman.group_sale_readonly</attribute>
+                <attribute name="groups">marin.group_sale_readonly</attribute>
             </xpath>
             <xpath expr="//field[@name='standard_price']" position="attributes">
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
         </field>
     </record>
@@ -42,7 +42,7 @@
         <field name="inherit_id" ref="product.product_template_kanban_view" />
         <field name="arch" type="xml">
             <xpath expr="//div[@name='product_lst_price']" position="attributes">
-                <attribute name="groups">xiuman.group_sale_readonly</attribute>
+                <attribute name="groups">marin.group_sale_readonly</attribute>
             </xpath>
         </field>
     </record>
@@ -59,26 +59,26 @@
                 <field name="user_sale_manager" invisible="1" />
             </xpath>
             <xpath expr="//label[@for='list_price']" position="attributes">
-                <attribute name="groups">xiuman.group_sale_readonly</attribute>
+                <attribute name="groups">marin.group_sale_readonly</attribute>
             </xpath>
             <xpath expr="//div[@name='pricing']" position="attributes">
-                <attribute name="groups">xiuman.group_sale_readonly</attribute>
+                <attribute name="groups">marin.group_sale_readonly</attribute>
             </xpath>
             <xpath expr="//field[@name='list_price']" position="attributes">
                 <attribute name="readonly">not user_sale_manager</attribute>
             </xpath>
             <xpath expr="//label[@for='standard_price']" position="attributes">
                 <attribute name="invisible">product_variant_count &gt; 1 and not is_product_variant</attribute>
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
             <xpath expr="//div[@name='standard_price_uom']" position="attributes">
-                <attribute name="groups">xiuman.group_product_cost_readonly</attribute>
+                <attribute name="groups">marin.group_product_cost_readonly</attribute>
             </xpath>
             <xpath expr="//field[@name='standard_price']" position="attributes">
                 <attribute name="readonly">not user_product_cost_manager</attribute>
             </xpath>
             <xpath expr="//page[@name='sales']" position="attributes">
-                <attribute name="groups">xiuman.group_sale_readonly</attribute>
+                <attribute name="groups">marin.group_sale_readonly</attribute>
             </xpath>
             <xpath expr="//field[@name='property_account_income_id']" position="after">
                 <field name="property_account_income_refund_id" />
