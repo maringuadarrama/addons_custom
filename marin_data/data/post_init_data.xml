@@ -4,12 +4,12 @@
         <field
             name="company_ids"
             eval="[
-                Command.link(ref('xiuman_data.company_lmmr')),
-                Command.link(ref('xiuman_data.company_tjgl')),
-                Command.link(ref('xiuman_data.company_ammg')),
-                Command.link(ref('xiuman_data.company_cfmg')),
-                Command.link(ref('xiuman_data.company_glmm')),
-                Command.link(ref('xiuman_data.company_xiuman')),
+                Command.link(ref('marin_data.company_lmmr')),
+                Command.link(ref('marin_data.company_tjgl')),
+                Command.link(ref('marin_data.company_ammg')),
+                Command.link(ref('marin_data.company_cfmg')),
+                Command.link(ref('marin_data.company_glmm')),
+                Command.link(ref('marin_data.company_marin')),
             ]"
         />
     </record>

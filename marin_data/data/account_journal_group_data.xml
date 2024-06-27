@@ -14,13 +14,13 @@
 
     <record id="journal_group_3" model="account.journal.group">
         <field name="name">Internal</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="sequence" eval="10" />
     </record>
 
     <record id="journal_group_4" model="account.journal.group">
         <field name="name">Fiscal</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="sequence" eval="11" />
     </record>
 </odoo>

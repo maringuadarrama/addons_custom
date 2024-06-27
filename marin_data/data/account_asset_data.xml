@@ -4,10 +4,10 @@
         <field name="name">Automovil FF</field>
         <field name="company_id" ref="base.main_company" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_154_01_001_main_company" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_154_01_001_main_company" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_09_001_main_company" />
-        <field name="journal_id" ref="xiuman_data.journal_528" />
+        <field name="account_asset_id" ref="marin_data.account_154_01_001_main_company" />
+        <field name="account_depreciation_id" ref="marin_data.account_154_01_001_main_company" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_09_001_main_company" />
+        <field name="journal_id" ref="marin_data.journal_528" />
         <field name="method">linear</field>
         <field name="method_number">48</field>
         <field name="method_period">1</field>
@@ -20,10 +20,10 @@
         <field name="name">Automovil NF</field>
         <field name="company_id" ref="base.main_company" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_154_01_002_main_company" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_154_01_002_main_company" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_09_002_main_company" />
-        <field name="journal_id" ref="xiuman_data.journal_529" />
+        <field name="account_asset_id" ref="marin_data.account_154_01_002_main_company" />
+        <field name="account_depreciation_id" ref="marin_data.account_154_01_002_main_company" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_09_002_main_company" />
+        <field name="journal_id" ref="marin_data.journal_529" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">1</field>
@@ -36,10 +36,10 @@
         <field name="name">Equipo de computo FF</field>
         <field name="company_id" ref="base.main_company" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_156_01_001_main_company" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_156_01_001_main_company" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_11_001_main_company" />
-        <field name="journal_id" ref="xiuman_data.journal_530" />
+        <field name="account_asset_id" ref="marin_data.account_156_01_001_main_company" />
+        <field name="account_depreciation_id" ref="marin_data.account_156_01_001_main_company" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_11_001_main_company" />
+        <field name="journal_id" ref="marin_data.journal_530" />
         <field name="method">linear</field>
         <field name="method_number">36</field>
         <field name="method_period">1</field>
@@ -52,10 +52,10 @@
         <field name="name">Equipo de telecom FF</field>
         <field name="company_id" ref="base.main_company" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_165_01_001_main_company" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_165_01_001_main_company" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_12_001_main_company" />
-        <field name="journal_id" ref="xiuman_data.journal_531" />
+        <field name="account_asset_id" ref="marin_data.account_165_01_001_main_company" />
+        <field name="account_depreciation_id" ref="marin_data.account_165_01_001_main_company" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_12_001_main_company" />
+        <field name="journal_id" ref="marin_data.journal_531" />
         <field name="method">linear</field>
         <field name="method_number">36</field>
         <field name="method_period">1</field>
@@ -68,10 +68,10 @@
         <field name="name">Maquinaria FF</field>
         <field name="company_id" ref="base.main_company" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_153_01_001_main_company" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_153_01_001_main_company" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_08_001_main_company" />
-        <field name="journal_id" ref="xiuman_data.journal_532" />
+        <field name="account_asset_id" ref="marin_data.account_153_01_001_main_company" />
+        <field name="account_depreciation_id" ref="marin_data.account_153_01_001_main_company" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_08_001_main_company" />
+        <field name="journal_id" ref="marin_data.journal_532" />
         <field name="method">linear</field>
         <field name="method_number">120</field>
         <field name="method_period">1</field>
@@ -84,10 +84,10 @@
         <field name="name">Maquinaria NF</field>
         <field name="company_id" ref="base.main_company" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_153_01_002_main_company" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_153_01_002_main_company" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_08_002_main_company" />
-        <field name="journal_id" ref="xiuman_data.journal_533" />
+        <field name="account_asset_id" ref="marin_data.account_153_01_002_main_company" />
+        <field name="account_depreciation_id" ref="marin_data.account_153_01_002_main_company" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_08_002_main_company" />
+        <field name="journal_id" ref="marin_data.journal_533" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -100,10 +100,10 @@
         <field name="name">Mobiliario oficina FF</field>
         <field name="company_id" ref="base.main_company" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_155_01_001_main_company" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_155_01_001_main_company" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_10_001_main_company" />
-        <field name="journal_id" ref="xiuman_data.journal_534" />
+        <field name="account_asset_id" ref="marin_data.account_155_01_001_main_company" />
+        <field name="account_depreciation_id" ref="marin_data.account_155_01_001_main_company" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_10_001_main_company" />
+        <field name="journal_id" ref="marin_data.journal_534" />
         <field name="method">linear</field>
         <field name="method_number">120</field>
         <field name="method_period">1</field>
@@ -116,10 +116,10 @@
         <field name="name">Mobiliario oficina NF</field>
         <field name="company_id" ref="base.main_company" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_155_01_002_main_company" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_155_01_002_main_company" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_10_002_main_company" />
-        <field name="journal_id" ref="xiuman_data.journal_535" />
+        <field name="account_asset_id" ref="marin_data.account_155_01_002_main_company" />
+        <field name="account_depreciation_id" ref="marin_data.account_155_01_002_main_company" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_10_002_main_company" />
+        <field name="journal_id" ref="marin_data.journal_535" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -132,10 +132,10 @@
         <field name="name">Terrenos FF</field>
         <field name="company_id" ref="base.main_company" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_151_01_001_main_company" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_151_01_001_main_company" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_14_001_main_company" />
-        <field name="journal_id" ref="xiuman_data.journal_536" />
+        <field name="account_asset_id" ref="marin_data.account_151_01_001_main_company" />
+        <field name="account_depreciation_id" ref="marin_data.account_151_01_001_main_company" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_14_001_main_company" />
+        <field name="journal_id" ref="marin_data.journal_536" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -148,10 +148,10 @@
         <field name="name">Terrenos NF</field>
         <field name="company_id" ref="base.main_company" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_151_01_002_main_company" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_151_01_002_main_company" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_14_002_main_company" />
-        <field name="journal_id" ref="xiuman_data.journal_537" />
+        <field name="account_asset_id" ref="marin_data.account_151_01_002_main_company" />
+        <field name="account_depreciation_id" ref="marin_data.account_151_01_002_main_company" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_14_002_main_company" />
+        <field name="journal_id" ref="marin_data.journal_537" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -162,12 +162,12 @@
 
     <record id="asset_8" model="account.asset">
         <field name="name">Automovil FF</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_154_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_154_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_09_001_lmmr" />
-        <field name="journal_id" ref="xiuman_data.journal_580" />
+        <field name="account_asset_id" ref="marin_data.account_154_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin_data.account_154_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_09_001_lmmr" />
+        <field name="journal_id" ref="marin_data.journal_580" />
         <field name="method">linear</field>
         <field name="method_number">48</field>
         <field name="method_period">1</field>
@@ -178,12 +178,12 @@
 
     <record id="asset_17" model="account.asset">
         <field name="name">Automovil NF</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_154_01_002_lmmr" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_154_01_002_lmmr" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_09_002_lmmr" />
-        <field name="journal_id" ref="xiuman_data.journal_581" />
+        <field name="account_asset_id" ref="marin_data.account_154_01_002_lmmr" />
+        <field name="account_depreciation_id" ref="marin_data.account_154_01_002_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_09_002_lmmr" />
+        <field name="journal_id" ref="marin_data.journal_581" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -194,12 +194,12 @@
 
     <record id="asset_9" model="account.asset">
         <field name="name">Equipo de computo FF</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_156_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_156_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_11_001_lmmr" />
-        <field name="journal_id" ref="xiuman_data.journal_582" />
+        <field name="account_asset_id" ref="marin_data.account_156_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin_data.account_156_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_11_001_lmmr" />
+        <field name="journal_id" ref="marin_data.journal_582" />
         <field name="method">linear</field>
         <field name="method_number">36</field>
         <field name="method_period">1</field>
@@ -210,12 +210,12 @@
 
     <record id="asset_10" model="account.asset">
         <field name="name">Equipo de telecom FF</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_165_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_165_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_12_001_lmmr" />
-        <field name="journal_id" ref="xiuman_data.journal_583" />
+        <field name="account_asset_id" ref="marin_data.account_165_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin_data.account_165_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_12_001_lmmr" />
+        <field name="journal_id" ref="marin_data.journal_583" />
         <field name="method">linear</field>
         <field name="method_number">36</field>
         <field name="method_period">1</field>
@@ -226,12 +226,12 @@
 
     <record id="asset_11" model="account.asset">
         <field name="name">Maquinaria FF</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_153_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_153_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_08_001_lmmr" />
-        <field name="journal_id" ref="xiuman_data.journal_584" />
+        <field name="account_asset_id" ref="marin_data.account_153_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin_data.account_153_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_08_001_lmmr" />
+        <field name="journal_id" ref="marin_data.journal_584" />
         <field name="method">linear</field>
         <field name="method_number">120</field>
         <field name="method_period">1</field>
@@ -242,12 +242,12 @@
 
     <record id="asset_12" model="account.asset">
         <field name="name">Maquinaria NF</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_153_01_002_lmmr" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_153_01_002_lmmr" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_08_002_lmmr" />
-        <field name="journal_id" ref="xiuman_data.journal_585" />
+        <field name="account_asset_id" ref="marin_data.account_153_01_002_lmmr" />
+        <field name="account_depreciation_id" ref="marin_data.account_153_01_002_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_08_002_lmmr" />
+        <field name="journal_id" ref="marin_data.journal_585" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -258,12 +258,12 @@
 
     <record id="asset_13" model="account.asset">
         <field name="name">Mobiliario oficina FF</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_155_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_155_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_10_001_lmmr" />
-        <field name="journal_id" ref="xiuman_data.journal_586" />
+        <field name="account_asset_id" ref="marin_data.account_155_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin_data.account_155_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_10_001_lmmr" />
+        <field name="journal_id" ref="marin_data.journal_586" />
         <field name="method">linear</field>
         <field name="method_number">120</field>
         <field name="method_period">1</field>
@@ -274,12 +274,12 @@
 
     <record id="asset_20" model="account.asset">
         <field name="name">Mobiliario oficina FF</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_155_01_002_lmmr" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_155_01_002_lmmr" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_10_002_lmmr" />
-        <field name="journal_id" ref="xiuman_data.journal_587" />
+        <field name="account_asset_id" ref="marin_data.account_155_01_002_lmmr" />
+        <field name="account_depreciation_id" ref="marin_data.account_155_01_002_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_10_002_lmmr" />
+        <field name="journal_id" ref="marin_data.journal_587" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -290,12 +290,12 @@
 
     <record id="asset_14" model="account.asset">
         <field name="name">Terrenos FF</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_151_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_151_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_14_001_lmmr" />
-        <field name="journal_id" ref="xiuman_data.journal_588" />
+        <field name="account_asset_id" ref="marin_data.account_151_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin_data.account_151_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_14_001_lmmr" />
+        <field name="journal_id" ref="marin_data.journal_588" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -306,12 +306,12 @@
 
     <record id="asset_15" model="account.asset">
         <field name="name">Terrenos NF</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="xiuman_data.account_151_01_002_lmmr" />
-        <field name="account_depreciation_id" ref="xiuman_data.account_151_01_002_lmmr" />
-        <field name="account_depreciation_expense_id" ref="xiuman_data.account_504_14_002_lmmr" />
-        <field name="journal_id" ref="xiuman_data.journal_589" />
+        <field name="account_asset_id" ref="marin_data.account_151_01_002_lmmr" />
+        <field name="account_depreciation_id" ref="marin_data.account_151_01_002_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin_data.account_504_14_002_lmmr" />
+        <field name="journal_id" ref="marin_data.journal_589" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>

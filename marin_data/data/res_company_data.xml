@@ -4,7 +4,7 @@
         <field name="name">LUIS MANUEL MARIN GUADARRAMA</field>
         <field name="vat">MAGL910204CY8</field>
         <field name="phone">+52 722 232 0859</field>
-        <field name="website">https://xiuman.mx</field>
+        <field name="website">https://agromarin.mx</field>
         <field name="email">atencion@agromarin.mx</field>
         <field name="street">Avenida Codagem SN</field>
         <field name="street2">San Lorenzo Coacalco</field>
@@ -28,7 +28,7 @@
             Mexico</p>
         </field>
         <field name="report_footer" type="html">
-            <p>+52 722 232 0859 atencion@agromarin.mx https://xiuman.mx</p>
+            <p>+52 722 232 0859 atencion@agromarin.mx https://agromarin.mx</p>
         </field>
         <field name="account_use_credit_limit" eval="True" />
         <field name="l10n_mx_edi_fiscal_regime">612</field>
@@ -211,7 +211,7 @@
         <field name="sequence" eval="12" />
     </record>
 
-    <record id="partner_xiuman" model="res.partner">
+    <record id="partner_marin" model="res.partner">
         <field name="name">XIUMAN AGRO</field>
         <field name="type">contact</field>
         <field name="is_company" eval="True" />
@@ -229,11 +229,11 @@
         <field name="l10n_mx_type_of_operation">85</field>
     </record>
 
-    <record id="company_xiuman" model="res.company">
+    <record id="company_marin" model="res.company">
         <field name="name">XIUMAN AGRO</field>
         <field name="code">XM</field>
-        <field name="partner_id" ref="partner_xiuman" />
-        <field name="website">https://xiuman.mx</field>
+        <field name="partner_id" ref="partner_marin" />
+        <field name="website">https://agromarin.mx</field>
         <field name="external_report_layout_id" ref="web.external_layout_striped" />
         <field name="paperformat_id" ref="base.paperformat_us" />
         <field name="chart_template">mx</field>

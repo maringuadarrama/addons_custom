@@ -7,36 +7,36 @@
 
     <record id="hr_department_3" model="hr.department">
         <field name="name">Direction</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
     </record>
 
     <record id="hr_department_4" model="hr.department">
         <field name="name">Commercial</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
     </record>
 
     <record id="hr_department_5" model="hr.department">
         <field name="name">Business services</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
     </record>
 
     <record id="hr_department_6" model="hr.department">
         <field name="name">Auditing</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
     </record>
 
     <record id="hr_department_7" model="hr.department">
         <field name="name">Operations</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
     </record>
 
     <record id="hr_department_8" model="hr.department">
         <field name="name">Management</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
     </record>
 
     <record id="hr_department_9" model="hr.department">
         <field name="name">Commercial</field>
-        <field name="company_id" ref="xiuman_data.company_glmm" />
+        <field name="company_id" ref="marin_data.company_glmm" />
     </record>
 </odoo>

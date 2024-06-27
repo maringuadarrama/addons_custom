@@ -2,7 +2,7 @@ from . import wizards
 from odoo import tools
 
 
-def _pre_init_xiuman(env):
+def _pre_init_marin(env):
     env.cr.execute("""SELECT setval('"public"."account_payment_term_id_seq"', 100, true);""")
     env.cr.execute("""SELECT setval('"public"."account_payment_term_line_id_seq"', 100, true);""")
     env.cr.execute("""SELECT setval('"public"."product_category_id_seq"', 100, true);""")
@@ -10,37 +10,37 @@ def _pre_init_xiuman(env):
     env.cr.execute("""SELECT setval('"public"."uom_category_id_seq"', 100, true);""")
     env.cr.execute("""SELECT setval('"public"."uom_uom_id_seq"', 100, true);""")
 
-    tools.convert.convert_file(env, "xiuman_data", "data/uom.category.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/uom.uom.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/product.category.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/product.tag.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/stock.package.type.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/stock.storage.category.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/uom.category.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/uom.uom.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/product.category.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/product.tag.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/stock.package.type.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/stock.storage.category.csv", None, mode="init", kind="data")
     tools.convert.convert_file(
-        env, "xiuman_data", "data/fleet.vehicle.model.brand.csv", None, mode="init", kind="data"
+        env, "marin_data", "data/fleet.vehicle.model.brand.csv", None, mode="init", kind="data"
     )
     suv_demo = env.ref("fleet.model_category_2", False)
     if suv_demo:
         suv_demo.write({"name": "SUV-demo"})
     tools.convert.convert_file(
-        env, "xiuman_data", "data/fleet.vehicle.model.category.csv", None, mode="init", kind="data"
+        env, "marin_data", "data/fleet.vehicle.model.category.csv", None, mode="init", kind="data"
     )
-    tools.convert.convert_file(env, "xiuman_data", "data/fleet.vehicle.model.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/pos.category.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/res_company_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/fleet.vehicle.model.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/pos.category.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/res_company_data.xml", None, mode="init", kind="data")
 
     env.cr.execute("""SELECT setval('"public"."product_pricelist_id_seq"', 100, true);""")
     env.cr.execute("""SELECT setval('"public"."product_pricelist_item_id_seq"', 1000, true);""")
-    tools.convert.convert_file(env, "xiuman_data", "data/product_pricelist_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/product_pricelist_data.xml", None, mode="init", kind="data")
 
     env.cr.execute("""SELECT setval('"public"."resource_calendar_id_seq"', 100, true);""")
     env.cr.execute("""SELECT setval('"public"."resource_calendar_attendance_id_seq"', 1000, true);""")
-    tools.convert.convert_file(env, "xiuman_data", "data/resource_calendar_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/resource_calendar_data.xml", None, mode="init", kind="data")
 
     env.cr.execute("""SELECT setval('"public"."res_partner_id_seq"', 200, true);""")
     env.cr.execute("""SELECT setval('"public"."res_users_id_seq"', 100, true);""")
-    tools.convert.convert_file(env, "xiuman_data", "data/website_data.xml", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/res_users_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/website_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/res_users_data.xml", None, mode="init", kind="data")
 
     env.cr.execute("""SELECT setval('"public"."stock_location_id_seq"', 1000, true);""")
     env.cr.execute("""SELECT setval('"public"."stock_picking_type_id_seq"', 1000, true);""")
@@ -58,14 +58,14 @@ def _pre_init_xiuman(env):
         if not exist:
             env["ir.model.data"].create(
                 {
-                    "module": "xiuman_data",
+                    "module": "marin_data",
                     "model": "stock.warehouse",
                     "name": "stock_warehouse_%s" % wh.id,
                     "res_id": wh.id,
                     "noupdate": True,
                 }
             )
-    tools.convert.convert_file(env, "xiuman_data", "data/stock_warehouse_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/stock_warehouse_data.xml", None, mode="init", kind="data")
 
     locations = (
         env["stock.location"]
@@ -77,14 +77,14 @@ def _pre_init_xiuman(env):
         if not exist:
             env["ir.model.data"].create(
                 {
-                    "module": "xiuman_data",
+                    "module": "marin_data",
                     "model": "stock.location",
                     "name": "stock_location_%s" % ln.id,
                     "res_id": ln.id,
                     "noupdate": True,
                 }
             )
-    tools.convert.convert_file(env, "xiuman_data", "data/stock.location.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/stock.location.csv", None, mode="init", kind="data")
 
     types = (
         env["stock.picking.type"]
@@ -96,17 +96,17 @@ def _pre_init_xiuman(env):
         if not exist:
             env["ir.model.data"].create(
                 {
-                    "module": "xiuman_data",
+                    "module": "marin_data",
                     "model": "stock.picking.type",
                     "name": "stock_picking_type_%s" % spt.id,
                     "res_id": spt.id,
                     "noupdate": True,
                 }
             )
-    tools.convert.convert_file(env, "xiuman_data", "data/stock.picking.type.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/stock.route.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/stock.picking.type.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/stock.route.csv", None, mode="init", kind="data")
     # env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 5000, true);""")
-    # tools.convert.convert_file(env, "xiuman_data", "data/stock.rule.csv", None, mode="init", kind="data")
+    # tools.convert.convert_file(env, "marin_data", "data/stock.rule.csv", None, mode="init", kind="data")
 
     env.cr.execute("""SELECT setval('"public"."account_account_id_seq"', 1000, true);""")
     env.cr.execute("""SELECT setval('"public"."account_analytic_plan_id_seq"', 200, true);""")
@@ -116,30 +116,30 @@ def _pre_init_xiuman(env):
     env.cr.execute("""SELECT setval('"public"."account_tax_id_seq"', 500, true);""")
     env.cr.execute("""SELECT setval('"public"."account_tax_repartition_line_id_seq"', 1000, true);""")
     tools.convert.convert_file(
-        env, "xiuman_data", "data/account_analytic_plan_data.xml", None, mode="init", kind="data"
+        env, "marin_data", "data/account_analytic_plan_data.xml", None, mode="init", kind="data"
     )
-    tools.convert.convert_file(env, "xiuman_data", "data/account_account.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/account_account.csv", None, mode="init", kind="data")
     tools.convert.convert_file(
-        env, "xiuman_data", "data/account_journal_group_data.xml", None, mode="init", kind="data"
+        env, "marin_data", "data/account_journal_group_data.xml", None, mode="init", kind="data"
     )
-    tools.convert.convert_file(env, "xiuman_data", "data/account.journal.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/account_asset_data.xml", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/account.payment.term.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/account_tax_group_data.xml", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/account_tax_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/account.journal.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/account_asset_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/account.payment.term.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/account_tax_group_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/account_tax_data.xml", None, mode="init", kind="data")
 
     env.cr.execute("""SELECT setval('"public"."pos_config_id_seq"', 100, true);""")
     env.cr.execute("""SELECT setval('"public"."pos_payment_method_id_seq"', 100, true);""")
-    tools.convert.convert_file(env, "xiuman_data", "data/pos_payment_method_data.xml", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/pos_config_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/pos_payment_method_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/pos_config_data.xml", None, mode="init", kind="data")
 
     env.cr.execute(
         """DELETE FROM ir_property WHERE name IN ('property_account_payable_id', 'property_account_receivable_id', 'property_account_expense_categ_id', 'property_account_income_categ_id');"""
     )
-    tools.convert.convert_file(env, "xiuman_data", "data/ir_property_data.xml", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/post_init_data.xml", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "xiuman_data", "data/res.company.csv", None, mode="init", kind="data")
-    env.cr.execute("""UPDATE ir_model_data SET noupdate='t' WHERE "module"='xiuman_data'""")
+    tools.convert.convert_file(env, "marin_data", "data/ir_property_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/post_init_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/res.company.csv", None, mode="init", kind="data")
+    env.cr.execute("""UPDATE ir_model_data SET noupdate='t' WHERE "module"='marin_data'""")
 
     # this partners had the competitor tag, now competitor is a bool field
     # env.cr.execute("""UPDATE res_partner SET competitor='t' WHERE id IN (1198,1200,1202,1271,1304,1311,1329,1344,1352,1354,1358,1360,1366,1367,1370,1372,1373,1416,1578,1782,1878,1986,2134,2332,2459,2614,2890,3407,3436,3488);""")
@@ -232,7 +232,7 @@ def _pre_init_xiuman(env):
     env.cr.execute("""SELECT setval('"public"."slide_answer_id_seq"', 1664, true);""")
 
 
-def _post_init_xiuman(env):
+def _post_init_marin(env):
     env["ir.module.module"].search([("name", "=", "snailmail")]).sudo().button_uninstall()
     env["ir.module.module"].search([("name", "=", "partner_autocomplete")]).sudo().button_uninstall()
     env["ir.module.module"].search([("name", "=", "google_gmail")]).sudo().button_uninstall()

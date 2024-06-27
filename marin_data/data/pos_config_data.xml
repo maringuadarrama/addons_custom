@@ -2,15 +2,15 @@
 <odoo noupdate="1">
     <record id="pos_config_101" model="pos.config">
         <field name="name">TPV MAIN</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="warehouse_id" ref="stock_warehouse_104" />
-        <field name="invoice_journal_id" ref="xiuman_data.journal_customers_nf_lmmr" />
-        <field name="journal_id" ref="xiuman_data.journal_pos_main_lmmr" />
+        <field name="invoice_journal_id" ref="marin_data.journal_customers_nf_lmmr" />
+        <field name="journal_id" ref="marin_data.journal_pos_main_lmmr" />
         <field name="down_payment_product_id" ref="pos_sale.default_downpayment_product" />
         <field
             name="payment_method_ids"
             eval="[
-                Command.link(ref('xiuman_data.pos_payment_method_101')),
+                Command.link(ref('marin_data.pos_payment_method_101')),
             ]"
         />
         <field name="iface_tax_included">total</field>
@@ -20,15 +20,15 @@
 
     <record id="pos_config_102" model="pos.config">
         <field name="name">TPV SJN</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="warehouse_id" ref="stock_warehouse_103" />
-        <field name="invoice_journal_id" ref="xiuman_data.journal_569" />
-        <field name="journal_id" ref="xiuman_data.journal_pos_main_lmmr" />
+        <field name="invoice_journal_id" ref="marin_data.journal_569" />
+        <field name="journal_id" ref="marin_data.journal_pos_main_lmmr" />
         <field name="down_payment_product_id" ref="pos_sale.default_downpayment_product" />
         <field
             name="payment_method_ids"
             eval="[
-                Command.link(ref('xiuman_data.pos_payment_method_102')),
+                Command.link(ref('marin_data.pos_payment_method_102')),
             ]"
         />
         <field name="iface_tax_included">total</field>
@@ -38,15 +38,15 @@
 
     <record id="pos_config_103" model="pos.config">
         <field name="name">TPV BAL</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="warehouse_id" ref="stock_warehouse_102" />
-        <field name="invoice_journal_id" ref="xiuman_data.journal_568" />
-        <field name="journal_id" ref="xiuman_data.journal_pos_main_lmmr" />
+        <field name="invoice_journal_id" ref="marin_data.journal_568" />
+        <field name="journal_id" ref="marin_data.journal_pos_main_lmmr" />
         <field name="down_payment_product_id" ref="pos_sale.default_downpayment_product" />
         <field
             name="payment_method_ids"
             eval="[
-                Command.link(ref('xiuman_data.pos_payment_method_103')),
+                Command.link(ref('marin_data.pos_payment_method_103')),
             ]"
         />
         <field name="iface_tax_included">total</field>

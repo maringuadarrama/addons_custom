@@ -19,7 +19,7 @@ def set_xml_id(cr):
                 noupdate
             )
         VALUES
-            ('hr_job_13', 13, 'xiuman_data', 'hr.job', TRUE),
-            ('hr_job_14', 14, 'xiuman_data', 'hr.job', TRUE);
+            ('hr_job_13', 13, 'marin_data', 'hr.job', TRUE),
+            ('hr_job_14', 14, 'marin_data', 'hr.job', TRUE);
     """
     cr.execute(query)

@@ -2,7 +2,7 @@
 <odoo noupdate="1">
     <record id="website_marinagro" model="website">
         <field name="name">Marin Agro</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="prevent_zero_price_sale" eval="True" />
         <field name="show_line_subtotals_tax_selection">tax_included</field>
         <field name="default_lang_id" ref="base.lang_es_MX" />

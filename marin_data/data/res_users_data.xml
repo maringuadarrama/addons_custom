@@ -26,17 +26,17 @@
         <field name="login">luis.maring@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_1" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field
             name="company_ids"
             eval="[
             Command.link(ref('base.main_company')),
-            Command.link(ref('xiuman_data.company_lmmr')),
-            Command.link(ref('xiuman_data.company_tjgl')),
-            Command.link(ref('xiuman_data.company_ammg')),
-            Command.link(ref('xiuman_data.company_cfmg')),
-            Command.link(ref('xiuman_data.company_glmm')),
-            Command.link(ref('xiuman_data.company_xiuman')),
+            Command.link(ref('marin_data.company_lmmr')),
+            Command.link(ref('marin_data.company_tjgl')),
+            Command.link(ref('marin_data.company_ammg')),
+            Command.link(ref('marin_data.company_cfmg')),
+            Command.link(ref('marin_data.company_glmm')),
+            Command.link(ref('marin_data.company_marin')),
         ]"
         />
     </record>
@@ -57,9 +57,9 @@
         <field name="login">karla_joesito@hotmail.com</field>
         <field name="partner_id" ref="partner_user_2" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -80,9 +80,9 @@
         <field name="login">elizais-uaemex09@hotmail.com</field>
         <field name="partner_id" ref="partner_user_3" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -103,9 +103,9 @@
         <field name="login">farfanepoani@hotmail.com</field>
         <field name="partner_id" ref="partner_user_4" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -126,9 +126,9 @@
         <field name="login">diana.evangelista@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_5" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -148,9 +148,9 @@
         <field name="login">gladis.mancinas@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_6" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -170,9 +170,9 @@
         <field name="login">carlos.marin@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_7" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -192,9 +192,9 @@
         <field name="login">angeles.martinez@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_8" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -215,9 +215,9 @@
         <field name="login">elsy.corona@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_9" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -237,9 +237,9 @@
         <field name="login">hugo.garcia@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_10" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -259,9 +259,9 @@
         <field name="login">ingjorgemoreno@gmail.com</field>
         <field name="partner_id" ref="partner_user_11" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -282,9 +282,9 @@
         <field name="login">aaron.espinosa@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_12" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -304,9 +304,9 @@
         <field name="login">gardunodani55@gmail.com</field>
         <field name="partner_id" ref="partner_user_13" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -327,9 +327,9 @@
         <field name="login">jose.guillen@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_14" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -350,9 +350,9 @@
         <field name="login">alejandro.ornelas@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_15" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -372,9 +372,9 @@
         <field name="login">juan.lino@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_16" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -394,9 +394,9 @@
         <field name="login">itzel.cruz@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_17" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -417,9 +417,9 @@
         <field name="login">eduardo.hernandez@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_18" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -439,9 +439,9 @@
         <field name="login">oscar.becerril@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_19" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -461,9 +461,9 @@
         <field name="login">misael.varela@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_20" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -484,9 +484,9 @@
         <field name="login">diego.garcia@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_21" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -507,9 +507,9 @@
         <field name="login">zulli.mejia@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_22" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -529,9 +529,9 @@
         <field name="login">bryan.martinez@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_23" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -551,9 +551,9 @@
         <field name="login">jorge.ibarra@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_24" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -573,9 +573,9 @@
         <field name="login">juan.carranza@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_25" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -595,9 +595,9 @@
         <field name="login">rod.jimenez@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_26" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -617,9 +617,9 @@
         <field name="login">magdalena.garcia@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_27" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -639,9 +639,9 @@
         <field name="login">maria.orozco@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_28" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -661,9 +661,9 @@
         <field name="login">alexander.benito@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_29" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -684,9 +684,9 @@
         <field name="login">patricia.nicolas@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_30" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -706,9 +706,9 @@
         <field name="login">daniel.pina@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_31" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -728,9 +728,9 @@
         <field name="login">sergio.hernandez@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_32" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
         <field name="active" eval="False" />
     </record>
@@ -751,9 +751,9 @@
         <field name="login">hugo.esquivel@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_33" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 
@@ -773,9 +773,9 @@
         <field name="login">antonio.lona@marinagro.mx</field>
         <field name="partner_id" ref="partner_user_34" />
         <field name="notification_type">inbox</field>
-        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="company_ids" eval="[
-            Command.link(ref('xiuman_data.company_lmmr')),
+            Command.link(ref('marin_data.company_lmmr')),
         ]" />
     </record>
 </odoo>
