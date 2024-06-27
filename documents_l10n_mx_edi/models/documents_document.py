@@ -157,7 +157,7 @@ class Document(models.Model):
 
     def _documents_l10n_mx_edi_get_tags(self, cfdi_etree):
         tag_obj = self.env["documents.tag"]
-        tags = [self.env.ref("documents_l10n_mx_edi.documents_l10n_mx_edi_tag_to_process").id]
+        tags = []
         tag = self._get_cfdi_type_tag(cfdi_etree.get("TipoDeComprobante"))
         tags.append(tag.id)
         tag = tag_obj.search(

@@ -5,17 +5,17 @@
         <field name="name">Create from CFDI</field>
         <field name="remove_activities">True</field>
         <field name="create_model">create.mx.edi.record</field>
-        <field
+<!--         <field
             name="domain"
             eval="['|', ('tag_ids', '=', False), ('tag_ids', 'in', [ref('documents_l10n_mx_edi.documents_l10n_mx_edi_tag_to_process')])]"
         />
-        <field name="domain_folder_id" ref="documents_l10n_mx_edi_folder" />
-        <field
+ -->        <field name="domain_folder_id" ref="documents_l10n_mx_edi_folder" />
+<!--         <field
             name="required_tag_ids"
             eval="[
                 (6, 0, [ref('documents_l10n_mx_edi.documents_l10n_mx_edi_tag_to_process')]),
             ]"
         />
-        <field name="sequence">10</field>
+ -->        <field name="sequence">10</field>
     </record>
 </odoo>
