@@ -35,7 +35,7 @@
                     domain="[('journal_id.x_treatment', 'in', ('not_fiscal_real', 'not_fiscal_simulated'))]"
                 />
                 <separator />
-                <filter name="to_store" string="To Store" domain="[('stored', '=', False)]" />
+                <filter name="to_store" string="To Store" domain="[('x_stored', '=', False)]" />
             </xpath>
             <xpath expr="//group/filter[@name='partner']" position="before">
                 <filter
@@ -166,7 +166,7 @@
                     name="button_set_stored"
                     string="Stored"
                     type="object"
-                    invisible="stored"
+                    invisible="x_stored"
                     groups="marin.group_account_customer_invoice"
                 />
             </xpath>
@@ -289,7 +289,7 @@
                 <attribute name="invisible">False</attribute>
             </xpath>
             <xpath expr="//page[@id='other_tab']//field[@name='to_check']" position="after">
-                <field name="stored" />
+                <field name="x_stored" />
             </xpath>
             <xpath expr="//page[@id='other_tab']/group" position="after">
                 <group string="Consistency">

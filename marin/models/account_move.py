@@ -32,7 +32,7 @@ class AccountMove(models.Model):
     force_payment_policy_pue = fields.Boolean("Force PUE")
     relate_purchase_order = fields.Boolean()
     related_purchase_order_id = fields.Many2one("purchase.order", readonly=True)
-    stored = fields.Boolean(
+    x_stored = fields.Boolean(
         "Stored",
         tracking=True,
         help="If this checkbox is ticked, it means that a management representative has "
