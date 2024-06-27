@@ -16,7 +16,7 @@
     <menuitem
         id="product_menu_root"
         name="Products"
-        web_icon="xiuman,static/description/product_icon.png"
+        web_icon="marin,static/description/product_icon.png"
         sequence="22"
         groups="base.group_user"
     >

@@ -21,7 +21,7 @@ def change_xml_id(cr):
         SET
             name = '%s'
         WHERE
-            module = 'xiuman'
+            module = 'marin'
             AND model = 'res.groups'
             AND name = '%s'
     """

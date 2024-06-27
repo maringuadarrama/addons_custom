@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo noupdate="1">
-    <record id="xiuman_groups" model="res.config.settings">
+    <record id="marin_groups" model="res.config.settings">
         <field name="group_product_pricelist">True</field>
         <field name="group_payslip_display">False</field>
         <field name="group_project_milestone">True</field>
@@ -41,10 +41,10 @@
     </record>
 
     <function model="res.config.settings" name="execute">
-        <value model="res.config.settings" search="[('id', '=', ref('xiuman_groups'))]" />
+        <value model="res.config.settings" search="[('id', '=', ref('marin_groups'))]" />
     </function>
 
-    <record id="xiuman_conf" model="res.config.settings">
+    <record id="marin_conf" model="res.config.settings">
         <field name="external_email_server_default" eval="True" />
         <field name="documents_hr_settings" eval="True" />
         <field name="documents_partner_settings" eval="True" />
@@ -75,6 +75,6 @@
     </record>
 
     <function model="res.config.settings" name="execute">
-        <value model="res.config.settings" search="[('id', '=', ref('xiuman_conf'))]" />
+        <value model="res.config.settings" search="[('id', '=', ref('marin_conf'))]" />
     </function>
 </odoo>

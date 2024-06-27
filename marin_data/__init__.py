@@ -118,7 +118,7 @@ def _pre_init_marin(env):
     tools.convert.convert_file(
         env, "marin_data", "data/account_analytic_plan_data.xml", None, mode="init", kind="data"
     )
-    tools.convert.convert_file(env, "marin_data", "data/account_account.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin_data", "data/account.account.csv", None, mode="init", kind="data")
     tools.convert.convert_file(
         env, "marin_data", "data/account_journal_group_data.xml", None, mode="init", kind="data"
     )

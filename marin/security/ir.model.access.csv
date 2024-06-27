@@ -14,7 +14,7 @@ access_fleet_vehicle_account_invoice,access.fleet.vehicle.account.invoice,fleet.
 access_fleet_vehicle_log_services_account_invoice,access.fleet.vehicle.log.services.account.invoice,fleet.model_fleet_vehicle_log_services,account.group_account_invoice,1,0,0,0
 access_fleet_vehicle_log_services_account_user,access.fleet.vehicle.log.services.account.user,fleet.model_fleet_vehicle_log_services,account.group_account_invoice,1,1,1,1
 access_mrp_bom_byproduct_stock_user,mrp.bom.byproduct.stock.user,mrp.model_mrp_bom_byproduct,stock.group_stock_user,1,0,0,0
-access_product_product_account_user_xiuman,access.product.product.account.user,product.model_product_product,account.group_account_invoice,1,0,0,0
+access_product_product_account_user_marin,access.product.product.account.user,product.model_product_product,account.group_account_invoice,1,0,0,0
 access_purchase_bill_union_account_bookkeeper,access.purchase.bill.union.account.bookkeeper,model_purchase_bill_union,account.group_account_user,1,0,0,0
 access_purchase_order_line_price_history,access.purchase.order.line.price.history,model_purchase_order_line_price_history,purchase.group_purchase_user,1,1,1,1
 access_purchase_order_line_price_history_line,access.purchase.order.line.price.history.line,model_purchase_order_line_price_history_line,purchase.group_purchase_user,1,1,1,1

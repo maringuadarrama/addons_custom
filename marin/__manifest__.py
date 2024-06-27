@@ -160,13 +160,13 @@
     #"demo": [
     #    "demo/ir_default_data.xml",
     #],
-    "pre_init_hook": "_pre_init_xiuman",
+    "pre_init_hook": "_pre_init_marin",
     #"assets": {
     #    "web.assets_backend": [
-    #        "xiuman/static/src/widgets/**/*",
+    #        "marin/static/src/widgets/**/*",
     #    ],
     #    "point_of_sale._assets_pos": [
-    #        "xiuman/static/src/pos/app/**/*",
+    #        "marin/static/src/pos/app/**/*",
     #    ],
     #},
     "installable": True,
