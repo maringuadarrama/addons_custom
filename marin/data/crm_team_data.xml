@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo noupdate="1">
-    <record id="team_lmmg" model="crm.team">
-        <field name="name">Venta directa LMMG</field>
-        <field name="company_id" ref="marin.company_lmmg" />
-    </record>
-
-    <record id="team_lmmg_website" model="crm.team">
-        <field name="name">Website LMMG</field>
-        <field name="company_id" ref="marin.company_lmmg" />
-    </record>
-
-    <record id="team_lmmg_sub" model="crm.team">
-        <field name="name">Subdistribucion LMMG</field>
-        <field name="company_id" ref="marin.company_lmmg" />
-    </record>
-
     <record id="team_lmmr" model="crm.team">
         <field name="name">Venta directa LMMR</field>
         <field name="company_id" ref="marin.company_lmmr" />
@@ -35,9 +20,24 @@
         <field name="company_id" ref="marin.company_tjgl" />
     </record>
 
-    <record id="team_glmm" model="crm.team">
-        <field name="name">Venta directa GLMM</field>
-        <field name="company_id" ref="marin.company_glmm" />
+    <record id="team_tjgl_website" model="crm.team">
+        <field name="name">Website TJGL</field>
+        <field name="company_id" ref="marin.company_tjgl" />
+    </record>
+
+    <record id="team_lmmg" model="crm.team">
+        <field name="name">Venta directa LMMG</field>
+        <field name="company_id" ref="marin.company_lmmg" />
+    </record>
+
+    <record id="team_lmmg_website" model="crm.team">
+        <field name="name">Website LMMG</field>
+        <field name="company_id" ref="marin.company_lmmg" />
+    </record>
+
+    <record id="team_lmmg_sub" model="crm.team">
+        <field name="name">Subdistribucion LMMG</field>
+        <field name="company_id" ref="marin.company_lmmg" />
     </record>
 
     <record id="team_lmmr_1" model="crm.team">
@@ -92,11 +92,6 @@
 
     <record id="team_lmmr_11" model="crm.team">
         <field name="name">Michoacan</field>
-        <field name="company_id" ref="marin.company_lmmr" />
-    </record>
-
-    <record id="team_lmmr_12" model="crm.team">
-        <field name="name">Subdistribucion 2</field>
         <field name="company_id" ref="marin.company_lmmr" />
     </record>
 </odoo>

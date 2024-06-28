@@ -84,7 +84,6 @@
         "data/documents_tag_data.xml",
         "data/documents_workflow_rule_data.xml",
         "data/product_removal_data.xml",
-        "data/website_data.xml",
         # "report/report_deliveryslip.xml",
         # "report/report_stock_picking_operations.xml",
         "report/report_invoice.xml",

@@ -90,30 +90,30 @@ def _post_init_marin(env):
     tools.convert.convert_file(env, "marin", "data/website_data.xml", None, mode="init", kind="data")
     tools.convert.convert_file(env, "marin", "data/res_users_data.xml", None, mode="init", kind="data")
 
-    env.cr.execute("""SELECT setval('"public"."stock_location_id_seq"', 1000, true);""")
-    env.cr.execute("""SELECT setval('"public"."stock_picking_type_id_seq"', 1000, true);""")
-    env.cr.execute("""SELECT setval('"public"."stock_route_id_seq"', 1000, true);""")
-    env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 1026, true);""")
-    env.cr.execute("""SELECT setval('"public"."stock_warehouse_id_seq"', 100, true);""")
-
-    warehouses = (
-        env["stock.warehouse"]
-        .sudo()
-        .search([("active", "in", (True, False))], order="id ASC")
-    )
-    for wh in warehouses:
-        exist = env["ir.model.data"].sudo().search([("model", "=", "stock.warehouse"), ("res_id", "=", wh.id)])
-        if not exist:
-            env["ir.model.data"].create(
-                {
-                    "module": "marin",
-                    "model": "stock.warehouse",
-                    "name": "stock_warehouse_%s" % wh.id,
-                    "res_id": wh.id,
-                    "noupdate": True,
-                }
-            )
-    tools.convert.convert_file(env, "marin", "data/stock_warehouse_data.xml", None, mode="init", kind="data")
+#    env.cr.execute("""SELECT setval('"public"."stock_location_id_seq"', 1000, true);""")
+#    env.cr.execute("""SELECT setval('"public"."stock_picking_type_id_seq"', 1000, true);""")
+#    env.cr.execute("""SELECT setval('"public"."stock_route_id_seq"', 1000, true);""")
+#    env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 1026, true);""")
+#    env.cr.execute("""SELECT setval('"public"."stock_warehouse_id_seq"', 100, true);""")
+#
+#    warehouses = (
+#        env["stock.warehouse"]
+#        .sudo()
+#        .search([("active", "in", (True, False))], order="id ASC")
+#    )
+#    for wh in warehouses:
+#        exist = env["ir.model.data"].sudo().search([("model", "=", "stock.warehouse"), ("res_id", "=", wh.id)])
+#        if not exist:
+#            env["ir.model.data"].create(
+#                {
+#                    "module": "marin",
+#                    "model": "stock.warehouse",
+#                    "name": "stock_warehouse_%s" % wh.id,
+#                    "res_id": wh.id,
+#                    "noupdate": True,
+#                }
+#            )
+#    tools.convert.convert_file(env, "marin", "data/stock_warehouse_data.xml", None, mode="init", kind="data")
 #    locations = (
 #        env["stock.location"]
 #        .sudo()
@@ -155,16 +155,16 @@ def _post_init_marin(env):
 #    # env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 5000, true);""")
 #    # tools.convert.convert_file(env, "marin", "data/stock.rule.csv", None, mode="init", kind="data")
 #
-    env.cr.execute("""SELECT setval('"public"."account_account_id_seq"', 1000, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_analytic_plan_id_seq"', 200, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_journal_id_seq"', 500, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_payment_method_line_id_seq"', 1000, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_payment_term_id_seq"', 100, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_payment_term_line_id_seq"', 100, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_tax_group_id_seq"', 500, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_tax_id_seq"', 500, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_tax_repartition_line_id_seq"', 1000, true);""")
-    tools.convert.convert_file(env, "marin", "data/account_analytic_plan_data.xml", None, mode="init", kind="data")
+#    env.cr.execute("""SELECT setval('"public"."account_account_id_seq"', 1000, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_analytic_plan_id_seq"', 200, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_journal_id_seq"', 500, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_payment_method_line_id_seq"', 1000, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_payment_term_id_seq"', 100, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_payment_term_line_id_seq"', 100, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_tax_group_id_seq"', 500, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_tax_id_seq"', 500, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_tax_repartition_line_id_seq"', 1000, true);""")
+#    tools.convert.convert_file(env, "marin", "data/account_analytic_plan_data.xml", None, mode="init", kind="data")
 #    tools.convert.convert_file(env, "marin", "data/account.account.csv", None, mode="init", kind="data")
 #    tools.convert.convert_file(env, "marin", "data/account_journal_group_data.xml", None, mode="init", kind="data")
 #    tools.convert.convert_file(env, "marin", "data/account.journal.csv", None, mode="init", kind="data")
@@ -188,7 +188,7 @@ def _post_init_marin(env):
 #    tools.convert.convert_file(env, "marin", "data/pos_payment_method_data.xml", None, mode="init", kind="data")
 #    tools.convert.convert_file(env, "marin", "data/pos.category.csv", None, mode="init", kind="data")
 #    tools.convert.convert_file(env, "marin", "data/pos_config_data.xml", None, mode="init", kind="data")
-
+#
 #    env.cr.execute(
 #        """DELETE FROM ir_property WHERE name IN ('property_account_payable_id', 'property_account_receivable_id', 'property_account_expense_categ_id', 'property_account_income_categ_id');"""
 #    )

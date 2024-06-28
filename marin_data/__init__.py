@@ -1,4 +1,4 @@
-from ...marin_data import wizards
+from . import wizards
 from odoo import tools
 
 
