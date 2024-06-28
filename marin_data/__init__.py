@@ -3,25 +3,6 @@ from odoo import tools
 
 
 def _pre_init_marin(env):
-    env.cr.execute("""SELECT setval('"public"."uom_category_id_seq"', 100, true);""")
-    env.cr.execute("""SELECT setval('"public"."uom_uom_id_seq"', 100, true);""")
-    tools.convert.convert_file(env, "marin_data", "data/uom.category.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/uom.uom.csv", None, mode="init", kind="data")
-
-    env.cr.execute("""SELECT setval('"public"."product_category_id_seq"', 100, true);""")
-    env.cr.execute("""SELECT setval('"public"."product_pricelist_id_seq"', 100, true);""")
-    env.cr.execute("""SELECT setval('"public"."product_pricelist_item_id_seq"', 1000, true);""")
-    tools.convert.convert_file(env, "marin_data", "data/product.category.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/product.tag.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/product_pricelist_data.xml", None, mode="init", kind="data")
-
-    tools.convert.convert_file(env, "marin_data", "data/fleet.vehicle.model.brand.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/fleet.vehicle.model.category.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/fleet.vehicle.model.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/pos.category.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/stock.package.type.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/stock.storage.category.csv", None, mode="init", kind="data")
-
     env.cr.execute("""SELECT setval('"public"."res_partner_id_seq"', 100, true);""")
     tools.convert.convert_file(env, "marin_data", "data/res_company_data.xml", None, mode="init", kind="data")
 
@@ -59,68 +40,68 @@ def _pre_init_marin(env):
             )
     tools.convert.convert_file(env, "marin_data", "data/stock_warehouse_data.xml", None, mode="init", kind="data")
 
-    locations = (
-        env["stock.location"]
-        .sudo()
-        .search([("id", ">=", 1), "|", ("active", "=", True), ("active", "=", False)], order="id ASC")
-    )
-    for ln in locations:
-        exist = env["ir.model.data"].sudo().search([("model", "=", "stock.location"), ("res_id", "=", ln.id)])
-        if not exist:
-            env["ir.model.data"].create(
-                {
-                    "module": "marin_data",
-                    "model": "stock.location",
-                    "name": "stock_location_%s" % ln.id,
-                    "res_id": ln.id,
-                    "noupdate": True,
-                }
-            )
-    tools.convert.convert_file(env, "marin_data", "data/stock.location.csv", None, mode="init", kind="data")
-
-    types = (
-        env["stock.picking.type"]
-        .sudo()
-        .search([("id", ">=", 1), "|", ("active", "=", True), ("active", "=", False)], order="id ASC")
-    )
-    for spt in types:
-        exist = env["ir.model.data"].sudo().search([("model", "=", "stock.picking.type"), ("res_id", "=", spt.id)])
-        if not exist:
-            env["ir.model.data"].create(
-                {
-                    "module": "marin_data",
-                    "model": "stock.picking.type",
-                    "name": "stock_picking_type_%s" % spt.id,
-                    "res_id": spt.id,
-                    "noupdate": True,
-                }
-            )
-    tools.convert.convert_file(env, "marin_data", "data/stock.picking.type.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/stock.route.csv", None, mode="init", kind="data")
-    # env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 5000, true);""")
-    # tools.convert.convert_file(env, "marin_data", "data/stock.rule.csv", None, mode="init", kind="data")
-
-    env.cr.execute("""SELECT setval('"public"."account_account_id_seq"', 1000, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_analytic_plan_id_seq"', 200, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_journal_id_seq"', 500, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_payment_method_line_id_seq"', 1000, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_payment_term_id_seq"', 100, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_payment_term_line_id_seq"', 100, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_tax_group_id_seq"', 500, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_tax_id_seq"', 500, true);""")
-    env.cr.execute("""SELECT setval('"public"."account_tax_repartition_line_id_seq"', 1000, true);""")
-    tools.convert.convert_file(
-        env, "marin_data", "data/account_analytic_plan_data.xml", None, mode="init", kind="data"
-    )
-    tools.convert.convert_file(env, "marin_data", "data/account.account.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(
-        env, "marin_data", "data/account_journal_group_data.xml", None, mode="init", kind="data"
-    )
-    tools.convert.convert_file(env, "marin_data", "data/account.journal.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/account_asset_data.xml", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/account.payment.term.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/account_tax_group_data.xml", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/account_tax_data.xml", None, mode="init", kind="data")
+#    locations = (
+#        env["stock.location"]
+#        .sudo()
+#        .search([("id", ">=", 1), "|", ("active", "=", True), ("active", "=", False)], order="id ASC")
+#    )
+#    for ln in locations:
+#        exist = env["ir.model.data"].sudo().search([("model", "=", "stock.location"), ("res_id", "=", ln.id)])
+#        if not exist:
+#            env["ir.model.data"].create(
+#                {
+#                    "module": "marin_data",
+#                    "model": "stock.location",
+#                    "name": "stock_location_%s" % ln.id,
+#                    "res_id": ln.id,
+#                    "noupdate": True,
+#                }
+#            )
+#    tools.convert.convert_file(env, "marin_data", "data/stock.location.csv", None, mode="init", kind="data")
+#
+#    types = (
+#        env["stock.picking.type"]
+#        .sudo()
+#        .search([("id", ">=", 1), "|", ("active", "=", True), ("active", "=", False)], order="id ASC")
+#    )
+#    for spt in types:
+#        exist = env["ir.model.data"].sudo().search([("model", "=", "stock.picking.type"), ("res_id", "=", spt.id)])
+#        if not exist:
+#            env["ir.model.data"].create(
+#                {
+#                    "module": "marin_data",
+#                    "model": "stock.picking.type",
+#                    "name": "stock_picking_type_%s" % spt.id,
+#                    "res_id": spt.id,
+#                    "noupdate": True,
+#                }
+#            )
+#    tools.convert.convert_file(env, "marin_data", "data/stock.picking.type.csv", None, mode="init", kind="data")
+#    tools.convert.convert_file(env, "marin_data", "data/stock.route.csv", None, mode="init", kind="data")
+#    # env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 5000, true);""")
+#    # tools.convert.convert_file(env, "marin_data", "data/stock.rule.csv", None, mode="init", kind="data")
+#
+#    env.cr.execute("""SELECT setval('"public"."account_account_id_seq"', 1000, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_analytic_plan_id_seq"', 200, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_journal_id_seq"', 500, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_payment_method_line_id_seq"', 1000, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_payment_term_id_seq"', 100, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_payment_term_line_id_seq"', 100, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_tax_group_id_seq"', 500, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_tax_id_seq"', 500, true);""")
+#    env.cr.execute("""SELECT setval('"public"."account_tax_repartition_line_id_seq"', 1000, true);""")
+#    tools.convert.convert_file(
+#        env, "marin_data", "data/account_analytic_plan_data.xml", None, mode="init", kind="data"
+#    )
+#    tools.convert.convert_file(env, "marin_data", "data/account.account.csv", None, mode="init", kind="data")
+#    tools.convert.convert_file(
+#        env, "marin_data", "data/account_journal_group_data.xml", None, mode="init", kind="data"
+#    )
+#    tools.convert.convert_file(env, "marin_data", "data/account.journal.csv", None, mode="init", kind="data")
+#    tools.convert.convert_file(env, "marin_data", "data/account_asset_data.xml", None, mode="init", kind="data")
+#    tools.convert.convert_file(env, "marin_data", "data/account.payment.term.csv", None, mode="init", kind="data")
+#    tools.convert.convert_file(env, "marin_data", "data/account_tax_group_data.xml", None, mode="init", kind="data")
+#    tools.convert.convert_file(env, "marin_data", "data/account_tax_data.xml", None, mode="init", kind="data")
 
     tools.convert.convert_file(env, "marin_data", "data/crm_team_data.xml", None, mode="init", kind="data")
 
@@ -132,19 +113,20 @@ def _pre_init_marin(env):
     tools.convert.convert_file(env, "marin_data", "data/hr_salary_rule_nomina_finiquito_data.xml", None, mode="init", kind="data")
     tools.convert.convert_file(env, "marin_data", "data/l10n_mx_edi_employer_registration_data.xml", None, mode="init", kind="data")
 
-    env.cr.execute("""SELECT setval('"public"."pos_config_id_seq"', 100, true);""")
-    env.cr.execute("""SELECT setval('"public"."pos_payment_method_id_seq"', 100, true);""")
-    tools.convert.convert_file(env, "marin_data", "data/pos_payment_method_data.xml", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/pos_config_data.xml", None, mode="init", kind="data")
+#    env.cr.execute("""SELECT setval('"public"."pos_config_id_seq"', 100, true);""")
+#    env.cr.execute("""SELECT setval('"public"."pos_payment_method_id_seq"', 100, true);""")
+#    tools.convert.convert_file(env, "marin_data", "data/pos_payment_method_data.xml", None, mode="init", kind="data")
+#    tools.convert.convert_file(env, "marin_data", "data/pos.category.csv", None, mode="init", kind="data")
+#    tools.convert.convert_file(env, "marin_data", "data/pos_config_data.xml", None, mode="init", kind="data")
 
-    env.cr.execute(
-        """DELETE FROM ir_property WHERE name IN ('property_account_payable_id', 'property_account_receivable_id', 'property_account_expense_categ_id', 'property_account_income_categ_id');"""
-    )
-    tools.convert.convert_file(env, "marin_data", "data/ir_property_data.xml", None, mode="init", kind="data")
-
-    tools.convert.convert_file(env, "marin_data", "data/post_init_data.xml", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin_data", "data/res.company.csv", None, mode="init", kind="data")
-    env.cr.execute("""UPDATE ir_model_data SET noupdate='t' WHERE "module"='marin_data'""")
+#    env.cr.execute(
+#        """DELETE FROM ir_property WHERE name IN ('property_account_payable_id', 'property_account_receivable_id', 'property_account_expense_categ_id', 'property_account_income_categ_id');"""
+#    )
+#    tools.convert.convert_file(env, "marin_data", "data/ir_property_data.xml", None, mode="init", kind="data")
+#
+#    tools.convert.convert_file(env, "marin_data", "data/post_init_data.xml", None, mode="init", kind="data")
+#    tools.convert.convert_file(env, "marin_data", "data/res.company.csv", None, mode="init", kind="data")
+#    env.cr.execute("""UPDATE ir_model_data SET noupdate='t' WHERE "module"='marin_data'""")
 
     # instead of xml file
     env.cr.execute("""UPDATE res_company SET account_purchase_tax_id=NULL;""")

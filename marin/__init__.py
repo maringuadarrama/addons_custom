@@ -1,9 +1,9 @@
 from . import models
 from . import report
 from . import wizards
+from odoo import tools
 
 def _pre_init_marin(env):
-    env.cr.execute("""SELECT setval('"public"."res_partner_category_id_seq"', 100, true);""")
     env["ir.module.module"].search([("name", "=", "attachment_indexation")]).sudo().button_install()
     env["ir.module.module"].search([("name", "=", "barcodes")]).sudo().button_install()
     env["ir.module.module"].search([("name", "=", "base_geolocalize")]).sudo().button_install()
@@ -58,7 +58,33 @@ def _pre_init_marin(env):
     env["ir.module.module"].search([("name", "=", "website_blog")]).sudo().button_install()
     env["ir.module.module"].search([("name", "=", "website_slides")]).sudo().button_install()
 
+    env.cr.execute("""SELECT setval('"public"."res_partner_category_id_seq"', 100, true);""")
+
+    env.cr.execute("""SELECT setval('"public"."product_category_id_seq"', 100, true);""")
+    env.cr.execute("""SELECT setval('"public"."product_pricelist_id_seq"', 100, true);""")
+    env.cr.execute("""SELECT setval('"public"."product_pricelist_item_id_seq"', 1000, true);""")
+    env.cr.execute("""SELECT setval('"public"."uom_category_id_seq"', 100, true);""")
+    env.cr.execute("""SELECT setval('"public"."uom_uom_id_seq"', 100, true);""")
+    tools.convert.convert_file(env, "marin", "data/product.category.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin", "data/product.tag.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin", "data/product_pricelist_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin", "data/uom.category.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin", "data/uom.uom.csv", None, mode="init", kind="data")
+
+    tools.convert.convert_file(env, "marin", "data/fleet.vehicle.model.brand.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin", "data/fleet.vehicle.model.category.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin", "data/fleet.vehicle.model.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin", "data/stock.package.type.csv", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin", "data/stock.storage.category.csv", None, mode="init", kind="data")
+
 def _post_init_marin(env):
+    env.cr.execute("""SELECT setval('"public"."res_partner_id_seq"', 100, true);""")
+    tools.convert.convert_file(env, "marin", "data/res_company_data.xml", None, mode="init", kind="data")
+
+    env.cr.execute("""SELECT setval('"public"."resource_calendar_id_seq"', 100, true);""")
+    env.cr.execute("""SELECT setval('"public"."resource_calendar_attendance_id_seq"', 1000, true);""")
+    tools.convert.convert_file(env, "marin", "data/resource_calendar_data.xml", None, mode="init", kind="data")
+
     env["ir.module.module"].search([("name", "=", "snailmail")]).sudo().button_uninstall()
     env["ir.module.module"].search([("name", "=", "partner_autocomplete")]).sudo().button_uninstall()
     env["ir.module.module"].search([("name", "=", "google_gmail")]).sudo().button_uninstall()

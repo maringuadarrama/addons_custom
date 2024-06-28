@@ -24,12 +24,15 @@
             <p>LUIS MANUEL MARIN GUADARRAMA<br />
             MAGL910204CY8<br />
             Avenida Codagem SN, San Lorenzo Coacalco<br />
-            52140 Metepec, MEX<br />
+            52140 Metepec, Mexico<br />
             Mexico</p>
         </field>
         <field name="report_footer" type="html">
             <p>+52 722 232 0859 atencion@xiuman.mx https://xiuman.mx</p>
         </field>
+        <field name="chart_template">mx</field>
+        <field name="anglo_saxon_accounting" eval="True" />
+        <field name="tax_exigibility" eval="True" />
         <field name="account_use_credit_limit" eval="True" />
         <field name="l10n_mx_edi_fiscal_regime">612</field>
         <field name="sequence" eval="10" />
@@ -66,7 +69,7 @@
             <p>LUIS MANUEL MARIN REBOLLO<br />
             MARL640819192<br />
             Carretera libre Toluca Temascaltepec SN, San Juan de las huertas<br />
-            51370 Zinacantepec, MEX<br />
+            51370 Zinacantepec, Mexico<br />
             Mexico</p>
         </field>
         <field name="report_footer" type="html">

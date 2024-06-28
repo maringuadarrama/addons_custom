@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo noupdate="1">
-    <record id="website_marinagro" model="website">
+    <record id="website_agromarin" model="website">
         <field name="name">Marin Agro</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="prevent_zero_price_sale" eval="True" />
