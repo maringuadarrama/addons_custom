@@ -14,7 +14,7 @@
         <field name="tz">America/Mexico_City</field>
         <field name="vat">MAGL910204CY8</field>
         <field name="phone">+52 722 232 0859</field>
-        <field name="email">luis.maring@marinagro.mx</field>
+        <field name="email">luis.maring@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
         <field name="l10n_mx_edi_fiscal_regime">612</field>
@@ -23,7 +23,7 @@
     </record>
 
     <record id="user_1" model="res.users">
-        <field name="login">luis.maring@marinagro.mx</field>
+        <field name="login">luis.maring@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_1" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -117,13 +117,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">diana.evangelista@marinagro.mx</field>
+        <field name="email">diana.evangelista@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">female</field>
     </record>
 
     <record id="user_5" model="res.users">
-        <field name="login">diana.evangelista@marinagro.mx</field>
+        <field name="login">diana.evangelista@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_5" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -161,13 +161,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">carlos.marin@marinagro.mx</field>
+        <field name="email">carlos.marin@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_7" model="res.users">
-        <field name="login">carlos.marin@marinagro.mx</field>
+        <field name="login">carlos.marin@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_7" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -183,13 +183,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">angeles.martinez@marinagro.mx</field>
+        <field name="email">angeles.martinez@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">female</field>
     </record>
 
     <record id="user_8" model="res.users">
-        <field name="login">angeles.martinez@marinagro.mx</field>
+        <field name="login">angeles.martinez@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_8" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -206,13 +206,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">elsy.corona@marinagro.mx</field>
+        <field name="email">elsy.corona@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">female</field>
     </record>
 
     <record id="user_9" model="res.users">
-        <field name="login">elsy.corona@marinagro.mx</field>
+        <field name="login">elsy.corona@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_9" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -228,13 +228,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">hugo.garcia@marinagro.mx</field>
+        <field name="email">hugo.garcia@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_10" model="res.users">
-        <field name="login">hugo.garcia@marinagro.mx</field>
+        <field name="login">hugo.garcia@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_10" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -273,13 +273,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">aaron.espinosa@marinagro.mx</field>
+        <field name="email">aaron.espinosa@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_12" model="res.users">
-        <field name="login">aaron.espinosa@marinagro.mx</field>
+        <field name="login">aaron.espinosa@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_12" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -341,13 +341,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">alejandro.ornelas@marinagro.mx</field>
+        <field name="email">alejandro.ornelas@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_15" model="res.users">
-        <field name="login">alejandro.ornelas@marinagro.mx</field>
+        <field name="login">alejandro.ornelas@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_15" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -363,13 +363,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">juan.lino@marinagro.mx</field>
+        <field name="email">juan.lino@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_16" model="res.users">
-        <field name="login">juan.lino@marinagro.mx</field>
+        <field name="login">juan.lino@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_16" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -408,13 +408,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">eduardo.hernandez@marinagro.mx</field>
+        <field name="email">eduardo.hernandez@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_18" model="res.users">
-        <field name="login">eduardo.hernandez@marinagro.mx</field>
+        <field name="login">eduardo.hernandez@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_18" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -430,13 +430,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">oscar.becerril@marinagro.mx</field>
+        <field name="email">oscar.becerril@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_19" model="res.users">
-        <field name="login">oscar.becerril@marinagro.mx</field>
+        <field name="login">oscar.becerril@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_19" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -452,13 +452,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">misael.varela@marinagro.mx</field>
+        <field name="email">misael.varela@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_20" model="res.users">
-        <field name="login">misael.varela@marinagro.mx</field>
+        <field name="login">misael.varela@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_20" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -498,13 +498,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">zulli.mejia@marinagro.mx</field>
+        <field name="email">zulli.mejia@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">female</field>
     </record>
 
     <record id="user_22" model="res.users">
-        <field name="login">zulli.mejia@marinagro.mx</field>
+        <field name="login">zulli.mejia@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_22" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -520,13 +520,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">bryan.martinez@marinagro.mx</field>
+        <field name="email">bryan.martinez@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_23" model="res.users">
-        <field name="login">bryan.martinez@marinagro.mx</field>
+        <field name="login">bryan.martinez@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_23" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -542,13 +542,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">jorge.ibarra@marinagro.mx</field>
+        <field name="email">jorge.ibarra@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_24" model="res.users">
-        <field name="login">jorge.ibarra@marinagro.mx</field>
+        <field name="login">jorge.ibarra@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_24" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -564,13 +564,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">juan.carranza@marinagro.mx</field>
+        <field name="email">juan.carranza@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_25" model="res.users">
-        <field name="login">juan.carranza@marinagro.mx</field>
+        <field name="login">juan.carranza@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_25" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -586,13 +586,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">rod.jimenez@marinagro.mx</field>
+        <field name="email">rod.jimenez@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_26" model="res.users">
-        <field name="login">rod.jimenez@marinagro.mx</field>
+        <field name="login">rod.jimenez@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_26" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -608,13 +608,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">magdalena.garcia@marinagro.mx</field>
+        <field name="email">magdalena.garcia@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">female</field>
     </record>
 
     <record id="user_27" model="res.users">
-        <field name="login">magdalena.garcia@marinagro.mx</field>
+        <field name="login">magdalena.garcia@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_27" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -630,13 +630,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">maria.orozco@marinagro.mx</field>
+        <field name="email">maria.orozco@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">female</field>
     </record>
 
     <record id="user_28" model="res.users">
-        <field name="login">maria.orozco@marinagro.mx</field>
+        <field name="login">maria.orozco@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_28" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -652,13 +652,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">alexander.benito@marinagro.mx</field>
+        <field name="email">alexander.benito@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_29" model="res.users">
-        <field name="login">alexander.benito@marinagro.mx</field>
+        <field name="login">alexander.benito@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_29" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -697,13 +697,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">daniel.pina@marinagro.mx</field>
+        <field name="email">daniel.pina@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_31" model="res.users">
-        <field name="login">daniel.pina@marinagro.mx</field>
+        <field name="login">daniel.pina@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_31" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -719,13 +719,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">sergio.hernandez@marinagro.mx</field>
+        <field name="email">sergio.hernandez@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_32" model="res.users">
-        <field name="login">sergio.hernandez@marinagro.mx</field>
+        <field name="login">sergio.hernandez@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_32" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -742,13 +742,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">hugo.esquivel@marinagro.mx</field>
+        <field name="email">hugo.esquivel@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_33" model="res.users">
-        <field name="login">hugo.esquivel@marinagro.mx</field>
+        <field name="login">hugo.esquivel@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_33" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
@@ -764,13 +764,13 @@
         <field name="country_id" ref="base.mx" />
         <field name="lang">es_MX</field>
         <field name="tz">America/Mexico_City</field>
-        <field name="email">antonio.lona@marinagro.mx</field>
+        <field name="email">antonio.lona@agromarin.mx</field>
         <field name="employee" eval="True" />
         <field name="gender">male</field>
     </record>
 
     <record id="user_34" model="res.users">
-        <field name="login">antonio.lona@marinagro.mx</field>
+        <field name="login">antonio.lona@agromarin.mx</field>
         <field name="partner_id" ref="partner_user_34" />
         <field name="notification_type">inbox</field>
         <field name="company_id" ref="marin_data.company_lmmr" />

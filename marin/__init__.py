@@ -85,6 +85,36 @@ def _post_init_marin(env):
     env.cr.execute("""SELECT setval('"public"."resource_calendar_attendance_id_seq"', 1000, true);""")
     tools.convert.convert_file(env, "marin", "data/resource_calendar_data.xml", None, mode="init", kind="data")
 
+    env.cr.execute("""SELECT setval('"public"."res_partner_id_seq"', 200, true);""")
+    env.cr.execute("""SELECT setval('"public"."res_users_id_seq"', 100, true);""")
+    tools.convert.convert_file(env, "marin", "data/website_data.xml", None, mode="init", kind="data")
+    tools.convert.convert_file(env, "marin", "data/res_users_data.xml", None, mode="init", kind="data")
+
+    env.cr.execute("""SELECT setval('"public"."stock_location_id_seq"', 1000, true);""")
+    env.cr.execute("""SELECT setval('"public"."stock_picking_type_id_seq"', 1000, true);""")
+    env.cr.execute("""SELECT setval('"public"."stock_route_id_seq"', 1000, true);""")
+    env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 1026, true);""")
+    env.cr.execute("""SELECT setval('"public"."stock_warehouse_id_seq"', 100, true);""")
+
+    warehouses = (
+        env["stock.warehouse"]
+        .sudo()
+        .search([("active", "in", (True, False))], order="id ASC")
+    )
+    for wh in warehouses:
+        exist = env["ir.model.data"].sudo().search([("model", "=", "stock.warehouse"), ("res_id", "=", wh.id)])
+        if not exist:
+            env["ir.model.data"].create(
+                {
+                    "module": "marin",
+                    "model": "stock.warehouse",
+                    "name": "stock_warehouse_%s" % wh.id,
+                    "res_id": wh.id,
+                    "noupdate": True,
+                }
+            )
+    tools.convert.convert_file(env, "marin", "data/stock_warehouse_data.xml", None, mode="init", kind="data")
+
     env["ir.module.module"].search([("name", "=", "snailmail")]).sudo().button_uninstall()
     env["ir.module.module"].search([("name", "=", "partner_autocomplete")]).sudo().button_uninstall()
     env["ir.module.module"].search([("name", "=", "google_gmail")]).sudo().button_uninstall()

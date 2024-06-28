@@ -3,8 +3,8 @@
     <record id="stock_warehouse_101" model="stock.warehouse">
         <field name="name">SANTIAGUITO</field>
         <field name="code">SNT</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="manufacture_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
@@ -16,8 +16,8 @@
     <record id="stock_warehouse_102" model="stock.warehouse">
         <field name="name">BALDERAS</field>
         <field name="code">BAL</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>
@@ -27,8 +27,8 @@
     <record id="stock_warehouse_103" model="stock.warehouse">
         <field name="name">SAN JUAN</field>
         <field name="code">SJN</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>
@@ -38,8 +38,8 @@
     <record id="stock_warehouse_104" model="stock.warehouse">
         <field name="name">CODAGEM</field>
         <field name="code">CDG</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>
@@ -49,8 +49,8 @@
     <record id="stock_warehouse_105" model="stock.warehouse">
         <field name="name">PROVIDENCIA</field>
         <field name="code">PROVI</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>
@@ -61,8 +61,8 @@
     <record id="stock_warehouse_106" model="stock.warehouse">
         <field name="name">SAN ALEJO</field>
         <field name="code">SLJ</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>
@@ -73,8 +73,8 @@
     <record id="stock_warehouse_107" model="stock.warehouse">
         <field name="name">TONATICO</field>
         <field name="code">TONA</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>
@@ -85,8 +85,8 @@
     <record id="stock_warehouse_108" model="stock.warehouse">
         <field name="name">CIUDAD OBREGON</field>
         <field name="code">CDO</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>
@@ -96,8 +96,8 @@
     <record id="stock_warehouse_109" model="stock.warehouse">
         <field name="name">LOMITA</field>
         <field name="code">LOM</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>
@@ -107,8 +107,8 @@
     <record id="stock_warehouse_110" model="stock.warehouse">
         <field name="name">MICHOACAN</field>
         <field name="code">MICH</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>
@@ -118,8 +118,8 @@
     <record id="stock_warehouse_111" model="stock.warehouse">
         <field name="name">SALTILLO</field>
         <field name="code">SALT</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>
@@ -128,9 +128,9 @@
 
     <record id="stock_warehouse_112" model="stock.warehouse">
         <field name="name">LOS MOCHIS</field>
-        <field name="code">LMO</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="code">MOCH</field>
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>
@@ -140,8 +140,8 @@
     <record id="stock_warehouse_113" model="stock.warehouse">
         <field name="name">PEROTE</field>
         <field name="code">PER</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
-        <field name="partner_id" ref="marin_data.partner_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
+        <field name="partner_id" ref="marin.partner_lmmr" />
         <field name="buy_to_resupply">True</field>
         <field name="reception_steps">one_step</field>
         <field name="delivery_steps">ship_only</field>

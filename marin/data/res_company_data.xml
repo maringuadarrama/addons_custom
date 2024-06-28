@@ -7,7 +7,7 @@
         <field name="vat">MARL640819192</field>
         <field name="phone">+52 722 232 0859</field>
         <field name="website">https://marinagro.mx</field>
-        <field name="email">atencion@marinagro.mx</field>
+        <field name="email">atencion@agromarin.mx</field>
         <field name="street">Carretera Libre Toluca Temascaltepec Sin Numero</field>
         <field name="street2">San Juan de las Huertas</field>
         <field name="city">Zinacantepec</field>
@@ -35,7 +35,7 @@
             Mexico</p>
         </field>
         <field name="report_footer" type="html">
-            <p>+52 722 232 0859 atencion@marinagro.mx https://marinagro.mx</p>
+            <p>+52 722 232 0859 atencion@agromarin.mx https://marinagro.mx</p>
         </field>
         <field name="chart_template">mx</field>
         <field name="anglo_saxon_accounting" eval="True" />
@@ -51,7 +51,7 @@
         <field name="is_company" eval="True" />
         <field name="vat">GULT710616CP7</field>
         <field name="phone">+52 722 232 0859</field>
-        <field name="email">atencion@marinagro.mx</field>
+        <field name="email">atencion@agromarin.mx</field>
         <field name="street">Isidro Fabela 101</field>
         <field name="street2">Hipico</field>
         <field name="city">Metepec</field>
@@ -130,7 +130,7 @@
         <field name="is_company" eval="True" />
         <field name="vat">MAGA920702II5</field>
         <field name="phone">+52 722 232 0859</field>
-        <field name="email">atencion@marinagro.mx</field>
+        <field name="email">atencion@agromarin.mx</field>
         <field name="city">Metepec</field>
         <field name="zip">52140</field>
         <field name="state_id" ref="base.state_mx_mex" />
@@ -162,7 +162,7 @@
         <field name="is_company" eval="True" />
         <field name="vat">MAGC9612027D8</field>
         <field name="phone">+52 722 232 0859</field>
-        <field name="email">atencion@marinagro.mx</field>
+        <field name="email">atencion@agromarin.mx</field>
         <field name="city">Metepec</field>
         <field name="zip">52140</field>
         <field name="state_id" ref="base.state_mx_mex" />
@@ -226,7 +226,7 @@
         <field name="type">contact</field>
         <field name="is_company" eval="True" />
         <field name="phone">+52 722 232 0859</field>
-        <field name="email">atencion@marinagro.mx</field>
+        <field name="email">atencion@agromarin.mx</field>
         <field name="street">Insurgentes sur 1000</field>
         <field name="street2">Benito Juarez</field>
         <field name="city">Ciudad de Mexico</field>
