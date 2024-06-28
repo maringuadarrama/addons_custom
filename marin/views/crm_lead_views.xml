@@ -49,4 +49,15 @@
             </xpath>
         </field>
     </record>
+
+    <record id="view_crm_lead_opportunity_geo_assign_form" model="ir.ui.view">
+        <field name="name">crm.lead.form</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="website_crm_partner_assign.view_crm_lead_opportunity_geo_assign_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_assigned_id']" position="attributes">
+                <attribute name="options">{'no_create': True}</attribute>
+            </xpath>
+        </field>
+    </record>
 </odoo>

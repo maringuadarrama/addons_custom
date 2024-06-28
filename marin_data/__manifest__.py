@@ -25,7 +25,6 @@
     ],
     "demo": [],
     "pre_init_hook": "_pre_init_marin",
-    "post_init_hook": "_post_init_marin",
     "installable": True,
     "auto_install": False,
     "application": False,

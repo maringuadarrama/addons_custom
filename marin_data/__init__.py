@@ -230,9 +230,3 @@ def _pre_init_marin(env):
     env.cr.execute("""SELECT setval('"public"."slide_slide_id_seq"', 148, true);""")
     env.cr.execute("""SELECT setval('"public"."slide_question_id_seq"', 500, true);""")
     env.cr.execute("""SELECT setval('"public"."slide_answer_id_seq"', 1664, true);""")
-
-
-def _post_init_marin(env):
-    env["ir.module.module"].search([("name", "=", "snailmail")]).sudo().button_uninstall()
-    env["ir.module.module"].search([("name", "=", "partner_autocomplete")]).sudo().button_uninstall()
-    env["ir.module.module"].search([("name", "=", "google_gmail")]).sudo().button_uninstall()
