@@ -4,8 +4,8 @@
         <field name="name">LUIS MANUEL MARIN GUADARRAMA</field>
         <field name="vat">MAGL910204CY8</field>
         <field name="phone">+52 722 232 0859</field>
-        <field name="website">https://agromarin.mx</field>
-        <field name="email">atencion@agromarin.mx</field>
+        <field name="website">https://xiuman.mx</field>
+        <field name="email">atencion@xiuman.mx</field>
         <field name="street">Avenida Codagem SN</field>
         <field name="street2">San Lorenzo Coacalco</field>
         <field name="city">Metepec</field>
@@ -28,7 +28,7 @@
             Mexico</p>
         </field>
         <field name="report_footer" type="html">
-            <p>+52 722 232 0859 atencion@agromarin.mx https://agromarin.mx</p>
+            <p>+52 722 232 0859 atencion@xiuman.mx https://xiuman.mx</p>
         </field>
         <field name="account_use_credit_limit" eval="True" />
         <field name="l10n_mx_edi_fiscal_regime">612</field>
