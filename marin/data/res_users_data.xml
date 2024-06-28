@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo noupdate="1">
+    <record id="base.user_admin" model="res.users">
+        <field
+            name="company_ids"
+            eval="[
+                Command.link(ref('marin_data.company_lmmr')),
+                Command.link(ref('marin_data.company_tjgl')),
+                Command.link(ref('marin_data.company_ammg')),
+                Command.link(ref('marin_data.company_cfmg')),
+                Command.link(ref('marin_data.company_glmm')),
+                Command.link(ref('marin_data.company_marin')),
+            ]"
+        />
+    </record>
 
     <record id="partner_user_1" model="res.partner">
         <field name="name">Luis Manuel Marin Guadarrama</field>
