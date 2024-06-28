@@ -135,19 +135,19 @@
         "wizards/stock_move_location.xml",
         "wizards/stock_quant_lot.xml",
     ],
-    #"demo": [
-    #    "demo/ir_default_data.xml",
-    #],
+    "demo": [
+        "demo/ir_default_data.xml",
+    ],
     "pre_init_hook": "_pre_init_marin",
     "post_init_hook": "_post_init_marin",
-    #"assets": {
-    #    "web.assets_backend": [
-    #        "marin/static/src/widgets/**/*",
-    #    ],
-    #    "point_of_sale._assets_pos": [
-    #        "marin/static/src/pos/app/**/*",
-    #    ],
-    #},
+    "assets": {
+        "web.assets_backend": [
+            "marin/static/src/widgets/**/*",
+        ],
+        "point_of_sale._assets_pos": [
+            "marin/static/src/pos/app/**/*",
+        ],
+    },
     "installable": True,
     "application": True,
 }
