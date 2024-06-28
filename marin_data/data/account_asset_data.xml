@@ -16,7 +16,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_16" model="account.asset">
+    <record id="asset_2" model="account.asset">
         <field name="name">Automovil NF</field>
         <field name="company_id" ref="marin_data.company_lmmg" />
         <field name="state">model</field>
@@ -32,7 +32,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_2" model="account.asset">
+    <record id="asset_3" model="account.asset">
         <field name="name">Equipo de computo FF</field>
         <field name="company_id" ref="marin_data.company_lmmg" />
         <field name="state">model</field>
@@ -48,7 +48,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_3" model="account.asset">
+    <record id="asset_4" model="account.asset">
         <field name="name">Equipo de telecom FF</field>
         <field name="company_id" ref="marin_data.company_lmmg" />
         <field name="state">model</field>
@@ -64,7 +64,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_4" model="account.asset">
+    <record id="asset_5" model="account.asset">
         <field name="name">Maquinaria FF</field>
         <field name="company_id" ref="marin_data.company_lmmg" />
         <field name="state">model</field>
@@ -80,7 +80,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_18" model="account.asset">
+    <record id="asset_6" model="account.asset">
         <field name="name">Maquinaria NF</field>
         <field name="company_id" ref="marin_data.company_lmmg" />
         <field name="state">model</field>
@@ -96,7 +96,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_5" model="account.asset">
+    <record id="asset_7" model="account.asset">
         <field name="name">Mobiliario oficina FF</field>
         <field name="company_id" ref="marin_data.company_lmmg" />
         <field name="state">model</field>
@@ -112,7 +112,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_19" model="account.asset">
+    <record id="asset_8" model="account.asset">
         <field name="name">Mobiliario oficina NF</field>
         <field name="company_id" ref="marin_data.company_lmmg" />
         <field name="state">model</field>
@@ -128,7 +128,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_6" model="account.asset">
+    <record id="asset_9" model="account.asset">
         <field name="name">Terrenos FF</field>
         <field name="company_id" ref="marin_data.company_lmmg" />
         <field name="state">model</field>
@@ -144,7 +144,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_7" model="account.asset">
+    <record id="asset_10" model="account.asset">
         <field name="name">Terrenos NF</field>
         <field name="company_id" ref="marin_data.company_lmmg" />
         <field name="state">model</field>
@@ -160,7 +160,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_8" model="account.asset">
+    <record id="asset_11" model="account.asset">
         <field name="name">Automovil FF</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
@@ -176,7 +176,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_17" model="account.asset">
+    <record id="asset_12" model="account.asset">
         <field name="name">Automovil NF</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
@@ -192,7 +192,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_9" model="account.asset">
+    <record id="asset_13" model="account.asset">
         <field name="name">Equipo de computo FF</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
@@ -208,7 +208,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_10" model="account.asset">
+    <record id="asset_14" model="account.asset">
         <field name="name">Equipo de telecom FF</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
@@ -224,7 +224,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_11" model="account.asset">
+    <record id="asset_15" model="account.asset">
         <field name="name">Maquinaria FF</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
@@ -240,7 +240,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_12" model="account.asset">
+    <record id="asset_16" model="account.asset">
         <field name="name">Maquinaria NF</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
@@ -256,7 +256,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_13" model="account.asset">
+    <record id="asset_17" model="account.asset">
         <field name="name">Mobiliario oficina FF</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
@@ -272,8 +272,8 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_20" model="account.asset">
-        <field name="name">Mobiliario oficina FF</field>
+    <record id="asset_18" model="account.asset">
+        <field name="name">Mobiliario oficina NF</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
         <field name="account_asset_id" ref="marin_data.account_155_01_002_lmmr" />
@@ -288,7 +288,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_14" model="account.asset">
+    <record id="asset_19" model="account.asset">
         <field name="name">Terrenos FF</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
@@ -304,7 +304,7 @@
         <field name="acquisition_date" eval="str(datetime(datetime.now().year,1,1))" />
     </record>
 
-    <record id="asset_15" model="account.asset">
+    <record id="asset_20" model="account.asset">
         <field name="name">Terrenos NF</field>
         <field name="company_id" ref="marin_data.company_lmmr" />
         <field name="state">model</field>
