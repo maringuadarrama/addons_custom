@@ -30,7 +30,7 @@
         <field
             name="company_ids"
             eval="[
-            Command.link(ref('base.main_company')),
+            Command.link(ref('marin_data.company_lmmg')),
             Command.link(ref('marin_data.company_lmmr')),
             Command.link(ref('marin_data.company_tjgl')),
             Command.link(ref('marin_data.company_ammg')),

@@ -18,7 +18,7 @@ msgstr ""
 #. module: marin_data
 #: model:account.account,name:marin_data.account_113_08_001_glmm
 #: model:account.account,name:marin_data.account_113_08_001_lmmr
-#: model:account.account,name:marin_data.account_113_08_001_main_company
+#: model:account.account,name:marin_data.account_113_08_001_company_lmmg
 #: model:account.account,name:marin_data.account_113_08_001_tjgl
 msgid " Other taxes in favor"
 msgstr "Otros impuestos a favor"
@@ -31,13 +31,13 @@ msgstr "/contactanos"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_32_001_tjgl
 #: model:account.account,name:marin_data.account_603_32_001_lmmr
-#: model:account.account,name:marin_data.account_603_32_001_main_company
+#: model:account.account,name:marin_data.account_603_32_001_company_lmmg
 msgid "Administrative services FF"
 msgstr "Servicios administrativos FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_603_32_002_lmmr
-#: model:account.account,name:marin_data.account_603_32_002_main_company
+#: model:account.account,name:marin_data.account_603_32_002_company_lmmg
 msgid "Administrative services NF"
 msgstr "Servicios administrativos NF"
 
@@ -57,7 +57,7 @@ msgstr ""
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_154_01_001_lmmr
-#: model:account.account,name:marin_data.account_154_01_001_main_company
+#: model:account.account,name:marin_data.account_154_01_001_company_lmmg
 #: model:account.journal,name:marin_data.journal_528
 #: model:account.journal,name:marin_data.journal_580
 msgid "Automobiles, trucks, forklifts and trailers FF"
@@ -66,7 +66,7 @@ msgstr ""
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_154_01_002_lmmr
-#: model:account.account,name:marin_data.account_154_01_002_main_company
+#: model:account.account,name:marin_data.account_154_01_002_company_lmmg
 #: model:account.journal,name:marin_data.journal_529
 #: model:account.journal,name:marin_data.journal_581
 msgid "Automobiles, trucks, forklifts and trailers NF"
@@ -86,7 +86,7 @@ msgid "Bank American Express Platinum"
 msgstr "Banco American Express Platinum"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_102_01_002_main_company
+#: model:account.account,name:marin_data.account_102_01_002_company_lmmg
 #: model:account.journal,name:marin_data.journal_504
 msgid "Bank BBVA 0110152269"
 msgstr "Banco BBVA 0110152269"
@@ -115,7 +115,7 @@ msgid "Bank BBVA 0467507011"
 msgstr "Banco BBVA 0467507011"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_102_01_003_main_company
+#: model:account.account,name:marin_data.account_102_01_003_company_lmmg
 #: model:account.journal,name:marin_data.journal_501
 msgid "Bank BBVA 0478986592"
 msgstr "Banco BBVA 0478986592"
@@ -137,13 +137,13 @@ msgid "Bank BBVA CC 4406 (5619)"
 msgstr "Banco BBVA TC 4406 (5619)"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_202_03_002_main_company
+#: model:account.account,name:marin_data.account_202_03_002_company_lmmg
 #: model:account.journal,name:marin_data.journal_506
 msgid "Bank BBVA CC 5435"
 msgstr "Banco BBVA TC 5435"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_102_01_001_main_company
+#: model:account.account,name:marin_data.account_102_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_102_01_001_tjgl
 #: model:account.account,name:marin_data.account_102_01_002_glmm
 #: model:account.journal,name:marin_data.journal_505
@@ -174,7 +174,7 @@ msgid "Bank BBVA meta segura"
 msgstr "Banco BBVA meta segura"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_102_01_006_main_company
+#: model:account.account,name:marin_data.account_102_01_006_company_lmmg
 msgid "Bank BanBajio 0038383038"
 msgstr "Banco BanBajio 0038383038"
 
@@ -212,13 +212,13 @@ msgid "Bank Efectivale - Expenses"
 msgstr "Banco Efectivale - Gastos"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_102_01_004_main_company
+#: model:account.account,name:marin_data.account_102_01_004_company_lmmg
 #: model:account.journal,name:marin_data.journal_503
 msgid "Bank Efectivale 86039 - Expenses"
 msgstr "Banco Efectivale 86039 - Gastos"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_102_01_005_main_company
+#: model:account.account,name:marin_data.account_102_01_005_company_lmmg
 msgid "Bank Efectivale 86039 - Fuel"
 msgstr "Banco Efectivale 86039 - Combustible"
 
@@ -237,7 +237,7 @@ msgstr "Banco Santander 56-74532047-4"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_701_10_001_glmm
 #: model:account.account,name:marin_data.account_701_10_001_lmmr
-#: model:account.account,name:marin_data.account_701_10_001_main_company
+#: model:account.account,name:marin_data.account_701_10_001_company_lmmg
 #: model:account.account,name:marin_data.account_701_10_001_tjgl
 msgid "Bank commissions FF"
 msgstr "Comisiones bancarias FF"
@@ -250,13 +250,13 @@ msgstr "Comisiones bancarias NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_102_01_000_glmm
 #: model:account.account,name:marin_data.account_102_01_000_lmmr
-#: model:account.account,name:marin_data.account_102_01_000_main_company
+#: model:account.account,name:marin_data.account_102_01_000_company_lmmg
 #: model:account.account,name:marin_data.account_102_01_002_tjgl
 msgid "Bank suspense account"
 msgstr "Cuenta de suspension bancaria"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_603_102_003_main_company
+#: model:account.account,name:marin_data.account_603_102_003_company_lmmg
 msgid "Bank trade GLMM --> cash LMMG to thirth parties"
 msgstr "Cambios banco GLMM --> efectivo LMMG a terceros"
 
@@ -266,12 +266,12 @@ msgid "Bank trade GLMM --> self cash to thirth parties"
 msgstr "Cambios banco GLMM --> efectivo propio a terceros"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_603_101_003_main_company
+#: model:account.account,name:marin_data.account_603_101_003_company_lmmg
 msgid "Bank trade LMMG --> Bank GLMM"
 msgstr "Cambios banco LMMG --> banco GLMM"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_603_101_001_main_company
+#: model:account.account,name:marin_data.account_603_101_001_company_lmmg
 msgid "Bank trade LMMG --> Bank LMMR"
 msgstr "Cambios banco LMMG --> banco LMMR"
 
@@ -292,7 +292,7 @@ msgid "Bank trade LMMR --> Bank LMMG"
 msgstr "Cambios banco LMMR --> banco LMMG"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_603_102_001_main_company
+#: model:account.account,name:marin_data.account_603_102_001_company_lmmg
 msgid "Bank trade LMMR --> cash LMMG to thirth parties"
 msgstr "Cambios banco LMMR --> efectivo LMMG a terceros"
 
@@ -303,7 +303,7 @@ msgstr "Cambios banco LMMR --> efectivo propio a terceros"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_179_01_001_lmmr
-#: model:account.account,name:marin_data.account_179_01_001_main_company
+#: model:account.account,name:marin_data.account_179_01_001_company_lmmg
 msgid "Brands and patents FF"
 msgstr "Marcas y patentes FF"
 
@@ -328,18 +328,18 @@ msgstr "Efectivo USD"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_899_01_099_glmm
 #: model:account.account,name:marin_data.account_899_01_099_lmmr
-#: model:account.account,name:marin_data.account_899_01_099_main_company
+#: model:account.account,name:marin_data.account_899_01_099_company_lmmg
 #: model:account.account,name:marin_data.account_899_01_099_tjgl
 msgid "Cash flow basis for taxation"
 msgstr "Base para impuestos basados en flujo de efectivo"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_603_100_003_main_company
+#: model:account.account,name:marin_data.account_603_100_003_company_lmmg
 msgid "Cash trade LMMG --> Bank GLMM"
 msgstr "Cambios efectivo LMMG --> banco GLMM"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_603_100_001_main_company
+#: model:account.account,name:marin_data.account_603_100_001_company_lmmg
 msgid "Cash trade LMMG --> Bank LMMR"
 msgstr "Cambios efectivo LMMG --> banco LMMR"
 
@@ -370,7 +370,7 @@ msgstr "Aguinaldo NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_54_001_lmmr
 #: model:account.account,name:marin_data.account_602_54_001_lmmr
-#: model:account.account,name:marin_data.account_602_54_001_main_company
+#: model:account.account,name:marin_data.account_602_54_001_company_lmmg
 #: model:account.account,name:marin_data.account_603_54_001_lmmr
 msgid "Cleaning articles and expenses FF"
 msgstr "Articulos y gastos de limpieza FF"
@@ -378,28 +378,28 @@ msgstr "Articulos y gastos de limpieza FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_54_002_lmmr
 #: model:account.account,name:marin_data.account_602_54_002_lmmr
-#: model:account.account,name:marin_data.account_602_54_002_main_company
+#: model:account.account,name:marin_data.account_602_54_002_company_lmmg
 #: model:account.account,name:marin_data.account_603_54_002_lmmr
 msgid "Cleaning articles and expenses NF"
 msgstr "Articulos y gastos de limpieza NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_208_02_001_lmmr
-#: model:account.account,name:marin_data.account_208_02_001_main_company
+#: model:account.account,name:marin_data.account_208_02_001_company_lmmg
 msgid "Collected transfered IEPS"
 msgstr "IEPS trasladado cobrado"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_208_01_001_glmm
 #: model:account.account,name:marin_data.account_208_01_001_lmmr
-#: model:account.account,name:marin_data.account_208_01_001_main_company
+#: model:account.account,name:marin_data.account_208_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_208_01_001_tjgl
 msgid "Collected transfered VAT"
 msgstr "IVA trasladado cobrado"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_165_01_001_lmmr
-#: model:account.account,name:marin_data.account_165_01_001_main_company
+#: model:account.account,name:marin_data.account_165_01_001_company_lmmg
 #: model:account.journal,name:marin_data.journal_531
 #: model:account.journal,name:marin_data.journal_583
 msgid "Communications equipment FF"
@@ -407,13 +407,13 @@ msgstr "Equipo de comunicaciones telefonicas FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_165_01_002_lmmr
-#: model:account.account,name:marin_data.account_165_01_002_main_company
+#: model:account.account,name:marin_data.account_165_01_002_company_lmmg
 msgid "Communications equipment NF"
 msgstr "Equipo de comunicaciones telefonicas NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_504_12_001_lmmr
-#: model:account.account,name:marin_data.account_504_12_001_main_company
+#: model:account.account,name:marin_data.account_504_12_001_company_lmmg
 msgid "Communications equipment depreciation FF"
 msgstr "Depreciacion de equipo de comunicacion FF"
 
@@ -424,7 +424,7 @@ msgstr "Compensaciones - Pagos hechos con exceso al trabajador FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_156_01_001_lmmr
-#: model:account.account,name:marin_data.account_156_01_001_main_company
+#: model:account.account,name:marin_data.account_156_01_001_company_lmmg
 #: model:account.journal,name:marin_data.journal_530
 #: model:account.journal,name:marin_data.journal_582
 msgid "Computing equipment FF"
@@ -432,7 +432,7 @@ msgstr "Equipo de computo FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_504_11_001_lmmr
-#: model:account.account,name:marin_data.account_504_11_001_main_company
+#: model:account.account,name:marin_data.account_504_11_001_company_lmmg
 msgid "Computing equipment depreciation FF"
 msgstr "Depreciacion de equipo de computo FF"
 
@@ -457,7 +457,7 @@ msgstr "Aportaciones al INFONAVIT FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_501_01_001_glmm
 #: model:account.account,name:marin_data.account_501_01_001_lmmr
-#: model:account.account,name:marin_data.account_501_01_001_main_company
+#: model:account.account,name:marin_data.account_501_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_501_01_001_tjgl
 msgid "Cost of sales FF"
 msgstr "Costo de venta FF"
@@ -465,14 +465,14 @@ msgstr "Costo de venta FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_501_01_003_glmm
 #: model:account.account,name:marin_data.account_501_01_003_lmmr
-#: model:account.account,name:marin_data.account_501_01_003_main_company
+#: model:account.account,name:marin_data.account_501_01_003_company_lmmg
 msgid "Cost of sales FX"
 msgstr "Costo de venta FX"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_501_01_002_glmm
 #: model:account.account,name:marin_data.account_501_01_002_lmmr
-#: model:account.account,name:marin_data.account_501_01_002_main_company
+#: model:account.account,name:marin_data.account_501_01_002_company_lmmg
 #: model:account.account,name:marin_data.account_501_01_002_tjgl
 msgid "Cost of sales NF"
 msgstr "Costo de venta NF"
@@ -480,7 +480,7 @@ msgstr "Costo de venta NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_702_01_001_glmm
 #: model:account.account,name:marin_data.account_702_01_001_lmmr
-#: model:account.account,name:marin_data.account_702_01_001_main_company
+#: model:account.account,name:marin_data.account_702_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_702_01_001_tjgl
 msgid "Currency exchange gain"
 msgstr "Utilidad cambiaria"
@@ -488,14 +488,14 @@ msgstr "Utilidad cambiaria"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_701_01_001_glmm
 #: model:account.account,name:marin_data.account_701_01_001_lmmr
-#: model:account.account,name:marin_data.account_701_01_001_main_company
+#: model:account.account,name:marin_data.account_701_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_701_01_001_tjgl
 msgid "Currency exchange loss"
 msgstr "Perdida cambiaria"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_206_01_001_lmmr
-#: model:account.account,name:marin_data.account_206_01_001_main_company
+#: model:account.account,name:marin_data.account_206_01_001_company_lmmg
 msgid "Customer advance FF"
 msgstr "Anticipo de cliente FF"
 
@@ -551,19 +551,19 @@ msgid "DSA%-"
 msgstr ""
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_504_09_001_main_company
+#: model:account.account,name:marin_data.account_504_09_001_company_lmmg
 msgid "Depreciacion de automobiles, buses, trucks, forklifts or trailers FF"
 msgstr "Depreciacion de automoviles, autobuses, camiones de carga, etc FF"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_504_09_002_main_company
+#: model:account.account,name:marin_data.account_504_09_002_company_lmmg
 msgid "Depreciacion de automobiles, buses, trucks, forklifts or trailers NF"
 msgstr "Depreciacion de automoviles, autobuses, camiones de carga, etc NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_105_01_001_glmm
 #: model:account.account,name:marin_data.account_105_01_001_lmmr
-#: model:account.account,name:marin_data.account_105_01_001_main_company
+#: model:account.account,name:marin_data.account_105_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_105_01_001_tjgl
 msgid "Domestic customers FF"
 msgstr "Clientes nacionales FF"
@@ -571,7 +571,7 @@ msgstr "Clientes nacionales FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_105_01_002_glmm
 #: model:account.account,name:marin_data.account_105_01_002_lmmr
-#: model:account.account,name:marin_data.account_105_01_002_main_company
+#: model:account.account,name:marin_data.account_105_01_002_company_lmmg
 #: model:account.account,name:marin_data.account_105_01_002_tjgl
 msgid "Domestic customers NF"
 msgstr "Clientes nacionales NF"
@@ -579,7 +579,7 @@ msgstr "Clientes nacionales NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_201_01_001_glmm
 #: model:account.account,name:marin_data.account_201_01_001_lmmr
-#: model:account.account,name:marin_data.account_201_01_001_main_company
+#: model:account.account,name:marin_data.account_201_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_201_01_001_tjgl
 msgid "Domestic vendors FF"
 msgstr "Proveedores nacionales FF"
@@ -587,26 +587,26 @@ msgstr "Proveedores nacionales FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_201_01_002_glmm
 #: model:account.account,name:marin_data.account_201_01_002_lmmr
-#: model:account.account,name:marin_data.account_201_01_002_main_company
+#: model:account.account,name:marin_data.account_201_01_002_company_lmmg
 #: model:account.account,name:marin_data.account_201_01_002_tjgl
 msgid "Domestic vendors NF"
 msgstr "Proveedores nacionales NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_120_01_001_lmmr
-#: model:account.account,name:marin_data.account_120_01_001_main_company
+#: model:account.account,name:marin_data.account_120_01_001_company_lmmg
 msgid "Domestic vendors advance FF"
 msgstr "Anticipo a proveedores nacionales FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_120_01_002_lmmr
-#: model:account.account,name:marin_data.account_120_01_002_main_company
+#: model:account.account,name:marin_data.account_120_01_002_company_lmmg
 msgid "Domestic vendors advance NF"
 msgstr "Anticipo a proveedores nacionales NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_63_001_lmmr
-#: model:account.account,name:marin_data.account_601_63_001_main_company
+#: model:account.account,name:marin_data.account_601_63_001_company_lmmg
 msgid "Donations and aids FF"
 msgstr "Donativos y ayudas FF"
 
@@ -642,7 +642,7 @@ msgstr "Efectivamente cobrado/pagado FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_52_001_lmmr
 #: model:account.account,name:marin_data.account_602_52_001_lmmr
-#: model:account.account,name:marin_data.account_602_52_001_main_company
+#: model:account.account,name:marin_data.account_602_52_001_company_lmmg
 #: model:account.account,name:marin_data.account_602_52_001_tjgl
 #: model:account.account,name:marin_data.account_603_52_001_lmmr
 msgid "Electric power FF"
@@ -651,7 +651,7 @@ msgstr "Energia electrica FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_52_002_lmmr
 #: model:account.account,name:marin_data.account_602_52_002_lmmr
-#: model:account.account,name:marin_data.account_602_52_002_main_company
+#: model:account.account,name:marin_data.account_602_52_002_company_lmmg
 #: model:account.account,name:marin_data.account_602_52_002_tjgl
 #: model:account.account,name:marin_data.account_603_52_002_lmmr
 msgid "Electric power NF"
@@ -671,9 +671,9 @@ msgstr "Despensa al personal NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_62_001_lmmr
-#: model:account.account,name:marin_data.account_602_62_001_main_company
+#: model:account.account,name:marin_data.account_602_62_001_company_lmmg
 #: model:account.account,name:marin_data.account_603_62_001_lmmr
-#: model:account.account,name:marin_data.account_603_62_001_main_company
+#: model:account.account,name:marin_data.account_603_62_001_company_lmmg
 msgid "Employee training FF"
 msgstr "Capacitacion al personal FF"
 
@@ -719,14 +719,14 @@ msgstr "Subsidio al empleo efectivamente entregado"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_302_01_001_glmm
 #: model:account.account,name:marin_data.account_302_01_001_lmmr
-#: model:account.account,name:marin_data.account_302_01_001_main_company
+#: model:account.account,name:marin_data.account_302_01_001_company_lmmg
 msgid "Equity FF"
 msgstr "Patrimonio FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_302_01_002_glmm
 #: model:account.account,name:marin_data.account_302_01_002_lmmr
-#: model:account.account,name:marin_data.account_302_01_002_main_company
+#: model:account.account,name:marin_data.account_302_01_002_company_lmmg
 msgid "Equity NF"
 msgstr "Patrimonio NF"
 
@@ -768,7 +768,7 @@ msgstr "Honorarios a personas morales NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_201_02_001_lmmr
-#: model:account.account,name:marin_data.account_201_02_001_main_company
+#: model:account.account,name:marin_data.account_201_02_001_company_lmmg
 #: model:account.journal,name:marin_data.journal_515
 #: model:account.journal,name:marin_data.journal_560
 msgid "Foreign vendors FF"
@@ -777,13 +777,13 @@ msgstr "Proveedores extranjeros FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_72_001_glmm
 #: model:account.account,name:marin_data.account_602_72_001_lmmr
-#: model:account.account,name:marin_data.account_602_72_001_main_company
+#: model:account.account,name:marin_data.account_602_72_001_company_lmmg
 msgid "Freight and haulage FF"
 msgstr "Fletes y acarreos FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_72_002_lmmr
-#: model:account.account,name:marin_data.account_602_72_002_main_company
+#: model:account.account,name:marin_data.account_602_72_002_company_lmmg
 msgid "Freight and haulage NF"
 msgstr "Fletes y acarreos NF"
 
@@ -791,7 +791,7 @@ msgstr "Fletes y acarreos NF"
 #: model:account.account,name:marin_data.account_601_48_001_lmmr
 #: model:account.account,name:marin_data.account_602_48_001_glmm
 #: model:account.account,name:marin_data.account_602_48_001_lmmr
-#: model:account.account,name:marin_data.account_602_48_001_main_company
+#: model:account.account,name:marin_data.account_602_48_001_company_lmmg
 #: model:account.account,name:marin_data.account_603_48_001_lmmr
 msgid "Fuel and lubricants FF"
 msgstr "Combustibles y lubricantes FF"
@@ -799,21 +799,21 @@ msgstr "Combustibles y lubricantes FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_48_002_lmmr
 #: model:account.account,name:marin_data.account_602_48_002_lmmr
-#: model:account.account,name:marin_data.account_602_48_002_main_company
+#: model:account.account,name:marin_data.account_602_48_002_company_lmmg
 #: model:account.account,name:marin_data.account_603_48_002_lmmr
 msgid "Fuel and lubricants NF"
 msgstr "Combustibles y lubricantes NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_155_01_001_lmmr
-#: model:account.account,name:marin_data.account_155_01_001_main_company
+#: model:account.account,name:marin_data.account_155_01_001_company_lmmg
 #: model:account.journal,name:marin_data.journal_534
 #: model:account.journal,name:marin_data.journal_586
 msgid "Furniture and office equipment FF"
 msgstr "Mobiliario y equipo de oficina FF"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_155_01_002_main_company
+#: model:account.account,name:marin_data.account_155_01_002_company_lmmg
 #: model:account.journal,name:marin_data.journal_535
 #: model:account.journal,name:marin_data.journal_587
 msgid "Furniture and office equipment NF"
@@ -821,14 +821,14 @@ msgstr "Mobiliario y equipo de oficina NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_504_10_001_lmmr
-#: model:account.account,name:marin_data.account_504_10_001_main_company
+#: model:account.account,name:marin_data.account_504_10_001_company_lmmg
 msgid "Furniture and office equipment depreciation FF"
 msgstr "Depreciacion de mobiliario y equipo de oficina FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_704_22_001_glmm
 #: model:account.account,name:marin_data.account_704_22_001_lmmr
-#: model:account.account,name:marin_data.account_704_22_001_main_company
+#: model:account.account,name:marin_data.account_704_22_001_company_lmmg
 #: model:account.account,name:marin_data.account_704_22_001_tjgl
 msgid "Gain from cash discount"
 msgstr "Ganancia por descuento al pago"
@@ -836,14 +836,14 @@ msgstr "Ganancia por descuento al pago"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_704_23_002_glmm
 #: model:account.account,name:marin_data.account_704_23_002_lmmr
-#: model:account.account,name:marin_data.account_704_23_002_main_company
+#: model:account.account,name:marin_data.account_704_23_002_company_lmmg
 #: model:account.account,name:marin_data.account_704_23_002_tjgl
 msgid "Gain from cash discrepancy"
 msgstr "Ganancia por diferencia de efectivo"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_704_04_001_lmmr
-#: model:account.account,name:marin_data.account_704_04_001_main_company
+#: model:account.account,name:marin_data.account_704_04_001_company_lmmg
 msgid ""
 "Gain on sale and/or disposal of automobiles, buses, trucks, forklifts or "
 "trailers FF"
@@ -853,7 +853,7 @@ msgstr ""
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_704_04_002_lmmr
-#: model:account.account,name:marin_data.account_704_04_002_main_company
+#: model:account.account,name:marin_data.account_704_04_002_company_lmmg
 msgid ""
 "Gain on sale and/or disposal of automobiles, buses, trucks, forklifts or "
 "trailers NF"
@@ -863,14 +863,14 @@ msgstr ""
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_704_01_001_lmmr
-#: model:account.account,name:marin_data.account_704_01_001_main_company
+#: model:account.account,name:marin_data.account_704_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_704_01_001_tjgl
 msgid "Gain on sale and/or disposal of lands FF"
 msgstr "Ganancia en venta y/o baja de terrenos FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_704_03_001_lmmr
-#: model:account.account,name:marin_data.account_704_03_001_main_company
+#: model:account.account,name:marin_data.account_704_03_001_company_lmmg
 #: model:account.account,name:marin_data.account_704_03_001_tjgl
 msgid "Gain on sale and/or disposal of machinery and equipment FF"
 msgstr "Ganancia en venta y/o baja de maquinaria y equipo FF"
@@ -1376,14 +1376,14 @@ msgstr ""
 #. module: marin_data
 #: model:account.account,name:marin_data.account_611_01_001_glmm
 #: model:account.account,name:marin_data.account_611_01_001_lmmr
-#: model:account.account,name:marin_data.account_611_01_001_main_company
+#: model:account.account,name:marin_data.account_611_01_001_company_lmmg
 msgid "Income tax - ISR"
 msgstr "Impuesto sobre la renta - ISR"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_113_02_001_glmm
 #: model:account.account,name:marin_data.account_113_02_001_lmmr
-#: model:account.account,name:marin_data.account_113_02_001_main_company
+#: model:account.account,name:marin_data.account_113_02_001_company_lmmg
 #: model:account.account,name:marin_data.account_113_02_001_tjgl
 msgid "Income tax in favor"
 msgstr "ISR a favor"
@@ -1391,13 +1391,13 @@ msgstr "ISR a favor"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_213_03_001_glmm
 #: model:account.account,name:marin_data.account_213_03_001_lmmr
-#: model:account.account,name:marin_data.account_213_03_001_main_company
+#: model:account.account,name:marin_data.account_213_03_001_company_lmmg
 msgid "Income tax payable"
 msgstr "ISR por pagar"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_216_03_001_lmmr
-#: model:account.account,name:marin_data.account_216_03_001_main_company
+#: model:account.account,name:marin_data.account_216_03_001_company_lmmg
 msgid "Income tax withholdings from leasing"
 msgstr "Impuestos retenidos de ISR por arrendamiento"
 
@@ -1409,14 +1409,14 @@ msgstr "Impuestos retenidos de ISR por servicios profesionales"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_216_01_001_glmm
 #: model:account.account,name:marin_data.account_216_01_001_lmmr
-#: model:account.account,name:marin_data.account_216_01_001_main_company
+#: model:account.account,name:marin_data.account_216_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_216_01_001_tjgl
 msgid "Income tax withholdings from wages and salaries"
 msgstr "Impuestos retenidos de ISR por sueldos y salarios"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_704_23_003_lmmr
-#: model:account.account,name:marin_data.account_704_23_003_main_company
+#: model:account.account,name:marin_data.account_704_23_003_company_lmmg
 msgid "Indemnities FF"
 msgstr "Indemnizaciones FF"
 
@@ -1424,7 +1424,7 @@ msgstr "Indemnizaciones FF"
 #: model:account.account,name:marin_data.account_601_57_001_lmmr
 #: model:account.account,name:marin_data.account_602_57_001_glmm
 #: model:account.account,name:marin_data.account_602_57_001_lmmr
-#: model:account.account,name:marin_data.account_602_57_001_main_company
+#: model:account.account,name:marin_data.account_602_57_001_company_lmmg
 #: model:account.account,name:marin_data.account_602_57_001_tjgl
 #: model:account.account,name:marin_data.account_603_57_011_lmmr
 msgid "Insurance and bonds FF"
@@ -1438,20 +1438,20 @@ msgstr "Seguros y fianzas pagados por anticipado"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_701_04_001_glmm
 #: model:account.account,name:marin_data.account_701_04_001_lmmr
-#: model:account.account,name:marin_data.account_701_04_001_main_company
+#: model:account.account,name:marin_data.account_701_04_001_company_lmmg
 msgid "Interest expense to domestic bank FF"
 msgstr "Intereses a cargo bancario nacional FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_701_08_001_lmmr
-#: model:account.account,name:marin_data.account_701_08_001_main_company
+#: model:account.account,name:marin_data.account_701_08_001_company_lmmg
 msgid "Interest expense to domestic legal entities FF"
 msgstr "Intereses a cargo de personas morales nacional FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_115_01_001_glmm
 #: model:account.account,name:marin_data.account_115_01_001_lmmr
-#: model:account.account,name:marin_data.account_115_01_001_main_company
+#: model:account.account,name:marin_data.account_115_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_115_01_001_tjgl
 msgid "Inventory FF"
 msgstr "Inventario FF"
@@ -1459,26 +1459,26 @@ msgstr "Inventario FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_115_01_002_glmm
 #: model:account.account,name:marin_data.account_115_01_002_lmmr
-#: model:account.account,name:marin_data.account_115_01_002_main_company
+#: model:account.account,name:marin_data.account_115_01_002_company_lmmg
 #: model:account.account,name:marin_data.account_115_01_002_tjgl
 msgid "Inventory NF"
 msgstr "Inventario NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_504_14_001_lmmr
-#: model:account.account,name:marin_data.account_504_14_001_main_company
+#: model:account.account,name:marin_data.account_504_14_001_company_lmmg
 msgid "Land depreciation FF"
 msgstr "Depreciacion de terrenos FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_504_14_002_lmmr
-#: model:account.account,name:marin_data.account_504_14_002_main_company
+#: model:account.account,name:marin_data.account_504_14_002_company_lmmg
 msgid "Land depreciation NF"
 msgstr "Depreciacion de terrenos NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_151_01_001_lmmr
-#: model:account.account,name:marin_data.account_151_01_001_main_company
+#: model:account.account,name:marin_data.account_151_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_151_01_001_tjgl
 #: model:account.journal,name:marin_data.journal_536
 #: model:account.journal,name:marin_data.journal_588
@@ -1488,7 +1488,7 @@ msgstr "Terrenos FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_151_01_002_lmmr
-#: model:account.account,name:marin_data.account_151_01_002_main_company
+#: model:account.account,name:marin_data.account_151_01_002_company_lmmg
 #: model:account.journal,name:marin_data.journal_537
 #: model:account.journal,name:marin_data.journal_589
 msgid "Lands NF"
@@ -1497,14 +1497,14 @@ msgstr "Terrenos NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_45_001_lmmr
 #: model:account.account,name:marin_data.account_603_45_001_lmmr
-#: model:account.account,name:marin_data.account_603_45_001_main_company
+#: model:account.account,name:marin_data.account_603_45_001_company_lmmg
 msgid "Lease to individuals FF"
 msgstr "Arrendamiento a personas fisicas FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_45_002_lmmr
 #: model:account.account,name:marin_data.account_603_45_002_lmmr
-#: model:account.account,name:marin_data.account_603_45_002_main_company
+#: model:account.account,name:marin_data.account_603_45_002_company_lmmg
 msgid "Lease to individuals NF"
 msgstr "Arrendamiento a personas fisicas NF"
 
@@ -1521,7 +1521,7 @@ msgstr "Arrendamiento a personas morales NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_102_01_111_glmm
 #: model:account.account,name:marin_data.account_102_01_111_lmmr
-#: model:account.account,name:marin_data.account_102_01_111_main_company
+#: model:account.account,name:marin_data.account_102_01_111_company_lmmg
 #: model:account.account,name:marin_data.account_102_01_111_tjgl
 msgid "Liquidity transfer"
 msgstr "Transferencia de liquidez"
@@ -1529,7 +1529,7 @@ msgstr "Transferencia de liquidez"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_202_03_090_glmm
 #: model:account.account,name:marin_data.account_202_03_090_lmmr
-#: model:account.account,name:marin_data.account_202_03_090_main_company
+#: model:account.account,name:marin_data.account_202_03_090_company_lmmg
 #: model:account.account,name:marin_data.account_202_03_090_tjgl
 msgid "Loans received in cash FF"
 msgstr "Prestamos recibidos en efectivo FF"
@@ -1537,7 +1537,7 @@ msgstr "Prestamos recibidos en efectivo FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_202_03_091_glmm
 #: model:account.account,name:marin_data.account_202_03_091_lmmr
-#: model:account.account,name:marin_data.account_202_03_091_main_company
+#: model:account.account,name:marin_data.account_202_03_091_company_lmmg
 #: model:account.account,name:marin_data.account_202_03_091_tjgl
 msgid "Loans received in cash NF"
 msgstr "Prestamos recibidos en efectivo NF"
@@ -1549,14 +1549,14 @@ msgstr "Cuentas por pagar a largo plazo"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_252_07_001_lmmr
-#: model:account.account,name:marin_data.account_252_07_001_main_company
+#: model:account.account,name:marin_data.account_252_07_001_company_lmmg
 msgid "Long-term national mortgages payable"
 msgstr "Hipotecas por pagar a largo plazo nacional"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_703_21_002_glmm
 #: model:account.account,name:marin_data.account_703_21_002_lmmr
-#: model:account.account,name:marin_data.account_703_21_002_main_company
+#: model:account.account,name:marin_data.account_703_21_002_company_lmmg
 #: model:account.account,name:marin_data.account_703_21_002_tjgl
 msgid "Loss due to cash discrepancy"
 msgstr "Perdida por diferencia de efectivo"
@@ -1564,7 +1564,7 @@ msgstr "Perdida por diferencia de efectivo"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_703_21_003_glmm
 #: model:account.account,name:marin_data.account_703_21_003_lmmr
-#: model:account.account,name:marin_data.account_703_21_003_main_company
+#: model:account.account,name:marin_data.account_703_21_003_company_lmmg
 #: model:account.account,name:marin_data.account_703_21_003_tjgl
 msgid "Loss from cash discount"
 msgstr "Perdida por descuento al pago"
@@ -1572,7 +1572,7 @@ msgstr "Perdida por descuento al pago"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_304_02_001_glmm
 #: model:account.account,name:marin_data.account_304_02_001_lmmr
-#: model:account.account,name:marin_data.account_304_02_001_main_company
+#: model:account.account,name:marin_data.account_304_02_001_company_lmmg
 #: model:account.account,name:marin_data.account_304_02_001_tjgl
 msgid "Loss from prior periods FF"
 msgstr "Perdida de ejercicios anteriores FF"
@@ -1580,14 +1580,14 @@ msgstr "Perdida de ejercicios anteriores FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_304_02_002_glmm
 #: model:account.account,name:marin_data.account_304_02_002_lmmr
-#: model:account.account,name:marin_data.account_304_02_002_main_company
+#: model:account.account,name:marin_data.account_304_02_002_company_lmmg
 #: model:account.account,name:marin_data.account_304_02_002_tjgl
 msgid "Loss from prior periods NF"
 msgstr "Perdida de ejercicios anteriores NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_153_01_001_lmmr
-#: model:account.account,name:marin_data.account_153_01_001_main_company
+#: model:account.account,name:marin_data.account_153_01_001_company_lmmg
 #: model:account.journal,name:marin_data.journal_532
 #: model:account.journal,name:marin_data.journal_584
 msgid "Machinery and equipment FF"
@@ -1595,7 +1595,7 @@ msgstr "Maquinaria y equipo FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_153_01_002_lmmr
-#: model:account.account,name:marin_data.account_153_01_002_main_company
+#: model:account.account,name:marin_data.account_153_01_002_company_lmmg
 #: model:account.journal,name:marin_data.journal_533
 #: model:account.journal,name:marin_data.journal_585
 msgid "Machinery and equipment NF"
@@ -1603,20 +1603,20 @@ msgstr "Maquinaria y equipo NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_504_08_001_lmmr
-#: model:account.account,name:marin_data.account_504_08_001_main_company
+#: model:account.account,name:marin_data.account_504_08_001_company_lmmg
 msgid "Machinery and equipment depreciation FF"
 msgstr "Depreciacion de maquinaria y equipo FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_504_08_002_lmmr
-#: model:account.account,name:marin_data.account_504_08_002_main_company
+#: model:account.account,name:marin_data.account_504_08_002_company_lmmg
 msgid "Machinery and equipment depreciation NF"
 msgstr "Depreciacion de maquinaria y equipo NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_101_01_001_glmm
 #: model:account.account,name:marin_data.account_101_01_001_lmmr
-#: model:account.account,name:marin_data.account_101_01_001_main_company
+#: model:account.account,name:marin_data.account_101_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_101_01_001_tjgl
 #: model:account.journal,name:marin_data.journal_507
 #: model:account.journal,name:marin_data.journal_549
@@ -1629,7 +1629,7 @@ msgstr "Efectivo principal"
 #: model:account.account,name:marin_data.account_601_56_001_lmmr
 #: model:account.account,name:marin_data.account_602_56_001_glmm
 #: model:account.account,name:marin_data.account_602_56_001_lmmr
-#: model:account.account,name:marin_data.account_602_56_001_main_company
+#: model:account.account,name:marin_data.account_602_56_001_company_lmmg
 #: model:account.account,name:marin_data.account_602_56_001_tjgl
 #: model:account.account,name:marin_data.account_603_56_001_lmmr
 msgid "Maintenance and conservation FF"
@@ -1638,20 +1638,20 @@ msgstr "Mantenimiento y conservacion FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_56_002_lmmr
 #: model:account.account,name:marin_data.account_602_56_002_lmmr
-#: model:account.account,name:marin_data.account_602_56_002_main_company
+#: model:account.account,name:marin_data.account_602_56_002_company_lmmg
 #: model:account.account,name:marin_data.account_603_56_002_lmmr
 msgid "Maintenance and conservation NF"
 msgstr "Mantenimiento y conservacion NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_17_001_lmmr
-#: model:account.account,name:marin_data.account_601_17_001_main_company
+#: model:account.account,name:marin_data.account_601_17_001_company_lmmg
 msgid "Medical services FF"
 msgstr "Servicios medicos FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_17_002_lmmr
-#: model:account.account,name:marin_data.account_601_17_002_main_company
+#: model:account.account,name:marin_data.account_601_17_002_company_lmmg
 #: model:account.account,name:marin_data.account_602_17_002_lmmr
 #: model:account.account,name:marin_data.account_603_17_002_lmmr
 msgid "Medical services NF"
@@ -1674,7 +1674,7 @@ msgstr "Operaciones varias NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_305_01_001_glmm
 #: model:account.account,name:marin_data.account_305_01_001_lmmr
-#: model:account.account,name:marin_data.account_305_01_001_main_company
+#: model:account.account,name:marin_data.account_305_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_305_01_001_tjgl
 msgid "Net income FF"
 msgstr "Utilidad del ejercicio FF"
@@ -1682,7 +1682,7 @@ msgstr "Utilidad del ejercicio FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_305_01_002_glmm
 #: model:account.account,name:marin_data.account_305_01_002_lmmr
-#: model:account.account,name:marin_data.account_305_01_002_main_company
+#: model:account.account,name:marin_data.account_305_01_002_company_lmmg
 #: model:account.account,name:marin_data.account_305_01_002_tjgl
 msgid "Net income NF"
 msgstr "Utilidad del ejercicio NF"
@@ -1690,7 +1690,7 @@ msgstr "Utilidad del ejercicio NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_305_02_001_glmm
 #: model:account.account,name:marin_data.account_305_02_001_lmmr
-#: model:account.account,name:marin_data.account_305_02_001_main_company
+#: model:account.account,name:marin_data.account_305_02_001_company_lmmg
 #: model:account.account,name:marin_data.account_305_02_001_tjgl
 msgid "Net loss FF"
 msgstr "Perdida del ejercicio FF"
@@ -1698,7 +1698,7 @@ msgstr "Perdida del ejercicio FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_305_02_002_glmm
 #: model:account.account,name:marin_data.account_305_02_002_lmmr
-#: model:account.account,name:marin_data.account_305_02_002_main_company
+#: model:account.account,name:marin_data.account_305_02_002_company_lmmg
 #: model:account.account,name:marin_data.account_305_02_002_tjgl
 msgid "Net loss NF"
 msgstr "Perdida del ejercicio NF"
@@ -1710,55 +1710,55 @@ msgstr "IVA acreditable no deducible"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_83_008_lmmr
-#: model:account.account,name:marin_data.account_601_83_008_main_company
+#: model:account.account,name:marin_data.account_601_83_008_company_lmmg
 #: model:account.account,name:marin_data.account_603_83_008_lmmr
 msgid "Non-deductible expenses - Actualizaciones"
 msgstr "Gastos no deducibles - Actualizaciones"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_603_83_006_lmmr
-#: model:account.account,name:marin_data.account_603_83_006_main_company
+#: model:account.account,name:marin_data.account_603_83_006_company_lmmg
 msgid "Non-deductible expenses - Administrative services"
 msgstr "Gastos no deducibles - Servicios administrativos"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_602_83_003_main_company
+#: model:account.account,name:marin_data.account_602_83_003_company_lmmg
 msgid "Non-deductible expenses - Bank commissions"
 msgstr "Gastos no deducibles - Comisiones bancarias"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_83_008_lmmr
-#: model:account.account,name:marin_data.account_602_83_008_main_company
+#: model:account.account,name:marin_data.account_602_83_008_company_lmmg
 msgid "Non-deductible expenses - Freight and haulage"
 msgstr "Gastos no deducibles - Fletes y acarreos"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_83_002_lmmr
-#: model:account.account,name:marin_data.account_602_83_002_main_company
+#: model:account.account,name:marin_data.account_602_83_002_company_lmmg
 msgid "Non-deductible expenses - Fuel and lubricants"
 msgstr "Gastos no deducibles - Combustibles y lubricantes"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_83_005_lmmr
-#: model:account.account,name:marin_data.account_602_83_005_main_company
+#: model:account.account,name:marin_data.account_602_83_005_company_lmmg
 msgid "Non-deductible expenses - Maintenance and conservation"
 msgstr "Gastos no deducibles - Mantenimiento y conservacion"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_83_004_lmmr
-#: model:account.account,name:marin_data.account_602_83_004_main_company
+#: model:account.account,name:marin_data.account_602_83_004_company_lmmg
 msgid "Non-deductible expenses - Per diem and travel expenses"
 msgstr "Gastos no deducibles - Viaticos y gastos de viaje"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_83_007_lmmr
-#: model:account.account,name:marin_data.account_602_83_007_main_company
+#: model:account.account,name:marin_data.account_602_83_007_company_lmmg
 msgid "Non-deductible expenses - non-deductible VAT"
 msgstr "Gastos no deducibles - IVA no deducible"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_83_001_lmmr
-#: model:account.account,name:marin_data.account_601_83_001_main_company
+#: model:account.account,name:marin_data.account_601_83_001_company_lmmg
 msgid "Non-deductible expenses - personal"
 msgstr "Gastos no deducibles - personales"
 
@@ -1766,14 +1766,14 @@ msgstr "Gastos no deducibles - personales"
 #: model:account.account,name:marin_data.account_601_83_001_glmm
 #: model:account.account,name:marin_data.account_602_83_001_glmm
 #: model:account.account,name:marin_data.account_602_83_001_lmmr
-#: model:account.account,name:marin_data.account_602_83_001_main_company
+#: model:account.account,name:marin_data.account_602_83_001_company_lmmg
 msgid "Non-deductible expenses - without fiscal requirements"
 msgstr "Gastos no deducibles - sin requisitos fiscales"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_119_01_002_glmm
 #: model:account.account,name:marin_data.account_119_01_002_lmmr
-#: model:account.account,name:marin_data.account_119_01_002_main_company
+#: model:account.account,name:marin_data.account_119_01_002_company_lmmg
 msgid "Non-deductible unpaid VAT"
 msgstr "IVA no deducible no pagado"
 
@@ -1785,13 +1785,13 @@ msgstr "No disponible para venderse"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_55_001_tjgl
 #: model:account.account,name:marin_data.account_603_55_001_lmmr
-#: model:account.account,name:marin_data.account_603_55_001_main_company
+#: model:account.account,name:marin_data.account_603_55_001_company_lmmg
 msgid "Office supplies and stationery FF"
 msgstr "Material, papelería y artículos de oficina FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_603_55_002_lmmr
-#: model:account.account,name:marin_data.account_603_55_002_main_company
+#: model:account.account,name:marin_data.account_603_55_002_company_lmmg
 msgid "Office supplies and stationery NF"
 msgstr "Material, papelería y artículos de oficina NF"
 
@@ -1831,25 +1831,25 @@ msgstr "Otras prestaciones al personal NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_703_21_001_glmm
 #: model:account.account,name:marin_data.account_703_21_001_lmmr
-#: model:account.account,name:marin_data.account_703_21_001_main_company
+#: model:account.account,name:marin_data.account_703_21_001_company_lmmg
 msgid "Other expenses FF"
 msgstr "Otros gastos FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_160_01_001_lmmr
-#: model:account.account,name:marin_data.account_160_01_001_main_company
+#: model:account.account,name:marin_data.account_160_01_001_company_lmmg
 msgid "Other fixed assets FF"
 msgstr "Otros activos fijos FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_84_001_lmmr
-#: model:account.account,name:marin_data.account_601_84_001_main_company
+#: model:account.account,name:marin_data.account_601_84_001_company_lmmg
 msgid "Other general expenses FF"
 msgstr "Otros gastos generales FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_84_002_lmmr
-#: model:account.account,name:marin_data.account_601_84_002_main_company
+#: model:account.account,name:marin_data.account_601_84_002_company_lmmg
 #: model:account.account,name:marin_data.account_601_84_002_tjgl
 msgid "Other general expenses NF"
 msgstr "Otros gastos generales NF"
@@ -1862,19 +1862,19 @@ msgstr "Otros ingresos propios NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_704_23_001_glmm
 #: model:account.account,name:marin_data.account_704_23_001_lmmr
-#: model:account.account,name:marin_data.account_704_23_001_main_company
+#: model:account.account,name:marin_data.account_704_23_001_company_lmmg
 msgid "Other products FF"
 msgstr "Otros productos FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_84_001_lmmr
-#: model:account.account,name:marin_data.account_602_84_001_main_company
+#: model:account.account,name:marin_data.account_602_84_001_company_lmmg
 msgid "Other sales expenses FF"
 msgstr "Otros gastos de venta FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_84_002_lmmr
-#: model:account.account,name:marin_data.account_602_84_002_main_company
+#: model:account.account,name:marin_data.account_602_84_002_company_lmmg
 msgid "Other sales expenses NF"
 msgstr "Otros gastos de venta NF"
 
@@ -1882,7 +1882,7 @@ msgstr "Otros gastos de venta NF"
 #: model:account.account,name:marin_data.account_601_58_001_lmmr
 #: model:account.account,name:marin_data.account_602_58_001_glmm
 #: model:account.account,name:marin_data.account_603_58_001_lmmr
-#: model:account.account,name:marin_data.account_603_58_001_main_company
+#: model:account.account,name:marin_data.account_603_58_001_company_lmmg
 msgid "Other taxes and duties FF"
 msgstr "Otros impuestos y derechos FF"
 
@@ -1890,7 +1890,7 @@ msgstr "Otros impuestos y derechos FF"
 #: model:account.account,name:marin_data.account_601_58_002_lmmr
 #: model:account.account,name:marin_data.account_602_58_002_lmmr
 #: model:account.account,name:marin_data.account_603_58_002_lmmr
-#: model:account.account,name:marin_data.account_603_58_002_main_company
+#: model:account.account,name:marin_data.account_603_58_002_company_lmmg
 msgid "Other taxes and duties NF"
 msgstr "Otros impuestos y derechos NF"
 
@@ -1928,7 +1928,7 @@ msgstr "TPV TONA"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_118_03_001_glmm
 #: model:account.account,name:marin_data.account_118_03_001_lmmr
-#: model:account.account,name:marin_data.account_118_03_001_main_company
+#: model:account.account,name:marin_data.account_118_03_001_company_lmmg
 #: model:account.account,name:marin_data.account_118_03_001_tjgl
 msgid "Paid IEPS creditable"
 msgstr "IEPS acreditable pagado"
@@ -1936,14 +1936,14 @@ msgstr "IEPS acreditable pagado"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_118_01_001_glmm
 #: model:account.account,name:marin_data.account_118_01_001_lmmr
-#: model:account.account,name:marin_data.account_118_01_001_main_company
+#: model:account.account,name:marin_data.account_118_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_118_01_001_tjgl
 msgid "Paid VAT creditable"
 msgstr "IVA acreditable pagado"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_202_03_001_lmmr
-#: model:account.account,name:marin_data.account_202_03_001_main_company
+#: model:account.account,name:marin_data.account_202_03_001_company_lmmg
 #: model:account.journal,name:marin_data.journal_510
 #: model:account.journal,name:marin_data.journal_555
 msgid "Payments done by thirth party in name of the company FF"
@@ -1953,7 +1953,7 @@ msgstr "Pagos hechos por terceros a nombre de la empresa FF"
 #: model:account.account,name:marin_data.account_601_49_001_lmmr
 #: model:account.account,name:marin_data.account_602_49_001_glmm
 #: model:account.account,name:marin_data.account_602_49_001_lmmr
-#: model:account.account,name:marin_data.account_602_49_001_main_company
+#: model:account.account,name:marin_data.account_602_49_001_company_lmmg
 #: model:account.account,name:marin_data.account_602_49_001_tjgl
 #: model:account.account,name:marin_data.account_603_49_001_lmmr
 msgid "Per diems and travel expenses FF"
@@ -1962,7 +1962,7 @@ msgstr "Viaticos y gastos de viaje FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_49_002_lmmr
 #: model:account.account,name:marin_data.account_602_49_002_lmmr
-#: model:account.account,name:marin_data.account_602_49_002_main_company
+#: model:account.account,name:marin_data.account_602_49_002_company_lmmg
 #: model:account.account,name:marin_data.account_603_49_002_lmmr
 msgid "Per diems and travel expenses NF"
 msgstr "Viaticos y gastos de viaje NF"
@@ -1978,25 +1978,25 @@ msgid "Personal and family pantry allowance NF"
 msgstr "Despensa personal y familia NF"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_601_15_002_main_company
+#: model:account.account,name:marin_data.account_601_15_002_company_lmmg
 msgid "Personal pantry NF"
 msgstr "Despensa personal NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_34_001_glmm
-#: model:account.account,name:marin_data.account_603_34_001_main_company
+#: model:account.account,name:marin_data.account_603_34_001_company_lmmg
 msgid "Professional fees FF"
 msgstr "Honorarios a personas fisicas FF"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_603_34_002_main_company
+#: model:account.account,name:marin_data.account_603_34_002_company_lmmg
 msgid "Professional fees NF"
 msgstr "Honorarios a personas fisicas NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_304_01_001_glmm
 #: model:account.account,name:marin_data.account_304_01_001_lmmr
-#: model:account.account,name:marin_data.account_304_01_001_main_company
+#: model:account.account,name:marin_data.account_304_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_304_01_001_tjgl
 msgid "Profit from prior periods FF"
 msgstr "Utilidad de ejercicios anteriores FF"
@@ -2004,21 +2004,21 @@ msgstr "Utilidad de ejercicios anteriores FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_304_01_002_glmm
 #: model:account.account,name:marin_data.account_304_01_002_lmmr
-#: model:account.account,name:marin_data.account_304_01_002_main_company
+#: model:account.account,name:marin_data.account_304_01_002_company_lmmg
 #: model:account.account,name:marin_data.account_304_01_002_tjgl
 msgid "Profit from prior periods NF"
 msgstr "Utilidad de ejercicios anteriores NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_61_001_lmmr
-#: model:account.account,name:marin_data.account_602_61_001_main_company
+#: model:account.account,name:marin_data.account_602_61_001_company_lmmg
 #: model:account.account,name:marin_data.account_603_61_001_lmmr
 msgid "Promotion, advertising and publicity FF"
 msgstr "Promocion, propaganda y publicidad FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_61_002_lmmr
-#: model:account.account,name:marin_data.account_602_61_002_main_company
+#: model:account.account,name:marin_data.account_602_61_002_company_lmmg
 #: model:account.account,name:marin_data.account_603_61_002_lmmr
 msgid "Promotion, advertising and publicity NF"
 msgstr "Promocion, propaganda y publicidad NF"
@@ -2045,14 +2045,14 @@ msgstr "Provision de sueldos y salarios por pagar"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_114_01_001_glmm
 #: model:account.account,name:marin_data.account_114_01_001_lmmr
-#: model:account.account,name:marin_data.account_114_01_001_main_company
+#: model:account.account,name:marin_data.account_114_01_001_company_lmmg
 msgid "Provisional income tax payments"
 msgstr "Pagos provisionales de ISR"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_503_01_004_glmm
 #: model:account.account,name:marin_data.account_503_01_004_lmmr
-#: model:account.account,name:marin_data.account_503_01_004_main_company
+#: model:account.account,name:marin_data.account_503_01_004_company_lmmg
 msgid "Purchase discounts"
 msgstr "Descuentos sobre compras"
 
@@ -2062,13 +2062,13 @@ msgid "Purchase discounts due payment in LMMG"
 msgstr "Descuentos sobre compras por pago en LMMG"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_503_01_006_main_company
+#: model:account.account,name:marin_data.account_503_01_006_company_lmmg
 msgid "Purchase discounts due payment in LMMR"
 msgstr "Descuentos sobre compras por pago en LMMR"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_503_01_005_lmmr
-#: model:account.account,name:marin_data.account_503_01_005_main_company
+#: model:account.account,name:marin_data.account_503_01_005_company_lmmg
 msgid "Purchase discounts for payment in kind NF"
 msgstr "Descuentos sobre compras por pago en especie NF"
 
@@ -2079,33 +2079,33 @@ msgstr ""
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_22_001_lmmr
-#: model:account.account,name:marin_data.account_401_22_001_main_company
+#: model:account.account,name:marin_data.account_401_22_001_company_lmmg
 msgid "Rental income FF"
 msgstr "Ingresos por arrendamiento FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_22_002_lmmr
-#: model:account.account,name:marin_data.account_401_22_002_main_company
+#: model:account.account,name:marin_data.account_401_22_002_company_lmmg
 #: model:account.account,name:marin_data.account_401_22_002_tjgl
 msgid "Rental income NF"
 msgstr "Ingresos por arrendamiento NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_202_03_099_lmmr
-#: model:account.account,name:marin_data.account_202_03_099_main_company
+#: model:account.account,name:marin_data.account_202_03_099_company_lmmg
 msgid "Returned bank transactions"
 msgstr "Rebotes, devoluciones bancarias"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_04_001_glmm
 #: model:account.account,name:marin_data.account_401_04_001_lmmr
-#: model:account.account,name:marin_data.account_401_04_001_main_company
+#: model:account.account,name:marin_data.account_401_04_001_company_lmmg
 #: model:account.account,name:marin_data.account_401_04_001_tjgl
 msgid "Sales 0% FF"
 msgstr "Ventas 0% FF"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_401_04_011_main_company
+#: model:account.account,name:marin_data.account_401_04_011_company_lmmg
 msgid "Sales 0% FX - Bank trade GLMM --> Bank LMMG"
 msgstr "Ventas 0% FX - Cambios banco GLMM --> banco LMMG"
 
@@ -2125,7 +2125,7 @@ msgid "Sales 0% FX - Bank trade LMMG --> Bank LMMR"
 msgstr "Ventas 0% FX - Cambios banco LMMG --> banco LMMR"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_401_04_010_main_company
+#: model:account.account,name:marin_data.account_401_04_010_company_lmmg
 msgid "Sales 0% FX - Bank trade LMMR --> Bank LMMG"
 msgstr "Ventas 0% FX - Cambios banco LMMR --> banco LMMG"
 
@@ -2140,34 +2140,34 @@ msgid "Sales 0% FX - Discounts on sales NF LMMG"
 msgstr "Ventas 0% FX - Descuentos sobre ventas NF LMMG"
 
 #. module: marin_data
-#: model:account.account,name:marin_data.account_401_04_004_main_company
+#: model:account.account,name:marin_data.account_401_04_004_company_lmmg
 msgid "Sales 0% FX - Discounts on sales NF LMMR"
 msgstr "Ventas 0% FX - Descuentos sobre ventas NF LMMR"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_04_003_lmmr
-#: model:account.account,name:marin_data.account_401_04_003_main_company
+#: model:account.account,name:marin_data.account_401_04_003_company_lmmg
 msgid "Sales 0% FX - Discounts on sales NF due payment in FX"
 msgstr "Ventas 0% FX - Descuentos sobre ventas NF por cobro en FX"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_04_006_glmm
 #: model:account.account,name:marin_data.account_401_04_006_lmmr
-#: model:account.account,name:marin_data.account_401_04_006_main_company
+#: model:account.account,name:marin_data.account_401_04_006_company_lmmg
 msgid "Sales 0% FX - Multi company cash trade --> self bank"
 msgstr "Ventas 0% FX - Cambios efectivo multicompañia --> banco propio"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_04_005_glmm
 #: model:account.account,name:marin_data.account_401_04_005_lmmr
-#: model:account.account,name:marin_data.account_401_04_005_main_company
+#: model:account.account,name:marin_data.account_401_04_005_company_lmmg
 msgid "Sales 0% FX - Self cash trade --> self bank"
 msgstr "Ventas 0% FX - Cambios efectivo propio --> banco propio"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_04_008_glmm
 #: model:account.account,name:marin_data.account_401_04_008_lmmr
-#: model:account.account,name:marin_data.account_401_04_008_main_company
+#: model:account.account,name:marin_data.account_401_04_008_company_lmmg
 msgid "Sales 0% FX - self bank trade --> multi company cash to thirth parties"
 msgstr ""
 "Ventas 0% FX - Cambios banco propio --> efectivo multi compañia a terceros"
@@ -2175,68 +2175,68 @@ msgstr ""
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_04_007_glmm
 #: model:account.account,name:marin_data.account_401_04_007_lmmr
-#: model:account.account,name:marin_data.account_401_04_007_main_company
+#: model:account.account,name:marin_data.account_401_04_007_company_lmmg
 msgid "Sales 0% FX - self bank trade --> self cash to thirth parties"
 msgstr "Ventas 0% FX - Cambios banco propio --> efectivo propio a terceros"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_04_014_glmm
 #: model:account.account,name:marin_data.account_401_04_014_lmmr
-#: model:account.account,name:marin_data.account_401_04_014_main_company
+#: model:account.account,name:marin_data.account_401_04_014_company_lmmg
 msgid "Sales 0% FX - without invoice with discount over sales NF"
 msgstr "Ventas 0% FX - sin factura con descuento sobre ventas NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_04_013_glmm
 #: model:account.account,name:marin_data.account_401_04_013_lmmr
-#: model:account.account,name:marin_data.account_401_04_013_main_company
+#: model:account.account,name:marin_data.account_401_04_013_company_lmmg
 #: model:account.account,name:marin_data.account_401_04_015_lmmr
-#: model:account.account,name:marin_data.account_401_04_015_main_company
+#: model:account.account,name:marin_data.account_401_04_015_company_lmmg
 msgid "Sales 0% FX - without invoice without discount over sales NF"
 msgstr "Ventas 0% FX - sin factura sin descuento sobre ventas NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_04_002_glmm
 #: model:account.account,name:marin_data.account_401_04_002_lmmr
-#: model:account.account,name:marin_data.account_401_04_002_main_company
+#: model:account.account,name:marin_data.account_401_04_002_company_lmmg
 #: model:account.account,name:marin_data.account_401_04_002_tjgl
 msgid "Sales 0% NF"
 msgstr "Ventas 0% NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_04_016_lmmr
-#: model:account.account,name:marin_data.account_401_04_016_main_company
+#: model:account.account,name:marin_data.account_401_04_016_company_lmmg
 msgid "Sales 0% NFX"
 msgstr "Ventas 0% NFX"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_401_01_001_glmm
 #: model:account.account,name:marin_data.account_401_01_001_lmmr
-#: model:account.account,name:marin_data.account_401_01_001_main_company
+#: model:account.account,name:marin_data.account_401_01_001_company_lmmg
 msgid "Sales 16% FF"
 msgstr "Ventas 16% FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_402_02_003_lmmr
-#: model:account.account,name:marin_data.account_402_02_003_main_company
+#: model:account.account,name:marin_data.account_402_02_003_company_lmmg
 msgid "Sales NF discounts for payment in FX multi company"
 msgstr "Descuentos sobre ventas NF por cobro en FX multi compañia"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_402_02_004_lmmr
-#: model:account.account,name:marin_data.account_402_02_004_main_company
+#: model:account.account,name:marin_data.account_402_02_004_company_lmmg
 msgid "Sales NF discounts for payment in kind"
 msgstr "Descuentos sobre ventas NF por cobro en especie"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_74_001_lmmr
-#: model:account.account,name:marin_data.account_602_74_001_main_company
+#: model:account.account,name:marin_data.account_602_74_001_company_lmmg
 msgid "Sales commissions FF"
 msgstr "Comisiones sobre ventas FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_74_002_lmmr
-#: model:account.account,name:marin_data.account_602_74_002_main_company
+#: model:account.account,name:marin_data.account_602_74_002_company_lmmg
 msgid "Sales commissions NF"
 msgstr "Comisiones sobre ventas NF"
 
@@ -2268,7 +2268,7 @@ msgstr "Cambios efectivo propio --> banco LMMR"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_213_05_001_lmmr
-#: model:account.account,name:marin_data.account_213_05_001_main_company
+#: model:account.account,name:marin_data.account_213_05_001_company_lmmg
 #: model:account.account,name:marin_data.account_213_05_001_tjgl
 msgid "State and municipal taxes payable"
 msgstr "Impuesto estatal y municipal por pagar"
@@ -2289,7 +2289,7 @@ msgstr "Declaracion de impuestos FF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_603_59_001_lmmr
-#: model:account.account,name:marin_data.account_603_59_001_main_company
+#: model:account.account,name:marin_data.account_603_59_001_company_lmmg
 msgid "Tax penalties FF"
 msgstr "Recargos fiscales FF"
 
@@ -2297,7 +2297,7 @@ msgstr "Recargos fiscales FF"
 #: model:account.account,name:marin_data.account_601_50_001_lmmr
 #: model:account.account,name:marin_data.account_602_50_001_glmm
 #: model:account.account,name:marin_data.account_602_50_001_lmmr
-#: model:account.account,name:marin_data.account_602_50_001_main_company
+#: model:account.account,name:marin_data.account_602_50_001_company_lmmg
 #: model:account.account,name:marin_data.account_602_50_001_tjgl
 #: model:account.account,name:marin_data.account_603_50_001_lmmr
 msgid "Telephone, internet FF"
@@ -2306,7 +2306,7 @@ msgstr "Telefono, internet FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_50_002_lmmr
 #: model:account.account,name:marin_data.account_602_50_002_lmmr
-#: model:account.account,name:marin_data.account_602_50_002_main_company
+#: model:account.account,name:marin_data.account_602_50_002_company_lmmg
 #: model:account.account,name:marin_data.account_603_50_002_lmmr
 msgid "Telephone, internet NF"
 msgstr "Telefono, internet NF"
@@ -2319,7 +2319,7 @@ msgstr "Traspaso de saldo entre clientes"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_16_001_lmmr
 #: model:account.account,name:marin_data.account_602_16_001_lmmr
-#: model:account.account,name:marin_data.account_602_16_001_main_company
+#: model:account.account,name:marin_data.account_602_16_001_company_lmmg
 #: model:account.account,name:marin_data.account_603_16_001_lmmr
 msgid "Transportation FF"
 msgstr "Transporte FF"
@@ -2327,27 +2327,27 @@ msgstr "Transporte FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_16_002_lmmr
 #: model:account.account,name:marin_data.account_602_16_002_lmmr
-#: model:account.account,name:marin_data.account_602_16_002_main_company
+#: model:account.account,name:marin_data.account_602_16_002_company_lmmg
 #: model:account.account,name:marin_data.account_603_16_002_lmmr
 msgid "Transportation NF"
 msgstr "Transporte NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_216_03_002_lmmr
-#: model:account.account,name:marin_data.account_216_03_002_main_company
+#: model:account.account,name:marin_data.account_216_03_002_company_lmmg
 msgid "Uncollected income tax withholdings from leasing"
 msgstr "Impuestos retenidos de ISR por arrendamiento no cobrado"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_209_02_001_lmmr
-#: model:account.account,name:marin_data.account_209_02_001_main_company
+#: model:account.account,name:marin_data.account_209_02_001_company_lmmg
 msgid "Uncollected transfered IEPS"
 msgstr "IEPS trasladado no cobrado"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_209_01_001_glmm
 #: model:account.account,name:marin_data.account_209_01_001_lmmr
-#: model:account.account,name:marin_data.account_209_01_001_main_company
+#: model:account.account,name:marin_data.account_209_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_209_01_001_tjgl
 msgid "Uncollected transfered VAT"
 msgstr "IVA trasladado no cobrado"
@@ -2396,7 +2396,7 @@ msgstr "Cuentas incobrables NF"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_602_77_001_lmmr
-#: model:account.account,name:marin_data.account_602_77_001_main_company
+#: model:account.account,name:marin_data.account_602_77_001_company_lmmg
 #: model:account.account,name:marin_data.account_603_75_001_lmmr
 msgid "Uniforms FF"
 msgstr "Uniformes FF"
@@ -2410,7 +2410,7 @@ msgstr "Uniformes NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_119_03_001_glmm
 #: model:account.account,name:marin_data.account_119_03_001_lmmr
-#: model:account.account,name:marin_data.account_119_03_001_main_company
+#: model:account.account,name:marin_data.account_119_03_001_company_lmmg
 #: model:account.account,name:marin_data.account_119_03_001_tjgl
 msgid "Unpaid IEPS creditable"
 msgstr "IEPS acreditable no pagado"
@@ -2418,7 +2418,7 @@ msgstr "IEPS acreditable no pagado"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_119_01_001_glmm
 #: model:account.account,name:marin_data.account_119_01_001_lmmr
-#: model:account.account,name:marin_data.account_119_01_001_main_company
+#: model:account.account,name:marin_data.account_119_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_119_01_001_tjgl
 msgid "Unpaid VAT creditable"
 msgstr "IVA acreditable no pagado"
@@ -2470,7 +2470,7 @@ msgstr ""
 #. module: marin_data
 #: model:account.account,name:marin_data.account_113_01_001_glmm
 #: model:account.account,name:marin_data.account_113_01_001_lmmr
-#: model:account.account,name:marin_data.account_113_01_001_main_company
+#: model:account.account,name:marin_data.account_113_01_001_company_lmmg
 #: model:account.account,name:marin_data.account_113_01_001_tjgl
 msgid "VAT in favor"
 msgstr "IVA a favor"
@@ -2478,7 +2478,7 @@ msgstr "IVA a favor"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_213_01_001_glmm
 #: model:account.account,name:marin_data.account_213_01_001_lmmr
-#: model:account.account,name:marin_data.account_213_01_001_main_company
+#: model:account.account,name:marin_data.account_213_01_001_company_lmmg
 msgid "VAT payable"
 msgstr "IVA por pagar"
 
@@ -2528,19 +2528,19 @@ msgstr ""
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_216_10_010_lmmr
-#: model:account.account,name:marin_data.account_216_10_010_main_company
+#: model:account.account,name:marin_data.account_216_10_010_company_lmmg
 msgid "VAT withholdings"
 msgstr "Impuestos retenidos de IVA"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_216_10_020_lmmr
-#: model:account.account,name:marin_data.account_216_10_020_main_company
+#: model:account.account,name:marin_data.account_216_10_020_company_lmmg
 msgid "VAT withholdings actually paid"
 msgstr "Impuestos retenidos de IVA efectivamente pagados"
 
 #. module: marin_data
 #: model:account.account,name:marin_data.account_216_10_002_lmmr
-#: model:account.account,name:marin_data.account_216_10_002_main_company
+#: model:account.account,name:marin_data.account_216_10_002_company_lmmg
 msgid "VAT withholdings from leasing"
 msgstr "Impuestos retenidos de IVA por arrendamiento"
 
@@ -2609,7 +2609,7 @@ msgstr "Sueldos y salarios FF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_01_002_lmmr
 #: model:account.account,name:marin_data.account_602_01_002_lmmr
-#: model:account.account,name:marin_data.account_602_01_002_main_company
+#: model:account.account,name:marin_data.account_602_01_002_company_lmmg
 #: model:account.account,name:marin_data.account_603_01_002_lmmr
 msgid "Wages and salaries NF"
 msgstr "Sueldos y salarios NF"
@@ -2617,7 +2617,7 @@ msgstr "Sueldos y salarios NF"
 #. module: marin_data
 #: model:account.account,name:marin_data.account_601_51_001_lmmr
 #: model:account.account,name:marin_data.account_602_51_001_lmmr
-#: model:account.account,name:marin_data.account_602_51_001_main_company
+#: model:account.account,name:marin_data.account_602_51_001_company_lmmg
 #: model:account.account,name:marin_data.account_603_51_001_lmmr
 msgid "Water FF"
 msgstr "Agua FF"

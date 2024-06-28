@@ -2,17 +2,17 @@
 <odoo noupdate="1">
     <record id="team_lmmg" model="crm.team">
         <field name="name">Venta directa LMMG</field>
-        <field name="company_id" ref="base.main_company" />
+        <field name="company_id" ref="marin_data.company_lmmg" />
     </record>
 
     <record id="team_lmmg_website" model="crm.team">
         <field name="name">Website LMMG</field>
-        <field name="company_id" ref="base.main_company" />
+        <field name="company_id" ref="marin_data.company_lmmg" />
     </record>
 
     <record id="team_lmmg_sub" model="crm.team">
         <field name="name">Subdistribucion LMMG</field>
-        <field name="company_id" ref="base.main_company" />
+        <field name="company_id" ref="marin_data.company_lmmg" />
     </record>
 
     <record id="team_lmmr" model="crm.team">

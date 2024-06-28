@@ -1,5 +1,5 @@
 id,company_id/id,warehouse_id/id,default_location_src_id/id,default_location_dest_id/id,code,sequence_code,barcode,reservation_method,active,create_backorder,use_existing_lots,show_operations,show_reserved,sequence,name
-stock_picking_type_1144,base.main_company,stock.warehouse0,,stock.stock_location_stock,Receipt,RTN,LMMG-RETURNS,At Confirmation,True,Ask,True,,True,150,Returns
+stock_picking_type_1144,marin_data.company_lmmg,stock.warehouse0,,stock.stock_location_stock,Receipt,RTN,LMMG-RETURNS,At Confirmation,True,Ask,True,,True,150,Returns
 stock_picking_type_1145,marin_data.company_lmmr,marin_data.stock_warehouse_2,,marin_data.stock_location_27,Receipt,RTN,LMMR-RETURNS,At Confirmation,,Ask,True,True,True,144,Returns
 stock_picking_type_1146,marin_data.company_tjgl,marin_data.stock_warehouse_3,,marin_data.stock_location_41,Receipt,RTN,TJGL-RETURNS,At Confirmation,True,Ask,True,True,True,150,Returns
 stock_picking_type_1147,marin_data.company_ammg,marin_data.stock_warehouse_4,,marin_data.stock_location_55,Receipt,RTN,AMMG-RETURNS,At Confirmation,True,Ask,True,True,True,150,Returns

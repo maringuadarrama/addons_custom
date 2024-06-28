@@ -3,13 +3,6 @@ from odoo import tools
 
 
 def _pre_init_marin(env):
-    env.cr.execute("""SELECT setval('"public"."res_partner_id_seq"', 100, true);""")
-    tools.convert.convert_file(env, "marin_data", "data/res_company_data.xml", None, mode="init", kind="data")
-
-    env.cr.execute("""SELECT setval('"public"."resource_calendar_id_seq"', 100, true);""")
-    env.cr.execute("""SELECT setval('"public"."resource_calendar_attendance_id_seq"', 1000, true);""")
-    tools.convert.convert_file(env, "marin_data", "data/resource_calendar_data.xml", None, mode="init", kind="data")
-
     env.cr.execute("""SELECT setval('"public"."res_partner_id_seq"', 200, true);""")
     env.cr.execute("""SELECT setval('"public"."res_users_id_seq"', 100, true);""")
     tools.convert.convert_file(env, "marin_data", "data/website_data.xml", None, mode="init", kind="data")

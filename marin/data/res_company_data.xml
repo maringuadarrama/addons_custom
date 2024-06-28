@@ -1,43 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo noupdate="1">
-    <record id="base.main_partner" model="res.partner">
-        <field name="name">LUIS MANUEL MARIN GUADARRAMA</field>
-        <field name="vat">MAGL910204CY8</field>
-        <field name="phone">+52 722 232 0859</field>
-        <field name="website">https://xiuman.mx</field>
-        <field name="email">atencion@xiuman.mx</field>
-        <field name="street">Avenida Codagem SN</field>
-        <field name="street2">San Lorenzo Coacalco</field>
-        <field name="city">Metepec</field>
-        <field name="zip">52140</field>
-        <field name="state_id" ref="base.state_mx_mex" />
-        <field name="country_id" ref="base.mx" />
-        <field name="l10n_mx_edi_curp">MAGL910204HMCRDS05</field>
-    </record>
-
-    <record id="base.main_company" model="res.company">
-        <field name="name">LUIS MANUEL MARIN GUADARRAMA</field>
-        <field name="code">LMMG</field>
-        <field name="external_report_layout_id" ref="web.external_layout_striped" />
-        <field name="paperformat_id" ref="base.paperformat_us" />
-        <field name="company_details" type="html">
-            <p>LUIS MANUEL MARIN GUADARRAMA<br />
-            MAGL910204CY8<br />
-            Avenida Codagem SN, San Lorenzo Coacalco<br />
-            52140 Metepec, Mexico<br />
-            Mexico</p>
-        </field>
-        <field name="report_footer" type="html">
-            <p>+52 722 232 0859 atencion@xiuman.mx https://xiuman.mx</p>
-        </field>
-        <field name="chart_template">mx</field>
-        <field name="anglo_saxon_accounting" eval="True" />
-        <field name="tax_exigibility" eval="True" />
-        <field name="account_use_credit_limit" eval="True" />
-        <field name="l10n_mx_edi_fiscal_regime">612</field>
-        <field name="sequence" eval="10" />
-    </record>
-
     <record id="partner_lmmr" model="res.partner">
         <field name="name">LUIS MANUEL MARIN REBOLLO</field>
         <field name="type">contact</field>
@@ -115,6 +77,51 @@
         <field name="account_use_credit_limit" eval="True" />
         <field name="l10n_mx_edi_fiscal_regime">612</field>
         <field name="sequence" eval="13" />
+    </record>
+
+    <record id="partner_lmmg" model="res.partner">
+        <field name="name">LUIS MANUEL MARIN GUADARRAMA</field>
+        <field name="type">contact</field>
+        <field name="is_company" eval="True" />
+        <field name="vat">MAGL910204CY8</field>
+        <field name="phone">+52 722 232 0859</field>
+        <field name="website">https://xiuman.mx</field>
+        <field name="email">atencion@xiuman.mx</field>
+        <field name="street">Avenida Codagem SN</field>
+        <field name="street2">San Lorenzo Coacalco</field>
+        <field name="city">Metepec</field>
+        <field name="zip">52140</field>
+        <field name="state_id" ref="base.state_mx_mex" />
+        <field name="country_id" ref="base.mx" />
+        <field name="lang">es_MX</field>
+        <field name="tz">America/Mexico_City</field>
+        <field name="l10n_mx_edi_fiscal_regime">612</field>
+        <field name="l10n_mx_type_of_operation">85</field>
+        <field name="l10n_mx_edi_curp">MAGL910204HMCRDS05</field>
+    </record>
+
+    <record id="company_lmmg" model="res.company">
+        <field name="name">LUIS MANUEL MARIN GUADARRAMA</field>
+        <field name="code">LMMG</field>
+        <field name="partner_id" ref="partner_lmmg" />
+        <field name="external_report_layout_id" ref="web.external_layout_striped" />
+        <field name="paperformat_id" ref="base.paperformat_us" />
+        <field name="company_details" type="html">
+            <p>LUIS MANUEL MARIN GUADARRAMA<br />
+            MAGL910204CY8<br />
+            Avenida Codagem SN, San Lorenzo Coacalco<br />
+            52140 Metepec, Mexico<br />
+            Mexico</p>
+        </field>
+        <field name="report_footer" type="html">
+            <p>+52 722 232 0859 atencion@xiuman.mx https://xiuman.mx</p>
+        </field>
+        <field name="chart_template">mx</field>
+        <field name="anglo_saxon_accounting" eval="True" />
+        <field name="tax_exigibility" eval="True" />
+        <field name="account_use_credit_limit" eval="True" />
+        <field name="l10n_mx_edi_fiscal_regime">612</field>
+        <field name="sequence" eval="10" />
     </record>
 
     <record id="partner_ammg" model="res.partner">

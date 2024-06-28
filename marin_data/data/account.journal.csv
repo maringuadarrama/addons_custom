@@ -1,42 +1,42 @@
 id,company_id/id,name,type,code,sequence,show_on_dashboard,color,refund_sequence,payment_sequence,x_treatment,currency_id/id,default_account_id/id,default_payable_account_id/id,default_receivable_account_id/id,default_refund_account_id/id,loss_account_id/id,profit_account_id/id,suspense_account_id/id
-journal_501,base.main_company,Vendors advances NF,Cash,ANT00,17,,10,,,Not Fiscal real,,marin_data.account_120_01_002_main_company,,,,marin_data.account_304_02_002_main_company,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_main_company
-journal_502,base.main_company,Vendors advances FF,Cash,ANT01,16,,10,,,Fiscal real,,marin_data.account_120_01_001_main_company,,,,marin_data.account_304_02_002_main_company,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_main_company
-journal_503,base.main_company,Cash Main,Cash,EFC01,18,True,10,,,Not Fiscal real,,marin_data.account_101_01_001_main_company,,,,marin_data.account_304_02_002_main_company,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_main_company
-journal_504,base.main_company,Payments done by thirth party in name of the company FF,Cash,EFT,19,,10,,,Fiscal real,,marin_data.account_202_03_001_main_company,,,,marin_data.account_304_02_002_main_company,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_main_company
-journal_505,base.main_company,Bank BBVA 0110152269,Bank,BNC01,13,,10,,,Not Fiscal real,,marin_data.account_102_01_002_main_company,,,,marin_data.account_304_02_002_main_company,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_main_company
-journal_506,base.main_company,Bank BBVA Payroll,Bank,BNC02,14,,10,,,Not Fiscal real,,marin_data.account_102_01_010_main_company,,,,marin_data.account_304_02_002_main_company,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_main_company
-journal_507,base.main_company,Bank BBVA 0478986592,Bank,BNC03,10,True,10,,,Fiscal real,,marin_data.account_102_01_001_main_company,,,,marin_data.account_304_02_002_main_company,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_main_company
-journal_508,base.main_company,Bank BBVA CC 5435,Bank,BNC04,15,,10,,,Not Fiscal real,,marin_data.account_202_03_002_main_company,,,,marin_data.account_304_02_002_main_company,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_main_company
-journal_509,base.main_company,Bank Efectivale - Expenses,Bank,BNC05,12,,10,,,Not Fiscal real,,marin_data.account_102_01_003_main_company,,,,marin_data.account_304_02_002_main_company,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_main_company
-journal_510,base.main_company,Bank Banbajio 0038383038,Bank,BNC06,11,True,10,,,Not Fiscal real,,marin_data.account_102_01_004_main_company,,,,marin_data.account_304_02_002_main_company,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_main_company
-journal_511,base.main_company,Foreign Suppliers FF,Purchase,PEX,32,,6,True,,Fiscal real,,marin_data.account_201_02_001_main_company,marin_data.account_115_01_001_main_company,,,,,
-journal_512,base.main_company,Suppliers FF,Purchase,PF,24,True,6,True,,Fiscal real,,marin_data.account_201_01_001_main_company,marin_data.account_113_08_001_main_company,,marin_data.account_602_56_002_main_company,,,
-journal_513,base.main_company,Suppliers NF,Purchase,PN,28,True,6,True,,Not Fiscal real,,marin_data.account_602_57_001_main_company,marin_data.account_114_01_001_main_company,,,,,
-journal_514,base.main_company,Suppliers NFX,Purchase,PNX,30,,6,,,Not Fiscal simulated,,marin_data.account_602_57_001_main_company,marin_data.account_114_01_001_main_company,,,,,
-journal_515,base.main_company,Suppliers FX,Purchase,PX,26,,6,True,,Fiscal simulated,,marin_data.account_602_61_001_main_company,marin_data.account_113_08_001_main_company,,,,,
-journal_516,base.main_company,Customers FF,Sales,CF,36,True,11,True,,Fiscal real,,marin_data.account_601_83_008_main_company,marin_data.account_105_01_002_main_company,marin_data.account_105_01_002_main_company,,,,
-journal_517,base.main_company,Customers NF,Sales,CN,41,True,11,True,,Not Fiscal real,,marin_data.account_601_84_001_main_company,marin_data.account_201_01_001_main_company,,,,,
-journal_518,base.main_company,Customers NFX,Sales,CNX,10,True,0,True,,Not Fiscal real,,marin_data.account_601_84_001_main_company,,,,,,
-journal_519,base.main_company,Customers FX,Sales,CX,39,,11,True,,Fiscal simulated,,marin_data.account_601_84_002_main_company,marin_data.account_105_01_002_main_company,marin_data.account_105_01_002_main_company,,,,
-journal_520,base.main_company,Tax declarations FF,Miscellaneous,CABA1,52,,0,,,Fiscal real,,,,,,,,
-journal_521,base.main_company,Effectively paid FF,Miscellaneous,CBMX1,46,,0,,,Not Fiscal real,,,,,,,,
-journal_522,base.main_company,Computing equipment FF,Miscellaneous,EQC01,70,,0,,,Fiscal real,,,,,,,,
-journal_523,base.main_company,"Automobiles, trucks, forklifts and trailers NF",Miscellaneous,EQT00,68,,0,,,Not Fiscal real,,,,,,,,
-journal_524,base.main_company,"Automobiles, trucks, forklifts and trailers FF",Miscellaneous,EQT01,66,,0,,,Fiscal real,,,,,,,,
-journal_525,base.main_company,Communications equipment FF,Miscellaneous,EQTL1,72,,0,,,Fiscal real,,,,,,,,
-journal_526,base.main_company,Exchange difference FF,Miscellaneous,EXCH1,49,,0,,,Fiscal real,,,,,,,,
-journal_527,base.main_company,Uncollectible debts NF,Miscellaneous,INC0,91,,0,,,Not Fiscal real,,,,,,,,
-journal_528,base.main_company,Uncollectible debts FF,Miscellaneous,INC1,55,,0,,,Fiscal real,,,,,,,,
-journal_529,base.main_company,Machinery and equipment NF,Miscellaneous,MAQ00,76,,0,,,Not Fiscal real,,,,,,,,
-journal_530,base.main_company,Machinery and equipment FF,Miscellaneous,MAQ01,74,,0,,,Fiscal real,,,,,,,,
-journal_531,base.main_company,Furniture and office equipment NF,Miscellaneous,MOQ00,80,,0,,,Not Fiscal real,,,,,,,,
-journal_532,base.main_company,Furniture and office equipment FF,Miscellaneous,MOQ01,78,,0,,,Fiscal real,,,,,,,,
-journal_533,base.main_company,Miscellaneous operations NF,Miscellaneous,MSC0,64,,0,,,Not Fiscal real,,,,,,,,
-journal_534,base.main_company,Miscellaneous operations FF,Miscellaneous,MSC1,61,,0,,,Fiscal real,,,,,,,,
-journal_535,base.main_company,Employees NF,Miscellaneous,NOM00,34,,6,,,Not Fiscal real,,marin_data.account_101_01_001_main_company,,,,,,
-journal_536,base.main_company,POS MAIN,Miscellaneous,TPV00,43,,0,,,Not Fiscal real,,,,,,,,
-journal_537,base.main_company,Lands NF,Miscellaneous,TRR00,86,,0,,,Not Fiscal real,,,,,,,,
-journal_538,base.main_company,Lands FF,Miscellaneous,TRR01,85,,0,,,Fiscal real,,,,,,,,
+journal_501,marin_data.company_lmmg,Vendors advances NF,Cash,ANT00,17,,10,,,Not Fiscal real,,marin_data.account_120_01_002_company_lmmg,,,,marin_data.account_304_02_002_company_lmmg,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_company_lmmg
+journal_502,marin_data.company_lmmg,Vendors advances FF,Cash,ANT01,16,,10,,,Fiscal real,,marin_data.account_120_01_001_company_lmmg,,,,marin_data.account_304_02_002_company_lmmg,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_company_lmmg
+journal_503,marin_data.company_lmmg,Cash Main,Cash,EFC01,18,True,10,,,Not Fiscal real,,marin_data.account_101_01_001_company_lmmg,,,,marin_data.account_304_02_002_company_lmmg,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_company_lmmg
+journal_504,marin_data.company_lmmg,Payments done by thirth party in name of the company FF,Cash,EFT,19,,10,,,Fiscal real,,marin_data.account_202_03_001_company_lmmg,,,,marin_data.account_304_02_002_company_lmmg,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_company_lmmg
+journal_505,marin_data.company_lmmg,Bank BBVA 0110152269,Bank,BNC01,13,,10,,,Not Fiscal real,,marin_data.account_102_01_002_company_lmmg,,,,marin_data.account_304_02_002_company_lmmg,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_company_lmmg
+journal_506,marin_data.company_lmmg,Bank BBVA Payroll,Bank,BNC02,14,,10,,,Not Fiscal real,,marin_data.account_102_01_010_company_lmmg,,,,marin_data.account_304_02_002_company_lmmg,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_company_lmmg
+journal_507,marin_data.company_lmmg,Bank BBVA 0478986592,Bank,BNC03,10,True,10,,,Fiscal real,,marin_data.account_102_01_001_company_lmmg,,,,marin_data.account_304_02_002_company_lmmg,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_company_lmmg
+journal_508,marin_data.company_lmmg,Bank BBVA CC 5435,Bank,BNC04,15,,10,,,Not Fiscal real,,marin_data.account_202_03_002_company_lmmg,,,,marin_data.account_304_02_002_company_lmmg,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_company_lmmg
+journal_509,marin_data.company_lmmg,Bank Efectivale - Expenses,Bank,BNC05,12,,10,,,Not Fiscal real,,marin_data.account_102_01_003_company_lmmg,,,,marin_data.account_304_02_002_company_lmmg,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_company_lmmg
+journal_510,marin_data.company_lmmg,Bank Banbajio 0038383038,Bank,BNC06,11,True,10,,,Not Fiscal real,,marin_data.account_102_01_004_company_lmmg,,,,marin_data.account_304_02_002_company_lmmg,marin_data.account_101_01_007_lmmr,marin_data.account_102_01_001_company_lmmg
+journal_511,marin_data.company_lmmg,Foreign Suppliers FF,Purchase,PEX,32,,6,True,,Fiscal real,,marin_data.account_201_02_001_company_lmmg,marin_data.account_115_01_001_company_lmmg,,,,,
+journal_512,marin_data.company_lmmg,Suppliers FF,Purchase,PF,24,True,6,True,,Fiscal real,,marin_data.account_201_01_001_company_lmmg,marin_data.account_113_08_001_company_lmmg,,marin_data.account_602_56_002_company_lmmg,,,
+journal_513,marin_data.company_lmmg,Suppliers NF,Purchase,PN,28,True,6,True,,Not Fiscal real,,marin_data.account_602_57_001_company_lmmg,marin_data.account_114_01_001_company_lmmg,,,,,
+journal_514,marin_data.company_lmmg,Suppliers NFX,Purchase,PNX,30,,6,,,Not Fiscal simulated,,marin_data.account_602_57_001_company_lmmg,marin_data.account_114_01_001_company_lmmg,,,,,
+journal_515,marin_data.company_lmmg,Suppliers FX,Purchase,PX,26,,6,True,,Fiscal simulated,,marin_data.account_602_61_001_company_lmmg,marin_data.account_113_08_001_company_lmmg,,,,,
+journal_516,marin_data.company_lmmg,Customers FF,Sales,CF,36,True,11,True,,Fiscal real,,marin_data.account_601_83_008_company_lmmg,marin_data.account_105_01_002_company_lmmg,marin_data.account_105_01_002_company_lmmg,,,,
+journal_517,marin_data.company_lmmg,Customers NF,Sales,CN,41,True,11,True,,Not Fiscal real,,marin_data.account_601_84_001_company_lmmg,marin_data.account_201_01_001_company_lmmg,,,,,
+journal_518,marin_data.company_lmmg,Customers NFX,Sales,CNX,10,True,0,True,,Not Fiscal real,,marin_data.account_601_84_001_company_lmmg,,,,,,
+journal_519,marin_data.company_lmmg,Customers FX,Sales,CX,39,,11,True,,Fiscal simulated,,marin_data.account_601_84_002_company_lmmg,marin_data.account_105_01_002_company_lmmg,marin_data.account_105_01_002_company_lmmg,,,,
+journal_520,marin_data.company_lmmg,Tax declarations FF,Miscellaneous,CABA1,52,,0,,,Fiscal real,,,,,,,,
+journal_521,marin_data.company_lmmg,Effectively paid FF,Miscellaneous,CBMX1,46,,0,,,Not Fiscal real,,,,,,,,
+journal_522,marin_data.company_lmmg,Computing equipment FF,Miscellaneous,EQC01,70,,0,,,Fiscal real,,,,,,,,
+journal_523,marin_data.company_lmmg,"Automobiles, trucks, forklifts and trailers NF",Miscellaneous,EQT00,68,,0,,,Not Fiscal real,,,,,,,,
+journal_524,marin_data.company_lmmg,"Automobiles, trucks, forklifts and trailers FF",Miscellaneous,EQT01,66,,0,,,Fiscal real,,,,,,,,
+journal_525,marin_data.company_lmmg,Communications equipment FF,Miscellaneous,EQTL1,72,,0,,,Fiscal real,,,,,,,,
+journal_526,marin_data.company_lmmg,Exchange difference FF,Miscellaneous,EXCH1,49,,0,,,Fiscal real,,,,,,,,
+journal_527,marin_data.company_lmmg,Uncollectible debts NF,Miscellaneous,INC0,91,,0,,,Not Fiscal real,,,,,,,,
+journal_528,marin_data.company_lmmg,Uncollectible debts FF,Miscellaneous,INC1,55,,0,,,Fiscal real,,,,,,,,
+journal_529,marin_data.company_lmmg,Machinery and equipment NF,Miscellaneous,MAQ00,76,,0,,,Not Fiscal real,,,,,,,,
+journal_530,marin_data.company_lmmg,Machinery and equipment FF,Miscellaneous,MAQ01,74,,0,,,Fiscal real,,,,,,,,
+journal_531,marin_data.company_lmmg,Furniture and office equipment NF,Miscellaneous,MOQ00,80,,0,,,Not Fiscal real,,,,,,,,
+journal_532,marin_data.company_lmmg,Furniture and office equipment FF,Miscellaneous,MOQ01,78,,0,,,Fiscal real,,,,,,,,
+journal_533,marin_data.company_lmmg,Miscellaneous operations NF,Miscellaneous,MSC0,64,,0,,,Not Fiscal real,,,,,,,,
+journal_534,marin_data.company_lmmg,Miscellaneous operations FF,Miscellaneous,MSC1,61,,0,,,Fiscal real,,,,,,,,
+journal_535,marin_data.company_lmmg,Employees NF,Miscellaneous,NOM00,34,,6,,,Not Fiscal real,,marin_data.account_101_01_001_company_lmmg,,,,,,
+journal_536,marin_data.company_lmmg,POS MAIN,Miscellaneous,TPV00,43,,0,,,Not Fiscal real,,,,,,,,
+journal_537,marin_data.company_lmmg,Lands NF,Miscellaneous,TRR00,86,,0,,,Not Fiscal real,,,,,,,,
+journal_538,marin_data.company_lmmg,Lands FF,Miscellaneous,TRR01,85,,0,,,Fiscal real,,,,,,,,
 journal_539,marin_data.company_lmmr,Vendors advances NF,Cash,ANT00,53,,10,,,Not Fiscal real,,marin_data.account_216_10_020_lmmr,,,,marin_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,marin_data.account_105_01_002_lmmr
 journal_540,marin_data.company_lmmr,Vendors advances FF,Cash,ANT01,50,,10,,,Fiscal real,,marin_data.account_216_10_010_lmmr,,,,marin_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,marin_data.account_105_01_002_lmmr
 journal_541,marin_data.company_lmmr,Cash Main,Cash,EFC01,23,True,10,,,Not Fiscal real,,marin_data.account_102_01_003_lmmr,marin_data.account_113_02_001_lmmr,__export__.account_account_1203_a0b03b89,,marin_data.account_304_02_002_lmmr,__export__.account_account_1511_9bc87670,marin_data.account_105_01_002_lmmr

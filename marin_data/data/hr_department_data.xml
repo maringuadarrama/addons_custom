@@ -2,7 +2,7 @@
 <odoo noupdate="1">
     <record id="hr_department_2" model="hr.department">
         <field name="name">Commercial</field>
-        <field name="company_id" ref="base.main_company" />
+        <field name="company_id" ref="marin_data.company_lmmg" />
     </record>
 
     <record id="hr_department_3" model="hr.department">
