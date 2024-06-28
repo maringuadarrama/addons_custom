@@ -2,7 +2,7 @@
 <odoo noupdate="1">
     <record id="default_account_payable_company_lmmg" model="ir.property" forcecreate="True">
         <field name="name">property_account_payable_id</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field
             name="fields_id"
             search="[('model', '=', 'res.partner'), ('name', '=', 'property_account_payable_id')]"
@@ -12,7 +12,7 @@
 
     <record id="default_account_receivable_company_lmmg" model="ir.property" forcecreate="True">
         <field name="name">property_account_receivable_id</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field
             name="fields_id"
             search="[('model', '=', 'res.partner'), ('name', '=', 'property_account_receivable_id')]"
@@ -22,7 +22,7 @@
 
     <record id="default_account_expense_company_lmmg" model="ir.property" forcecreate="True">
         <field name="name">property_account_expense_categ_id</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field
             name="fields_id"
             search="[('model', '=', 'product.category'), ('name', '=', 'property_account_expense_categ_id')]"
@@ -32,7 +32,7 @@
 
     <record id="default_account_income_company_lmmg" model="ir.property" forcecreate="True">
         <field name="name">property_account_income_categ_id</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field
             name="fields_id"
             search="[('model', '=', 'product.category'), ('name', '=', 'property_account_income_categ_id')]"
@@ -42,7 +42,7 @@
 
     <record id="default_account_payable_lmmr" model="ir.property" forcecreate="True">
         <field name="name">property_account_payable_id</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field
             name="fields_id"
             search="[('model', '=', 'res.partner'), ('name', '=', 'property_account_payable_id')]"
@@ -52,7 +52,7 @@
 
     <record id="default_account_receivable_lmmr" model="ir.property" forcecreate="True">
         <field name="name">property_account_receivable_id</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field
             name="fields_id"
             search="[('model', '=', 'res.partner'), ('name', '=', 'property_account_receivable_id')]"
@@ -62,7 +62,7 @@
 
     <record id="default_account_expense_lmmr" model="ir.property" forcecreate="True">
         <field name="name">property_account_expense_categ_id</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field
             name="fields_id"
             search="[('model', '=', 'product.category'), ('name', '=', 'property_account_expense_categ_id')]"
@@ -72,7 +72,7 @@
 
     <record id="default_account_income_lmmr" model="ir.property" forcecreate="True">
         <field name="name">property_account_income_categ_id</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field
             name="fields_id"
             search="[('model', '=', 'product.category'), ('name', '=', 'property_account_income_categ_id')]"
@@ -82,7 +82,7 @@
 
     <record id="default_account_payable_tjgl" model="ir.property" forcecreate="True">
         <field name="name">property_account_payable_id</field>
-        <field name="company_id" ref="marin_data.company_tjgl" />
+        <field name="company_id" ref="marin.company_tjgl" />
         <field
             name="fields_id"
             search="[('model', '=', 'res.partner'), ('name', '=', 'property_account_payable_id')]"
@@ -92,7 +92,7 @@
 
     <record id="default_account_receivable_tjgl" model="ir.property" forcecreate="True">
         <field name="name">property_account_receivable_id</field>
-        <field name="company_id" ref="marin_data.company_tjgl" />
+        <field name="company_id" ref="marin.company_tjgl" />
         <field
             name="fields_id"
             search="[('model', '=', 'res.partner'), ('name', '=', 'property_account_receivable_id')]"
@@ -102,7 +102,7 @@
 
     <record id="default_account_expense_tjgl" model="ir.property" forcecreate="True">
         <field name="name">property_account_expense_categ_id</field>
-        <field name="company_id" ref="marin_data.company_tjgl" />
+        <field name="company_id" ref="marin.company_tjgl" />
         <field
             name="fields_id"
             search="[('model', '=', 'product.category'), ('name', '=', 'property_account_expense_categ_id')]"
@@ -112,7 +112,7 @@
 
     <record id="default_account_income_tjgl" model="ir.property" forcecreate="True">
         <field name="name">property_account_income_categ_id</field>
-        <field name="company_id" ref="marin_data.company_tjgl" />
+        <field name="company_id" ref="marin.company_tjgl" />
         <field
             name="fields_id"
             search="[('model', '=', 'product.category'), ('name', '=', 'property_account_income_categ_id')]"
@@ -122,7 +122,7 @@
 
     <record id="default_account_payable_glmm" model="ir.property" forcecreate="True">
         <field name="name">property_account_payable_id</field>
-        <field name="company_id" ref="marin_data.company_glmm" />
+        <field name="company_id" ref="marin.company_glmm" />
         <field
             name="fields_id"
             search="[('model', '=', 'res.partner'), ('name', '=', 'property_account_payable_id')]"
@@ -132,7 +132,7 @@
 
     <record id="default_account_receivable_glmm" model="ir.property" forcecreate="True">
         <field name="name">property_account_receivable_id</field>
-        <field name="company_id" ref="marin_data.company_glmm" />
+        <field name="company_id" ref="marin.company_glmm" />
         <field
             name="fields_id"
             search="[('model', '=', 'res.partner'), ('name', '=', 'property_account_receivable_id')]"
@@ -142,7 +142,7 @@
 
     <record id="default_account_expense_glmm" model="ir.property" forcecreate="True">
         <field name="name">property_account_expense_categ_id</field>
-        <field name="company_id" ref="marin_data.company_glmm" />
+        <field name="company_id" ref="marin.company_glmm" />
         <field
             name="fields_id"
             search="[('model', '=', 'product.category'), ('name', '=', 'property_account_expense_categ_id')]"
@@ -152,7 +152,7 @@
 
     <record id="default_account_income_glmm" model="ir.property" forcecreate="True">
         <field name="name">property_account_income_categ_id</field>
-        <field name="company_id" ref="marin_data.company_glmm" />
+        <field name="company_id" ref="marin.company_glmm" />
         <field
             name="fields_id"
             search="[('model', '=', 'product.category'), ('name', '=', 'property_account_income_categ_id')]"

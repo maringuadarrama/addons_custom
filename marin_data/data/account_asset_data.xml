@@ -2,12 +2,12 @@
 <odoo noupdate="1">
     <record id="asset_eqt01_lmmr" model="account.asset">
         <field name="name">Automovil FF</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_154_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="marin_data.account_154_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_09_001_lmmr" />
-        <field name="journal_id" ref="marin_data.journal_580" />
+        <field name="account_asset_id" ref="marin.account_154_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin.account_154_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_09_001_lmmr" />
+        <field name="journal_id" ref="marin.journal_580" />
         <field name="method">linear</field>
         <field name="method_number">48</field>
         <field name="method_period">1</field>
@@ -18,12 +18,12 @@
 
     <record id="asset_eqt00_lmmr" model="account.asset">
         <field name="name">Automovil NF</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_154_01_002_lmmr" />
-        <field name="account_depreciation_id" ref="marin_data.account_154_01_002_lmmr" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_09_002_lmmr" />
-        <field name="journal_id" ref="marin_data.journal_581" />
+        <field name="account_asset_id" ref="marin.account_154_01_002_lmmr" />
+        <field name="account_depreciation_id" ref="marin.account_154_01_002_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_09_002_lmmr" />
+        <field name="journal_id" ref="marin.journal_581" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -34,12 +34,12 @@
 
     <record id="asset_eqc01_lmmr" model="account.asset">
         <field name="name">Equipo de computo FF</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_156_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="marin_data.account_156_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_11_001_lmmr" />
-        <field name="journal_id" ref="marin_data.journal_582" />
+        <field name="account_asset_id" ref="marin.account_156_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin.account_156_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_11_001_lmmr" />
+        <field name="journal_id" ref="marin.journal_582" />
         <field name="method">linear</field>
         <field name="method_number">36</field>
         <field name="method_period">1</field>
@@ -50,12 +50,12 @@
 
     <record id="asset_eqtl1_lmmr" model="account.asset">
         <field name="name">Equipo de telecom FF</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_165_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="marin_data.account_165_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_12_001_lmmr" />
-        <field name="journal_id" ref="marin_data.journal_583" />
+        <field name="account_asset_id" ref="marin.account_165_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin.account_165_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_12_001_lmmr" />
+        <field name="journal_id" ref="marin.journal_583" />
         <field name="method">linear</field>
         <field name="method_number">36</field>
         <field name="method_period">1</field>
@@ -66,12 +66,12 @@
 
     <record id="asset_maq01_lmmr" model="account.asset">
         <field name="name">Maquinaria FF</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_153_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="marin_data.account_153_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_08_001_lmmr" />
-        <field name="journal_id" ref="marin_data.journal_584" />
+        <field name="account_asset_id" ref="marin.account_153_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin.account_153_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_08_001_lmmr" />
+        <field name="journal_id" ref="marin.journal_584" />
         <field name="method">linear</field>
         <field name="method_number">120</field>
         <field name="method_period">1</field>
@@ -82,12 +82,12 @@
 
     <record id="asset_maq00_lmmr" model="account.asset">
         <field name="name">Maquinaria NF</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_153_01_002_lmmr" />
-        <field name="account_depreciation_id" ref="marin_data.account_153_01_002_lmmr" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_08_002_lmmr" />
-        <field name="journal_id" ref="marin_data.journal_585" />
+        <field name="account_asset_id" ref="marin.account_153_01_002_lmmr" />
+        <field name="account_depreciation_id" ref="marin.account_153_01_002_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_08_002_lmmr" />
+        <field name="journal_id" ref="marin.journal_585" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -98,12 +98,12 @@
 
     <record id="asset_moq01_lmmr" model="account.asset">
         <field name="name">Mobiliario oficina FF</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_155_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="marin_data.account_155_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_10_001_lmmr" />
-        <field name="journal_id" ref="marin_data.journal_586" />
+        <field name="account_asset_id" ref="marin.account_155_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin.account_155_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_10_001_lmmr" />
+        <field name="journal_id" ref="marin.journal_586" />
         <field name="method">linear</field>
         <field name="method_number">120</field>
         <field name="method_period">1</field>
@@ -114,12 +114,12 @@
 
     <record id="asset_moq00_lmmr" model="account.asset">
         <field name="name">Mobiliario oficina NF</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_155_01_002_lmmr" />
-        <field name="account_depreciation_id" ref="marin_data.account_155_01_002_lmmr" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_10_002_lmmr" />
-        <field name="journal_id" ref="marin_data.journal_587" />
+        <field name="account_asset_id" ref="marin.account_155_01_002_lmmr" />
+        <field name="account_depreciation_id" ref="marin.account_155_01_002_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_10_002_lmmr" />
+        <field name="journal_id" ref="marin.journal_587" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -130,12 +130,12 @@
 
     <record id="asset_trr01_lmmr" model="account.asset">
         <field name="name">Terrenos FF</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_151_01_001_lmmr" />
-        <field name="account_depreciation_id" ref="marin_data.account_151_01_001_lmmr" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_14_001_lmmr" />
-        <field name="journal_id" ref="marin_data.journal_588" />
+        <field name="account_asset_id" ref="marin.account_151_01_001_lmmr" />
+        <field name="account_depreciation_id" ref="marin.account_151_01_001_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_14_001_lmmr" />
+        <field name="journal_id" ref="marin.journal_588" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -146,12 +146,12 @@
 
     <record id="asset_trr00_lmmr" model="account.asset">
         <field name="name">Terrenos NF</field>
-        <field name="company_id" ref="marin_data.company_lmmr" />
+        <field name="company_id" ref="marin.company_lmmr" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_151_01_002_lmmr" />
-        <field name="account_depreciation_id" ref="marin_data.account_151_01_002_lmmr" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_14_002_lmmr" />
-        <field name="journal_id" ref="marin_data.journal_589" />
+        <field name="account_asset_id" ref="marin.account_151_01_002_lmmr" />
+        <field name="account_depreciation_id" ref="marin.account_151_01_002_lmmr" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_14_002_lmmr" />
+        <field name="journal_id" ref="marin.journal_589" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -161,12 +161,12 @@
     </record>
     <record id="asset_eqt01_lmmg" model="account.asset">
         <field name="name">Automovil FF</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_154_01_001_company_lmmg" />
-        <field name="account_depreciation_id" ref="marin_data.account_154_01_001_company_lmmg" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_09_001_company_lmmg" />
-        <field name="journal_id" ref="marin_data.journal_528" />
+        <field name="account_asset_id" ref="marin.account_154_01_001_company_lmmg" />
+        <field name="account_depreciation_id" ref="marin.account_154_01_001_company_lmmg" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_09_001_company_lmmg" />
+        <field name="journal_id" ref="marin.journal_528" />
         <field name="method">linear</field>
         <field name="method_number">48</field>
         <field name="method_period">1</field>
@@ -177,12 +177,12 @@
 
     <record id="asset_eqt00_lmmg" model="account.asset">
         <field name="name">Automovil NF</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_154_01_002_company_lmmg" />
-        <field name="account_depreciation_id" ref="marin_data.account_154_01_002_company_lmmg" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_09_002_company_lmmg" />
-        <field name="journal_id" ref="marin_data.journal_529" />
+        <field name="account_asset_id" ref="marin.account_154_01_002_company_lmmg" />
+        <field name="account_depreciation_id" ref="marin.account_154_01_002_company_lmmg" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_09_002_company_lmmg" />
+        <field name="journal_id" ref="marin.journal_529" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">1</field>
@@ -193,12 +193,12 @@
 
     <record id="asset_eqc01_lmmg" model="account.asset">
         <field name="name">Equipo de computo FF</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_156_01_001_company_lmmg" />
-        <field name="account_depreciation_id" ref="marin_data.account_156_01_001_company_lmmg" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_11_001_company_lmmg" />
-        <field name="journal_id" ref="marin_data.journal_530" />
+        <field name="account_asset_id" ref="marin.account_156_01_001_company_lmmg" />
+        <field name="account_depreciation_id" ref="marin.account_156_01_001_company_lmmg" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_11_001_company_lmmg" />
+        <field name="journal_id" ref="marin.journal_530" />
         <field name="method">linear</field>
         <field name="method_number">36</field>
         <field name="method_period">1</field>
@@ -209,12 +209,12 @@
 
     <record id="asset_eqtl1_lmmg" model="account.asset">
         <field name="name">Equipo de telecom FF</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_165_01_001_company_lmmg" />
-        <field name="account_depreciation_id" ref="marin_data.account_165_01_001_company_lmmg" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_12_001_company_lmmg" />
-        <field name="journal_id" ref="marin_data.journal_531" />
+        <field name="account_asset_id" ref="marin.account_165_01_001_company_lmmg" />
+        <field name="account_depreciation_id" ref="marin.account_165_01_001_company_lmmg" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_12_001_company_lmmg" />
+        <field name="journal_id" ref="marin.journal_531" />
         <field name="method">linear</field>
         <field name="method_number">36</field>
         <field name="method_period">1</field>
@@ -225,12 +225,12 @@
 
     <record id="asset_maq01_lmmg" model="account.asset">
         <field name="name">Maquinaria FF</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_153_01_001_company_lmmg" />
-        <field name="account_depreciation_id" ref="marin_data.account_153_01_001_company_lmmg" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_08_001_company_lmmg" />
-        <field name="journal_id" ref="marin_data.journal_532" />
+        <field name="account_asset_id" ref="marin.account_153_01_001_company_lmmg" />
+        <field name="account_depreciation_id" ref="marin.account_153_01_001_company_lmmg" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_08_001_company_lmmg" />
+        <field name="journal_id" ref="marin.journal_532" />
         <field name="method">linear</field>
         <field name="method_number">120</field>
         <field name="method_period">1</field>
@@ -241,12 +241,12 @@
 
     <record id="asset_maq00_lmmg" model="account.asset">
         <field name="name">Maquinaria NF</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_153_01_002_company_lmmg" />
-        <field name="account_depreciation_id" ref="marin_data.account_153_01_002_company_lmmg" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_08_002_company_lmmg" />
-        <field name="journal_id" ref="marin_data.journal_533" />
+        <field name="account_asset_id" ref="marin.account_153_01_002_company_lmmg" />
+        <field name="account_depreciation_id" ref="marin.account_153_01_002_company_lmmg" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_08_002_company_lmmg" />
+        <field name="journal_id" ref="marin.journal_533" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -257,12 +257,12 @@
 
     <record id="asset_moq01_lmmg" model="account.asset">
         <field name="name">Mobiliario oficina FF</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_155_01_001_company_lmmg" />
-        <field name="account_depreciation_id" ref="marin_data.account_155_01_001_company_lmmg" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_10_001_company_lmmg" />
-        <field name="journal_id" ref="marin_data.journal_534" />
+        <field name="account_asset_id" ref="marin.account_155_01_001_company_lmmg" />
+        <field name="account_depreciation_id" ref="marin.account_155_01_001_company_lmmg" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_10_001_company_lmmg" />
+        <field name="journal_id" ref="marin.journal_534" />
         <field name="method">linear</field>
         <field name="method_number">120</field>
         <field name="method_period">1</field>
@@ -273,12 +273,12 @@
 
     <record id="asset_moq00_lmmg" model="account.asset">
         <field name="name">Mobiliario oficina NF</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_155_01_002_company_lmmg" />
-        <field name="account_depreciation_id" ref="marin_data.account_155_01_002_company_lmmg" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_10_002_company_lmmg" />
-        <field name="journal_id" ref="marin_data.journal_535" />
+        <field name="account_asset_id" ref="marin.account_155_01_002_company_lmmg" />
+        <field name="account_depreciation_id" ref="marin.account_155_01_002_company_lmmg" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_10_002_company_lmmg" />
+        <field name="journal_id" ref="marin.journal_535" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -289,12 +289,12 @@
 
     <record id="asset_trr01_lmmg" model="account.asset">
         <field name="name">Terrenos FF</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_151_01_001_company_lmmg" />
-        <field name="account_depreciation_id" ref="marin_data.account_151_01_001_company_lmmg" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_14_001_company_lmmg" />
-        <field name="journal_id" ref="marin_data.journal_536" />
+        <field name="account_asset_id" ref="marin.account_151_01_001_company_lmmg" />
+        <field name="account_depreciation_id" ref="marin.account_151_01_001_company_lmmg" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_14_001_company_lmmg" />
+        <field name="journal_id" ref="marin.journal_536" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
@@ -305,12 +305,12 @@
 
     <record id="asset_trr00_lmmg" model="account.asset">
         <field name="name">Terrenos NF</field>
-        <field name="company_id" ref="marin_data.company_lmmg" />
+        <field name="company_id" ref="marin.company_lmmg" />
         <field name="state">model</field>
-        <field name="account_asset_id" ref="marin_data.account_151_01_002_company_lmmg" />
-        <field name="account_depreciation_id" ref="marin_data.account_151_01_002_company_lmmg" />
-        <field name="account_depreciation_expense_id" ref="marin_data.account_504_14_002_company_lmmg" />
-        <field name="journal_id" ref="marin_data.journal_537" />
+        <field name="account_asset_id" ref="marin.account_151_01_002_company_lmmg" />
+        <field name="account_depreciation_id" ref="marin.account_151_01_002_company_lmmg" />
+        <field name="account_depreciation_expense_id" ref="marin.account_504_14_002_company_lmmg" />
+        <field name="journal_id" ref="marin.journal_537" />
         <field name="method">linear</field>
         <field name="method_number">0</field>
         <field name="method_period">12</field>
