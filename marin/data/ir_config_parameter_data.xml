@@ -5,5 +5,4 @@
     <function model="ir.config_parameter" name="set_param" eval="('auth_signup.reset_password', 'False')" />
     <function model="ir.config_parameter" name="set_param" eval="('base_setup.default_user_rights', 'True')" />
     <function model="ir.config_parameter" name="set_param" eval="('product.product_pricelist_setting', 'advanced')" />
-    <function model="ir.config_parameter" name="set_param" eval="('crm.iap.lead.enrich.setting', 'manual')" />
 </odoo>

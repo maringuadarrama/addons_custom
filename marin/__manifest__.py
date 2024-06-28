@@ -12,7 +12,6 @@
         "date_range",
         "web_studio",
         "data_recycle",
-        "timer",
         "board",
         "loyalty",
         "survey",

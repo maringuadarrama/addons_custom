@@ -62,3 +62,7 @@ def _post_init_marin(env):
     env["ir.module.module"].search([("name", "=", "snailmail")]).sudo().button_uninstall()
     env["ir.module.module"].search([("name", "=", "partner_autocomplete")]).sudo().button_uninstall()
     env["ir.module.module"].search([("name", "=", "google_gmail")]).sudo().button_uninstall()
+    env["ir.module.module"].search([("name", "=", "crm_iap_mine")]).sudo().button_uninstall()
+    env["ir.module.module"].search([("name", "=", "crm_iap_enrich")]).sudo().button_uninstall()
+    env["ir.module.module"].search([("name", "=", "account_bank_statement_import_ofx")]).sudo().button_uninstall()
+    env["ir.module.module"].search([("name", "=", "account_bank_statement_import_camt")]).sudo().button_uninstall()
