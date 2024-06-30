@@ -1,5 +1,5 @@
 {
-    "name": "Marin data",
+    "name": "Marin maniac",
     "summary": """
     Load data for Marin module
     """,
@@ -7,11 +7,9 @@
     "website": "https://www.vauxoo.com",
     "license": "OPL-1",
     "category": "Installer",
-    "version": "17.0.0.0.1",
+    "version": "17.0.0.0.0",
     "depends": [
-        "marin",
     ],
     "pre_init_hook": "_pre_init_marin",
     "installable": True,
-    "application": False,
 }
