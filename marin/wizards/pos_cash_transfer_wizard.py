@@ -104,7 +104,9 @@ class PosCashTransferWizard(models.TransientModel):
             )
 
     def _get_schedule_activity_users(self):
-        return self.env.user
+        job = self.env.ref("marin.hr_job_14")
+        users = self.env["hr.employee"].search([("job_id", "=", job.id)]).mapped("user_id")
+        return users or self.env.user
 
     @api.onchange("journal_id")
     def _onchange_currency_id(self):

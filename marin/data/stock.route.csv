@@ -1,0 +1,4 @@
+"id","company_id/id","supplied_wh_id/id","supplier_wh_id/id","active","packaging_selectable","product_selectable","product_categ_selectable","shipping_selectable","warehouse_selectable","sale_selectable","sequence","name"
+"marin.stock_route_1066","","","","True","","","","","True","","41","Intercompany transfer in 2 steps"
+"marin.stock_route_1067","marin.company_lmmr","","","True","","","","","","True","17","CDG: Deliver in 2 steps (ship + deliver)"
+"marin.stock_route_1068","marin.company_lmmr","marin.stock_warehouse_102","","True","","","","","True","","42","Interwarehouse transfer in 2 steps (ship + deliver)"

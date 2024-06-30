@@ -4,8 +4,8 @@
         <field name="name">TPV MAIN</field>
         <field name="company_id" ref="marin.company_lmmr" />
         <field name="warehouse_id" ref="stock_warehouse_104" />
-        <field name="invoice_journal_id" ref="marin.journal_customers_nf_lmmr" />
-        <field name="journal_id" ref="marin.journal_pos_main_lmmr" />
+        <field name="journal_id" ref="marin.journal_tpv1_lmmr" />
+        <field name="invoice_journal_id" ref="marin.journal_cn_lmmr" />
         <field name="down_payment_product_id" ref="pos_sale.default_downpayment_product" />
         <field
             name="payment_method_ids"
@@ -22,8 +22,8 @@
         <field name="name">TPV SJN</field>
         <field name="company_id" ref="marin.company_lmmr" />
         <field name="warehouse_id" ref="stock_warehouse_103" />
-        <field name="invoice_journal_id" ref="marin.journal_569" />
-        <field name="journal_id" ref="marin.journal_pos_main_lmmr" />
+        <field name="journal_id" ref="marin.journal_tpv3_lmmr" />
+        <field name="invoice_journal_id" ref="marin.journal_cn_lmmr" />
         <field name="down_payment_product_id" ref="pos_sale.default_downpayment_product" />
         <field
             name="payment_method_ids"
@@ -40,8 +40,8 @@
         <field name="name">TPV BAL</field>
         <field name="company_id" ref="marin.company_lmmr" />
         <field name="warehouse_id" ref="stock_warehouse_102" />
-        <field name="invoice_journal_id" ref="marin.journal_568" />
-        <field name="journal_id" ref="marin.journal_pos_main_lmmr" />
+        <field name="journal_id" ref="marin.journal_tpv2_lmmr" />
+        <field name="invoice_journal_id" ref="marin.journal_cn_lmmr" />
         <field name="down_payment_product_id" ref="pos_sale.default_downpayment_product" />
         <field
             name="payment_method_ids"

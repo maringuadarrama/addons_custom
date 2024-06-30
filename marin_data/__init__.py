@@ -1,4 +1,3 @@
-from . import wizards
 from odoo import tools
 
 

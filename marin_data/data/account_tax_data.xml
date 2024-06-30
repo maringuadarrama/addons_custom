@@ -22,7 +22,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_507" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -40,7 +40,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_503" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="True" />
         <field name="is_base_affected" eval="False" />
@@ -58,7 +58,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_507" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="True" />
@@ -76,7 +76,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_505" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="True" />
         <field name="is_base_affected" eval="True" />
@@ -94,7 +94,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_507" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -112,7 +112,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_507" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_213_01_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_213_01_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -130,7 +130,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_507" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -148,7 +148,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_507" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_213_01_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_213_01_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -166,7 +166,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_507" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -184,7 +184,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_507" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -202,7 +202,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_507" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_213_01_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_213_01_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -220,7 +220,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_507" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_03_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -306,7 +306,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_511" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_01_002_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_01_002_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -324,7 +324,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_511" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_209_02_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_209_02_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -342,7 +342,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_511" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_202_03_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_202_03_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -360,7 +360,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_512" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_01_002_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_01_002_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="True" />
@@ -378,7 +378,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_512" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_209_02_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_209_02_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -396,7 +396,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_512" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_202_03_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_202_03_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="True" />
@@ -414,7 +414,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_514" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_119_01_002_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_119_01_002_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -432,7 +432,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_514" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_209_02_001_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_209_02_001_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
@@ -450,7 +450,7 @@
         <field name="company_id" ref="marin.company_lmmg" />
         <field name="country_id" ref="base.mx" />
         <field name="tax_group_id" ref="marin.tax_group_526" />
-        <field name="cash_basis_transition_account_id" ref="marin.account_216_10_020_company_lmmg" />
+        <field name="cash_basis_transition_account_id" ref="marin.account_216_10_020_lmmg" />
         <field name="active" eval="True" />
         <field name="include_base_amount" eval="False" />
         <field name="is_base_affected" eval="False" />
