@@ -155,8 +155,8 @@ def _post_init_marin(env):
 #    # env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 5000, true);""")
 #    # tools.convert.convert_file(env, "marin", "data/stock.rule.csv", None, mode="init", kind="data")
 #
-#    env.cr.execute("""SELECT setval('"public"."account_account_id_seq"', 1000, true);""")
-#    env.cr.execute("""SELECT setval('"public"."account_analytic_plan_id_seq"', 200, true);""")
+    env.cr.execute("""SELECT setval('"public"."account_account_id_seq"', 1000, true);""")
+    env.cr.execute("""SELECT setval('"public"."account_analytic_plan_id_seq"', 200, true);""")
 #    env.cr.execute("""SELECT setval('"public"."account_journal_id_seq"', 500, true);""")
 #    env.cr.execute("""SELECT setval('"public"."account_payment_method_line_id_seq"', 1000, true);""")
 #    env.cr.execute("""SELECT setval('"public"."account_payment_term_id_seq"', 100, true);""")
