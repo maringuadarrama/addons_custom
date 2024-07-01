@@ -79,7 +79,7 @@
         "data/product_pricelist_data.xml",
         "data/product.tag.csv",
         "data/res_config_settings_data.xml",
-        "data/res_partner_category_data.xml",
+        "data/res.partner.category.csv",
         "data/res_partner_age_range_data.xml",
         "data/res_bank_data.xml",
         "data/uom.category.csv",
