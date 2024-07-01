@@ -38,13 +38,13 @@
 
     <record id="journal_group_7" model="account.journal.group">
         <field name="name">Not simulated</field>
-        <field name="company_id" ref="marin.company_marin" />
+        <field name="company_id" ref="marin.company_society" />
         <field name="sequence" eval="10" />
     </record>
 
     <record id="journal_group_8" model="account.journal.group">
         <field name="name">Not fiscal</field>
-        <field name="company_id" ref="marin.company_marin" />
+        <field name="company_id" ref="marin.company_society" />
         <field name="sequence" eval="11" />
     </record>
 </odoo>
