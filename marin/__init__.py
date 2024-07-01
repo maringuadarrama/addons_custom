@@ -81,10 +81,10 @@ def _post_init_marin(env):
                     "noupdate": True,
                 }
             )
-    tools.convert.convert_file(env, "marin", "data/stock.picking.type.csv", None, mode="init", kind="data")
-    tools.convert.convert_file(env, "marin", "data/stock.route.csv", None, mode="init", kind="data")
-#    # env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 5000, true);""")
-#    # tools.convert.convert_file(env, "marin", "data/stock.rule.csv", None, mode="init", kind="data")
+    #tools.convert.convert_file(env, "marin", "data/stock.picking.type.csv", None, mode="init", kind="data")
+    #tools.convert.convert_file(env, "marin", "data/stock.route.csv", None, mode="init", kind="data")
+    #env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 5000, true);""")
+    #tools.convert.convert_file(env, "marin", "data/stock.rule.csv", None, mode="init", kind="data")
 
     env.cr.execute("""SELECT setval('"public"."account_account_id_seq"', 1000, true);""")
     env.cr.execute("""SELECT setval('"public"."account_analytic_plan_id_seq"', 200, true);""")
