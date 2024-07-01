@@ -109,7 +109,25 @@ def _post_init_marin(env):
     tools.convert.convert_file(env, "marin", "data/account.asset.csv", None, mode="init", kind="data")
     tools.convert.convert_file(env, "marin", "data/account.payment.term.csv", None, mode="init", kind="data")
     tools.convert.convert_file(env, "marin", "data/account.tax.group.csv", None, mode="init", kind="data")
-#    tools.convert.convert_file(env, "marin", "data/account_tax_data.xml", None, mode="init", kind="data")
+    model = "account.account.tag"
+    aat = (
+        env[model]
+        .sudo()
+        .search([("name", "ilike", "DIOT:")], order="id ASC")
+    )
+    for at in aat:
+        exist = env["ir.model.data"].sudo().search([("model", "=", model), ("res_id", "=", at.id)])
+        if not exist:
+            env["ir.model.data"].create(
+                {
+                    "module": "l10n_mx",
+                    "model": model,
+                    "name": "l10n_mx_%s" % (at.name.replace(" ","_").replace("%","").replace(":","").replace("-","in_").replace("+","out_").lower()),
+                    "res_id": at.id,
+                    "noupdate": True,
+                }
+            )
+    tools.convert.convert_file(env, "marin", "data/account.tax.csv", None, mode="init", kind="data")
 
     tools.convert.convert_file(env, "marin", "data/crm_team_data.xml", None, mode="init", kind="data")
 
