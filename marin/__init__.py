@@ -30,61 +30,68 @@ def _post_init_marin(env):
     env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 1026, true);""")
     env.cr.execute("""SELECT setval('"public"."stock_warehouse_id_seq"', 100, true);""")
 
+    model = "stock.warehouse"
     warehouses = (
-        env["stock.warehouse"]
+        env[model]
         .sudo()
         .search([("active", "in", [True, False])], order="id ASC")
     )
     for wh in warehouses:
-        env["ir.model.data"].create(
-            {
-                "module": "marin",
-                "model": "stock.warehouse",
-                "name": "warehouse_%s" % wh.id,
-                "res_id": wh.id,
-                "noupdate": True,
-            }
-        )
-    tools.convert.convert_file(env, "marin", "data/stock.warehouse.csv", None, mode="init", kind="data")
-
-    locations = (
-        env["stock.location"]
-        .sudo()
-        .search([("active", "in", [True, False])], order="id ASC")
-    )
-    for ln in locations:
-        env["ir.model.data"].create(
-            {
-                "module": "marin",
-                "model": "stock.location",
-                "name": "stock_location_%s" % ln.id,
-                "res_id": ln.id,
-                "noupdate": True,
-            }
-        )
-    tools.convert.convert_file(env, "marin", "data/stock.location.csv", None, mode="init", kind="data")
-
-    types = (
-        env["stock.picking.type"]
-        .sudo()
-        .search([("active", "in", [True, False])], order="id ASC")
-    )
-    for spt in types:
-        exist = env["ir.model.data"].sudo().search([("model", "=", "stock.picking.type"), ("res_id", "=", spt.id)])
+        exist = env["ir.model.data"].sudo().search([("model", "=", model), ("res_id", "=", wh.id)])
         if not exist:
             env["ir.model.data"].create(
                 {
                     "module": "marin",
-                    "model": "stock.picking.type",
+                    "model": model,
+                    "name": "stock_warehouse_%s" % wh.id,
+                    "res_id": wh.id,
+                    "noupdate": True,
+                }
+            )
+    tools.convert.convert_file(env, "marin", "data/stock.warehouse.csv", None, mode="init", kind="data")
+
+    model = "stock.location"
+    locations = (
+        env[model]
+        .sudo()
+        .search([("active", "in", [True, False])], order="id ASC")
+    )
+    for ln in locations:
+        exist = env["ir.model.data"].sudo().search([("model", "=", model), ("res_id", "=", ln.id)])
+        if not exist:
+            env["ir.model.data"].create(
+                {
+                    "module": "marin",
+                    "model": model,
+                    "name": "stock_location_%s" % ln.id,
+                    "res_id": ln.id,
+                    "noupdate": True,
+                }
+            )
+    tools.convert.convert_file(env, "marin", "data/stock.location.csv", None, mode="init", kind="data")
+
+    model = "stock.picking.type"
+    types = (
+        env[model]
+        .sudo()
+        .search([("active", "in", [True, False])], order="id ASC")
+    )
+    for spt in types:
+        exist = env["ir.model.data"].sudo().search([("model", "=", model), ("res_id", "=", spt.id)])
+        if not exist:
+            env["ir.model.data"].create(
+                {
+                    "module": "marin",
+                    "model": model,
                     "name": "stock_picking_type_%s" % spt.id,
                     "res_id": spt.id,
                     "noupdate": True,
                 }
             )
-    #tools.convert.convert_file(env, "marin", "data/stock.picking.type.csv", None, mode="init", kind="data")
-    #tools.convert.convert_file(env, "marin", "data/stock.route.csv", None, mode="init", kind="data")
-    #env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 5000, true);""")
-    #tools.convert.convert_file(env, "marin", "data/stock.rule.csv", None, mode="init", kind="data")
+#    tools.convert.convert_file(env, "marin", "data/stock.picking.type.csv", None, mode="init", kind="data")
+#    tools.convert.convert_file(env, "marin", "data/stock.route.csv", None, mode="init", kind="data")
+#    # env.cr.execute("""SELECT setval('"public"."stock_rule_id_seq"', 5000, true);""")
+#    # tools.convert.convert_file(env, "marin", "data/stock.rule.csv", None, mode="init", kind="data")
 
     env.cr.execute("""SELECT setval('"public"."account_account_id_seq"', 1000, true);""")
     env.cr.execute("""SELECT setval('"public"."account_analytic_plan_id_seq"', 200, true);""")
