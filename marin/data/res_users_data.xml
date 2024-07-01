@@ -11,7 +11,7 @@
                 Command.link(ref('marin.company_ammg')),
                 Command.link(ref('marin.company_cfmg')),
                 Command.link(ref('marin.company_glmm')),
-                Command.link(ref('marin.company_marin')),
+                Command.link(ref('marin.company_society')),
             ]"
         />
     </record>
@@ -51,7 +51,7 @@
             Command.link(ref('marin.company_ammg')),
             Command.link(ref('marin.company_cfmg')),
             Command.link(ref('marin.company_glmm')),
-            Command.link(ref('marin.company_marin')),
+            Command.link(ref('marin.company_society')),
         ]"
         />
     </record>

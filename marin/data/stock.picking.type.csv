@@ -3,15 +3,15 @@ marin.stock_picking_type_1144,marin.company_lmmg,stock.warehouse0,stock.stock_lo
 marin.stock_picking_type_1145,marin.company_lmmg,stock.warehouse0,stock.stock_location_stock,marin.stock_location_1106,,Intercompany transfers LMMG-XM,Delivery,INTCP,,At Confirmation,True,Never,,True,,3
 marin.stock_picking_type_1146,marin.company_lmmr,marin.stock_warehouse_104,marin.stock_location_1026,marin.stock_location_1107,,Intercompany transfers LMMR-LMMG,Delivery,INTCP,,At Confirmation,True,Never,,True,,23
 marin.stock_picking_type_1147,marin.company_lmmr,marin.stock_warehouse_104,marin.stock_location_1026,marin.stock_location_1108,,Intercompany transfers LMMR-XM,Delivery,INTCP,,At Confirmation,True,Never,,True,,23
-marin.stock_picking_type_1148,marin.company_marin,marin.stock_warehouse_7,marin.stock_location_97,marin.stock_location_1109,,Intercompany transfers XM-LMMG,Delivery,INTCP,,At Confirmation,True,Never,,True,,0
-marin.stock_picking_type_1149,marin.company_marin,marin.stock_warehouse_7,marin.stock_location_97,marin.stock_location_1110,,Intercompany transfers XM-LMMR,Delivery,INTCP,,At Confirmation,True,Never,,True,,0
+marin.stock_picking_type_1148,marin.company_society,marin.stock_warehouse_7,marin.stock_location_97,marin.stock_location_1109,,Intercompany transfers XM-LMMG,Delivery,INTCP,,At Confirmation,True,Never,,True,,0
+marin.stock_picking_type_1149,marin.company_society,marin.stock_warehouse_7,marin.stock_location_97,marin.stock_location_1110,,Intercompany transfers XM-LMMR,Delivery,INTCP,,At Confirmation,True,Never,,True,,0
 marin.stock_picking_type_1150,marin.company_lmmg,stock.warehouse0,,stock.stock_location_stock,,Returns,Receipt,RTN,LMMG-RETURNS,At Confirmation,True,Always,,True,,5
 marin.stock_picking_type_1151,marin.company_lmmr,marin.stock_warehouse_2,,marin.stock_location_27,,Returns,Receipt,RTN,LMMR-RETURNS,At Confirmation,,Ask,True,True,True,500
 marin.stock_picking_type_1152,marin.company_tjgl,marin.stock_warehouse_3,,marin.stock_location_41,,Returns,Receipt,RTN,TJGL-RETURNS,At Confirmation,True,Ask,True,True,True,500
 marin.stock_picking_type_1153,marin.company_ammg,marin.stock_warehouse_4,,marin.stock_location_55,,Returns,Receipt,RTN,AMMG-RETURNS,At Confirmation,True,Ask,True,True,True,500
 marin.stock_picking_type_1154,marin.company_cfmg,marin.stock_warehouse_5,,marin.stock_location_69,,Returns,Receipt,RTN,CFMG-RETURNS,At Confirmation,True,Ask,True,True,True,500
 marin.stock_picking_type_1155,marin.company_glmm,marin.stock_warehouse_6,,marin.stock_location_83,,Returns,Receipt,RTN,GLMM-RETURNS,At Confirmation,True,Ask,True,True,True,500
-marin.stock_picking_type_1156,marin.company_marin,marin.stock_warehouse_7,,marin.stock_location_97,,Returns,Receipt,RTN,SAM-RETURNS,At Confirmation,True,Ask,True,True,True,500
+marin.stock_picking_type_1156,marin.company_society,marin.stock_warehouse_7,,marin.stock_location_97,,Returns,Receipt,RTN,SAM-RETURNS,At Confirmation,True,Ask,True,True,True,500
 marin.stock_picking_type_1157,marin.company_lmmr,marin.stock_warehouse_101,,marin.stock_location_1002,,Returns,Receipt,RTN,SNT-RETURN,At Confirmation,True,Always,True,True,True,59
 marin.stock_picking_type_1158,marin.company_lmmr,marin.stock_warehouse_102,,marin.stock_location_1010,,Returns,Receipt,RTN,BAL1-RETURN,At Confirmation,True,Always,,True,True,60
 marin.stock_picking_type_1159,marin.company_lmmr,marin.stock_warehouse_103,,marin.stock_location_1018,,Returns,Receipt,RTN,SJN-RETURN,At Confirmation,True,Always,,True,True,61
