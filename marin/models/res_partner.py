@@ -14,9 +14,9 @@ class ResPartner(models.Model):
         if self.user_has_groups("marin.group_sale_user"):
             parents.append(self.env.ref("marin.partner_category_commercial").id)
         if self.user_has_groups("marin.group_security_compliance"):
-            parents.append(self.env.ref("marin.partner_category_105").id)
+            parents.append(self.env.ref("marin.partner_category_security").id)
         if self.user_has_groups("marin.group_purchase_user"):
-            parents.append(self.env.ref("marin.partner_category_106").id)
+            parents.append(self.env.ref("marin.partner_category_purchase").id)
         if not parents:
             return [("id", "=", False)]
         return [("parent_id", "!=", False), ("parent_id", "in", parents)]
