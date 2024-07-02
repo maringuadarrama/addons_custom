@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="payment_checks_content" name="Payment Checks Content">
+        <div class="payments_checklist">
+            <div t-if="not messages" class="text-center alert alert-info">
+                <p>No information available</p>
+            </div>
+            <t t-if="messages">
+                <ul class="list-group list-unstyled">
+                    <t t-foreach="sorted_keys" t-as="key">
+                        <t t-set="message" t-value="str(key)" />
+                        <t t-set="is_ok" t-value="succeeded.get(message, False)" />
+                        <t t-set="elem" t-value="succeeded.get(message) if is_ok else failed.get(message)" />
+                        <li t-att-class="'list-group-item list-group-item-%s' % ('success' if is_ok else 'danger')">
+                            <i t-attf-class="fa #{'fa-check-circle' if is_ok else 'fa-times-circle'}" />
+                            <t t-esc="message" />
+                            <strong><t t-esc="elem.get('title_ok' if is_ok else 'title')" />: </strong>
+                            <t t-esc="elem.get('message_ok' if is_ok else 'message')" />
+                        </li>
+                    </t>
+                </ul>
+            </t>
+        </div>
+    </template>
+
+    <template id="xmlPreVisualization">
+        <t t-call="web.html_container">
+            <div class="xml-pre-visualization mt-5" style="font-size: 12px !important;">
+                <div class="row">
+                    <div class="col d-flex">
+                        <div class="">
+                            <p style="font-weight: 600; margin-bottom: 5px;">VAT emitter: <span
+                                    style="margin-bottom: 5px; margin-left: 10px; font-weight: 400;"
+                                ><t t-out="pdf_content['emitter_vat']" /></span></p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Name emitter: <span
+                                    style="margin-bottom: 5px; margin-left: 10px; font-weight: 400;"
+                                ><t t-out="pdf_content['emitter_name']" /></span></p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">VAT receptor: <span
+                                    style="margin-bottom: 5px; margin-left: 10px; font-weight: 400;"
+                                ><t t-out="pdf_content['receptor_vat']" /></span></p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Name receptor: <span
+                                    style="margin-bottom: 5px; margin-left: 10px; font-weight: 400;"
+                                ><t t-out="pdf_content['receptor_name']" /></span></p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">C.P receptor: <span
+                                    style="margin-bottom: 5px; margin-left: 10px; font-weight: 400;"
+                                ><t t-out="pdf_content['receptor_fiscal_address']" /></span></p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Receptor fiscal regime: <span
+                                    style="margin-bottom: 5px; margin-left: 10px; font-weight: 400;"
+                                ><t t-out="pdf_content['receptor_fiscal_regime']" /></span></p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">CFDI use: <span
+                                    style="margin-bottom: 5px; margin-left: 10px; font-weight: 400;"
+                                ><t t-out="pdf_content['cfdi_usage']" /></span></p>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <div class="">
+                            <p style="font-weight: 600; margin-bottom: 5px;">Fiscal folio: <span
+                                    style="margin-bottom: 5px; margin-left: 10px; font-weight: 400;"
+                                ><t t-out="pdf_content['folio']" /></span></p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">C.P, date and hour of emission: <span
+                                    style="margin-bottom: 5px; margin-left: 10px; font-weight: 400;"
+                                ><t t-out="pdf_content['expedition_place']" /> <t
+                                        t-out="pdf_content['date']"
+                                    /></span></p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Fiscal regime: <span
+                                    style="margin-bottom: 5px; margin-left: 10px; font-weight: 400;"
+                                ><t t-out="pdf_content['fiscal_regime']" /></span></p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Export: <span
+                                    style="margin-bottom: 5px; margin-left: 10px; font-weight: 400;"
+                                ><t t-out="pdf_content['export']" /></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <h5>Concepts</h5>
+                    <table style="border: 1px solid black;">
+                        <thead style="border: 1px solid black;">
+                            <tr style="background: lightgray;" class="text-center">
+                                <td style="border: 1px solid black; font-weight: 600;">Product or service Key</td>
+                                <td style="border: 1px solid black; font-weight: 600;">Identification number</td>
+                                <td style="border: 1px solid black; font-weight: 600;">Description</td>
+                                <td style="border: 1px solid black; font-weight: 600;">Quantity</td>
+                                <td style="border: 1px solid black; font-weight: 600;">Unity key</td>
+                                <td style="border: 1px solid black; font-weight: 600;">Unity</td>
+                                <td style="border: 1px solid black; font-weight: 600;">Unit price</td>
+                                <td style="border: 1px solid black; font-weight: 600;">Import</td>
+                                <td style="border: 1px solid black; font-weight: 600;">Imposed object</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="pdf_content['concepts']" t-as="concept">
+                                <tr style="border: 1px solid black;" class="text-center">
+                                    <td style="border: 1px solid black;"><t
+                                            t-out="concept['product_service_key']"
+                                        /></td>
+                                    <td style="border: 1px solid black;"><t
+                                            t-out="concept['identification_number']"
+                                        /></td>
+                                    <td style="border: 1px solid black;"><t t-out="concept['description']" /></td>
+                                    <td style="border: 1px solid black;"><t t-out="concept['quantity']" /></td>
+                                    <td style="border: 1px solid black;"><t t-out="concept['unity_key']" /></td>
+                                    <td style="border: 1px solid black;"><t t-out="concept['unity']" /></td>
+                                    <td style="border: 1px solid black;"><t t-out="concept['unit_price']" /></td>
+                                    <td style="border: 1px solid black;"><t t-out="concept['import']" /></td>
+                                    <td style="border: 1px solid black;"><t t-out="concept['imp_object']" /></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col d-flex">
+                        <div>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Currency:</p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Payment form:</p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Payment method:</p>
+                        </div>
+                        <div>
+                            <p style="margin-bottom: 5px; margin-left: 10px"><t t-out="pdf_content['currency']" /></p>
+                            <p style="margin-bottom: 5px; margin-left: 10px"><t
+                                    t-out="pdf_content['payment_form']"
+                                /></p>
+                            <p style="margin-bottom: 5px; margin-left: 10px"><t
+                                    t-out="pdf_content['payment_method']"
+                                /></p>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <div>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Subtotal:</p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Transferred taxes:</p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Witheld taxes:</p>
+                            <p style="font-weight: 600; margin-bottom: 5px;">Total:</p>
+                        </div>
+                        <div>
+                            <p style="margin-bottom: 5px; margin-left: 10px"><t t-out="pdf_content['subtotal']" /></p>
+                            <p style="margin-bottom: 5px; margin-left: 10px"><t
+                                    t-out="pdf_content['total_transferred_taxes']"
+                                /></p>
+                            <p style="margin-bottom: 5px; margin-left: 10px"><t
+                                    t-out="pdf_content['total_witheld_taxes']"
+                                /></p>
+                            <p style="margin-bottom: 5px; margin-left: 10px"><t t-out="pdf_content['total']" /></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <p style="font-weight: 600; margin-bottom: 5px;">CFDI digital stamp:</p>
+                        <p><t t-out="pdf_content['seal']" /></p>
+                    </div>
+                    <div>
+                        <p style="font-weight: 600; margin-bottom: 5px;">SAT digital stamp:</p>
+                        <p><t t-out="pdf_content['sello_sat']" /></p>
+                    </div>
+                    <div>
+                        <p
+                            style="font-weight: 600; margin-bottom: 5px;"
+                        >Original chain of the SAT digital certification complement:</p>
+                        <p><t t-out="pdf_content['cadena']" /></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p style="font-weight: 600; margin-bottom: 5px;">VAT of certification provider: </p><p><t
+                                t-out="pdf_content['certificate_provider_rfc']"
+                            /></p>
+                        <p style="font-weight: 600; margin-bottom: 5px;">SAT certificate serial number: </p><p><t
+                                t-out="pdf_content['certificate_sat_number']"
+                            /></p>
+                    </div>
+                    <div class="col">
+                        <p style="font-weight: 600; margin-bottom: 5px;">Date and time of certification: </p><p><t
+                                t-out="pdf_content['emission_date_str']"
+                            /></p>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

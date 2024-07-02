@@ -1,0 +1,512 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#     * l10n_edi_document
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-30 22:28+0000\n"
+"PO-Revision-Date: 2024-05-30 22:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_edi_document
+#: model:ir.model,name:l10n_edi_document.model_documents_workflow_rule
+msgid ""
+"A set of condition and actions which will be available to all attachments "
+"matching the conditions"
+msgstr ""
+"Un conjunto de condiciones y acciones que estarán disponibles para todos los"
+" archivos adjuntos que coincidan con las condiciones"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_document__analytic_account_id
+msgid "Analytic Account"
+msgstr "Cuenta Analítica"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_document__analytic_group
+msgid "Analytic Group"
+msgstr "Grupo Analítico"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_documents_document__analytic_account_id
+msgid "Analytic account to be used in the invoices to generate."
+msgstr "Cuenta analítica que será utilizada en las facturas a generar."
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_04
+msgid "April"
+msgstr "Abril"
+
+#. module: l10n_edi_document
+#: model:ir.actions.act_window,name:l10n_edi_document.attach_document_invoice_wizard_action
+#: model_terms:ir.ui.view,arch_db:l10n_edi_document.view_move_form_inherit
+msgid "Attach EDI Document"
+msgstr "Adjuntar documento EDI"
+
+#. module: l10n_edi_document
+#: model:ir.model,name:l10n_edi_document.model_attach_document_invoice_wizard
+msgid "Attach document to invoice"
+msgstr "Adjuntar documento a la factura"
+
+#. module: l10n_edi_document
+#: model:ir.model,name:l10n_edi_document.model_ir_attachment
+msgid "Attachment"
+msgstr "Archivo adjunto"
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_08
+msgid "August"
+msgstr "Agosto"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_attach_document_invoice_wizard__available_document_ids
+msgid "Available Document"
+msgstr "Documentos disponibles"
+
+#. module: l10n_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_edi_document.attach_document_invoice_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_edi_document
+#. odoo-javascript
+#: code:addons/l10n_edi_document/static/src/xml/checks_widget.xml:0
+#: code:addons/l10n_edi_document/static/src/xml/checks_widget.xml:0
+#, python-format
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: l10n_edi_document
+#: model:ir.model,name:l10n_edi_document.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_edi_document
+#: model:ir.model,name:l10n_edi_document.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_workflow_rule__create_model
+msgid "Create"
+msgstr "Crear"
+
+#. module: l10n_edi_document
+#: model:documents.workflow.rule,name:l10n_edi_document.edi_document_rule
+msgid "Create EDI document"
+msgstr "Crear documento EDI"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_attach_document_invoice_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_attach_document_invoice_wizard__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_edi_document
+#. odoo-python
+#: code:addons/l10n_edi_document/models/workflow.py:0
+#, python-format
+msgid "Created with DMS"
+msgstr "Creado con DMS"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_account_bank_statement_line__l10n_edi_created_with_dms
+#: model:ir.model.fields,field_description:l10n_edi_document.field_account_move__l10n_edi_created_with_dms
+#: model:ir.model.fields,field_description:l10n_edi_document.field_account_payment__l10n_edi_created_with_dms
+msgid "Created with DMS?"
+msgstr "¿Creado con DMS?"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_document__customer_account_id
+msgid "Customer Account"
+msgstr "Cuenta de Cliente"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_document__customer_journal_id
+msgid "Customer Journal"
+msgstr "Diario de Cliente"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_documents_document__invoice_date
+msgid ""
+"Date to be used in the invoice to generate, if is empty will be used the "
+"CFDI date."
+msgstr ""
+"Fecha a utilizar en la factura a generar, si esta vació se utilizará la "
+"fecha del CFDI."
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_12
+msgid "December"
+msgstr "Diciembre"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_attach_document_invoice_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_edi_document
+#: model:ir.model,name:l10n_edi_document.model_documents_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_attach_document_invoice_wizard__document_ids
+#: model_terms:ir.ui.view,arch_db:l10n_edi_document.document_tree_view
+msgid "Document"
+msgstr "Documento"
+
+#. module: l10n_edi_document
+#. odoo-python
+#: code:addons/l10n_edi_document/models/workflow.py:0
+#, python-format
+msgid "Document requires Purchase Order to process."
+msgstr "El documento requiere orden de compra para procesar."
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_attach_document_invoice_wizard__document_ids
+msgid "Document to relate on this invoice."
+msgstr "Documento a relacionar con esta factura."
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_attach_document_invoice_wizard__available_document_ids
+msgid "Documents available to be related to this invoice."
+msgstr "Documentos disponibles para relacionar a esta factura."
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.documents_edi_automatic_tag
+#: model:res.partner.category,name:l10n_edi_document.documents_edi_automatic_partner_tag
+msgid "EDI Automatic"
+msgstr "EDI Automático"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields.selection,name:l10n_edi_document.selection__documents_workflow_rule__create_model__l10n_edi_document_edi_document
+msgid "EDI Document"
+msgstr "Documento EDI"
+
+#. module: l10n_edi_document
+#: model:documents.facet,name:l10n_edi_document.documents_edi_facet
+#: model:documents.folder,name:l10n_edi_document.l10n_edi_document_folder_edi_doc
+#: model_terms:ir.ui.view,arch_db:l10n_edi_document.res_config_settings_view_form
+msgid "EDI Documents"
+msgstr "Documentos EDI"
+
+#. module: l10n_edi_document
+#: model:ir.actions.server,name:l10n_edi_document.ir_cron_process_edi_documents_ir_actions_server
+msgid "EDI Documents: Process documents automatically"
+msgstr "Documentos EDI: Procesar documentos automáticamente"
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.documents_edi_requires_po_tag
+#: model:res.partner.category,name:l10n_edi_document.documents_edi_partner_requires_po_tag
+msgid "EDI Requires PO"
+msgstr "Requiere OC"
+
+#. module: l10n_edi_document
+#: model:documents.folder,name:l10n_edi_document.l10n_edi_document_documents_without_records
+msgid "EDI documents without records"
+msgstr "Documentos EDI sin registros"
+
+#. module: l10n_edi_document
+#: model:documents.folder,name:l10n_edi_document.documents_edi_not_found_folder
+msgid "Edi Documents not found folder"
+msgstr "Carpeta para Documentos EDI se encontrados"
+
+#. module: l10n_edi_document
+#. odoo-javascript
+#: code:addons/l10n_edi_document/static/src/xml/checks_widget.xml:0
+#, python-format
+msgid "Failed checks"
+msgstr "Comprobaciones fallidas"
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_02
+msgid "February"
+msgstr "Febrero"
+
+#. module: l10n_edi_document
+#: model:documents.facet,name:l10n_edi_document.l10n_edi_document_facet_fiscal_month
+msgid "Fiscal month"
+msgstr "Mes fiscal"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_attach_document_invoice_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_res_company__l10n_edi_import_customer_invoices
+#: model:ir.model.fields,help:l10n_edi_document.field_res_config_settings__l10n_edi_import_customer_invoices
+#: model_terms:ir.ui.view,arch_db:l10n_edi_document.res_config_settings_view_form
+msgid ""
+"If the company is starting in Odoo, and must import the open customer "
+"invoices, mark this option to allow select the default journal and account "
+"to be used in Documents."
+msgstr ""
+"Si la compañía esta iniciando con Odoo, y desea importar las facturas de "
+"cliente abiertas, marque esta opción para permitir elegir el diario y la "
+"cuenta por default a utilizar en los Documentos."
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_res_company__l10n_edi_import_canceled_documents
+#: model:ir.model.fields,help:l10n_edi_document.field_res_config_settings__l10n_edi_import_canceled_documents
+#: model_terms:ir.ui.view,arch_db:l10n_edi_document.res_config_settings_view_form
+msgid ""
+"If true, will to allow import canceled documents on the country portal, but "
+"will be generated and cancelled in Odoo."
+msgstr ""
+"Si se marca esta opción, se permitirá importar documentos cancelados en el "
+"portal del cliente, pero se generarán cencelados en Odoo."
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_res_company__l10n_edi_import_canceled_documents
+#: model:ir.model.fields,field_description:l10n_edi_document.field_res_config_settings__l10n_edi_import_canceled_documents
+#: model_terms:ir.ui.view,arch_db:l10n_edi_document.res_config_settings_view_form
+msgid "Import Canceled Documents?"
+msgstr "¿Importar documentos cancelados?"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_res_company__l10n_edi_import_customer_invoices
+#: model:ir.model.fields,field_description:l10n_edi_document.field_res_config_settings__l10n_edi_import_customer_invoices
+#: model_terms:ir.ui.view,arch_db:l10n_edi_document.res_config_settings_view_form
+msgid "Import Customer Invoices?"
+msgstr "¿Importar facturas de cliente?"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_document__in_finance_folder
+msgid "In Finance Folder"
+msgstr "En la carpeta de finanzas"
+
+#. module: l10n_edi_document
+#: model:documents.folder,name:l10n_edi_document.documents_incorrect_edi_folder
+msgid "Incorrect EDI Documents"
+msgstr "Documentos EDI Incorrectos"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_documents_document__in_finance_folder
+msgid "Indicates if document is in finance folder"
+msgstr "Indica si el documento esta en la carpeta de finanzas"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_document__invoice_date
+msgid "Invoice Date"
+msgstr "Fecha de factura"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_account_bank_statement_line__l10n_edi_created_with_dms
+#: model:ir.model.fields,help:l10n_edi_document.field_account_move__l10n_edi_created_with_dms
+#: model:ir.model.fields,help:l10n_edi_document.field_account_payment__l10n_edi_created_with_dms
+msgid "Is market if the document was created with DMS."
+msgstr "Se marca si el documento fue creado con DMS."
+
+#. module: l10n_edi_document
+#: model:documents.folder,name:l10n_edi_document.l10n_edi_document_folder_edi_issued
+msgid "Issued"
+msgstr "Emitido"
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_01
+msgid "January"
+msgstr "Enero"
+
+#. module: l10n_edi_document
+#: model:ir.model,name:l10n_edi_document.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: l10n_edi_document
+#: model:ir.model,name:l10n_edi_document.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_07
+msgid "July"
+msgstr "Julio"
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_06
+msgid "June"
+msgstr "Junio"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_attach_document_invoice_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_attach_document_invoice_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_03
+msgid "March"
+msgstr "Marzo"
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_05
+msgid "May"
+msgstr "Mayo"
+
+#. module: l10n_edi_document
+#. odoo-javascript
+#: code:addons/l10n_edi_document/static/src/xml/checks_widget.xml:0
+#, python-format
+msgid "Modal title"
+msgstr "Título de la Ventana Modal"
+
+#. module: l10n_edi_document
+#. odoo-javascript
+#: code:addons/l10n_edi_document/static/src/xml/checks_widget.xml:0
+#, python-format
+msgid "No checks performed yet"
+msgstr "Aún sin verificar"
+
+#. module: l10n_edi_document
+#. odoo-javascript
+#: code:addons/l10n_edi_document/static/src/xml/checks_widget.xml:0
+#, python-format
+msgid "No information available"
+msgstr "Sin información disponible"
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_11
+msgid "November"
+msgstr "Noviembre"
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_10
+msgid "October"
+msgstr "Octubre"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_attach_document_invoice_wizard__partner_id
+msgid "Partner"
+msgstr "Proveedor"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_attach_document_invoice_wizard__partner_id
+msgid "Partner related to the invoice."
+msgstr "Proveedor relacionado a esta factura."
+
+#. module: l10n_edi_document
+#. odoo-python
+#: code:addons/l10n_edi_document/wizard/attach_document_invoice_wizard.py:0
+#, python-format
+msgid "Please select a record."
+msgstr "Por favor seleccione un registro."
+
+#. module: l10n_edi_document
+#: model:documents.folder,name:l10n_edi_document.l10n_edi_document_folder_edi_received
+msgid "Received"
+msgstr "Recibido"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_document__edi_reference
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: l10n_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_edi_document.attach_document_invoice_wizard_form
+msgid "Relate Document"
+msgstr "Relacionar documento"
+
+#. module: l10n_edi_document
+#: model:documents.tag,name:l10n_edi_document.l10n_edi_document_fiscal_month_09
+msgid "September"
+msgstr "Septiembre"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_document__show_customer_fields
+msgid "Show Customer Fields"
+msgstr "Mostrar campos de cliente"
+
+#. module: l10n_edi_document
+#. odoo-javascript
+#: code:addons/l10n_edi_document/static/src/xml/checks_widget.xml:0
+#, python-format
+msgid "Successful checks"
+msgstr "Verificación exitosa"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_document__tag_ids
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_documents_document__customer_account_id
+msgid ""
+"This account will be used in the customer invoices generated by this "
+"document. If this account is not set, will be used the default account."
+msgstr ""
+"Esta cuenta será utilizada en las facturas generadas por este documento. Si "
+"esta cuenta esta vacía, será utilizada la cuenta por default."
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_documents_document__vendor_account_id
+msgid ""
+"This account will be used in the vendor bills generated by this document. If"
+" this account is not set, will be used the default account."
+msgstr ""
+"Esta cuenta será utilizada en las líneas de la factura de proveedor a "
+"generar. Si esta cuenta esta en blanco, s utilizará la cuenta por default."
+
+#. module: l10n_edi_document
+#. odoo-python
+#: code:addons/l10n_edi_document/wizard/attach_document_invoice_wizard.py:0
+#, python-format
+msgid "This can only be used on invoices without EDI documents related."
+msgstr ""
+"Esta opción solo puede ser usada en facturas sin documentos EDI "
+"relacionados."
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_documents_document__customer_journal_id
+msgid ""
+"This journal will be used in the customer invoices generated by this "
+"document."
+msgstr ""
+"Este diario será utilizado en las facturas de cliente generadas por este "
+"documento."
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,help:l10n_edi_document.field_documents_document__vendor_journal_id
+msgid ""
+"This journal will be used in the vendor bills generated by this document."
+msgstr ""
+"Este diario será utilizado en las facturas de proveedor generadas por este "
+"documento."
+
+#. module: l10n_edi_document
+#. odoo-python
+#: code:addons/l10n_edi_document/wizard/attach_document_invoice_wizard.py:0
+#, python-format
+msgid ""
+"To use this option, only could be used a document, please select the correct"
+" record."
+msgstr ""
+"Para utilizar esta opción, solo puede ser seleccionado un documento, por "
+"favor elija el documento correcto."
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_document__vendor_account_id
+msgid "Vendor Account"
+msgstr "Cuenta de proveedor"
+
+#. module: l10n_edi_document
+#: model:ir.model.fields,field_description:l10n_edi_document.field_documents_document__vendor_journal_id
+msgid "Vendor Journal"
+msgstr "Diario de proveedor"
+
+#. module: l10n_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_edi_document.document_view_search
+msgid "Without Journal Entry"
+msgstr "Sin Asiento Contable"

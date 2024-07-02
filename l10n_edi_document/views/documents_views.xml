@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="documents_view_list_inherit_edi_doc" model="ir.ui.view">
+        <field name="name">documents.view.list.inherit.edi.doc</field>
+        <field name="model">documents.document</field>
+        <field name="inherit_id" ref="documents.documents_view_list" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="edi_reference" optional="show" />
+            </xpath>
+        </field>
+    </record>
+    <record id="document_tree_view" model="ir.ui.view">
+        <field name="name">document.tree.view</field>
+        <field name="model">documents.document</field>
+        <field name="arch" type="xml">
+            <tree create="false" edit="false" decoration-info="type == 'empty'" sample="1">
+                <field name="name" string="Document" required="True" />
+                <field name="tag_ids" widget="documents_many2many_tags" optional="show" />
+                <field name="partner_id" optional="show" />
+                <field name="edi_reference" optional="show" />
+                <field name="type" optional="hide" />
+            </tree>
+        </field>
+    </record>
+    <record id="document_view_search" model="ir.ui.view">
+        <field name="name">documents.search.inherited</field>
+        <field name="model">documents.document</field>
+        <field name="inherit_id" ref="documents.document_view_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//separator[3]" position="before">
+                <filter
+                    string="Without Journal Entry"
+                    name="without_journal_entry"
+                    domain="[('tag_ids', 'not in', %(documents.documents_finance_documents_bill)d)] "
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

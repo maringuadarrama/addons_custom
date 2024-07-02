@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t
+        t-name="documents.DocumentsInspector.documentsInfo"
+        t-inherit="documents.DocumentsInspector.documentsInfo"
+        t-inherit-mode="extension"
+    >
+        <xpath expr="//tr[hasclass('o_inspector_divider')]" position="before">
+            <t t-set="data" t-value="records[0].data" />
+            <t t-set="path" t-value="records[0].data.folder_id[1]" />
+            <t t-set="edidocs" t-value="['EDI Documents', 'Documentos EDI'].some(el => path.includes(el))" />
+            <t t-if="(data.in_finance_folder || edidocs) &amp;&amp; data.show_customer_fields">
+                <t t-call="documents.DocumentsInspector.field">
+                    <t t-set="fieldName" t-translation="off">customer_journal_id</t>
+                    <t
+                        t-set="additionalProps"
+                        t-value="{canOpen: false, canCreate: false, canCreateEdit: false, canQuickCreate: false}"
+                    />
+                </t>
+                <t t-call="documents.DocumentsInspector.field">
+                    <t t-set="fieldName" t-translation="off">customer_account_id</t>
+                    <t
+                        t-set="additionalProps"
+                        t-value="{canOpen: false, canCreate: false, canCreateEdit: false, canQuickCreate: false}"
+                    />
+                </t>
+            </t>
+            <t t-if="data.in_finance_folder || edidocs">
+                <t t-call="documents.DocumentsInspector.field">
+                    <t t-set="fieldName" t-translation="off">vendor_journal_id</t>
+                    <t
+                        t-set="additionalProps"
+                        t-value="{canOpen: false, canCreate: false, canCreateEdit: false, canQuickCreate: false}"
+                    />
+                </t>
+                <t t-call="documents.DocumentsInspector.field">
+                    <t t-set="fieldName" t-translation="off">vendor_account_id</t>
+                    <t
+                        t-set="additionalProps"
+                        t-value="{canOpen: false, canCreate: false, canCreateEdit: false, canQuickCreate: false}"
+                    />
+                </t>
+                <t t-call="documents.DocumentsInspector.field">
+                    <t t-set="fieldName" t-translation="off">invoice_date</t>
+                </t>
+            </t>
+            <t t-if="(data.in_finance_folder || edidocs) &amp;&amp; data.show_analytic">
+                <t t-call="documents.DocumentsInspector.field">
+                    <t t-set="fieldName" t-translation="off">analytic_account_id</t>
+                    <t
+                        t-set="additionalProps"
+                        t-value="{canOpen: false, canCreate: false, canCreateEdit: false, canQuickCreate: false}"
+                    />
+                </t>
+            </t>
+        </xpath>
+    </t>
+</templates>

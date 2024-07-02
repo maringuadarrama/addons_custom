@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="attach_document_invoice_wizard_form">
+        <field name="name">attach.document.invoice.wizard.form</field>
+        <field name="model">attach.document.invoice.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="partner_id" invisible="1" />
+                    <field name="available_document_ids" invisible="1" />
+                    <field
+                        name="document_ids"
+                        options="{'no_create': True}"
+                        nolabel="1"
+                        colspan="2"
+                        context="{'tree_view_ref': 'l10n_edi_document.document_tree_view'}"
+                    />
+                </group>
+                <footer>
+                    <button string="Relate Document" name="do_action" type="object" class="oe_highlight" />
+                    <button string="Cancel" class="btn btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="attach_document_invoice_wizard_action" model="ir.actions.act_window">
+        <field name="name">Attach EDI Document</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name='res_model'>attach.document.invoice.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="attach_document_invoice_wizard_form" />
+        <field name="target">new</field>
+    </record>
+</odoo>

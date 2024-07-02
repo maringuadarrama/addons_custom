@@ -1,0 +1,546 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_mx_edi_document
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-14 22:05+0000\n"
+"PO-Revision-Date: 2024-02-14 22:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model,name:l10n_mx_edi_document.model_documents_workflow_rule
+msgid ""
+"A set of condition and actions which will be available to all attachments "
+"matching the conditions"
+msgstr ""
+"Un conjunto de condiciones y acciones estarán disponibles para todos los "
+"archivos adjuntos que coincidan con las condiciones"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/wizard/attach_document_invoice_wizard.py:0
+#, python-format
+msgid ""
+"An invoice already exists with the same fiscal folio as the selected "
+"document."
+msgstr ""
+"Una factura con el mismo folio fiscal que el documento relacionado ya "
+"existe."
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.documents_view_search_inherit_mexican_doc
+msgid "Assigned"
+msgstr "Asignado"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model,name:l10n_mx_edi_document.model_attach_document_invoice_wizard
+msgid "Attach document to invoice"
+msgstr "Adjuntar documento a la factura"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model,name:l10n_mx_edi_document.model_ir_attachment
+msgid "Attachment"
+msgstr "Adjunto"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "C.P receptor:"
+msgstr ""
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "C.P, date and hour of emission:"
+msgstr "C.P, fecha y hora de emisión:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "CFDI digital stamp:"
+msgstr "Sello digital del CFDI:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "CFDI use:"
+msgstr "Uso CFDI:"
+
+#. module: l10n_mx_edi_document
+#. odoo-javascript
+#: code:addons/l10n_mx_edi_document/static/src/xml/checks_widget.xml:0
+#: code:addons/l10n_mx_edi_document/static/src/xml/checks_widget.xml:0
+#, python-format
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model,name:l10n_mx_edi_document.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Concepts"
+msgstr "Conceptos"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model,name:l10n_mx_edi_document.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/workflow.py:0
+#, python-format
+msgid "Created with DMS"
+msgstr "Creado con DMS"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model.fields,field_description:l10n_mx_edi_document.field_account_payment__l10n_edi_created_with_dms
+msgid "Created with DMS?"
+msgstr "¿Creado con DMS?"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Currency:"
+msgstr "Moneda:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Date and time of certification:"
+msgstr "Fecha y hora de certificación:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Description"
+msgstr "Descripción"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model,name:l10n_mx_edi_document.model_documents_document
+msgid "Document"
+msgstr "Documento"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/workflow.py:0
+#, python-format
+msgid "Document requires Purchase Order to process."
+msgstr "El documento requiere orden de compra para procesar."
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.documents_search_inherit
+msgid "Downloaded XMLs"
+msgstr "XML descargados"
+
+#. module: l10n_mx_edi_document
+#: model:documents.tag,name:l10n_mx_edi_document.egreso_tag
+msgid "Egress"
+msgstr "Egreso"
+
+#. module: l10n_mx_edi_document
+#: model:documents.tag,name:l10n_mx_edi_document.ingreso_tag
+msgid "Entry"
+msgstr "Ingreso"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#, python-format
+msgid "Error on invoice cancellation: %s"
+msgstr "Error en la validación de la factura: %s"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#, python-format
+msgid "Error on invoice validation: %s"
+msgstr "Error en la validación de la factura: %s"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Export:"
+msgstr "Exportación:"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#, python-format
+msgid "FUEL - IEPS"
+msgstr ""
+
+#. module: l10n_mx_edi_document
+#. odoo-javascript
+#: code:addons/l10n_mx_edi_document/static/src/xml/checks_widget.xml:0
+#, python-format
+msgid "Failed checks"
+msgstr "Revisiones fallidas"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Fiscal folio:"
+msgstr "Folio fiscal:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Fiscal regime:"
+msgstr "Régimen fiscal:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Identification number"
+msgstr "Número de identificación"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Import"
+msgstr "Importe"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Imposed object"
+msgstr "Objeto impuesto"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/wizard/attach_document_invoice_wizard.py:0
+#, python-format
+msgid "Incorrect CFDI in the document"
+msgstr "CFDI incorrecto en el documento"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model.fields,help:l10n_mx_edi_document.field_account_move_line__l10n_mx_edi_is_ecc
+msgid "Indicates that comes from a Fuel Account Statement complement"
+msgstr ""
+"Indica que proviene de un complemento de Estado de Cuenta de Combustible"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model.fields,help:l10n_mx_edi_document.field_account_payment__l10n_edi_created_with_dms
+msgid "Is market if the document was created with DMS."
+msgstr "Se marca si el documento fue creado con DMS."
+
+#. module: l10n_mx_edi_document
+#: model:ir.model,name:l10n_mx_edi_document.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model,name:l10n_mx_edi_document.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model.fields,field_description:l10n_mx_edi_document.field_documents_document__just_downloaded
+msgid "Just Downloaded"
+msgstr "Recién descargado"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model.fields,field_description:l10n_mx_edi_document.field_account_move_line__l10n_mx_edi_is_ecc
+msgid "L10N Mx Edi Is Ecc"
+msgstr ""
+
+#. module: l10n_mx_edi_document
+#: model:ir.model,name:l10n_mx_edi_document.model_l10n_mx_edi_document
+msgid "Mexican documents that needs to transit outside of Odoo"
+msgstr "Documentos mexicanos que necesitan transitar fuera de Odoo"
+
+#. module: l10n_mx_edi_document
+#. odoo-javascript
+#: code:addons/l10n_mx_edi_document/static/src/xml/checks_widget.xml:0
+#, python-format
+msgid "Modal title"
+msgstr "Título modal"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Name emitter:"
+msgstr "Nombre del emisor:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Name receptor:"
+msgstr "Nombre del receptor:"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/ir_attachment.py:0
+#, python-format
+msgid ""
+"Neither the emitter nor the receiver of this CFDI is this company, please "
+"review this document."
+msgstr ""
+"Ni el emisor ni el receptor de este CFDI es esta compañía, por favor revise "
+"este documento."
+
+#. module: l10n_mx_edi_document
+#. odoo-javascript
+#: code:addons/l10n_mx_edi_document/static/src/xml/checks_widget.xml:0
+#, python-format
+msgid "No checks performed yet"
+msgstr "Aún no se han realizado comprobaciones"
+
+#. module: l10n_mx_edi_document
+#. odoo-javascript
+#: code:addons/l10n_mx_edi_document/static/src/xml/checks_widget.xml:0
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.payment_checks_content
+#, python-format
+msgid "No information available"
+msgstr "Información no disponible"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.documents_view_search_inherit_mexican_doc
+msgid "Not Assigned"
+msgstr "No asignado"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Original chain of the SAT digital certification complement:"
+msgstr "Cadena original del complemento de certificación digital del SAT:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Payment form:"
+msgstr "Forma de pago:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Payment method:"
+msgstr "Método de pago:"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model,name:l10n_mx_edi_document.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: l10n_mx_edi_document
+#: model:documents.tag,name:l10n_mx_edi_document.nomina_tag
+msgid "Payroll"
+msgstr "Nómina"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#, python-format
+msgid "Please configure the tax account in the tax %s"
+msgstr "Configure la cuenta de impuestos en el %s de impuestos"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Product or service Key"
+msgstr "Llave del producto o servicio"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: l10n_mx_edi_document
+#: model:documents.tag,name:l10n_mx_edi_document.reception_tag
+msgid "Reception"
+msgstr "Recepción"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Receptor fiscal regime:"
+msgstr "Régimen fiscal receptor:"
+
+#. module: l10n_mx_edi_document
+#: model:documents.tag,name:l10n_mx_edi_document.retencion_tag
+msgid "Retention"
+msgstr "Retención"
+
+#. module: l10n_mx_edi_document
+#: model:documents.facet,name:l10n_mx_edi_document.xunnel_xml_facet
+msgid "SAT"
+msgstr ""
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "SAT certificate serial number:"
+msgstr "Número de serie de certificado SAT:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "SAT digital stamp:"
+msgstr "Sello digital del SAT:"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model.fields,field_description:l10n_mx_edi_document.field_res_company__l10n_mx_edi_fuel_code_sat_ids
+#: model:ir.model.fields,field_description:l10n_mx_edi_document.field_res_config_settings__l10n_mx_edi_fuel_code_sat_ids
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.res_config_settings_view_form
+msgid "SAT fuel codes"
+msgstr "Códigos SAT de combustibles"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#, python-format
+msgid "Station: %s - Operation: %s"
+msgstr "Estación: %s - Operación: %s"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Subtotal:"
+msgstr ""
+
+#. module: l10n_mx_edi_document
+#. odoo-javascript
+#: code:addons/l10n_mx_edi_document/static/src/xml/checks_widget.xml:0
+#, python-format
+msgid "Succesfull checks"
+msgstr "Comprobaciones exitosas"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/account_payment.py:0
+#, python-format
+msgid "The CFDI attached to was assigned with DMS."
+msgstr "El CFDI adjunto fue asignado con DMS."
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#, python-format
+msgid "The SAT status of this document is not valid in the SAT. (Is %s)"
+msgstr "Este documento no es válido ante el SAT. (Es %s)"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/wizard/attach_document_invoice_wizard.py:0
+#, python-format
+msgid ""
+"The VAT on the CFDI (%s) is not the same that in the invoice company (%s)."
+msgstr ""
+"La RFC en el CFDI (%s) no es el mismo que en la compañía de la factura (%s)."
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/wizard/attach_document_invoice_wizard.py:0
+#, python-format
+msgid ""
+"The VAT on the CFDI (%s) is not the same that in the invoice partner (%s)."
+msgstr ""
+"La RFC en el CFDI (%s) no es el mismo que en el proveedor de la factura "
+"(%s)."
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/wizard/attach_document_invoice_wizard.py:0
+#, python-format
+msgid ""
+"The amount total of the invoice (%s) is not the same that the XML file (%s)."
+msgstr "La monto total en la factura (%s) no es el mismo que en el XML (%s)."
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#, python-format
+msgid ""
+"The currency %s is not available in the system, please ensure that it is "
+"active."
+msgstr ""
+"La moneda %s no esta disponible en el sistema, por favor asegúrese que esta "
+"activa."
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/wizard/attach_document_invoice_wizard.py:0
+#, python-format
+msgid ""
+"The currency on the CFDI (%s) is not the same that in the invoice (%s)."
+msgstr "La moneda en el CFDI (%s) no es la misma que en la factura (%s)."
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#, python-format
+msgid ""
+"The partner does not exist, please create it manually and try to generate "
+"the document again."
+msgstr ""
+"El cliente/proveedor no existe, por favor creé el registro manualmente e "
+"intente generar el documento nuevamente."
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#, python-format
+msgid "The tax %s cannot be found"
+msgstr "No se puede encontrar el impuesto %s"
+
+#. module: l10n_mx_edi_document
+#. odoo-python
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#: code:addons/l10n_mx_edi_document/models/account_move.py:0
+#: code:addons/l10n_mx_edi_document/models/account_payment.py:0
+#, python-format
+msgid "This record was generated from DMS"
+msgstr "Este registro fue generado con DMS"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Total:"
+msgstr ""
+
+#. module: l10n_mx_edi_document
+#: model:documents.tag,name:l10n_mx_edi_document.translado_tag
+msgid "Transfer"
+msgstr "Transferencia"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Transferred taxes:"
+msgstr "Impuestos trasladados:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Unit price"
+msgstr "Precio unitario"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Unity"
+msgstr "Unidad"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Unity key"
+msgstr "Clave de unidad"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.view_account_invoice_supplier_form
+msgid "Update SAT"
+msgstr "Actualizar SAT"
+
+#. module: l10n_mx_edi_document
+#: model:ir.model.fields,help:l10n_mx_edi_document.field_documents_document__just_downloaded
+msgid ""
+"Used to identify the just donwloaded attachments.\n"
+"            To evaluate if an attachment was just downloaded, we need to\n"
+"            check the current context."
+msgstr ""
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "VAT emitter:"
+msgstr "RFC emisor:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "VAT of certification provider:"
+msgstr "RFC del proveedor de certificación:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "VAT receptor:"
+msgstr "RFC receptor:"
+
+#. module: l10n_mx_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_mx_edi_document.xmlPreVisualization
+msgid "Witheld taxes:"
+msgstr "Impuestos retenidos:"

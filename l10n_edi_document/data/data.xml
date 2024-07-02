@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- Workflow Rules -->
+
+    <record id="l10n_edi_document_folder_edi_doc" model="documents.folder">
+        <field name="name">EDI Documents</field>
+        <field name="sequence">10</field>
+        <field name="parent_folder_id" ref="documents.documents_finance_folder" />
+    </record>
+
+    <record id="edi_document_rule" model="documents.workflow.rule" forcecreate="0">
+        <field name="name">Create EDI document</field>
+        <field name="create_model">l10n_edi_document.edi.document</field>
+        <field name="domain_folder_id" ref="l10n_edi_document_folder_edi_doc" />
+    </record>
+
+    <record id="documents_replace_inbox_edi_document" model="documents.workflow.action" forcecreate="0">
+        <field name="workflow_rule_id" ref="edi_document_rule" />
+        <field name="action">replace</field>
+        <field name="facet_id" ref="documents.documents_finance_status" />
+        <field name="tag_id" ref="documents.documents_finance_status_tc" />
+    </record>
+
+    <record id="documents_add_documents_edi_document" model="documents.workflow.action" forcecreate="0">
+        <field name="workflow_rule_id" ref="edi_document_rule" />
+        <field name="action">add</field>
+        <field name="tag_id" ref="documents.documents_finance_documents_bill" />
+    </record>
+
+    <!-- New Folder -->
+    <record id="l10n_edi_document_folder_edi_received" model="documents.folder">
+        <field name="name">Received</field>
+        <field name="sequence">10</field>
+        <field name="parent_folder_id" ref="l10n_edi_document_folder_edi_doc" />
+    </record>
+
+    <record id="l10n_edi_document_folder_edi_issued" model="documents.folder">
+        <field name="name">Issued</field>
+        <field name="sequence">20</field>
+        <field name="parent_folder_id" ref="l10n_edi_document_folder_edi_doc" />
+    </record>
+
+    <record id="documents_incorrect_edi_folder" model="documents.folder">
+        <field name="name">Incorrect EDI Documents</field>
+        <field name="sequence">30</field>
+        <field name="parent_folder_id" ref="l10n_edi_document_folder_edi_doc" />
+    </record>
+
+    <record id="documents_edi_not_found_folder" model="documents.folder">
+        <field name="name">Edi Documents not found folder</field>
+        <field name="sequence">40</field>
+        <field name="parent_folder_id" ref="l10n_edi_document_folder_edi_doc" />
+    </record>
+
+    <record id="l10n_edi_document_documents_without_records" model="documents.folder">
+        <field name="name">EDI documents without records</field>
+        <field name="sequence">100</field>
+        <field name="parent_folder_id" ref="l10n_edi_document_folder_edi_doc" />
+    </record>
+
+    <!--Tags to process EDI documents automatically -->
+
+    <record id="documents_edi_automatic_partner_tag" model="res.partner.category">
+        <field name="name">EDI Automatic</field>
+    </record>
+
+    <record id="documents_edi_facet" model="documents.facet">
+        <field name="name">EDI Documents</field>
+        <field name="sequence">1</field>
+        <field name="folder_id" ref="documents.documents_finance_folder" />
+    </record>
+
+    <record id="documents_edi_automatic_tag" model="documents.tag">
+        <field name="name">EDI Automatic</field>
+        <field name="facet_id" ref="documents_edi_facet" />
+        <field name="sequence">1</field>
+    </record>
+
+    <!-- Requires PO Tag -->
+
+    <record id="documents_edi_partner_requires_po_tag" model="res.partner.category">
+        <field name="name">EDI Requires PO</field>
+    </record>
+
+    <record id="documents_edi_requires_po_tag" model="documents.tag">
+        <field name="name">EDI Requires PO</field>
+        <field name="facet_id" ref="documents_edi_facet" />
+        <field name="sequence">2</field>
+    </record>
+
+    <!-- Facets -->
+
+    <record id="l10n_edi_document_facet_fiscal_month" model="documents.facet">
+        <field name="name">Fiscal month</field>
+        <field name="sequence">30</field>
+        <field name="folder_id" ref="documents.documents_finance_folder" />
+    </record>
+
+    <!-- Tags -->
+
+    <record id="l10n_edi_document_fiscal_month_01" model="documents.tag">
+        <field name="name">January</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">1</field>
+    </record>
+
+    <record id="l10n_edi_document_fiscal_month_02" model="documents.tag">
+        <field name="name">February</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">2</field>
+    </record>
+
+    <record id="l10n_edi_document_fiscal_month_03" model="documents.tag">
+        <field name="name">March</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">3</field>
+    </record>
+
+    <record id="l10n_edi_document_fiscal_month_04" model="documents.tag">
+        <field name="name">April</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">4</field>
+    </record>
+
+    <record id="l10n_edi_document_fiscal_month_05" model="documents.tag">
+        <field name="name">May</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">5</field>
+    </record>
+
+    <record id="l10n_edi_document_fiscal_month_06" model="documents.tag">
+        <field name="name">June</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">6</field>
+    </record>
+
+    <record id="l10n_edi_document_fiscal_month_07" model="documents.tag">
+        <field name="name">July</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">7</field>
+    </record>
+
+    <record id="l10n_edi_document_fiscal_month_08" model="documents.tag">
+        <field name="name">August</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">8</field>
+    </record>
+
+    <record id="l10n_edi_document_fiscal_month_09" model="documents.tag">
+        <field name="name">September</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">9</field>
+    </record>
+
+    <record id="l10n_edi_document_fiscal_month_10" model="documents.tag">
+        <field name="name">October</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="l10n_edi_document_fiscal_month_11" model="documents.tag">
+        <field name="name">November</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">11</field>
+    </record>
+
+    <record id="l10n_edi_document_fiscal_month_12" model="documents.tag">
+        <field name="name">December</field>
+        <field name="facet_id" ref="l10n_edi_document_facet_fiscal_month" />
+        <field name="sequence">12</field>
+    </record>
+
+</odoo>
