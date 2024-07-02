@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+    <record id="journal_501" model="account.journal">
+        <field name="name">Bank BBVA 0478986592</field>
+        <field name="code">BNC03</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_003_main_company" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_main_company" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_main_company" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_main_company" />
+        <field name="sequence" eval="11" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_502" model="account.journal">
+        <field name="name">Bank Banbajio 0038383038</field>
+        <field name="code">BNC06</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_006_main_company" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_main_company" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_main_company" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_main_company" />
+        <field name="sequence" eval="12" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_503" model="account.journal">
+        <field name="name">Bank Efectivale 86039 - Expenses</field>
+        <field name="code">BNC05</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_004_main_company" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_main_company" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_main_company" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_main_company" />
+        <field name="sequence" eval="13" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_504" model="account.journal">
+        <field name="name">Bank BBVA 0110152269</field>
+        <field name="code">BNC01</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_002_main_company" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_main_company" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_main_company" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_main_company" />
+        <field name="sequence" eval="14" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_505" model="account.journal">
+        <field name="name">Bank BBVA Payroll</field>
+        <field name="code">BNC02</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_001_main_company" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_main_company" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_main_company" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_main_company" />
+        <field name="sequence" eval="15" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_506" model="account.journal">
+        <field name="name">Bank BBVA CC 5435</field>
+        <field name="code">BNC04</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_202_03_002_main_company" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_main_company" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_main_company" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_main_company" />
+        <field name="sequence" eval="16" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_main_cash_main_company" model="account.journal">
+        <field name="name">Main cash</field>
+        <field name="code">EFC01</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_101_01_001_main_company" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_main_company" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_main_company" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_main_company" />
+        <field name="sequence" eval="10" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_508" model="account.journal">
+        <field name="name">Vendors advances FF</field>
+        <field name="code">ANT01</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_120_01_001_main_company" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_main_company" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_main_company" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_main_company" />
+        <field name="sequence" eval="17" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_509" model="account.journal">
+        <field name="name">Vendors advances NF</field>
+        <field name="code">ANT00</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_120_01_002_main_company" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_main_company" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_main_company" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_main_company" />
+        <field name="sequence" eval="18" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_510" model="account.journal">
+        <field name="name">Payments done by thirth party in name of the company FF</field>
+        <field name="code">EFT</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_202_03_001_main_company" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_main_company" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_main_company" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_main_company" />
+        <field name="sequence" eval="19" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_suppliers_ff_main_company" model="account.journal">
+        <field name="name">Suppliers FF</field>
+        <field name="code">PF</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_001_main_company" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_001_main_company" />
+        <field name="sequence" eval="20" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_suppliers_fx_main_company" model="account.journal">
+        <field name="name">Suppliers FX</field>
+        <field name="code">PX</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_003_main_company" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_001_main_company" />
+        <field name="sequence" eval="21" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_simulated</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_suppliers_nf_main_company" model="account.journal">
+        <field name="name">Suppliers NF</field>
+        <field name="code">PN</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_002_main_company" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_002_main_company" />
+        <field name="sequence" eval="22" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_suppliers_nfx_main_company" model="account.journal">
+        <field name="name">Suppliers NFX</field>
+        <field name="code">PNX</field>
+        <field name="type">purchase</field>
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_002_main_company" />
+        <field name="sequence" eval="23" />
+        <field name="refund_sequence" eval="False" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">not_fiscal_simulated</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_foreign_suppliers_main_company" model="account.journal">
+        <field name="name">Foreign Suppliers FF</field>
+        <field name="code">PEX</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_001_main_company" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_02_001_main_company" />
+        <field name="sequence" eval="24" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_customers_ff_main_company" model="account.journal">
+        <field name="name">Customers FF</field>
+        <field name="code">CF</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_001_main_company" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_001_main_company" />
+        <field name="sequence" eval="26" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_customers_fx_main_company" model="account.journal">
+        <field name="name">Customers FX</field>
+        <field name="code">CX</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_003_main_company" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_001_main_company" />
+        <field name="sequence" eval="27" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_simulated</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_customers_nf_main_company" model="account.journal">
+        <field name="name">Customers NF</field>
+        <field name="code">CN</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_002_main_company" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_002_main_company" />
+        <field name="sequence" eval="28" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_employees_nf_main_company" model="account.journal">
+        <field name="name">Employees NF</field>
+        <field name="code">NOM00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="25" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_pos_main_main_company" model="account.journal">
+        <field name="name">POS MAIN</field>
+        <field name="code">TPV00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="29" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_cbmx1_main_company" model="account.journal">
+        <field name="name">Effectively paid FF</field>
+        <field name="code">CBMX1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="30" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_exch1_main_company" model="account.journal">
+        <field name="name">Exchange difference FF</field>
+        <field name="code">EXCH1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="31" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_caba1_main_company" model="account.journal">
+        <field name="name">Tax declarations FF</field>
+        <field name="code">CABA1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="32" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_524" model="account.journal">
+        <field name="name">Uncollectible debts FF</field>
+        <field name="code">INC1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="33" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_525" model="account.journal">
+        <field name="name">Uncollectible debts NF</field>
+        <field name="code">INC0</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="34" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_misc_ff_main_company" model="account.journal">
+        <field name="name">Miscellaneous operations FF</field>
+        <field name="code">MSC1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="35" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_misc_nf_main_company" model="account.journal">
+        <field name="name">Miscellaneous operations NF</field>
+        <field name="code">MSC0</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="36" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_528" model="account.journal">
+        <field name="name">Automobiles, trucks, forklifts and trailers FF</field>
+        <field name="code">EQT01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="37" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_529" model="account.journal">
+        <field name="name">Automobiles, trucks, forklifts and trailers NF</field>
+        <field name="code">EQT00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="38" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_530" model="account.journal">
+        <field name="name">Computing equipment FF</field>
+        <field name="code">EQC01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="39" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_531" model="account.journal">
+        <field name="name">Communications equipment FF</field>
+        <field name="code">EQTL1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="40" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_532" model="account.journal">
+        <field name="name">Machinery and equipment FF</field>
+        <field name="code">MAQ01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="41" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_533" model="account.journal">
+        <field name="name">Machinery and equipment NF</field>
+        <field name="code">MAQ00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="42" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_534" model="account.journal">
+        <field name="name">Furniture and office equipment FF</field>
+        <field name="code">MOQ01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="43" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_535" model="account.journal">
+        <field name="name">Furniture and office equipment NF</field>
+        <field name="code">MOQ00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="44" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_536" model="account.journal">
+        <field name="name">Lands FF</field>
+        <field name="code">TRR01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="45" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_537" model="account.journal">
+        <field name="name">Lands NF</field>
+        <field name="code">TRR00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="46" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="base.main_company" />
+    </record>
+
+    <record id="journal_538" model="account.journal">
+        <field name="name">Bank BBVA 0194254961</field>
+        <field name="code">BNC01</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_001_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="11" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_539" model="account.journal">
+        <field name="name">Bank Banbajio 0038383478</field>
+        <field name="code">BNC11</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_006_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="12" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_540" model="account.journal">
+        <field name="name">Bank Efectivale - Expenses</field>
+        <field name="code">BNC10</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_004_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="13" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_541" model="account.journal">
+        <field name="name">Bank BBVA TN 5064</field>
+        <field name="code">BNC04</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_202_03_002_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="14" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_542" model="account.journal">
+        <field name="name">Bank BBVA TN 5073</field>
+        <field name="code">BNC09</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_202_03_003_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="15" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_543" model="account.journal">
+        <field name="name">Bank BBVA CC 4406 (5619)</field>
+        <field name="code">BNC03</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_202_03_005_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="16" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_544" model="account.journal">
+        <field name="name">Bank American Express Gold</field>
+        <field name="code">BNC06</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_202_03_006_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="17" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_545" model="account.journal">
+        <field name="name">Bank American Express Platinum</field>
+        <field name="code">BNC07</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_202_03_007_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="18" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_546" model="account.journal">
+        <field name="name">Bank HSBC 4046829461</field>
+        <field name="code">BNC02</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_002_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="22" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="active" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_547" model="account.journal">
+        <field name="name">Bank BBVA 1007025823</field>
+        <field name="code">BNC08</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_202_03_004_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="23" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="active" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_548" model="account.journal">
+        <field name="name">Bank Banorte 0313328770</field>
+        <field name="code">BNC05</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_003_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="24" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="active" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_main_cash_lmmr" model="account.journal">
+        <field name="name">Main cash</field>
+        <field name="code">EFC01</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_101_01_001_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="10" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_550" model="account.journal">
+        <field name="name">Cash USD</field>
+        <field name="code">EFC02</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_101_01_003_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="19" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_551" model="account.journal">
+        <field name="name">Cash BAL1</field>
+        <field name="code">EFC04</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_101_01_005_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="20" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_552" model="account.journal">
+        <field name="name">Cash SJN</field>
+        <field name="code">EFC05</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_101_01_007_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="21" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_553" model="account.journal">
+        <field name="name">Vendors advances FF</field>
+        <field name="code">ANT01</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_120_01_001_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="22" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_554" model="account.journal">
+        <field name="name">Vendors advances NF</field>
+        <field name="code">ANT00</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_120_01_002_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="23" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_555" model="account.journal">
+        <field name="name">Payments done by thirth party in name of the company FF</field>
+        <field name="code">EFT</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_202_03_001_lmmr" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_lmmr" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_lmmr" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_lmmr" />
+        <field name="sequence" eval="24" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_suppliers_ff_lmmr" model="account.journal">
+        <field name="name">Suppliers FF</field>
+        <field name="code">PF</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_001_lmmr" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_001_lmmr" />
+        <field name="sequence" eval="25" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_suppliers_fx_lmmr" model="account.journal">
+        <field name="name">Suppliers FX</field>
+        <field name="code">PX</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_003_lmmr" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_001_lmmr" />
+        <field name="sequence" eval="26" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_simulated</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_suppliers_nf_lmmr" model="account.journal">
+        <field name="name">Suppliers NF</field>
+        <field name="code">PN</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_002_lmmr" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_002_lmmr" />
+        <field name="type">purchase</field>
+        <field name="sequence" eval="27" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_suppliers_nfx_lmmr" model="account.journal">
+        <field name="name">Suppliers NFX</field>
+        <field name="code">PNX</field>
+        <field name="type">purchase</field>
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_002_lmmr" />
+        <field name="sequence" eval="28" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">not_fiscal_simulated</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_foreign_suppliers_lmmr" model="account.journal">
+        <field name="name">Foreign Suppliers FF</field>
+        <field name="code">PEX</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_001_lmmr" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_02_001_lmmr" />
+        <field name="sequence" eval="29" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_customers_ff_lmmr" model="account.journal">
+        <field name="name">Customers FF</field>
+        <field name="code">CF</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_001_lmmr" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_001_lmmr" />
+        <field name="sequence" eval="32" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_customers_fx_lmmr" model="account.journal">
+        <field name="name">Customers FX</field>
+        <field name="code">CX</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_003_lmmr" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_001_lmmr" />
+        <field name="sequence" eval="33" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_simulated</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_customers_nf_lmmr" model="account.journal">
+        <field name="name">Customers NF</field>
+        <field name="code">CN</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_002_lmmr" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_002_lmmr" />
+        <field name="sequence" eval="34" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_customers_nfx_lmmr" model="account.journal">
+        <field name="name">Customers NFX</field>
+        <field name="code">CNX</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_002_lmmr" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_002_lmmr" />
+        <field name="sequence" eval="35" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">not_fiscal_simulated</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_employees_ff_lmmr" model="account.journal">
+        <field name="name">Employees FF</field>
+        <field name="code">NOM01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="30" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_employees_nf_lmmr" model="account.journal">
+        <field name="name">Employees NF</field>
+        <field name="code">NOM00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="31" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_pos_main_lmmr" model="account.journal">
+        <field name="name">POS MAIN</field>
+        <field name="code">TPV00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="36" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_568" model="account.journal">
+        <field name="name">POS BAL1</field>
+        <field name="code">TPV01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="37" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_569" model="account.journal">
+        <field name="name">POS SJN</field>
+        <field name="code">TPV02</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="38" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_cbmx1_lmmr" model="account.journal">
+        <field name="name">Effectively paid FF</field>
+        <field name="code">CBMX1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="43" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_exch1_lmmr" model="account.journal">
+        <field name="name">Exchange difference FF</field>
+        <field name="code">EXCH1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="44" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_caba1_lmmr" model="account.journal">
+        <field name="name">Tax declarations FF</field>
+        <field name="code">CABA1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="45" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_576" model="account.journal">
+        <field name="name">Uncollectible debts FF</field>
+        <field name="code">INC1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="46" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_577" model="account.journal">
+        <field name="name">Uncollectible debts NF</field>
+        <field name="code">INC0</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="47" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_misc_ff_lmmr" model="account.journal">
+        <field name="name">Miscellaneous operations FF</field>
+        <field name="code">MSC1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="48" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_misc_nf_lmmr" model="account.journal">
+        <field name="name">Miscellaneous operations NF</field>
+        <field name="code">MSC0</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="49" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_580" model="account.journal">
+        <field name="name">Automobiles, trucks, forklifts and trailers FF</field>
+        <field name="code">EQT01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="50" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_581" model="account.journal">
+        <field name="name">Automobiles, trucks, forklifts and trailers NF</field>
+        <field name="code">EQT00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="51" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_582" model="account.journal">
+        <field name="name">Computing equipment FF</field>
+        <field name="code">EQC01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="52" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_583" model="account.journal">
+        <field name="name">Communications equipment FF</field>
+        <field name="code">EQTL1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="53" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_584" model="account.journal">
+        <field name="name">Machinery and equipment FF</field>
+        <field name="code">MAQ01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="54" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_585" model="account.journal">
+        <field name="name">Machinery and equipment NF</field>
+        <field name="code">MAQ00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="55" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_586" model="account.journal">
+        <field name="name">Furniture and office equipment FF</field>
+        <field name="code">MOQ01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="56" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_587" model="account.journal">
+        <field name="name">Furniture and office equipment NF</field>
+        <field name="code">MOQ00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="57" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_588" model="account.journal">
+        <field name="name">Lands FF</field>
+        <field name="code">TRR01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="58" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_589" model="account.journal">
+        <field name="name">Lands NF</field>
+        <field name="code">TRR00</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="59" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+    </record>
+
+    <record id="journal_590" model="account.journal">
+        <field name="name">Bank BBVA 0463866521</field>
+        <field name="code">BNC01</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_005_tjgl" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_002_tjgl" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_tjgl" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_tjgl" />
+        <field name="sequence" eval="95" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_591" model="account.journal">
+        <field name="name">Bank Banamex 0126152041</field>
+        <field name="code">BNC02</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_003_tjgl" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_002_tjgl" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_tjgl" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_tjgl" />
+        <field name="sequence" eval="96" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_592" model="account.journal">
+        <field name="name">Bank BBVA Payroll</field>
+        <field name="code">BNC03</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_001_tjgl" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_002_tjgl" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_tjgl" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_tjgl" />
+        <field name="sequence" eval="97" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_main_cash_tjgl" model="account.journal">
+        <field name="name">Main cash</field>
+        <field name="code">EFC01</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_101_01_001_tjgl" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_002_tjgl" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_tjgl" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_tjgl" />
+        <field name="sequence" eval="94" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_suppliers_ff_tjgl" model="account.journal">
+        <field name="name">Suppliers FF</field>
+        <field name="code">PF</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_001_tjgl" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_001_tjgl" />
+        <field name="refund_sequence" eval="True" />
+        <field name="sequence" eval="98" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_suppliers_nf_tjgl" model="account.journal">
+        <field name="name">Suppliers NF</field>
+        <field name="code">PN</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_002_tjgl" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_002_tjgl" />
+        <field name="refund_sequence" eval="True" />
+        <field name="sequence" eval="99" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_customers_ff_tjgl" model="account.journal">
+        <field name="name">Customers FF</field>
+        <field name="code">CF</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_001_tjgl" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_001_tjgl" />
+        <field name="sequence" eval="100" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_customers_nf_tjgl" model="account.journal">
+        <field name="name">Customers NF</field>
+        <field name="code">CN</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_002_tjgl" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_002_tjgl" />
+        <field name="sequence" eval="101" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_cbmx1_tjgl" model="account.journal">
+        <field name="name">Effectively paid FF</field>
+        <field name="code">CBMX1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="102" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_exch1_tjgl" model="account.journal">
+        <field name="name">Exchange difference FF</field>
+        <field name="code">EXCH1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="103" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_caba1_tjgl" model="account.journal">
+        <field name="name">Tax declarations FF</field>
+        <field name="code">CABA1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="104" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_misc_ff_tjgl" model="account.journal">
+        <field name="name">Miscellaneous operations FF</field>
+        <field name="code">MSC1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="105" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_602" model="account.journal">
+        <field name="name">Lands FF</field>
+        <field name="code">TRR01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="106" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_tjgl" />
+    </record>
+
+    <record id="journal_603" model="account.journal">
+        <field name="name">Bank BBVA 0466728227</field>
+        <field name="code">BNC02</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_003_glmm" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_glmm" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_glmm" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_glmm" />
+        <field name="sequence" eval="108" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_604" model="account.journal">
+        <field name="name">Bank Santander 56-74532047-4</field>
+        <field name="code">BNC03</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_004_glmm" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_glmm" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_glmm" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_glmm" />
+        <field name="sequence" eval="109" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_605" model="account.journal">
+        <field name="name">Bank BBVA Payroll</field>
+        <field name="code">BNC01</field>
+        <field name="type">bank</field>
+        <field name="default_account_id" ref="xiuman_data.account_102_01_002_glmm" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_glmm" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_glmm" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_glmm" />
+        <field name="sequence" eval="110" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_main_cash_glmm" model="account.journal">
+        <field name="name">Main cash</field>
+        <field name="code">EFC01</field>
+        <field name="type">cash</field>
+        <field name="default_account_id" ref="xiuman_data.account_101_01_001_glmm" />
+        <field name="suspense_account_id" ref="xiuman_data.account_102_01_000_glmm" />
+        <field name="profit_account_id" ref="xiuman_data.account_704_23_002_glmm" />
+        <field name="loss_account_id" ref="xiuman_data.account_703_21_002_glmm" />
+        <field name="sequence" eval="107" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_suppliers_ff_glmm" model="account.journal">
+        <field name="name">Suppliers FF</field>
+        <field name="code">PF</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_001_glmm" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_001_glmm" />
+        <field name="sequence" eval="111" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_suppliers_fx_glmm" model="account.journal">
+        <field name="name">Suppliers FX</field>
+        <field name="code">PX</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_003_glmm" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_001_glmm" />
+        <field name="sequence" eval="26" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_simulated</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_suppliers_nf_glmm" model="account.journal">
+        <field name="name">Suppliers NF</field>
+        <field name="code">PN</field>
+        <field name="type">purchase</field>
+        <field name="default_account_id" ref="xiuman_data.account_501_01_002_glmm" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_201_01_002_glmm" />
+        <field name="sequence" eval="112" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_customers_ff_glmm" model="account.journal">
+        <field name="name">Customers FF</field>
+        <field name="code">CF</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_001_glmm" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_001_glmm" />
+        <field name="sequence" eval="114" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_customers_fx_glmm" model="account.journal">
+        <field name="name">Customers FX</field>
+        <field name="code">CX</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_006_glmm" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_001_glmm" />
+        <field name="sequence" eval="33" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="False" />
+        <field name="x_treatment">fiscal_simulated</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_customers_nf_glmm" model="account.journal">
+        <field name="name">Customers NF</field>
+        <field name="code">CN</field>
+        <field name="type">sale</field>
+        <field name="default_account_id" ref="xiuman_data.account_401_04_002_glmm" />
+        <field name="default_payable_account_id" ref="xiuman_data.account_105_01_002_glmm" />
+        <field name="sequence" eval="115" />
+        <field name="refund_sequence" eval="True" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_employees_ff_glmm" model="account.journal">
+        <field name="name">Employees FF</field>
+        <field name="code">NOM01</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="113" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_cbmx1_glmm" model="account.journal">
+        <field name="name">Effectively paid FF</field>
+        <field name="code">CBMX1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="116" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_exch1_glmm" model="account.journal">
+        <field name="name">Exchange difference FF</field>
+        <field name="code">EXCH1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="117" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_caba1_glmm" model="account.journal">
+        <field name="name">Tax declarations FF</field>
+        <field name="code">CABA1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="118" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+
+    <record id="journal_misc_ff_glmm" model="account.journal">
+        <field name="name">Miscellaneous operations FF</field>
+        <field name="code">MSC1</field>
+        <field name="type">general</field>
+        <field name="sequence" eval="119" />
+        <field name="show_on_dashboard" eval="True" />
+        <field name="x_treatment">fiscal_real</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+    </record>
+</odoo>

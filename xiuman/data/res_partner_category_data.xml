@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+    <!-- id 101 -->
+    <record id="partner_category_management" model="res.partner.category">
+        <field name="name">Accounting</field>
+    </record>
+
+    <record id="partner_category_commercial" model="res.partner.category">
+        <field name="name">Commercial</field>
+    </record>
+
+    <record id="partner_category_mrp" model="res.partner.category">
+        <field name="name">MRP</field>
+    </record>
+
+    <record id="partner_category_operations" model="res.partner.category">
+        <field name="name">Operations</field>
+    </record>
+
+    <record id="partner_category_105" model="res.partner.category">
+        <field name="name">Security - Compliance</field>
+    </record>
+
+    <record id="partner_category_106" model="res.partner.category">
+        <field name="name">Suppliers</field>
+    </record>
+
+    <record id="partner_category_107" model="res.partner.category">
+        <field name="name">temp2</field>
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_category_108" model="res.partner.category">
+        <field name="name">temp3</field>
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_category_109" model="res.partner.category">
+        <field name="name">temp4</field>
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_category_110" model="res.partner.category">
+        <field name="name">Special project supplier - Xiuman</field>
+        <field name="parent_id" ref="partner_category_106" />
+    </record>
+
+    <record id="partner_category_core_supplier" model="res.partner.category">
+        <field name="name">Core business supplier</field>
+        <field name="parent_id" ref="partner_category_106" />
+    </record>
+
+    <record id="partner_category_general_supplier" model="res.partner.category">
+        <field name="name">General supplier</field>
+        <field name="parent_id" ref="partner_category_106" />
+    </record>
+
+    <record id="partner_category_debt_uncollectible" model="res.partner.category">
+        <field name="name">Debt quality - Uncollectible</field>
+        <field name="parent_id" ref="partner_category_management" />
+    </record>
+
+    <record id="partner_category_debt_low" model="res.partner.category">
+        <field name="name">Debt quality - Low</field>
+        <field name="parent_id" ref="partner_category_management" />
+    </record>
+
+    <record id="partner_category_debt_medium" model="res.partner.category">
+        <field name="name">Debt quality - Medium</field>
+        <field name="parent_id" ref="partner_category_management" />
+    </record>
+
+    <record id="partner_category_debt_high" model="res.partner.category">
+        <field name="name">Debt quality - High</field>
+        <field name="parent_id" ref="partner_category_management" />
+    </record>
+
+    <record id="partner_category_ff" model="res.partner.category">
+        <field name="name">Fiscal effect - FF</field>
+        <field name="parent_id" ref="partner_category_management" />
+    </record>
+
+    <record id="partner_category_fx" model="res.partner.category">
+        <field name="name">Fiscal effect - FX</field>
+        <field name="parent_id" ref="partner_category_management" />
+    </record>
+
+    <record id="partner_category_nf" model="res.partner.category">
+        <field name="name">Fiscal effect - NF</field>
+        <field name="parent_id" ref="partner_category_management" />
+    </record>
+
+    <record id="partner_category_122" model="res.partner.category">
+        <field name="name">High Risk</field>
+        <field name="parent_id" ref="partner_category_105" />
+    </record>
+
+    <record id="partner_category_super_big" model="res.partner.category">
+        <field name="name">Production size - Super big holder (more than 30mdp)</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_big" model="res.partner.category">
+        <field name="name">Production size - Big holder (up to 30mdp)</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_medium" model="res.partner.category">
+        <field name="name">Production size - Medium holder (up to 18mdp)</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_small" model="res.partner.category">
+        <field name="name">Production size - Small holder (up to 10mdp)</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_very_small" model="res.partner.category">
+        <field name="name">Production size - Very small holder (up to 3mdp)</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_expansion" model="res.partner.category">
+        <field name="name">Growth perspective - Expansion</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_contraction" model="res.partner.category">
+        <field name="name">Growth perspective - Contraction</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_hold" model="res.partner.category">
+        <field name="name">Growth perspective - Hold</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_avocado" model="res.partner.category">
+        <field name="name">Crop - Avocado</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_barley" model="res.partner.category">
+        <field name="name">Crop - Barley</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_bean" model="res.partner.category">
+        <field name="name">Crop - Bean</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_berry" model="res.partner.category">
+        <field name="name">Crop - Berry</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_corn" model="res.partner.category">
+        <field name="name">Crop - Corn</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_citrus" model="res.partner.category">
+        <field name="name">Crop - Citrus</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_cucurbit" model="res.partner.category">
+        <field name="name">Crop - Cucurbits</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_onion" model="res.partner.category">
+        <field name="name">Crop - Onion</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_ornamental" model="res.partner.category">
+        <field name="name">Crop - Ornamentals</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_pepper" model="res.partner.category">
+        <field name="name">Crop - Pepper</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_potato" model="res.partner.category">
+        <field name="name">Crop - Potato</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_tomato" model="res.partner.category">
+        <field name="name">Crop - Tomato</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_wheat" model="res.partner.category">
+        <field name="name">Crop - Wheat</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_144" model="res.partner.category">
+        <field name="name">Debt collection - Aaron</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_145" model="res.partner.category">
+        <field name="name">Debt collection - Alejandro</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_146" model="res.partner.category">
+        <field name="name">Debt collection - Axel</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_147" model="res.partner.category">
+        <field name="name">Debt collection - BAL</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_148" model="res.partner.category">
+        <field name="name">Debt collection - Bryan</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_149" model="res.partner.category">
+        <field name="name">Debt collection - Corporativo</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_150" model="res.partner.category">
+        <field name="name">Debt collection - Hugo</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_151" model="res.partner.category">
+        <field name="name">Debt collection - Juan</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_152" model="res.partner.category">
+        <field name="name">Debt collection - Misael</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="partner_category_153" model="res.partner.category">
+        <field name="name">Debt collection - Reynaldo</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_154" model="res.partner.category">
+        <field name="name">Debt collection - SJN</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+
+    <record id="partner_category_carrot" model="res.partner.category">
+        <field name="name">Crop - Carrot</field>
+        <field name="parent_id" ref="partner_category_commercial" />
+    </record>
+</odoo>

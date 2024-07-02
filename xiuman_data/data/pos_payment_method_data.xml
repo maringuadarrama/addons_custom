@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+    <record id="pos_payment_method_101" model="pos.payment.method">
+        <field name="name">Main cash</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="journal_id" ref="xiuman_data.journal_main_cash_lmmr" />
+    </record>
+
+    <record id="pos_payment_method_102" model="pos.payment.method">
+        <field name="name">Cash SJN</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="journal_id" ref="xiuman_data.journal_552" />
+    </record>
+
+    <record id="pos_payment_method_103" model="pos.payment.method">
+        <field name="name">Cash BAL</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="journal_id" ref="xiuman_data.journal_551" />
+    </record>
+</odoo>

@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+    <record id="account_tax_501" model="account.tax">
+        <field name="name">DSA 0.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_501" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type" />
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_502" model="account.tax">
+        <field name="name">IEPS 0.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_507" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_503" model="account.tax">
+        <field name="name">IEPS 26.5%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_503" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="True" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="26.5" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_504" model="account.tax">
+        <field name="name">IEPS 3.0% telecom</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_507" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="True" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="3" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_505" model="account.tax">
+        <field name="name">IEPS 53.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_505" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="True" />
+        <field name="is_base_affected" eval="True" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="53" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_506" model="account.tax">
+        <field name="name">IEPS 6.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_507" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="6" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_507" model="account.tax">
+        <field name="name">IEPS 6.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_507" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_213_01_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="6" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_508" model="account.tax">
+        <field name="name">IEPS 7.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_507" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="7" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_509" model="account.tax">
+        <field name="name">IEPS 7.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_507" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_213_01_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="7" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_510" model="account.tax">
+        <field name="name">IEPS 8.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_507" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="8" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_511" model="account.tax">
+        <field name="name">IEPS 9.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_507" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="9" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_512" model="account.tax">
+        <field name="name">IEPS 9.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_507" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_213_01_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="9" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_513" model="account.tax">
+        <field name="name">IEPS exento</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_507" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Exento</field>
+    </record>
+
+    <record id="account_tax_514" model="account.tax">
+        <field name="name">ISH 2%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_508" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="2" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type" />
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_515" model="account.tax">
+        <field name="name">ISH 3.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_508" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="3" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type" />
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_516" model="account.tax">
+        <field name="name">ISH 3.5%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_508" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="3.5" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type" />
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_517" model="account.tax">
+        <field name="name">ISH 4.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_508" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="4" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type" />
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_518" model="account.tax">
+        <field name="name">IVA 0.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_511" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_002_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_519" model="account.tax">
+        <field name="name">IVA 0.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_511" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_02_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_520" model="account.tax">
+        <field name="name">IVA 0.0% no deducible</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_511" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_202_03_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_521" model="account.tax">
+        <field name="name">IVA 16.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_512" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_002_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="True" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="16" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_522" model="account.tax">
+        <field name="name">IVA 16.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_512" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_02_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="16" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_523" model="account.tax">
+        <field name="name">IVA 16.0% no deducible</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_512" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_202_03_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="True" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="16" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_524" model="account.tax">
+        <field name="name">IVA exento</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_514" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_002_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Exento</field>
+    </record>
+
+    <record id="account_tax_525" model="account.tax">
+        <field name="name">IVA exento</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_514" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_02_001_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Exento</field>
+    </record>
+
+    <record id="account_tax_526" model="account.tax">
+        <field name="name">IVA retencion fletes 4.0%</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_526" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_216_10_020_main_company" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="4" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_527" model="account.tax">
+        <field name="name">DSA 0.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_519" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type" />
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_528" model="account.tax">
+        <field name="name">IEPS 0.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_529" model="account.tax">
+        <field name="name">IEPS 26.5%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_521" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="True" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="26.5" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_530" model="account.tax">
+        <field name="name">IEPS 3.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="3" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_531" model="account.tax">
+        <field name="name">IEPS 3.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_02_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="3" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_532" model="account.tax">
+        <field name="name">IEPS 3.0% telecom</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="True" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="3" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_533" model="account.tax">
+        <field name="name">IEPS 3.5%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="3.5" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_534" model="account.tax">
+        <field name="name">IEPS 3.5%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_02_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="3.5" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_535" model="account.tax">
+        <field name="name">IEPS 4.5%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="4.5" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_536" model="account.tax">
+        <field name="name">IEPS 4.5%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_02_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="4.5" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_537" model="account.tax">
+        <field name="name">IEPS 5.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="5" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_538" model="account.tax">
+        <field name="name">IEPS 53.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_523" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="True" />
+        <field name="is_base_affected" eval="True" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="53" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_539" model="account.tax">
+        <field name="name">IEPS 6.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="6" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_540" model="account.tax">
+        <field name="name">IEPS 6.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_02_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="6" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_541" model="account.tax">
+        <field name="name">IEPS 7.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="7" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_542" model="account.tax">
+        <field name="name">IEPS 7.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_02_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="7" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_543" model="account.tax">
+        <field name="name">IEPS 8.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_524" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="8" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_544" model="account.tax">
+        <field name="name">IEPS 9.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_03_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="9" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_545" model="account.tax">
+        <field name="name">IEPS 9.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_02_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="9" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_546" model="account.tax">
+        <field name="name">IEPS exento</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_525" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type">ieps</field>
+        <field name="l10n_mx_factor_type">Exento</field>
+    </record>
+
+    <record id="account_tax_547" model="account.tax">
+        <field name="name">ISH 2.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_526" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="2" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type" />
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_548" model="account.tax">
+        <field name="name">ISH 3.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_526" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="3" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type" />
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_549" model="account.tax">
+        <field name="name">ISH 3.5%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_526" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="3.5" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type" />
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_550" model="account.tax">
+        <field name="name">ISH 4.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_526" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="4" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type" />
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_551" model="account.tax">
+        <field name="name">ISR retencion arrendamiento 10%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_527" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_216_03_002_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="-10" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">isr</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_552" model="account.tax">
+        <field name="name">IVA 0.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_529" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_553" model="account.tax">
+        <field name="name">IVA 0.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_529" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_01_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_554" model="account.tax">
+        <field name="name">IVA 0.0% no deducible</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_529" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_002_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_555" model="account.tax">
+        <field name="name">IVA 15.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_530" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_001_lmmr" />
+        <field name="active" eval="False" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="15" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_556" model="account.tax">
+        <field name="name">IVA 16.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_530" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="True" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="16" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_557" model="account.tax">
+        <field name="name">IVA 16.0%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_530" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_01_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="16" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_558" model="account.tax">
+        <field name="name">IVA 16.0% no deducible</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_530" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_002_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="True" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="16" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_559" model="account.tax">
+        <field name="name">IVA exento</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_532" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Exento</field>
+    </record>
+
+    <record id="account_tax_560" model="account.tax">
+        <field name="name">IVA exento</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_532" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_01_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Exento</field>
+    </record>
+
+    <record id="account_tax_561" model="account.tax">
+        <field name="name">IVA retencion 10.6667%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_535" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_01_001_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="-10.6667" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_562" model="account.tax">
+        <field name="name">IVA retencion fletes 4%</field>
+        <field name="company_id" ref="xiuman_data.company_lmmr" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_536" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_216_10_010_lmmr" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="-4" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_563" model="account.tax">
+        <field name="name">ISH 4.0%</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_598" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="4" />
+        <field name="tax_exigibility">on_invoice</field>
+        <field name="l10n_mx_tax_type" />
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_564" model="account.tax">
+        <field name="name">IVA 0.0%</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_601" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_001_glmm" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_565" model="account.tax">
+        <field name="name">IVA 0.0%</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_601" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_01_001_glmm" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_566" model="account.tax">
+        <field name="name">IVA 16.0%</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_602" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_001_glmm" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="True" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="16" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_567" model="account.tax">
+        <field name="name">IVA 16.0%</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_602" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_01_001_glmm" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="16" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_568" model="account.tax">
+        <field name="name">IVA 16.0% no deducible</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_602" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_002_glmm" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="True" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="16" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Tasa</field>
+    </record>
+
+    <record id="account_tax_569" model="account.tax">
+        <field name="name">IVA exento</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_601" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_119_01_001_glmm" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">purchase</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Exento</field>
+    </record>
+
+    <record id="account_tax_570" model="account.tax">
+        <field name="name">IVA exento</field>
+        <field name="company_id" ref="xiuman_data.company_glmm" />
+        <field name="country_id" ref="base.mx" />
+        <field name="tax_group_id" ref="xiuman_data.tax_group_601" />
+        <field name="cash_basis_transition_account_id" ref="xiuman_data.account_209_01_001_glmm" />
+        <field name="active" eval="True" />
+        <field name="include_base_amount" eval="False" />
+        <field name="is_base_affected" eval="False" />
+        <field name="analytic" eval="True" />
+        <field name="type_tax_use">sale</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="0" />
+        <field name="tax_exigibility">on_payment</field>
+        <field name="l10n_mx_tax_type">iva</field>
+        <field name="l10n_mx_factor_type">Exento</field>
+    </record>
+</odoo>
